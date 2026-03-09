@@ -4,6 +4,18 @@ Specific articles, posts, and reference sites worth reading.
 
 ---
 
+## [NK's AI Cookbook](https://ai-blog.nkschjoedt.com/ai-cookbook)
+By [NK Schjødt](people.md#nk-schjødt). A senior developer's practical guide to AI-assisted development. Central metaphor: **AI is an excavator, you are the operator** — it amplifies skilled operators and is dangerous for unskilled ones.
+
+Covers four core principles (context is everything, plan before coding, build a skills library, avoid burnout) plus a dense tactics section. Particularly good on:
+- The **barcoding pattern** for avoiding burnout: strict black zones (deep work) and white zones (genuine rest), eliminating the grey (waiting in front of the screen while the agent runs)
+- **Input-to-output ratio** as a quality signal — if your input is less than 20% of total conversation tokens, you're under-specifying
+- **Skills as permanent context injection** — encode repeated instructions as skills so the model auto-selects them instead of you reconstructing context every session
+
+Complements the Pydantic article well: same problem space (developer experience with AI), more tactical and less reflective.
+
+---
+
 ## [The Human-in-the-Loop is Tired](https://pydantic.dev/articles/the-human-in-the-loop-is-tired)
 By Pydantic. An honest account of what LLM-assisted programming actually feels like from the inside — not a doomer piece or a hype piece.
 

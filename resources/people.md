@@ -24,6 +24,13 @@ Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition), [The
 
 ---
 
+## NK Schjødt
+- Blog: https://ai-blog.nkschjoedt.com/
+
+Senior developer writing practical, grounded takes on AI-assisted development.
+
+---
+
 ## Andrej Karpathy
 - Blog: https://karpathy.bearblog.dev/
 - GitHub: https://github.com/karpathy
