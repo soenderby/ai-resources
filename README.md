@@ -11,3 +11,7 @@ A personal collection of resources related to AI, LLMs, and agents — curated a
 - Fine-tuning & training
 - Tooling & infrastructure
 - Research & papers
+
+## See Also
+
+- [ORCA](https://github.com/soenderby/orca) — personal agent framework / harness
