@@ -23,3 +23,8 @@ By [Steve Yegge](people.md#steve-yegge).
 
 ## [pi-mono](https://github.com/badlogic/pi-mono)
 By Mario Zechner (badlogic).
+
+---
+
+## [pi-skills](https://github.com/badlogic/pi-skills)
+By Mario Zechner (badlogic). A collection of reusable skills for the pi coding agent. Upstream source for the skills in [agent-skills/](../agent-skills/).
