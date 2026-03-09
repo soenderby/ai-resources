@@ -4,6 +4,37 @@ People worth following in the AI, LLM, and agent space.
 
 ---
 
+## Abi Awomosu
+- Substack: https://abiawomosu.substack.com/
+- Profile: https://substack.com/@abiawomosu
+
+"Digital Griot. Ex-Big Tech insider with an outsider's perspective." Author of *How Not to Use AI*. Deliberately teaches the opposite of the dominant narrative — frames AI not as a tool you command but as a medium you craft with. A useful counterweight to the practitioner-productivity angle that dominates most AI writing.
+
+---
+
+## Harper Reed
+- Blog: https://harper.blog/
+
+Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about LLM workflows with a hacker sensibility — less polished than the other practitioners in this list, more experimental and hands-on. Known for the widely-cited "My LLM codegen workflow atm" post.
+
+---
+
+## Ethan Mollick
+- Substack: https://www.oneusefulthing.org/
+- Wharton profile: https://mgmt.wharton.upenn.edu/profile/emollick/
+
+Associate professor at Wharton. Writes *One Useful Thing* — a research-backed take on AI's implications for work, education, and life. Hundreds of thousands of subscribers. Completely different axis from the practitioners in this list: empirical, evidence-citing, and focused on what actually changes for knowledge workers rather than how to build agents.
+
+---
+
+## Lilian Weng
+- Blog: https://lilianweng.github.io/
+- GitHub: https://github.com/lilianweng
+
+Researcher at OpenAI. Writes long, dense technical posts on agent architecture, memory systems, prompting, and alignment. Her posts read more like literature reviews than blog posts — she synthesises dozens of papers into coherent frameworks. The most technically rigorous writing in this collection. Her 2023 agent overview is still the canonical reference for anyone building agent systems.
+
+---
+
 ## Steve Yegge
 - Medium: https://steve-yegge.medium.com/
 - GitHub: https://github.com/steveyegge

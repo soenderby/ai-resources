@@ -4,6 +4,16 @@ Specific articles, posts, and reference sites worth reading.
 
 ---
 
+## [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
+By [Lilian Weng](people.md#lilian-weng). The canonical technical reference for agent system design. Breaks down agent architecture into four components — **planning** (subgoal decomposition, reflection, self-critique), **memory** (sensory/short-term/long-term, retrieval), **tool use**, and **action** — and surveys the research behind each. Written in 2023 but still the clearest framework for reasoning about what an agent actually is and what its parts do. Worth reading before building anything agent-shaped.
+
+---
+
+## [My LLM Codegen Workflow ATM](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/)
+By [Harper Reed](people.md#harper-reed). Practical, no-hype walkthrough of a working LLM coding workflow. Three discrete loops: **brainstorm → spec** (one question at a time with a conversational model), **spec → plan** (reasoning model produces a sequenced set of implementation prompts), **plan → execute** (coding agent works through prompts step by step). Widely cited because the prompts are included verbatim and actually work. Complements the NK Cookbook well — same problem space, different style.
+
+---
+
 ## [NK's AI Cookbook](https://ai-blog.nkschjoedt.com/ai-cookbook)
 By [NK Schjødt](people.md#nk-schjødt). A senior developer's practical guide to AI-assisted development. Central metaphor: **AI is an excavator, you are the operator** — it amplifies skilled operators and is dangerous for unskilled ones.
 
