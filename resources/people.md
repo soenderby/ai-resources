@@ -4,6 +4,17 @@ People worth following in the AI, LLM, and agent space.
 
 ---
 
+## Jeffrey Emanuel
+- Website: https://www.jeffreyemanuel.com/
+- GitHub: https://github.com/Dicklesworthstone
+- X: https://x.com/doodlestein
+
+Building what he calls the **Agentic Coding Flywheel** — a self-reinforcing ecosystem of 14 tools for multi-agent software development. Agents coordinate via email (MCP Agent Mail), track work via Beads, search past sessions (CASS), guard against destructive commands (DCG), and orchestrate across tmux panes (NTM). Each tool amplifies the others. He's also the person Yegge credits with the discovery that combining MCP Agent Mail with Beads produces spontaneous agent collaboration — the "agent village" pattern that seeded Gas Town's design.
+
+Currently also building more ambitious infrastructure: FrankenSQLite (clean-room SQLite with MVCC versioning), FrankenTerm (terminal hypervisor for agent swarms), and bio-inspired neural architectures.
+
+---
+
 ## Abi Awomosu
 - Substack: https://abiawomosu.substack.com/
 - Profile: https://substack.com/@abiawomosu
