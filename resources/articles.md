@@ -59,6 +59,11 @@ By [Steve Yegge](people.md#steve-yegge). A way to build resilient AI application
 
 ---
 
+## [Welcome to the Wasteland: A Thousand Gas Towns](https://steve-yegge.medium.com/welcome-to-the-wasteland-a-thousand-gas-towns-a5eb9bc8dc1f)
+By [Steve Yegge](people.md#steve-yegge). Launch post for [The Wasteland](../resources/projects.md#the-wasteland). Explains the vision: federating Gas Towns at scale to solve the "ideas > capacity" problem. Interesting framing — every major AI tooling breakthrough has involved a ~100x increase in token spend, and federating Gas Towns is how you get another 100x.
+
+---
+
 ## [The Future of Coding Agents](https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c)
 By [Steve Yegge](people.md#steve-yegge). Written three days after launching Gas Town. Predictions for 2026: models will get smarter, coding agent shops will shift from building workers to building factories, and big companies that haven't leaned in are in trouble. Also explains the backstory of Gas Town through four failed orchestrator attempts.
 
@@ -66,6 +71,13 @@ By [Steve Yegge](people.md#steve-yegge). Written three days after launching Gas 
 
 ## [Software Survival 3.0](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b)
 By [Steve Yegge](people.md#steve-yegge). A framework for predicting which software survives in a world where AI can build almost anything on demand. Core thesis: **software tends to survive if it saves cognition**. Introduces a "survival ratio" — tools that reduce token/compute cost win under selection pressure. Concrete and actionable even if you don't buy the full Karpathy/Amodei vision.
+
+---
+
+## [Minotaur Capital Quarterly — December 2025](https://www.minotaurcapital.com/reports/quarterly/2025-12)
+By Minotaur Capital. An Australian global equities fund that uses LLMs end-to-end in their investment process — from idea generation and triage to portfolio construction and risk management. Their December 2025 quarterly is interesting as a real-world account of an industry outside tech adopting agents seriously.
+
+Key quote from the newsletter: *"Now the output quality has crossed a threshold where it's genuinely useful, and it's cheap. If capable LLMs were free and infinitely fast, you'd always prefer brute force iteration over careful human design."* — a good articulation of the threshold moment we're in. Note: the full newsletter is JS-rendered and may require a browser to read.
 
 ---
 

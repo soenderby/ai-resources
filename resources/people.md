@@ -9,7 +9,7 @@ People worth following in the AI, LLM, and agent space.
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Beads](projects.md#beads)  
-Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30)
+Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30)
 
 ---
 
@@ -21,6 +21,15 @@ Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition), [The
 
 ## Simon Willison
 - Weblog: https://simonwillison.net/
+
+---
+
+## Addy Osmani
+- Blog: https://addyosmani.com/blog/
+- Substack: https://addyo.substack.com/
+- LinkedIn: https://www.linkedin.com/in/addyosmani
+
+Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author — recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 
 ---
 
