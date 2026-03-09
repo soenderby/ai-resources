@@ -13,6 +13,30 @@ Also coins **supervision fatigue** — the cognitive load of holding intent in y
 
 ---
 
+## [2025: The Year in LLMs](https://simonwillison.net/2025/Dec/31/the-year-in-llms/)
+By [Simon Willison](people.md#simon-willison). Annual review of the LLM landscape. Essential reading. Coins several terms that are sticking: **"lethal trifecta"** (agent has private data + external comms + untrusted content exposure), **"context rot"** (quality degradation as context window fills), and **"YOLO mode"** (running agents without confirmations — framed as normalization of deviance). Also covers the rise of coding agents, async agents, MCP, and the competitive shift to Chinese open-weight models.
+
+---
+
+## [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
+By [Simon Willison](people.md#simon-willison). A living, growing guide — structured like a book, published chapter by chapter. Distinguishes **agentic engineering** (professional engineers using coding agents to amplify expertise) from vibe coding (no attention paid to the code). Covers practical patterns for getting reliable results. Continuously updated.
+
+---
+
+## [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/)
+By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. Key framings:
+- **RLVR** (Reinforcement Learning from Verifiable Rewards) as the new major training stage, enabling "reasoning" models
+- **Ghosts vs. Animals / Jagged Intelligence** — LLMs are not evolving animals, they are "summoned ghosts" with strange, spiky capability profiles. Genius in some domains, confused in others
+- **Claude Code** as the first convincing LLM agent, notable for running *on your computer* rather than in the cloud
+- **Vibe coding** — Karpathy coined the term; discusses its implications for who can program and what software becomes
+
+---
+
+## [Everything is a RALPH Loop](https://ghuntley.com/loop/)
+By [Geoffrey Huntley](people.md#geoffrey-huntley). Introduces the **RALPH** orchestration pattern: a monolithic loop (not microservices) that runs a single task per iteration, throwing tokens at it until done. Argues for vertical scaling over multi-agent complexity at this stage. Companion thinking to Gas Town — where Gas Town focuses on orchestration/spinning plates, Huntley's "Loom" project aims for evolutionary software that optimises itself autonomously.
+
+---
+
 ## [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 By Rich Sutton.
 
@@ -20,6 +44,16 @@ By Rich Sutton.
 
 ## [Zero-Framework Cognition](https://steve-yegge.medium.com/zero-framework-cognition-a-way-to-build-resilient-ai-applications-56b090ed3e69)
 By [Steve Yegge](people.md#steve-yegge). A way to build resilient AI applications.
+
+---
+
+## [The Future of Coding Agents](https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c)
+By [Steve Yegge](people.md#steve-yegge). Written three days after launching Gas Town. Predictions for 2026: models will get smarter, coding agent shops will shift from building workers to building factories, and big companies that haven't leaned in are in trouble. Also explains the backstory of Gas Town through four failed orchestrator attempts.
+
+---
+
+## [Software Survival 3.0](https://steve-yegge.medium.com/software-survival-3-0-97a2a6255f7b)
+By [Steve Yegge](people.md#steve-yegge). A framework for predicting which software survives in a world where AI can build almost anything on demand. Core thesis: **software tends to survive if it saves cognition**. Introduces a "survival ratio" — tools that reduce token/compute cost win under selection pressure. Concrete and actionable even if you don't buy the full Karpathy/Amodei vision.
 
 ---
 

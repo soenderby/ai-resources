@@ -9,7 +9,7 @@ People worth following in the AI, LLM, and agent space.
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Beads](projects.md#beads)  
-Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition)
+Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30)
 
 ---
 
@@ -21,3 +21,11 @@ Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition)
 
 ## Simon Willison
 - Weblog: https://simonwillison.net/
+
+---
+
+## Andrej Karpathy
+- Blog: https://karpathy.bearblog.dev/
+- GitHub: https://github.com/karpathy
+
+Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
