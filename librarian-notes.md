@@ -18,6 +18,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-09** — The collection has a strong concentration of practitioner-builders (Yegge, Huntley, Emanuel, Reed) and is lighter on academic/research perspectives (Mollick, Weng added recently). Worth actively seeking more voices from the research side.
 
+**2026-03-09** — The alignment cluster added today (Yudkowsky → Bostrom → Russell → Christiano) has an internal progression worth noting: Yudkowsky is the originator and most pessimistic; Bostrom brought the argument to mainstream philosophy and policy; Russell brought it into mainstream CS academia; Christiano is the most technically active and most optimistic of the four. Together they cover the full arc from founding intuition to current research practice.
+
 **2026-03-09** — Most sources are male. Abi Awomosu is currently the only exception and brings a distinctly different perspective. Worth being conscious of this when evaluating new sources.
 
 **2026-03-09** — There is a cluster of interconnected people: Yegge → Emanuel (credits Emanuel's MCP Agent Mail discovery as seeding Gas Town's agent-village pattern) → Huntley (building parallel "Loom" project, references Gas Town). These people are actively influencing each other's work. Worth watching this cluster.
@@ -29,6 +31,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 ## Gaps
 
 **2026-03-09** — No coverage of the alignment/safety perspective beyond a passing mention in the patterns document. The collection is heavily weighted toward "how to use AI effectively" and light on "what are the risks of doing so." This is a genuine gap worth filling intentionally, not just because balance is good, but because the security and alignment questions are getting more practically relevant as agents are given more autonomy.
+
+**2026-03-09** — *(partially addressed)* Added Yudkowsky, Bostrom, Russell, and Christiano as people entries, and four alignment resources (Rationality/Sequences, AGI Ruin, If Anyone Builds It, The Alignment Forum). The collection now has a foundation on the safety/risk side. Still missing: more technically active researchers (e.g. researchers at Anthropic Interpretability, DeepMind safety), and critical perspectives *on* the alignment community itself — people who think the existential risk framing is misguided or counterproductive.
 
 **2026-03-09** — No coverage of AI from a non-Western perspective. The collection is almost entirely US/European voices. Chinese open-weight model labs (DeepSeek, etc.) are mentioned in passing but nobody from that side of the field is tracked as a person or primary source.
 

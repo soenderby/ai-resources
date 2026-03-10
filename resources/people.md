@@ -87,3 +87,39 @@ Senior developer writing practical, grounded takes on AI-assisted development.
 - GitHub: https://github.com/karpathy
 
 Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
+
+---
+
+## Eliezer Yudkowsky
+- Website: https://www.yudkowsky.net/
+- LessWrong: https://www.lesswrong.com/users/eliezer_yudkowsky
+- Alignment Forum: https://www.alignmentforum.org/users/eliezer_yudkowsky
+
+Articles: [Rationality: From AI to Zombies](articles.md#rationality-from-ai-to-zombies), [AGI Ruin: A List of Lethalities](articles.md#agi-ruin-a-list-of-lethalities), [If Anyone Builds It, Everyone Dies](articles.md#if-anyone-builds-it-everyone-dies)
+
+The closest thing the AI alignment field has to a founding figure. Self-taught — no PhD, no academic affiliation beyond MIRI, the research nonprofit he co-founded in 2000. Also founded LessWrong and coined "friendly AI." Has been arguing since the early 2000s that unaligned superintelligence poses an existential threat to humanity — a position that was fringe when he started and is now debated at government levels.
+
+His view is bleaker than most: the default outcome of building superintelligent AI is extinction, alignment is extremely hard, and we are not on track to solve it in time. Two bodies of work worth knowing: the *Sequences* — a sprawling multi-year series on rationality, epistemology, and cognition that became foundational reading for a generation of AI safety researchers — and his alignment writing proper, particularly *AGI Ruin: A List of Lethalities*. Recent book: *If Anyone Builds It, Everyone Dies* (2025, co-authored with Nate Soares), a *New York Times* bestseller.
+
+---
+
+## Nick Bostrom
+- Website: https://nickbostrom.com/
+
+Swedish philosopher, founding director of the Future of Humanity Institute at Oxford (closed in 2024). Wrote *Superintelligence: Paths, Dangers, Strategies* (2014) — the book most responsible for bringing the concept of existential AI risk to mainstream attention, cited by Elon Musk and debated in policy circles globally. His approach is more analytically structured than Yudkowsky's: he surveys possible development paths, control strategies, and failure modes rather than arguing for a single outcome. Not a blogger — his contribution is the books — but *Superintelligence* is a required reference in the alignment canon and the most important thing to read for a grounded overview of the argument.
+
+---
+
+## Stuart Russell
+- Website: https://people.eecs.berkeley.edu/~russell/
+- CHAI: https://humancompatible.ai/
+
+UC Berkeley CS professor, co-author (with Peter Norvig) of *Artificial Intelligence: A Modern Approach* — the dominant AI textbook of the last three decades, which itself cites Yudkowsky on alignment. Wrote *Human Compatible: Artificial Intelligence and the Problem of Control* (2019), the most technically rigorous book-length argument for why alignment matters and what a solution might look like. His proposal: build systems that are uncertain about human preferences rather than optimising for a fixed objective, making them inherently deferential to human correction. Runs the Center for Human-Compatible Artificial Intelligence (CHAI) at Berkeley. More optimistic than Yudkowsky or Bostrom about tractability, but takes the same core problem seriously.
+
+---
+
+## Paul Christiano
+- Website: https://paulfchristiano.com/
+- Alignment writing: https://ai-alignment.com/
+
+Former head of the language model alignment team at OpenAI, then founder of the Alignment Research Center (ARC). Now head of AI safety at NIST. His technical contributions include developing RLHF (Reinforcement Learning from Human Feedback) — the training technique now used in ChatGPT, Claude, and virtually every major language model. Also developed the theoretical framework for *iterated amplification*, a proposal for how to supervise AI systems smarter than any individual human. More optimistic than Yudkowsky about alignment being tractable, but has written clearly about what it would take for things to go badly. His [80,000 Hours interview](https://80000hours.org/podcast/episodes/paul-christiano-ai-alignment-solutions/) is the most accessible entry point to his thinking.

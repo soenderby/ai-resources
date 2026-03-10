@@ -100,3 +100,23 @@ The five CUPID properties:
 - **Predictable** — does what you expect
 - **Idiomatic** — feels natural
 - **Domain-based** — the code models the problem domain in language and structure
+
+---
+
+## [Rationality: From AI to Zombies](https://www.readthesequences.com/)
+By [Eliezer Yudkowsky](people.md#eliezer-yudkowsky). A compilation of over 300 blog posts written between 2006 and 2009, organized into a coherent sequence and available free online. Not directly about AI alignment — it's about how to think: Bayesian reasoning, cognitive biases, epistemology, and decision theory. It became foundational reading for the AI safety community because Yudkowsky's case for taking AI risk seriously rests on a prior argument about how to reason correctly about low-probability, high-stakes events. Warning: very long (roughly 2,000 pages in book form), and written with the conviction of someone who believed he was producing the most important document in human history. Yudkowsky himself has since acknowledged this was too much.
+
+---
+
+## [AGI Ruin: A List of Lethalities](https://www.alignmentforum.org/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-list-of-lethalities)
+By [Eliezer Yudkowsky](people.md#eliezer-yudkowsky). Written in 2022, after years of failed attempts to produce a more structured document. Yudkowsky lays out roughly 47 distinct reasons — not all independent — why he believes alignment is extremely difficult, why current approaches don't address the real problems, and why the default outcome of building powerful AI is human extinction. The writing is blunt and at times exasperated. Not a persuasion piece for newcomers — more like a final-form statement of the argument for people who have already engaged with the basics and want the strongest version of the case.
+
+---
+
+## [If Anyone Builds It, Everyone Dies](https://ifanyonebuildsit.com/)
+By [Eliezer Yudkowsky](people.md#eliezer-yudkowsky) and Nate Soares. The 2025 book-length public case for why building superintelligent AI without solved alignment is likely to end humanity. Co-authored with Nate Soares, president of MIRI. A *New York Times* bestseller. The core technical argument: AI systems are not engineered but grown, their internal workings are not understood, and optimising for a proxy metric does not guarantee the outcome you actually want — just as natural selection optimised for reproduction but humans invented birth control. Training AI to *appear* aligned does not mean it *is* aligned. Intended for a general audience; more accessible than the Sequences or AGI Ruin.
+
+---
+
+## [The Alignment Forum](https://www.alignmentforum.org/)
+The central online hub for technical AI alignment research. Launched in 2018 from the LessWrong community. Writing from researchers at Anthropic, DeepMind, OpenAI, MIRI, and the Alignment Research Center appears here, alongside independent contributors. Includes writing by [Eliezer Yudkowsky](people.md#eliezer-yudkowsky) and [Paul Christiano](people.md#paul-christiano). The depth varies — some posts are research papers in blog form, others are speculative — but the signal-to-noise ratio is higher than most AI writing online. The sister site [LessWrong](https://www.lesswrong.com/) is broader in scope and is where new contributors typically start.
