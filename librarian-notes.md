@@ -42,6 +42,12 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 ---
 
+## Connections
+
+**2026-03-11** — The local Orca project and Gas Town / Gas City share the same core architecture (tmux sessions, git worktrees, Beads for work tracking, prompt-template-based agent contracts) despite being built independently. This convergence suggests these are the irreducible building blocks of multi-agent orchestration for coding. The most interesting difference is in intelligence location: Orca pushes all reasoning to the model (the harness is a "thin, deterministic shell"), while Gas Town distributes intelligence across specialized roles, and Gas City decouples it entirely into user-supplied prompt templates. The Orca project is also notably self-improving — agents running inside it have authored ~60% of its commits.
+
+---
+
 ## Open Questions
 
 **2026-03-09** — Steve Yegge's *Beads* project (memory system for coding agents) is listed as a project but has no annotation. Worth reading properly and annotating — it's foundational to Gas Town and Emanuel's work.
