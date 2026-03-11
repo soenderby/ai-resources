@@ -8,6 +8,8 @@ Reusable skills for AI coding agents (pi, Claude Code, etc.). Each skill lives i
 |-------|-------------|
 | [brave-search](brave-search/) | Web search and content extraction via Brave Search API. Lightweight, no browser required. |
 | [browser-tools](browser-tools/) | Browser automation via DevTools Protocol (CDP). For interactive pages, frontend testing, and JS-rendered content. |
+| [feed-checker](feed-checker/) | Check RSS feeds and GitHub releases for people and projects tracked in this repo. Reports only new items since the last run. |
+| [ssh-sync](ssh-sync/) | SSH + rsync deployment workflow using sync-simply, with dry-run-first scripts and troubleshooting notes. |
 
 ## Upstream
 
