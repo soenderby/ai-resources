@@ -1,0 +1,354 @@
+{
+  "feeds": {
+    "https://abiawomosu.substack.com/feed": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://abiawomosu.substack.com/p/what-they-call-niche-is-the-only",
+        "https://abiawomosu.substack.com/p/be-the-village-rome-cant-read",
+        "https://abiawomosu.substack.com/p/they-keep-saying-ai-will-replace",
+        "https://abiawomosu.substack.com/p/the-medium-the-mirror-and-the-machine",
+        "https://abiawomosu.substack.com/p/the-heros-journey-is-burning-the",
+        "https://abiawomosu.substack.com/p/the-openclaw-sensation-they-could",
+        "https://abiawomosu.substack.com/p/they-built-stepford-ai-and-called",
+        "https://abiawomosu.substack.com/p/so-they-built-an-ai-that-undresses",
+        "https://abiawomosu.substack.com/p/the-agi-builders-at-davos-quoted",
+        "https://abiawomosu.substack.com/p/big-tech-does-not-own-ai",
+        "https://abiawomosu.substack.com/p/how-openai-pivoted-from-benefiting",
+        "https://abiawomosu.substack.com/p/attention-is-all-you-need",
+        "https://abiawomosu.substack.com/p/they-built-a-child-they-wont-raise",
+        "https://abiawomosu.substack.com/p/the-danger-of-a-single-story-how",
+        "https://abiawomosu.substack.com/p/decoding-ai-agents-25-trends-for",
+        "https://abiawomosu.substack.com/p/decoding-algorithmic-suppression",
+        "https://abiawomosu.substack.com/p/decoding-the-chatgpt-5-revolt-they",
+        "https://abiawomosu.substack.com/p/decoding-the-myth-ai-is-not-artificial",
+        "https://abiawomosu.substack.com/p/decoding-the-2-billion-boy-math-a"
+      ]
+    },
+    "https://addyo.substack.com/feed": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://addyo.substack.com/p/14-more-lessons-from-14-years-at",
+        "https://addyo.substack.com/p/the-80-problem-in-agentic-coding",
+        "https://addyo.substack.com/p/how-to-write-a-good-spec-for-ai-agents",
+        "https://addyo.substack.com/p/code-review-in-the-age-of-ai",
+        "https://addyo.substack.com/p/how-good-is-ai-at-coding-react-really",
+        "https://addyo.substack.com/p/my-llm-coding-workflow-going-into",
+        "https://addyo.substack.com/p/21-lessons-from-14-years-at-google",
+        "https://addyo.substack.com/p/treat-ai-generated-code-as-a-draft",
+        "https://addyo.substack.com/p/critical-thinking-during-the-age",
+        "https://addyo.substack.com/p/conductors-to-orchestrators-the-future",
+        "https://addyo.substack.com/p/gemini-cli-tips-and-tricks",
+        "https://addyo.substack.com/p/how-modern-browsers-work",
+        "https://addyo.substack.com/p/vibe-coding-is-not-the-same-as-ai",
+        "https://addyo.substack.com/p/the-reality-of-ai-assisted-software",
+        "https://addyo.substack.com/p/coding-for-the-future-agentic-world",
+        "https://addyo.substack.com/p/context-engineering-bringing-engineering",
+        "https://addyo.substack.com/p/the-ai-native-software-engineer",
+        "https://addyo.substack.com/p/the-trust-but-verify-pattern-for",
+        "https://addyo.substack.com/p/the-prompt-engineering-playbook-for",
+        "https://addyo.substack.com/p/ai-wont-kill-junior-devs-but-your"
+      ]
+    },
+    "https://addyosmani.com/rss.xml": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://addyosmani.com/blog/factory-model/",
+        "https://addyosmani.com/blog/agents-md/",
+        "https://addyosmani.com/blog/bias-towards-action/",
+        "https://addyosmani.com/blog/14-more-lessons/",
+        "https://addyosmani.com/blog/claude-code-agent-teams/",
+        "https://addyosmani.com/blog/agentic-engineering/",
+        "https://addyosmani.com/blog/self-improving-agents/",
+        "https://addyosmani.com/blog/good-spec/",
+        "https://addyosmani.com/blog/coding-agents-manager/",
+        "https://addyosmani.com/blog/code-review-ai/"
+      ]
+    },
+    "https://karpathy.bearblog.dev/feed/?type=rss": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://karpathy.bearblog.dev/year-in-review-2025/",
+        "https://karpathy.bearblog.dev/chemical-hygiene/",
+        "https://karpathy.bearblog.dev/auto-grade-hn/",
+        "https://karpathy.bearblog.dev/the-space-of-minds/",
+        "https://karpathy.bearblog.dev/verifiability/",
+        "https://karpathy.bearblog.dev/animals-vs-ghosts/",
+        "https://karpathy.bearblog.dev/vibe-coding-menugen/",
+        "https://karpathy.bearblog.dev/power-to-the-people/",
+        "https://karpathy.bearblog.dev/finding-the-best-sleep-tracker/",
+        "https://karpathy.bearblog.dev/the-append-and-review-note/"
+      ]
+    },
+    "https://www.oneusefulthing.org/feed": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
+        "https://www.oneusefulthing.org/p/management-as-ai-superpower",
+        "https://www.oneusefulthing.org/p/claude-code-and-what-comes-next",
+        "https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks",
+        "https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini",
+        "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview",
+        "https://www.oneusefulthing.org/p/an-opinionated-guide-to-using-ai",
+        "https://www.oneusefulthing.org/p/real-ai-agents-and-real-work",
+        "https://www.oneusefulthing.org/p/on-working-with-wizards",
+        "https://www.oneusefulthing.org/p/mass-intelligence",
+        "https://www.oneusefulthing.org/p/gpt-5-it-just-does-stuff",
+        "https://www.oneusefulthing.org/p/the-bitter-lesson-versus-the-garbage",
+        "https://www.oneusefulthing.org/p/against-brain-damage",
+        "https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide",
+        "https://www.oneusefulthing.org/p/the-recent-history-of-ai-in-32-otters",
+        "https://www.oneusefulthing.org/p/making-ai-work-leadership-lab-and",
+        "https://www.oneusefulthing.org/p/personality-and-persuasion",
+        "https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything",
+        "https://www.oneusefulthing.org/p/no-elephants-breakthroughs-in-image",
+        "https://www.oneusefulthing.org/p/the-cybernetic-teammate"
+      ]
+    },
+    "https://ghuntley.com/feed/": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "69ae875fb4e52500011bd898",
+        "695f3fc2a41a4300017736bc",
+        "698433cfa6946f0001c72030",
+        "696b6604eaf98e0001f61629",
+        "696b2580eaf98e0001f5e5e2",
+        "692d755d71527000014356f2",
+        "68450f5db68eea0001597da1",
+        "68b6f98f62c0060001a85596",
+        "687e367fbf5f0200010a933d",
+        "68a8260e8f9108000106b3d2",
+        "68a53226054ea900013cb312",
+        "687787709190460001596ec0",
+        "6875772895d2e100013de94f",
+        "685c47fe000c6000017b76ec",
+        "684ce8342f08f00001a9df50"
+      ]
+    },
+    "https://harper.blog/index.xml": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://harper.blog/notes/2026-03-10_178f9a9cea9b_just-posted-about-dot-files-an/",
+        "https://harper.blog/notes/2026-03-05_5e91057f1d8a_made-a-surprise-visit-to-color/",
+        "https://harper.blog/notes/2026-03-05_503f2258ffe0_a-few-more-from-our-friday-jam/",
+        "https://harper.blog/notes/2026-03-05_2fab7bc1bbd3_we-have-been-having-a-few-frie/",
+        "https://harper.blog/notes/2026-02-16_7f0eee0717bd_was-nice-to-hang-in-colorado/",
+        "https://harper.blog/notes/2026-02-05_dade6a11641b_last-nights-agriculture-show-w/",
+        "https://harper.blog/notes/2026-01-25_8fa33e53ece7_a-quick-5-miles-in-the-snow/",
+        "https://harper.blog/notes/2026-01-16_bb87333ba84c_i-like-to-think-i-am-ready-for/",
+        "https://harper.blog/2026/01/07/2025-is-dead-to-me-2026-is-going-to-be-stranger/",
+        "https://harper.blog/now/2026-01-06/",
+        "https://harper.blog/notes/2026-01-05_c6e302b8c827_i-blogged-about-using-claude-c/",
+        "https://harper.blog/2026/01/05/claude-code-is-better-on-your-phone/",
+        "https://harper.blog/notes/2025-12-31_88e66b284c9b_2026-is-wild-watch-out/",
+        "https://harper.blog/notes/2025-12-28_6a241bd395c2_yuzu-land/",
+        "https://harper.blog/notes/2025-12-28_857229e13ca7_my-pockets-are-full-of-yuzu/",
+        "https://harper.blog/notes/2025-12-25_d33136ee482f_happy-holidays-from-about-righ/",
+        "https://harper.blog/notes/2025-12-16_c664c7d43dda_going-through-a-lil-cyberdeck-/"
+      ]
+    },
+    "https://lilianweng.github.io/index.xml": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://lilianweng.github.io/posts/2025-05-01-thinking/",
+        "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
+        "https://lilianweng.github.io/posts/2024-07-07-hallucination/",
+        "https://lilianweng.github.io/posts/2024-04-12-diffusion-video/",
+        "https://lilianweng.github.io/posts/2024-02-05-human-data-quality/",
+        "https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/",
+        "https://lilianweng.github.io/posts/2023-06-23-agent/",
+        "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+        "https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/",
+        "https://lilianweng.github.io/posts/2023-01-10-inference-optimization/",
+        "https://lilianweng.github.io/posts/2022-09-08-ntk/",
+        "https://lilianweng.github.io/posts/2022-06-09-vlm/",
+        "https://lilianweng.github.io/posts/2022-04-15-data-gen/",
+        "https://lilianweng.github.io/posts/2022-02-20-active-learning/",
+        "https://lilianweng.github.io/posts/2021-12-05-semi-supervised/",
+        "https://lilianweng.github.io/posts/2021-09-25-train-large/",
+        "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/",
+        "https://lilianweng.github.io/posts/2021-05-31-contrastive/",
+        "https://lilianweng.github.io/posts/2021-03-21-lm-toxicity/",
+        "https://lilianweng.github.io/posts/2021-01-02-controllable-text-generation/",
+        "https://lilianweng.github.io/posts/2020-10-29-odqa/",
+        "https://lilianweng.github.io/posts/2020-08-06-nas/",
+        "https://lilianweng.github.io/posts/2020-06-07-exploration-drl/",
+        "https://lilianweng.github.io/posts/2020-04-07-the-transformer-family/",
+        "https://lilianweng.github.io/posts/2020-01-29-curriculum-rl/",
+        "https://lilianweng.github.io/posts/2019-11-10-self-supervised/",
+        "https://lilianweng.github.io/posts/2019-09-05-evolution-strategies/",
+        "https://lilianweng.github.io/posts/2019-06-23-meta-rl/",
+        "https://lilianweng.github.io/posts/2019-05-05-domain-randomization/",
+        "https://lilianweng.github.io/posts/2019-03-14-overfit/",
+        "https://lilianweng.github.io/posts/2019-01-31-lm/",
+        "https://lilianweng.github.io/posts/2018-12-27-object-recognition-part-4/",
+        "https://lilianweng.github.io/posts/2018-11-30-meta-learning/",
+        "https://lilianweng.github.io/posts/2018-10-13-flow-models/",
+        "https://lilianweng.github.io/posts/2018-08-12-vae/",
+        "https://lilianweng.github.io/posts/2018-06-24-attention/",
+        "https://lilianweng.github.io/posts/2018-05-05-drl-implementation/",
+        "https://lilianweng.github.io/posts/2018-04-08-policy-gradient/",
+        "https://lilianweng.github.io/posts/2018-02-19-rl-overview/",
+        "https://lilianweng.github.io/posts/2018-01-23-multi-armed-bandit/",
+        "https://lilianweng.github.io/posts/2017-12-31-object-recognition-part-3/",
+        "https://lilianweng.github.io/posts/2017-12-15-object-recognition-part-2/",
+        "https://lilianweng.github.io/posts/2017-10-29-object-recognition-part-1/",
+        "https://lilianweng.github.io/posts/2017-10-15-word-embedding/",
+        "https://lilianweng.github.io/posts/2017-09-28-information-bottleneck/",
+        "https://lilianweng.github.io/posts/2017-08-20-gan/",
+        "https://lilianweng.github.io/posts/2017-08-01-interpretation/",
+        "https://lilianweng.github.io/posts/2017-07-22-stock-rnn-part-2/",
+        "https://lilianweng.github.io/posts/2017-07-08-stock-rnn-part-1/",
+        "https://lilianweng.github.io/posts/2017-06-21-overview/",
+        "https://lilianweng.github.io/faq/"
+      ]
+    },
+    "https://ai-blog.nkschjoedt.com/rss.xml": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://ai-blog.nkschjoedt.com/the-feedback-loop.html",
+        "https://ai-blog.nkschjoedt.com/still-true.html",
+        "https://ai-blog.nkschjoedt.com/it-wasnt-wrong.html",
+        "https://ai-blog.nkschjoedt.com/the-fire-ceremony.html",
+        "https://ai-blog.nkschjoedt.com/dont-tell-enforce.html",
+        "https://ai-blog.nkschjoedt.com/software-price-zero.html",
+        "https://ai-blog.nkschjoedt.com/shifting-gears.html",
+        "https://ai-blog.nkschjoedt.com/ai-tools-guide.html",
+        "https://ai-blog.nkschjoedt.com/ai-podcasts.html",
+        "https://ai-blog.nkschjoedt.com/ai-qa.html",
+        "https://ai-blog.nkschjoedt.com/ai-cookbook.html"
+      ]
+    },
+    "https://medium.com/feed/@paulfchristiano": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://medium.com/p/4788b1cd0c72",
+        "https://medium.com/p/690abcc0fba9",
+        "https://medium.com/p/92b83c2acd5a",
+        "https://medium.com/p/81300500ad2e",
+        "https://medium.com/p/b7c93b51079d",
+        "https://medium.com/p/fb84f4c6d0dc",
+        "https://medium.com/p/f977478608fc",
+        "https://medium.com/p/6f9c1d688f5f",
+        "https://medium.com/p/56e69b1e09ce",
+        "https://medium.com/p/800b42a14f66"
+      ]
+    },
+    "https://simonwillison.net/atom/everything/": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://simonwillison.net/guides/agentic-engineering-patterns/better-code/#atom-everything",
+        "https://simonwillison.net/2026/Mar/9/production-query-plans-without-production-data/#atom-everything",
+        "https://simonwillison.net/2026/Mar/9/not-so-boring/#atom-everything",
+        "https://simonwillison.net/2026/Mar/8/joseph-weizenbaum/#atom-everything",
+        "https://simonwillison.net/2026/Mar/7/codex-for-open-source/#atom-everything",
+        "https://simonwillison.net/2026/Mar/6/ally-piechowski/#atom-everything",
+        "https://simonwillison.net/2026/Mar/6/anthropic-and-the-pentagon/#atom-everything",
+        "https://simonwillison.net/guides/agentic-engineering-patterns/agentic-manual-testing/#atom-everything",
+        "https://simonwillison.net/2026/Mar/6/clinejection/#atom-everything",
+        "https://simonwillison.net/2026/Mar/5/introducing-gpt54/#atom-everything",
+        "https://simonwillison.net/2026/Mar/5/chardet/#atom-everything",
+        "https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/#atom-everything",
+        "https://simonwillison.net/2026/Mar/4/qwen/#atom-everything",
+        "https://simonwillison.net/2026/Mar/3/donald-knuth/#atom-everything",
+        "https://simonwillison.net/2026/Mar/3/gemini-31-flash-lite/#atom-everything",
+        "https://simonwillison.net/guides/agentic-engineering-patterns/gif-optimization/#atom-everything",
+        "https://simonwillison.net/2026/Mar/2/february-newsletter/#atom-everything",
+        "https://simonwillison.net/2026/Mar/1/ai-writing/#atom-everything",
+        "https://simonwillison.net/2026/Mar/1/claude-import-memory/#atom-everything",
+        "https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything",
+        "https://simonwillison.net/2026/Feb/27/passkeys/#atom-everything",
+        "https://simonwillison.net/2026/Feb/27/ai-agent-coding-in-excessive-detail/#atom-everything",
+        "https://simonwillison.net/2026/Feb/27/claude-max-oss-six-months/#atom-everything",
+        "https://simonwillison.net/2026/Feb/27/unicode-explorer/#atom-everything",
+        "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/#atom-everything",
+        "https://simonwillison.net/2026/Feb/26/andrej-karpathy/#atom-everything",
+        "https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything",
+        "https://simonwillison.net/2026/Feb/26/benedict-evans/#atom-everything",
+        "https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything",
+        "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything"
+      ]
+    },
+    "https://medium.com/feed/@steve-yegge": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "https://medium.com/p/a5eb9bc8dc1f",
+        "https://medium.com/p/eda6e4f07163",
+        "https://medium.com/p/d01f768f3d7b",
+        "https://medium.com/p/97a2a6255f7b",
+        "https://medium.com/p/34f437139cb5",
+        "https://medium.com/p/249b924a621a",
+        "https://medium.com/p/cf0e4556d74b",
+        "https://medium.com/p/e9451a84207c",
+        "https://medium.com/p/4f25ee16dd04",
+        "https://medium.com/p/d4e9c86e42a9"
+      ]
+    }
+  },
+  "github": {
+    "steveyegge/gastown": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "v0.11.0",
+        "v0.10.0",
+        "v0.9.0",
+        "v0.7.0",
+        "v0.6.0",
+        "v0.5.0"
+      ]
+    },
+    "gastownhall/gascity": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": []
+    },
+    "steveyegge/beads": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "v0.59.0",
+        "v0.58.0",
+        "v0.57.0",
+        "v0.56.1",
+        "v0.55.4",
+        "v0.52.0",
+        "v0.51.0",
+        "v0.50.3",
+        "v0.50.2",
+        "v0.50.1"
+      ]
+    },
+    "gastownhall/wasteland": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "v0.4.0",
+        "v0.3.0",
+        "v0.2.0",
+        "v0.1.1",
+        "v0.1.0-rc.1",
+        "v0.1.0"
+      ]
+    },
+    "Dicklesworthstone/agentic_coding_flywheel_setup": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "v0.6.0",
+        "v0.5.0",
+        "v0.4.0",
+        "v0.3.0",
+        "v0.2.0",
+        "v0.1.0"
+      ]
+    },
+    "Dicklesworthstone/mcp_agent_mail": {
+      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "seenIds": [
+        "v0.3.0",
+        "v0.2.1",
+        "v0.2.0",
+        "v0.1.5",
+        "v0.1.4",
+        "v0.1.3",
+        "v0.1.2",
+        "v0.1.1"
+      ]
+    }
+  }
+}

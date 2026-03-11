@@ -1,0 +1,96 @@
+# Feed checker configuration
+# Maps tracked people to their RSS/Atom feed URLs, and projects to GitHub repos.
+#
+# Feed URL notes:
+#   - Substack feeds are always at /feed on the custom domain — reliable
+#   - Medium feeds are at https://medium.com/feed/@username — reliable
+#   - Bearblog feeds are at /feed/?type=rss — reliable
+#   - Personal blogs: URLs marked "# needs-validation" should be verified on first use
+#     (check the site's <link rel="alternate" type="application/rss+xml"> tag if unsure)
+#
+# People not tracked here (no regular RSS-accessible publications):
+#   - Jeffrey Emanuel   — no known blog; covered via GitHub projects below
+#   - Nick Bostrom      — books only, no regular publications
+#   - Stuart Russell    — academic, no regular publications
+#   - Yann LeCun        — LinkedIn-primary, not accessible via RSS
+
+people:
+  - name: Abi Awomosu
+    feeds:
+      - https://abiawomosu.substack.com/feed
+
+  - name: Addy Osmani
+    feeds:
+      - https://addyo.substack.com/feed
+      - https://addyosmani.com/rss.xml
+
+  - name: Andrej Karpathy
+    feeds:
+      - https://karpathy.bearblog.dev/feed/?type=rss
+
+  - name: Eliezer Yudkowsky
+    feeds: []
+    # Neither LessWrong nor Alignment Forum expose usable feeds for this tool:
+    # - LessWrong user RSS (.rss extension) returns malformed XML with unencoded < chars
+    # - Alignment Forum user feeds return HTTP 429 (rate-limited)
+    # Yudkowsky publishes rarely and with enough fanfare to notice manually.
+
+  - name: Ethan Mollick
+    feeds:
+      - https://www.oneusefulthing.org/feed
+
+  - name: Geoffrey Huntley
+    feeds:
+      - https://ghuntley.com/feed/
+
+  - name: Harper Reed
+    feeds:
+      - https://harper.blog/index.xml
+
+  - name: Lilian Weng
+    feeds:
+      - https://lilianweng.github.io/index.xml
+
+  - name: NK Schjødt
+    feeds:
+      - https://ai-blog.nkschjoedt.com/rss.xml
+
+  - name: Paul Christiano
+    feeds:
+      - https://medium.com/feed/@paulfchristiano
+
+  - name: Simon Willison
+    feeds:
+      - https://simonwillison.net/atom/everything/
+
+  - name: Steve Yegge
+    feeds:
+      - https://medium.com/feed/@steve-yegge
+
+# GitHub repos to watch for new releases (not commits).
+# Only tagged releases are tracked — no noise from day-to-day commits.
+# Set GITHUB_TOKEN env var to raise rate limit from 60 to 5000 req/hour.
+projects:
+  - name: Gastown
+    github: steveyegge/gastown
+    owner: Steve Yegge
+
+  - name: Gas City
+    github: gastownhall/gascity
+    owner: Steve Yegge
+
+  - name: Beads
+    github: steveyegge/beads
+    owner: Steve Yegge
+
+  - name: The Wasteland
+    github: gastownhall/wasteland
+    owner: Steve Yegge
+
+  - name: Agentic Coding Flywheel
+    github: Dicklesworthstone/agentic_coding_flywheel_setup
+    owner: Jeffrey Emanuel
+
+  - name: MCP Agent Mail
+    github: Dicklesworthstone/mcp_agent_mail
+    owner: Jeffrey Emanuel
