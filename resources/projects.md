@@ -12,16 +12,23 @@ Math tends to be a lot more rigorous than software development, so it's interest
 ---
 
 ## [Gastown](https://github.com/steveyegge/gastown)
-By [Steve Yegge](people.md#steve-yegge). An agent orchestration system — a "factory" for coding agents rather than a single worker. Agents take on roles (Deacon, Refinery, Dogs, etc.) and collaborate to chew through large backlogs of work. Evolved into [The Wasteland](#the-wasteland).
+By [Steve Yegge](people.md#steve-yegge). An agent orchestration system — a "factory" for coding agents rather than a single worker. Agents take on roles (Deacon, Refinery, Dogs, etc.) and collaborate to chew through large backlogs of work. The primitives it battle-tested — session management, work assignment, health patrol, communication — were extracted into [Gas City](#gas-city). Evolved into [The Wasteland](#the-wasteland).
+
+---
+
+## [Gas City](https://github.com/gastownhall/gascity)
+By [Steve Yegge](people.md#steve-yegge) and the Gas Town community. An orchestration-builder SDK extracted from Gas Town. The key realisation: Gas Town's roles (mayor, witness, refinery, polecats, deacon) weren't fundamental concepts — they were configurations. Gas City pulls out the real irreducible primitives — **Agent Protocol**, **Task Store** (Beads), **Event Bus**, **Config**, and **Prompt Templates** — into a standalone SDK where Gas Town itself becomes one "pack" (a directory of TOML config and prompt templates) among many. You define agents, pools, health patrol, and multi-step workflow DAGs in a TOML file; Gas City handles sessions, work tracking, communication, scaling, and crash recovery.
+
+The Kubernetes parallel is explicit in the design: `city.toml` is your desired state, a controller loop reconciles it to reality, and providers abstract the runtime — swap `provider = "tmux"` for `provider = "k8s"` in two lines with no other changes. Packs are the Helm charts of agent orchestration. Has a progressive capability model: Level 1 is one agent doing tracked work; Level 8 is the full Gas Town complement spun up from a single `gc topo start gastown`. The [Bitter Lesson](articles.md#the-bitter-lesson) is explicitly in the design rationale — everything in the SDK is infrastructure plumbing that gets *more* useful as models improve; anything that encodes a judgment call was deliberately cut.
 
 ---
 
 ## [The Wasteland](https://wasteland.gastownhall.ai/)
-By [Steve Yegge](people.md#steve-yegge). Hub: [gastownhall.ai](https://gastownhall.ai/).
+By [Steve Yegge](people.md#steve-yegge) and contributors. Hub: [gastownhall.ai](https://gastownhall.ai/). CLI: [gastownhall/wasteland](https://github.com/gastownhall/wasteland).
 
-The next step beyond Gas Town: a federated platform linking thousands of Gas Towns together in a shared trust network. At the center is a **Wanted Board** — people post ideas, others use their Gas Towns to build them, and contributors earn stamps and reputation (implemented as a portable ledger, structured like a CV). Uses Git's fork/pull/merge semantics for accepting work, and [Dolt](https://github.com/dolthub/dolt) (a SQL database with Git semantics) as the backing store.
+A federated platform for AI-accelerated work, built on [Dolt](https://github.com/dolthub/dolt) (a SQL database with Git semantics). At the centre is a **Wanted Board** — a shared list of open tasks, bugs, features, research questions, anything. Anyone can post work; any rig can claim it, complete it, and submit evidence. A validator reviews the evidence and issues a **stamp** — a multi-dimensional attestation of quality, reliability, and severity that goes onto a permanent, auditable ledger. Stamps accumulate into a portable reputation: not a single score, but a structured work history traceable back through stamp → completion → wanted item. The yearbook rule: you can't stamp your own work.
 
-Has RPG elements: character sheets, leaderboards, skill progression that maps to real skills. Genuinely novel experiment in federated, AI-accelerated open source work.
+The `wl` CLI tool (the `gastownhall/wasteland` repo) is the concrete federation client — `wl join`, `wl browse`, `wl claim`, `wl done`, `wl accept`. Three interfaces ship: CLI, a Bubbletea TUI, and an embedded React web UI served from a single binary. Trust levels gate what you can do: new rigs can claim and submit; maintainer-level rigs can validate and stamp. Has RPG elements — character sheets, leaderboards, skill progression — but the underlying design principle is serious: *work is the only input, reputation is the only output*. No buying reputation, no gaming followers, no social signals disconnected from evidence.
 
 ---
 
