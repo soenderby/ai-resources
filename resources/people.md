@@ -123,3 +123,14 @@ UC Berkeley CS professor, co-author (with Peter Norvig) of *Artificial Intellige
 - Alignment writing: https://ai-alignment.com/
 
 Former head of the language model alignment team at OpenAI, then founder of the Alignment Research Center (ARC). Now head of AI safety at NIST. His technical contributions include developing RLHF (Reinforcement Learning from Human Feedback) — the training technique now used in ChatGPT, Claude, and virtually every major language model. Also developed the theoretical framework for *iterated amplification*, a proposal for how to supervise AI systems smarter than any individual human. More optimistic than Yudkowsky about alignment being tractable, but has written clearly about what it would take for things to go badly. His [80,000 Hours interview](https://80000hours.org/podcast/episodes/paul-christiano-ai-alignment-solutions/) is the most accessible entry point to his thinking.
+
+---
+
+## Yann LeCun
+- LinkedIn: https://www.linkedin.com/in/yann-lecun/
+- X: https://x.com/ylecun
+- NYU page: https://cs.nyu.edu/~yann/
+
+Chief AI Scientist at Meta and Silver Professor at NYU. Turing Award winner (2018, shared with Geoffrey Hinton and Yoshua Bengio) for foundational work on deep learning and convolutional neural networks. The most credible and vocal technical voice against the AI existential risk narrative.
+
+His argument is not "don't worry, be happy." It has a specific technical basis: current LLMs can't reason, plan, or model the physical world, making them nowhere near the kind of intelligence the doom scenarios require. And when we do eventually build systems that capable, we will — like engineers designing turbojets — build safety in by design. "AI is not some sort of natural phenomenon that will just emerge and become dangerous. *We* design it and *we* build it." He has engaged in direct public debates with Yudkowsky, and argues the existential risk framing is both premature and actively harmful — it stokes fear without substance, and crowds out practical near-term concerns. His 2022 paper [*A Path Towards Autonomous Machine Intelligence*](https://openreview.net/pdf?id=BZ5a1r-kVsf) lays out his positive alternative: a world-model architecture (JEPA) as the path to genuinely capable and safe AI. His primary long-form writing is on LinkedIn; his X account is mostly links to those posts.
