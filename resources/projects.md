@@ -12,7 +12,15 @@ Math tends to be a lot more rigorous than software development, so it's interest
 ---
 
 ## [Gastown](https://github.com/steveyegge/gastown)
-By [Steve Yegge](people.md#steve-yegge). An agent orchestration system — a "factory" for coding agents rather than a single worker. Agents take on roles (Deacon, Refinery, Dogs, etc.) and collaborate to chew through large backlogs of work. The primitives it battle-tested — session management, work assignment, health patrol, communication — were extracted into [Gas City](#gas-city). Evolved into [The Wasteland](#the-wasteland).
+By [Steve Yegge](people.md#steve-yegge). A multi-agent orchestration system for running many coding agents across multiple projects simultaneously — designed around the observation that 4–10 agents quickly become chaotic without built-in management infrastructure.
+
+The central primitive is the **Rig**: a project container wrapping a git repository. You can have as many rigs as you want; the **Mayor** — an AI coordinator running at the workspace level — has visibility across all of them. Work is tracked in two layers: **Beads** (git-backed atomic task items, each with a stable ID like `gt-abc12`) and **Convoys** (bundles of beads tracked as a unit, the project-management layer). The intended workflow — called MEOW, Mayor-Enhanced Orchestration Workflow — is: tell the Mayor what you want to build; it decomposes the work, creates a convoy, spawns agents, slings beads to them, and reports progress. The user's job is to declare which repos are in play and describe the goals; the Mayor handles the rest.
+
+At scale (20–50+ agents), Gastown has a **problems view** (`gt feed --problems`) that continuously analyses agent health and surfaces stuck agents before they waste budget. States tracked: GUPP Violation (hooked work, no progress), Stalled, Zombie (dead tmux session), Working, Idle. You can nudge or hand off a stuck agent directly from the TUI — this is the kind of intervention layer most naive multi-agent setups leave entirely to the user.
+
+**Persistence** is handled via git worktrees ("hooks"): each agent's work state is version-controlled and survives crashes and restarts. **Formulas** are TOML-defined repeatable multi-step workflows (dependencies between steps, variable substitution) — a way to encode release pipelines and other repeated processes so agents don't reinvent them each time.
+
+The repo has grown significantly since Yegge's launch blog posts. Now supports multiple runtimes (Claude Code, Codex, Cursor, Gemini, pi, and others), a web dashboard, Docker, and OpenTelemetry observability. The primitives it battle-tested were extracted into [Gas City](#gas-city) as a standalone SDK. Evolved into [The Wasteland](#the-wasteland).
 
 ---
 

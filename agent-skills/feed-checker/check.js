@@ -18,6 +18,20 @@ const STATE_FILE = join(__dirname, 'state.json')
 const MAX_SEEN_IDS = 200
 
 // ---------------------------------------------------------------------------
+// CLI args
+// ---------------------------------------------------------------------------
+
+// --since YYYY-MM-DD  Report all items published on or after this date,
+//                     regardless of prior state. State is still updated normally.
+const sinceIndex = process.argv.indexOf('--since')
+const sinceDate = sinceIndex !== -1 ? new Date(process.argv[sinceIndex + 1]) : null
+
+if (sinceDate && isNaN(sinceDate)) {
+  console.error('Error: --since requires a valid date, e.g. --since 2026-03-04')
+  process.exit(1)
+}
+
+// ---------------------------------------------------------------------------
 // Load config and state
 // ---------------------------------------------------------------------------
 
@@ -167,20 +181,23 @@ for (let i = 0; i < tasks.length; i++) {
     for (const item of result.feed.items ?? []) {
       const id = itemId(item)
       if (!id) continue
-      if (!seenSet.has(id)) {
-        if (!isFirstRun) {
-          newForFeed.push({
-            person: task.person,
-            source: hostname,
-            type: 'article',
-            title: item.title?.trim() || '(untitled)',
-            url: item.link || id,
-            date: item.isoDate ? item.isoDate.substring(0, 10) : '',
-            excerpt: itemExcerpt(item),
-          })
-        }
-        seenSet.add(id)
+      const itemDate = item.isoDate ? new Date(item.isoDate) : null
+      const isNew = sinceDate
+        ? (itemDate && itemDate >= sinceDate)
+        : (!seenSet.has(id) && !isFirstRun)
+
+      if (isNew) {
+        newForFeed.push({
+          person: task.person,
+          source: hostname,
+          type: 'article',
+          title: item.title?.trim() || '(untitled)',
+          url: item.link || id,
+          date: item.isoDate ? item.isoDate.substring(0, 10) : '',
+          excerpt: itemExcerpt(item),
+        })
       }
+      seenSet.add(id)
     }
 
     state.feeds[feedUrl] = {
@@ -213,21 +230,24 @@ for (let i = 0; i < tasks.length; i++) {
     for (const release of result.releases ?? []) {
       if (release.draft || release.prerelease) continue
       const id = release.tag_name
-      if (!seenSet.has(id)) {
-        if (!isFirstRun) {
-          const body = (release.body || '').replace(/\r?\n/g, ' ').trim()
-          newForRepo.push({
-            person: task.person,
-            source: `github.com/${ownerRepo}`,
-            type: 'release',
-            title: `${task.projectName} ${release.name || release.tag_name}`,
-            url: release.html_url,
-            date: release.published_at ? release.published_at.substring(0, 10) : '',
-            excerpt: body.length > 220 ? body.substring(0, 220).trimEnd() + '…' : body,
-          })
-        }
-        seenSet.add(id)
+      const releaseDate = release.published_at ? new Date(release.published_at) : null
+      const isNew = sinceDate
+        ? (releaseDate && releaseDate >= sinceDate)
+        : (!seenSet.has(id) && !isFirstRun)
+
+      if (isNew) {
+        const body = (release.body || '').replace(/\r?\n/g, ' ').trim()
+        newForRepo.push({
+          person: task.person,
+          source: `github.com/${ownerRepo}`,
+          type: 'release',
+          title: `${task.projectName} ${release.name || release.tag_name}`,
+          url: release.html_url,
+          date: release.published_at ? release.published_at.substring(0, 10) : '',
+          excerpt: body.length > 220 ? body.substring(0, 220).trimEnd() + '…' : body,
+        })
       }
+      seenSet.add(id)
     }
 
     state.github[ownerRepo] = {
@@ -293,11 +313,10 @@ if (report.newItems.length === 0 && report.errors.length === 0) {
 }
 
 if (report.quiet.length > 0) {
-  lines.push(
-    '---',
-    `_Checked with no new items: ${report.quiet.join(' · ')}_`,
-    ''
-  )
+  const label = sinceDate
+    ? `_Nothing published since ${sinceDate.toISOString().substring(0, 10)}: ${report.quiet.join(' · ')}_`
+    : `_Checked with no new items: ${report.quiet.join(' · ')}_`
+  lines.push('---', label, '')
 }
 
 console.log(lines.join('\n'))
