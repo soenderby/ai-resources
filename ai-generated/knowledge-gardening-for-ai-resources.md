@@ -396,6 +396,111 @@ A concept model will change as the repository grows. Starting with a generated c
 
 Only once a concept layer proves repeatedly useful should it become a first-class maintained structure.
 
+## Worked Example: A Concept Entry
+
+The best way to evaluate whether a concept layer would actually be useful is to sketch one real entry in full. That forces decisions about granularity, overlap, annotation depth, and linking behavior.
+
+What follows is not presented as the final correct format. It is a concrete test case.
+
+### Example concept: Memory for agents
+
+**Definition**
+
+The problem of how an agent retains, retrieves, and uses information across time instead of starting every task from a blank context window. In practice this includes explicit memory stores, task records, searchable past work, linked notes, and other structures that let useful context persist beyond a single session.
+
+**Why it matters**
+
+This concept sits close to the center of modern agent design. A powerful model with no memory is trapped in a short, expensive cycle of repeated rediscovery: each session has to reconstruct intent, prior attempts, constraints, and unfinished work from scratch. That is workable for short tasks, but it breaks down as tasks get longer, more parallel, or more cumulative.
+
+In this collection, “memory for agents” appears in at least three distinct forms:
+
+1. **Task memory** — systems like [Beads](../resources/projects.md#beads), [Gastown](../resources/projects.md#gastown), and [Gas City](../resources/projects.md#gas-city) use explicit work records so agents can claim, resume, coordinate, and report work.
+2. **Context memory** — [Lilian Weng’s agent overview](../resources/articles.md#llm-powered-autonomous-agents) treats memory as one of the core components of an agent architecture, alongside planning, tool use, and action.
+3. **Knowledge memory** — Harper Reed’s [My now immaculate knowledge graph of life](../resources/articles.md#my-now-immaculate-knowledge-graph-of-life) points to a different but adjacent pattern: using agents to convert messy information into durable linked knowledge that can later become context for humans or agents.
+
+The concept matters because it connects infrastructure, cognition, and curation. It is not just a technical storage problem. It is a question of what information should persist, in what form, and how it becomes usable again later.
+
+**What this concept is not**
+
+This concept overlaps with several others, but should not collapse into them:
+
+- It is **not identical to context engineering**. Context engineering is about what goes into the model’s working memory right now. Memory for agents is about what survives across sessions and can be brought back later.
+- It is **not identical to knowledge management** in the generic PKM sense. The focus here is not personal organization broadly, but information structures that improve agent continuity and effectiveness.
+- It is **not identical to multi-agent orchestration**. Orchestration is about coordinating concurrent work. Memory is one of the enabling substrates that makes orchestration possible.
+- It is **not identical to agentic knowledge gardening**. Knowledge gardening is one way of producing durable memory, but the concept of agent memory also includes task ledgers, searchable transcripts, and workflow state.
+
+This kind of boundary section is important because concept entries will inevitably overlap. The goal is not to eliminate overlap entirely, but to give each concept a clear center of gravity.
+
+**Related people**
+
+- [Lilian Weng](../resources/people.md#lilian-weng) — provides the clearest high-level architectural framing for memory as a core agent component.
+- [Steve Yegge](../resources/people.md#steve-yegge) — memory appears in his ecosystem as explicit task records and persistent multi-agent coordination primitives.
+- [Jeffrey Emanuel](../resources/people.md#jeffrey-emanuel) — his tooling cluster treats durable task state, searchable session history, and agent-to-agent communication as mutually reinforcing.
+- [Harper Reed](../resources/people.md#harper-reed) — interesting here not for task orchestration but for turning messy life/work data into linked, reusable knowledge.
+
+**Related articles**
+
+- [LLM Powered Autonomous Agents](../resources/articles.md#llm-powered-autonomous-agents) — the canonical architectural overview; memory is one of the four main components.
+- [My now immaculate knowledge graph of life](../resources/articles.md#my-now-immaculate-knowledge-graph-of-life) — a useful adjacent example of converting raw material into durable, linked context.
+- [Agentic Engineering Patterns](../resources/articles.md#agentic-engineering-patterns) — relevant because long-lived workflows implicitly depend on better retrieval, decomposition, and context handling.
+- [2025: The Year in LLMs](../resources/articles.md#2025-the-year-in-llms) — useful for concepts like context rot, which sharpen the case for externalizing memory rather than overstuffing the active context window.
+
+**Related projects**
+
+- [Beads](../resources/projects.md#beads) — the clearest example in the repo of explicit machine-readable task memory.
+- [Gastown](../resources/projects.md#gastown) — uses Beads and higher-level coordination structures to make multi-agent work resumable and visible.
+- [Gas City](../resources/projects.md#gas-city) — generalizes those memory and coordination primitives into an SDK.
+- [Agentic Coding Flywheel](../resources/projects.md#agentic-coding-flywheel) — relevant because its tools collectively create persistence across agents, sessions, and workflows.
+
+**Adjacent concepts**
+
+- **Context engineering** — what the model sees now.
+- **Agentic knowledge gardening** — turning messy information into durable, linked knowledge.
+- **Multi-agent orchestration** — coordination patterns that often rely on persistent task state.
+- **Local-first knowledge** — the storage philosophy that makes memory inspectable and durable.
+- **Prompt templates / agent contracts** — the protocol layer that tells agents how to use memory structures.
+
+A good concept index would not try to force these into a strict hierarchy. It would simply make the neighboring relationships explicit.
+
+**Tensions and disagreements**
+
+There are at least three tensions inside this concept:
+
+1. **Implicit vs explicit memory** — Should memory live mostly in retrieved documents and notes, or in structured task stores and ledgers?
+2. **Human-readable vs machine-optimized memory** — A note system that is pleasant for a human to browse may not be the best substrate for automated retrieval and coordination; the reverse is also true.
+3. **Local-first vs platform-native memory** — There is a real difference between memory stored in local files under version control and memory trapped inside a SaaS product or proprietary agent runtime.
+
+These tensions are exactly why the concept is useful. It is not just a bucket of related links. It is a place where different design choices can be compared.
+
+**Open questions**
+
+- Which memory forms matter most in practice for agents: task state, semantic retrieval, linked notes, or communication history?
+- When does a simple file-based memory system stop being enough?
+- Which forms of memory genuinely improve agent performance, and which merely create more material to search through?
+- Can a personal knowledge base like this repo become part of an agent’s memory substrate without becoming over-engineered?
+
+### What this example reveals about the design
+
+A worked example like this makes several design questions more concrete.
+
+#### 1. A concept should be broader than one source, narrower than a whole field
+“Memory for agents” works because it connects multiple entries while still naming a specific problem. “AI agents” would be too broad; “Harper Reed’s graph workflow” would be too narrow.
+
+#### 2. Overlap is unavoidable, so boundaries should be explicit
+The right move is not to pretend concepts are perfectly separate. It is to include a short “what this is not” or “adjacent concepts” section so overlap becomes navigable instead of confusing.
+
+#### 3. A useful concept entry needs interpretation, not just backlinks
+A bare list of links would be weak. The real value comes from a short explanation of why the concept matters and how the sources relate.
+
+#### 4. The threshold for a concept should be practical
+A concept likely deserves an entry when it:
+- recurs across multiple sources
+- helps connect otherwise separate parts of the collection
+- supports useful questions or syntheses
+- has enough internal coherence to define in plain language
+
+That is a much better test than simply asking whether a phrase appears often.
+
 ---
 
 ## Human–Agent Division of Labor
