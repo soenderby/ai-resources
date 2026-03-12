@@ -1,7 +1,7 @@
 {
   "feeds": {
     "https://abiawomosu.substack.com/feed": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.423Z",
       "seenIds": [
         "https://abiawomosu.substack.com/p/what-they-call-niche-is-the-only",
         "https://abiawomosu.substack.com/p/be-the-village-rome-cant-read",
@@ -25,7 +25,7 @@
       ]
     },
     "https://addyo.substack.com/feed": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.423Z",
       "seenIds": [
         "https://addyo.substack.com/p/14-more-lessons-from-14-years-at",
         "https://addyo.substack.com/p/the-80-problem-in-agentic-coding",
@@ -50,7 +50,7 @@
       ]
     },
     "https://addyosmani.com/rss.xml": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.423Z",
       "seenIds": [
         "https://addyosmani.com/blog/factory-model/",
         "https://addyosmani.com/blog/agents-md/",
@@ -65,7 +65,7 @@
       ]
     },
     "https://karpathy.bearblog.dev/feed/?type=rss": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.423Z",
       "seenIds": [
         "https://karpathy.bearblog.dev/year-in-review-2025/",
         "https://karpathy.bearblog.dev/chemical-hygiene/",
@@ -80,7 +80,7 @@
       ]
     },
     "https://www.oneusefulthing.org/feed": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.423Z",
       "seenIds": [
         "https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the",
         "https://www.oneusefulthing.org/p/management-as-ai-superpower",
@@ -105,7 +105,7 @@
       ]
     },
     "https://ghuntley.com/feed/": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.423Z",
       "seenIds": [
         "69ae875fb4e52500011bd898",
         "695f3fc2a41a4300017736bc",
@@ -125,7 +125,7 @@
       ]
     },
     "https://harper.blog/index.xml": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.424Z",
       "seenIds": [
         "https://harper.blog/notes/2026-03-10_178f9a9cea9b_just-posted-about-dot-files-an/",
         "https://harper.blog/notes/2026-03-05_5e91057f1d8a_made-a-surprise-visit-to-color/",
@@ -143,11 +143,13 @@
         "https://harper.blog/notes/2025-12-28_6a241bd395c2_yuzu-land/",
         "https://harper.blog/notes/2025-12-28_857229e13ca7_my-pockets-are-full-of-yuzu/",
         "https://harper.blog/notes/2025-12-25_d33136ee482f_happy-holidays-from-about-righ/",
-        "https://harper.blog/notes/2025-12-16_c664c7d43dda_going-through-a-lil-cyberdeck-/"
+        "https://harper.blog/notes/2025-12-16_c664c7d43dda_going-through-a-lil-cyberdeck-/",
+        "https://harper.blog/notes/2026-03-11_d3f1bef6cda5_i-posted-a-fun-post-about-how-/",
+        "https://harper.blog/2026/03/11/2026-immaculate-knowledge-graph/"
       ]
     },
     "https://lilianweng.github.io/index.xml": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.424Z",
       "seenIds": [
         "https://lilianweng.github.io/posts/2025-05-01-thinking/",
         "https://lilianweng.github.io/posts/2024-11-28-reward-hacking/",
@@ -203,7 +205,7 @@
       ]
     },
     "https://ai-blog.nkschjoedt.com/rss.xml": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.424Z",
       "seenIds": [
         "https://ai-blog.nkschjoedt.com/the-feedback-loop.html",
         "https://ai-blog.nkschjoedt.com/still-true.html",
@@ -219,7 +221,7 @@
       ]
     },
     "https://medium.com/feed/@paulfchristiano": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.424Z",
       "seenIds": [
         "https://medium.com/p/4788b1cd0c72",
         "https://medium.com/p/690abcc0fba9",
@@ -234,7 +236,7 @@
       ]
     },
     "https://simonwillison.net/atom/everything/": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.424Z",
       "seenIds": [
         "https://simonwillison.net/guides/agentic-engineering-patterns/better-code/#atom-everything",
         "https://simonwillison.net/2026/Mar/9/production-query-plans-without-production-data/#atom-everything",
@@ -265,11 +267,13 @@
         "https://simonwillison.net/2026/Feb/26/google-api-keys/#atom-everything",
         "https://simonwillison.net/2026/Feb/26/benedict-evans/#atom-everything",
         "https://simonwillison.net/2026/Feb/25/closed-tests/#atom-everything",
-        "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything"
+        "https://simonwillison.net/2026/Feb/25/claude-code-remote-control/#atom-everything",
+        "https://simonwillison.net/2026/Mar/11/sorting-algorithms/#atom-everything",
+        "https://simonwillison.net/2026/Mar/11/john-carmack/#atom-everything"
       ]
     },
     "https://medium.com/feed/@steve-yegge": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.424Z",
       "seenIds": [
         "https://medium.com/p/a5eb9bc8dc1f",
         "https://medium.com/p/eda6e4f07163",
@@ -286,22 +290,23 @@
   },
   "github": {
     "steveyegge/gastown": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.425Z",
       "seenIds": [
         "v0.11.0",
         "v0.10.0",
         "v0.9.0",
         "v0.7.0",
         "v0.6.0",
-        "v0.5.0"
+        "v0.5.0",
+        "v0.12.0"
       ]
     },
     "gastownhall/gascity": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.425Z",
       "seenIds": []
     },
     "steveyegge/beads": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.425Z",
       "seenIds": [
         "v0.59.0",
         "v0.58.0",
@@ -312,11 +317,12 @@
         "v0.51.0",
         "v0.50.3",
         "v0.50.2",
-        "v0.50.1"
+        "v0.50.1",
+        "v0.60.0"
       ]
     },
     "gastownhall/wasteland": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.425Z",
       "seenIds": [
         "v0.4.0",
         "v0.3.0",
@@ -327,7 +333,7 @@
       ]
     },
     "Dicklesworthstone/agentic_coding_flywheel_setup": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.425Z",
       "seenIds": [
         "v0.6.0",
         "v0.5.0",
@@ -338,7 +344,7 @@
       ]
     },
     "Dicklesworthstone/mcp_agent_mail": {
-      "lastChecked": "2026-03-11T08:54:29.963Z",
+      "lastChecked": "2026-03-12T11:28:17.425Z",
       "seenIds": [
         "v0.3.0",
         "v0.2.1",

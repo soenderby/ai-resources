@@ -14,6 +14,11 @@ By [Harper Reed](people.md#harper-reed). Practical, no-hype walkthrough of a wor
 
 ---
 
+## [My now immaculate knowledge graph of life](https://harper.blog/2026/03/11/2026-immaculate-knowledge-graph/)
+By [Harper Reed](people.md#harper-reed). A great example of **agentic knowledge gardening** rather than agentic coding. Reed takes ~600 meeting transcripts from Granola, syncs them to local markdown with his Rust CLI [muesli](https://github.com/harperreed/muesli), then uses a Claude Code skill to turn them into Obsidian-friendly notes with extracted people, concepts, and wiki-links. The distinctive idea is not "LLMs can summarize meetings" — that's generic — but that messy conversational exhaust can be converted into a **file-based personal knowledge graph** that surfaces clusters and relationships you already live inside but can't easily see. Strong connection to Steph Ango's bottom-up "file over app" / emergent-structure Obsidian philosophy, but pushed one step further: the structure is not hand-maintained, it's grown from transcripts.
+
+---
+
 ## [NK's AI Cookbook](https://ai-blog.nkschjoedt.com/ai-cookbook)
 By [NK Schjødt](people.md#nk-schjødt). A senior developer's practical guide to AI-assisted development. Central metaphor: **AI is an excavator, you are the operator** — it amplifies skilled operators and is dangerous for unskilled ones.
 
