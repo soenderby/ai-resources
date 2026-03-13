@@ -51,7 +51,7 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Beads](projects.md#beads)  
-Articles: [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30)
+Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30)
 
 ---
 

@@ -41,7 +41,9 @@ The `wl` CLI tool (the `gastownhall/wasteland` repo) is the concrete federation 
 ---
 
 ## [Beads](https://github.com/steveyegge/beads)
-By [Steve Yegge](people.md#steve-yegge).
+By [Steve Yegge](people.md#steve-yegge). A git-native issue tracker designed specifically as **external memory for coding agents**. Work items live in the repo as structured JSONL records rather than in a hosted tracker, which means they travel with branches, can be queried locally, and persist across agent sessions.
+
+The important idea is not simply "tickets for AI". Beads gives agents a way to reason about **dependencies, readiness, discovered work, parent/child structure, and in-progress claims** without relying on fragile markdown plans or human memory. That makes it a foundational substrate for long-horizon agent work and coordination — the memory layer underneath [Gastown](#gastown), and part of the same broader pattern later extended by tools like [BeadHub](../resources/articles.md#beadhub-coordination-for-ai-programming-teams).
 
 ---
 

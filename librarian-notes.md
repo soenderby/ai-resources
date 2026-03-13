@@ -30,6 +30,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-13** — A useful cluster is forming around the idea that AI shifts the bottleneck upward rather than removing it: HBR on work intensification, Pydantic on supervision fatigue, HYBRD on replacing agent supervisors with deterministic code, and BeadHub on multi-human / multi-agent coordination. Common theme: generation gets cheaper, but oversight, coordination, and expectation management get more expensive.
 
+**2026-03-13** — Anthropic's "How we built our multi-agent research system" and Cognition's "Don't Build Multi-Agents" are best read as task-specific, not contradictory. A useful lens: **multi-agent for breadth-first exploration**, **single-agent for depth-first coherence-heavy execution**. This seems like one of the clearest emerging distinctions in agent architecture.
+
 ---
 
 ## Gaps

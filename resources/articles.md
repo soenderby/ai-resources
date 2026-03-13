@@ -65,6 +65,31 @@ By Jon Vet. One of the better synthesis pieces on agent architecture, mainly bec
 
 ---
 
+## [Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents)
+By Anthropic. One of the canonical framing pieces for agent system design. Its enduring value is the clean taxonomy: **workflows vs agents**, plus five composable patterns — prompt chaining, routing, parallelization, orchestrator-workers, and evaluator-optimizer. The underlying bias is useful too: start with the simplest thing that works, avoid frameworks until you need them, and only add agentic complexity when it demonstrably improves outcomes.
+
+---
+
+## [A practical guide to building agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)
+By OpenAI. A practical deployment-oriented complement to Anthropic's workflow taxonomy. Distinguishes single-agent from multi-agent systems, lays out **manager** vs **decentralized handoff** patterns, and puts unusual emphasis on **guardrails**, tool risk, and human intervention for high-stakes actions. Less distinctive than Anthropic's piece conceptually, but useful as a major-lab reference for how agent systems are being framed for real product teams.
+
+---
+
+## [How we built our multi-agent research system](https://www.anthropic.com/engineering/built-multi-agent-research-system)
+By Anthropic. Valuable not just because Anthropic says multi-agent systems work, but because it is unusually specific about **when** they work: high-value, breadth-first research tasks where many search directions can be explored independently in parallel. Also strong on production detail — token economics, prompt heuristics for delegation, tool-description quality, observability, and evaluation. Best read alongside Cognition's [Don’t Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents), since the tension between them mostly resolves once you separate exploratory search from coherence-heavy coding.
+
+---
+
+## [Don’t Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents)
+By Cognition. One of the clearest arguments against naive multi-agent coding systems. The key concept is **context engineering**: reliability depends on preserving the full chain of relevant decisions, and parallel agents easily diverge because **actions carry implicit decisions** that other agents cannot see. The article's core recommendation — prefer a single-threaded agent with explicit context compression over parallel worker swarms for coherence-heavy tasks — is an important counterweight to orchestration enthusiasm.
+
+---
+
+## [Building proactive AI agents](https://bryanhoulton1.substack.com/p/building-proactive-ai-agents)
+By Bryan Houlton. A genuinely novel architectural piece. Instead of request/response agents or fixed cron workflows, Houlton proposes long-lived **entities** that control their own wake schedule, can be interrupted by external events, use human-style tools ("your inbox", "your calendar"), and maintain **decaying-resolution memory** that gets more compressed as it ages. Especially worth keeping because it pushes beyond coding-agent patterns into what persistent, semi-autonomous agent systems might actually look like.
+
+---
+
 ## [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/)
 By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. Key framings:
 - **RLVR** (Reinforcement Learning from Verifiable Rewards) as the new major training stage, enabling "reasoning" models
@@ -76,6 +101,11 @@ By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. 
 
 ## [Everything is a RALPH Loop](https://ghuntley.com/loop/)
 By [Geoffrey Huntley](people.md#geoffrey-huntley). Introduces the **RALPH** orchestration pattern: a monolithic loop (not microservices) that runs a single task per iteration, throwing tokens at it until done. Argues for vertical scaling over multi-agent complexity at this stage. Companion thinking to Gas Town — where Gas Town focuses on orchestration/spinning plates, Huntley's "Loom" project aims for evolutionary software that optimises itself autonomously.
+
+---
+
+## [With the Rise of AI-Assisted Programming We'll Want More Programmers, Not Fewer](https://juanreyero.com/article/ai/we-need-more-programmers/)
+By Juan Reyero. A clear Jevons-paradox argument for software engineering: if capable developers become dramatically more productive with LLMs, the backlog expands, ambition expands, and demand shifts upward toward people who can direct that new capacity well. The most useful part is where the bottleneck moves: away from individual code production and toward **coordination** among LLM-augmented engineers. Pairs naturally with Reyero's later [BeadHub](https://juanreyero.com/article/ai/beadhub/) piece, which treats that coordination problem as the next thing to build infrastructure for.
 
 ---
 
@@ -91,6 +121,11 @@ By Juan Reyero. Sharp statement of the next coordination problem after single-us
 
 ## [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 By Rich Sutton.
+
+---
+
+## [Introducing Beads: A coding agent memory system](https://steve-yegge.medium.com/introducing-beads-a-coding-agent-memory-system-637d7d92514a)
+By [Steve Yegge](people.md#steve-yegge). The primary source for [Beads](projects.md#beads), and one of the more important pieces in the coding-agent cluster. Yegge's claim is that markdown plans are the wrong abstraction for long-horizon agent work; what agents actually need is **external memory** in the form of a structured, queryable issue graph with dependencies, ready-work detection, and persistence across sessions. The distinctive contribution is not "use tickets" in the Jira sense, but "use a git-native issue graph as the agent's working memory" — a substrate for planning, discovered work capture, and multi-agent coordination.
 
 ---
 

@@ -8,7 +8,7 @@
 #   - Personal blogs: URLs marked "# needs-validation" should be verified on first use
 #     (check the site's <link rel="alternate" type="application/rss+xml"> tag if unsure)
 #
-# People not tracked here (no regular RSS-accessible publications):
+# People / orgs not tracked here (no regular RSS-accessible publications):
 #   - Jeffrey Emanuel   — no known blog; covered via GitHub projects below
 #   - Nick Bostrom      — books only, no regular publications
 #   - Stuart Russell    — academic, no regular publications
@@ -27,6 +27,11 @@ people:
   - name: Andrej Karpathy
     feeds:
       - https://karpathy.bearblog.dev/feed/?type=rss
+
+  - name: Anthropic
+    feeds: []
+    # Anthropic News does not currently expose a working RSS/Atom feed.
+    # Keep tracked here as a manual source worth checking periodically.
 
   - name: Eliezer Yudkowsky
     feeds: []
@@ -54,6 +59,10 @@ people:
   - name: NK Schjødt
     feeds:
       - https://ai-blog.nkschjoedt.com/rss.xml
+
+  - name: OpenAI
+    feeds:
+      - https://openai.com/news/rss.xml
 
   - name: Paul Christiano
     feeds:
