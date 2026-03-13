@@ -40,6 +40,16 @@ Also coins **supervision fatigue** — the cognitive load of holding intent in y
 
 ---
 
+## [AI Doesn’t Reduce Work—It Intensifies It](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it)
+By Aruna Ranganathan and Xingqi Maggie Ye. Reports an eight-month study of roughly 200 workers at a U.S. tech company and argues that AI often intensifies work rather than relieving it. The useful breakdown is three-fold: **task expansion** (people take on work outside their formal role because AI makes it feel possible), **blurred boundaries** ("just one more prompt" leaks work into evenings and breaks), and **multitasking overload** (parallel AI use increases monitoring and context-switching). Strong organizational-level complement to [The Human-in-the-Loop is Tired](https://pydantic.dev/articles/the-human-in-the-loop-is-tired): same phenomenon, but observed as a workplace pattern rather than a developer's subjective account.
+
+---
+
+## [Critical Thinking during the age of AI](https://addyo.substack.com/p/critical-thinking-during-the-age)
+By [Addy Osmani](people.md#addy-osmani). Uses the old **who / what / where / when / why / how** framework as a checklist for AI-augmented engineering. The core point is simple but important: cheap, plausible output makes classic failure modes more dangerous, not less — unclear problem definitions, weak evidence, confirmation bias, shallow root-cause analysis, and treating the model as an oracle. Worth keeping as a clear antidote to the "AI will think for us" mindset.
+
+---
+
 ## [2025: The Year in LLMs](https://simonwillison.net/2025/Dec/31/the-year-in-llms/)
 By [Simon Willison](people.md#simon-willison). Annual review of the LLM landscape. Essential reading. Coins several terms that are sticking: **"lethal trifecta"** (agent has private data + external comms + untrusted content exposure), **"context rot"** (quality degradation as context window fills), and **"YOLO mode"** (running agents without confirmations — framed as normalization of deviance). Also covers the rise of coding agents, async agents, MCP, and the competitive shift to Chinese open-weight models.
 
@@ -47,6 +57,11 @@ By [Simon Willison](people.md#simon-willison). Annual review of the LLM landscap
 
 ## [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
 By [Simon Willison](people.md#simon-willison). A living, growing guide — structured like a book, published chapter by chapter. Distinguishes **agentic engineering** (professional engineers using coding agents to amplify expertise) from vibe coding (no attention paid to the code). Covers practical patterns for getting reliable results. Continuously updated.
+
+---
+
+## [Emerging Principles of Agent Design](https://www.jonvet.com/blog/principles-of-agent-design)
+By Jon Vet. One of the better synthesis pieces on agent architecture, mainly because it gives a simple lens for reconciling apparently conflicting advice: **use multi-agents for breadth-first problems** (research, parallel exploration) and **single agents for depth-first problems** (coding, coherence-heavy execution). Also pulls together context management, tool-description design, and the move toward ambient / proactive agents. Secondary rather than primary, but a useful map of where the 2025 agent-design conversation seems to be converging.
 
 ---
 
@@ -61,6 +76,16 @@ By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. 
 
 ## [Everything is a RALPH Loop](https://ghuntley.com/loop/)
 By [Geoffrey Huntley](people.md#geoffrey-huntley). Introduces the **RALPH** orchestration pattern: a monolithic loop (not microservices) that runs a single task per iteration, throwing tokens at it until done. Argues for vertical scaling over multi-agent complexity at this stage. Companion thinking to Gas Town — where Gas Town focuses on orchestration/spinning plates, Huntley's "Loom" project aims for evolutionary software that optimises itself autonomously.
+
+---
+
+## [Don’t Send an Agent to do Code’s Job](https://medium.com/hybrd-engineering/dont-send-an-agent-to-do-code-s-job-080ef837420d)
+By HYBRD Engineering. A useful countercurrent to agent-everything orchestration. The argument is that supervision is too deterministic a job to leave to an LLM: task slinging, dependency checks, nudging stuck workers, and policy enforcement are better implemented in code for lower token burn, better observability, and less behavioral drift. Their Village V3 replaces agentic supervisors with a single Rust process while keeping agents as workers, and uses [Beads](projects.md#beads) as the persistent work ledger. Good concrete example of the pattern "use code for the control plane, agents for the work plane."
+
+---
+
+## [BeadHub: Coordination for AI Programming Teams](https://juanreyero.com/article/ai/beadhub/)
+By Juan Reyero. Sharp statement of the next coordination problem after single-user agent swarms: not one programmer with many agents, but many programmers with many agents across machines and repositories. BeadHub layers claims, advisory file reservations, mail/chat, and human escalation on top of [Beads](projects.md#beads), turning the repo-local task ledger into a networked coordination fabric. Strong connection to [Gastown](projects.md#gastown): same core insight that memory / work tracking is the substrate, but pushed from one-machine orchestration to multi-human, multi-machine teams.
 
 ---
 
