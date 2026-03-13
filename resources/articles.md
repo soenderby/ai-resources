@@ -45,8 +45,23 @@ By Aruna Ranganathan and Xingqi Maggie Ye. Reports an eight-month study of rough
 
 ---
 
+## [Real AI Agents and Real Work](https://www.oneusefulthing.org/p/real-ai-agents-and-real-work)
+By [Ethan Mollick](people.md#ethan-mollick). Useful because it makes a precise distinction that gets lost in most automation talk: AI is starting to do **economically meaningful tasks**, not whole jobs. Mollick's example — using Claude to reproduce results from published economics papers from the raw replication archive — is a good demonstration of why this matters: a task that was previously too expensive to do at scale suddenly becomes cheap enough to reshape a field. Good complement to the HBR and Pydantic pieces: less about fatigue, more about what kinds of work become newly viable.
+
+---
+
+## [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)
+By METR. One of the most useful empirical counterweights to coding-agent hype. In a randomized controlled trial with experienced open-source maintainers working on their own repositories, AI use made them **19% slower on average**, despite developers expecting a 24% speedup and still believing afterwards that AI had helped. The important point is not "AI is bad at coding"; METR is explicit that this may not generalize. The real value is the warning that **benchmarks, anecdotes, and self-reports can all materially overstate real-world productivity gains**, especially in high-context, high-quality codebases.
+
+---
+
 ## [Critical Thinking during the age of AI](https://addyo.substack.com/p/critical-thinking-during-the-age)
 By [Addy Osmani](people.md#addy-osmani). Uses the old **who / what / where / when / why / how** framework as a checklist for AI-augmented engineering. The core point is simple but important: cheap, plausible output makes classic failure modes more dangerous, not less — unclear problem definitions, weak evidence, confirmation bias, shallow root-cause analysis, and treating the model as an oracle. Worth keeping as a clear antidote to the "AI will think for us" mindset.
+
+---
+
+## [The Anthropic Economic Index](https://www.anthropic.com/news/the-anthropic-economic-index)
+By Anthropic. A rare attempt to ground discussion of AI's economic impact in **observed usage data** rather than surveys or speculation. The key findings from the initial report are already useful: current use is concentrated in software and technical writing, is spread unevenly across occupations rather than replacing whole jobs, and skews more toward **augmentation (57%)** than automation (43%). Important partly because it is one of the few primary sources in the repo that looks at the labor market through actual task data rather than individual anecdotes.
 
 ---
 
@@ -57,6 +72,11 @@ By [Simon Willison](people.md#simon-willison). Annual review of the LLM landscap
 
 ## [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
 By [Simon Willison](people.md#simon-willison). A living, growing guide — structured like a book, published chapter by chapter. Distinguishes **agentic engineering** (professional engineers using coding agents to amplify expertise) from vibe coding (no attention paid to the code). Covers practical patterns for getting reliable results. Continuously updated.
+
+---
+
+## [The lethal trifecta for AI agents: private data, untrusted content, and external communication](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
+By [Simon Willison](people.md#simon-willison). The cleanest short framing in the collection for one of the central security problems with agents. Willison's claim is that if a system combines **private data access + exposure to untrusted content + a way to communicate externally**, then prompt injection can turn it into a data-exfiltration machine. Distinctive because it reduces a messy security discussion to a memorable model that non-specialists can actually use, while still mapping to real exploits seen across products.
 
 ---
 
@@ -121,6 +141,11 @@ By Juan Reyero. Sharp statement of the next coordination problem after single-us
 
 ## [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
 By Rich Sutton.
+
+---
+
+## [Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)
+By OpenAI. Useful because it reframes prompt injection as a **social engineering** problem rather than just a string-filtering problem. The most important move is architectural: assume some manipulative inputs will get through, and design the system so that dangerous consequences are constrained anyway via source-sink analysis, confirmations, and limited-action pathways. Pairs well with Simon Willison's [lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/): one gives the memorable risk model, the other gives a concrete defense mindset.
 
 ---
 

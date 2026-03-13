@@ -32,6 +32,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-13** — Anthropic's "How we built our multi-agent research system" and Cognition's "Don't Build Multi-Agents" are best read as task-specific, not contradictory. A useful lens: **multi-agent for breadth-first exploration**, **single-agent for depth-first coherence-heavy execution**. This seems like one of the clearest emerging distinctions in agent architecture.
 
+**2026-03-13** — A productive tension is emerging between three kinds of evidence about AI's impact on work: (1) usage data like Anthropic's Economic Index, which shows where AI is actually being applied; (2) field experiments like METR, which show that real productivity effects can diverge sharply from user belief and benchmark performance; and (3) case-based writing like Mollick and Reyero, which shows how a single newly-viable task can still reshape a workflow or field. Worth keeping all three, because none is sufficient on its own.
+
 ---
 
 ## Gaps

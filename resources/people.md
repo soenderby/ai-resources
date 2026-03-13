@@ -34,6 +34,8 @@ Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about
 - Substack: https://www.oneusefulthing.org/
 - Wharton profile: https://mgmt.wharton.upenn.edu/profile/emollick/
 
+Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work)
+
 Associate professor at Wharton. Writes *One Useful Thing* — a research-backed take on AI's implications for work, education, and life. Hundreds of thousands of subscribers. Completely different axis from the practitioners in this list: empirical, evidence-citing, and focused on what actually changes for knowledge workers rather than how to build agents.
 
 ---
@@ -63,6 +65,8 @@ Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memor
 
 ## Simon Willison
 - Weblog: https://simonwillison.net/
+
+Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication)
 
 ---
 
