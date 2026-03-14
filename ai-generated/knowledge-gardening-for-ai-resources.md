@@ -4,502 +4,327 @@
 
 ## What This Document Is
 
-A design note for treating this repository not just as a curated list of links, but as a **local-first knowledge garden**: a repository where source material, annotations, syntheses, memory, and retrieval tools all reinforce each other.
+A design note for turning this repository into a more useful **local-first knowledge garden**: not just a curated list of sources, but a system that helps collect, connect, synthesize, and retrieve knowledge over time.
 
-The goal is **not** to turn the repo into a "second brain" product, a graph visualisation demo, or a maximalist PKM system. The goal is simpler and more useful:
+The goal is not to build a graph demo, a second-brain product, or a complex PKM taxonomy. The goal is narrower and more practical:
 
-- make it easier to **collect** high-signal material
-- make it easier to **organise** and **cross-link** what is already here
-- make it easier to **extract patterns** across sources
-- make it easier to **query** the collection when thinking or writing
-- make it easier for LLM agents to help maintain and use the repository without becoming the arbiters of taste
-
-This is a proposal for how that could work, using the repository's existing structure and values rather than replacing them.
+- keep the curated collection readable and high-signal
+- add better derived views over what is already here
+- make the repository easier to query when thinking or writing
+- let agents help with structure and synthesis without taking over curation
 
 ---
 
-## Why This Repo Is a Good Fit
+## Core Proposal
 
-The repository already has most of the ingredients of a strong knowledge system:
+Treat the repository as four layers that should remain distinct:
 
-- **Canonical curated records** in [`resources/articles.md`](../resources/articles.md), [`resources/people.md`](../resources/people.md), and [`resources/projects.md`](../resources/projects.md)
-- **Curator memory** in [`librarian-notes.md`](../librarian-notes.md)
-- **Derived understanding** in [`ai-generated/`](./)
-- **Automation hooks** in [`agent-skills/`](../agent-skills/)
-- **Version control** as the durability and audit layer
+1. **Canonical knowledge** — the curated source of truth
+2. **Ingestion support** — lightweight workflows for reading, annotating, and cross-linking new material
+3. **Derived views** — generated concept indexes, syntheses, reading paths, and gap reports
+4. **Query tools** — local retrieval interfaces for asking questions of the collection
 
-This means the repo is already better positioned than most note systems for agent-assisted knowledge work. It is:
+The key design principle is simple:
 
-- local and file-based
-- inspectable with normal tools
-- searchable with plain text tools
-- portable across machines
-- easy to diff and review
-- legible to both humans and agents
+- keep `resources/` and `librarian-notes.md` small and human-curated
+- let `ai-generated/` hold exploratory, replaceable, generated structure
 
-What it lacks is not a foundation. It lacks a stronger **organisation-and-use layer**.
+This repo already has the right substrate for that approach:
 
-That is the opportunity.
+- local markdown files
+- clear canonical files
+- version control
+- existing generated documents
+- existing agent tooling
+
+What it lacks is not content. It lacks a stronger **idea layer** and a better **use layer**.
 
 ---
 
-## The Core Idea
+## Design Principles
 
-Treat the repository as a system with four interacting layers:
+## 1. Canonical knowledge should stay human-curated
 
-1. **Canonical knowledge** — the human-curated entries and notes that are the source of truth
-2. **Ingestion and structuring** — lightweight workflows that turn raw sources into clean local knowledge artifacts
-3. **Derived views and synthesis** — generated documents that expose patterns, themes, disagreements, gaps, and reading paths
-4. **Query and retrieval tools** — scripts or skills that make the collection actually usable as a working knowledge base
-
-The important design move is to keep these layers distinct.
-
-### Source of truth stays small and human-curated
-
-The repo should continue to treat these as canonical:
+These files should remain the authoritative layer:
 
 - [`resources/articles.md`](../resources/articles.md)
 - [`resources/people.md`](../resources/people.md)
 - [`resources/projects.md`](../resources/projects.md)
 - [`librarian-notes.md`](../librarian-notes.md)
 
-These files express judgment. They should stay concise, readable, and under human control.
+They express judgment: what belongs here, why it belongs, what is notable, what patterns matter. That should remain a human responsibility.
 
-### Derived artifacts can be expansive and exploratory
+## 2. Generated artifacts should carry most of the structure
 
-The repo should use [`ai-generated/`](./) much more aggressively for:
+The repo should get much more value out of generated documents in [`ai-generated/`](./), especially for:
 
 - concept indexes
-- synthesis documents
-- cluster maps in prose
+- thematic syntheses
 - reading paths
-- gap analyses
 - disagreement maps
+- gap reports
 - pattern extraction
 
-These artifacts are valuable precisely because they do **not** have to be canonical. They can be provisional, exploratory, and easy to replace.
+These documents are useful precisely because they are provisional. They can be regenerated, restructured, or discarded without destabilizing the core collection.
 
----
+## 3. Prefer emergent structure over upfront taxonomy
 
-## The Philosophy
+Do not create a large ontology or new directory tree just because it sounds neat. Start with generated structure, use it, and only formalize what proves repeatedly useful.
 
-## 1. Local-first beats tool-first
+The rule should be:
 
-The durable unit of knowledge in this repo should remain the markdown file, not the application used to manipulate it.
+**promote proven structure, not imagined structure**.
 
-This matters for practical reasons:
+## 4. Optimize for retrieval and synthesis, not visuals
 
-- files survive tool churn
-- files are easy to audit
-- agents can read and transform files directly
-- git gives history, reversibility, and trust
-- file paths and headings are already a lightweight address system
-
-This is the same broad philosophy Steph Ango applies to Obsidian: **file over app**. In this repository, the equivalent principle is **repo over product**.
-
-## 2. Derived views are where leverage comes from
-
-A list of links is necessary but not sufficient.
-
-The real value comes when the repository can answer questions like:
+A graph view may occasionally be interesting, but it is not the point. The point is to make the repository better at answering questions like:
 
 - What are the recurring ideas across these sources?
-- Which people disagree about the same topic?
+- Which people disagree about the same issue?
 - What projects cluster around memory, orchestration, or evaluation?
-- What are the most important readings on a theme?
-- What is overrepresented, and what is missing?
+- What are the best reading paths into a topic?
+- What gaps does the collection currently have?
 
-These are not new raw entries. They are **derived views** over the collection.
-
-## 3. Emergent structure beats premature taxonomy
-
-The repo should resist the temptation to design an elaborate ontology up front.
-
-A better approach is:
-
-- start from the current structure
-- observe which concepts recur naturally
-- promote concepts or structures only when they keep proving useful
-- prefer generated indexes before creating new first-class directories
-
-This keeps the repository adaptable. It lets structure emerge from use rather than theory.
-
-## 4. Agents should organise and synthesise, not decide taste
-
-This repo already has a strong curatorial voice and an explicit anti-hype filter. That should remain a human function.
-
-Agents are well-suited for:
-
-- fetching and normalising sources
-- extracting concepts
-- proposing cross-links
-- comparing entries
-- generating synthesis documents
-- identifying duplication or gaps
-- answering questions from the existing corpus
-
-Agents are poorly suited for:
-
-- deciding who is worth following
-- deciding what belongs in the collection
-- replacing human annotation with generic summaries
-- introducing structure that is more complicated than the content warrants
-
-The right division of labour is:
-
-- **human**: taste, standards, inclusion, final wording
-- **agent**: structure, recall, comparison, retrieval, draft synthesis
-
-## 5. Textual usefulness beats visual novelty
-
-A graph view may be occasionally helpful, but it should not be the goal.
-
-The goal is to make the repository more useful for actual thinking:
-
-- clearer retrieval
-- better synthesis
-- stronger memory
-- more discoverable relationships
-- lower friction in maintenance
-
-The repo should optimise for questions and writing, not for screenshots.
+This repo should optimize for thinking and writing, not for screenshots.
 
 ---
 
-## The Repository as a Knowledge Garden
+## Proposed Architecture
 
-A useful way to think about the repo is this:
+## Layer 1 — Canonical knowledge
 
-- **`resources/`** is the planted bed: curated, intentional, public-facing
-- **`librarian-notes.md`** is the gardener's notebook: decisions, gaps, taste, memory
-- **`ai-generated/`** is the compost and greenhouse: experiments, syntheses, reorganisations, temporary structures that feed back into the main garden
-- **`agent-skills/`** is the tool shed: reusable mechanisms for searching, checking, extracting, and transforming knowledge
+This is the stable, human-maintained layer.
 
-This framing matters because it prevents a common failure mode: trying to make every artifact equally canonical.
+### Purpose
+Record what is in the collection and why.
 
-Not everything should be pruned into a final form. Some outputs should remain rough but useful.
+### Files
+- [`resources/articles.md`](../resources/articles.md)
+- [`resources/people.md`](../resources/people.md)
+- [`resources/projects.md`](../resources/projects.md)
+- [`librarian-notes.md`](../librarian-notes.md)
 
----
-
-## A Practical Architecture
-
-## Layer 1 — Canonical Knowledge
-
-This layer should remain small, stable, and human-edited.
-
-### `resources/articles.md`
-The key record of specific essays, posts, papers, and reference sites.
-
-### `resources/people.md`
-The key record of people worth following.
-
-### `resources/projects.md`
-The key record of projects worth tracking.
-
-### `librarian-notes.md`
-The running record of:
-- curatorial decisions
-- patterns noticed
-- gaps
-- connections
-- open questions
-
-### Design principle for Layer 1
-This layer should answer:
-
-- what is in the collection?
-- why is it here?
-- what judgment has already been made?
-
-It should not try to answer every thematic question directly.
+### Rule
+This layer should stay concise. It should not try to answer every thematic question directly.
 
 ---
 
-## Layer 2 — Ingestion and Structuring
+## Layer 2 — Ingestion support
 
-This layer turns raw source material into repo-ready knowledge.
+This layer helps turn new raw sources into repo-ready knowledge.
 
 ### Existing ingredients
 - Brave content extraction
-- browser tools for JS-heavy pages
-- feed checker for updates
-- repo guidelines in [`CLAUDE.md`](../CLAUDE.md)
+- browser tools
+- feed checker
+- repo instructions in [`CLAUDE.md`](../CLAUDE.md)
 
-### Desirable ingestion workflow
-For a new source, an agent should be able to do something like:
+### Useful ingestion workflow
+For a new source, an agent should be able to:
 
-1. fetch the source locally
-2. read it fully
-3. identify whether it is an article, person, or project
-4. check for duplicates in the collection
-5. draft a meaningful annotation
-6. suggest relevant people/projects cross-links
-7. suggest recurring concepts the source belongs to
-8. surface anything notable for `librarian-notes.md`
+1. fetch and read it fully
+2. identify what kind of source it is
+3. check for duplicates
+4. draft an annotation
+5. suggest relevant cross-links
+6. suggest likely concepts it belongs to
+7. note anything worth adding to `librarian-notes.md`
+
+### Rule
+Keep this lightweight. The goal is not a large ingestion framework, just a more consistent intake process.
+
+---
+
+## Layer 3 — Derived views
+
+This is the highest-leverage layer to improve next.
+
+The repository is currently organized mostly by **source type**. It needs a stronger layer organized by **idea**.
+
+### Useful outputs
+- `ai-generated/concept-index.md`
+- thematic syntheses such as `memory-for-agents.md`
+- reading paths
+- disagreement maps
+- gap reports
 
 ### Why this matters
-The most common failure mode in collections like this is that intake becomes inconsistent. Some entries are richly connected; others are just added quickly and forgotten.
-
-A lightweight structuring pass would make new additions more coherent without making the process bureaucratic.
-
-### What not to do
-Do not build a huge ingestion framework before the workflow proves itself. A thin script or skill that supports the existing process is enough.
+This is where the repo stops being only a directory and starts becoming a working library.
 
 ---
 
-## Layer 3 — Derived Views and Synthesis
+## Layer 4 — Query tools
 
-This is likely the highest-value area for development.
+A knowledge base becomes much more useful once it can be asked questions directly.
 
-The repo is currently organised mostly by **source type**. It would become much more useful if it also had stronger organisation by **idea**.
-
-### Candidate output: concept index
-A generated document such as:
-
-- `ai-generated/concept-index.md`
-
-This would list recurring concepts across the collection, for example:
-
-- context engineering
-- agentic knowledge gardening
-- memory for agents
-- zero-framework cognition
-- multi-agent orchestration
-- local-first knowledge
-- prompt templates
-- supervision fatigue
-- RLVR
-- alignment
-- security surface / prompt injection
-- anti-hype curation
-
-For each concept, a useful entry might include:
-
-- a short definition in plain language
-- why it matters
-- related people
-- related articles
-- related projects
-- tensions or disagreements
-- adjacent concepts
-
-This would function as a textual graph: not a visual network, but a navigable index of ideas.
-
-### Candidate output: thematic syntheses
-Examples:
-
-- `ai-generated/memory-for-agents.md`
-- `ai-generated/ai-assisted-development-workflows.md`
-- `ai-generated/alignment-positions.md`
-- `ai-generated/agent-orchestration-patterns.md`
-- `ai-generated/anti-hype-practitioners.md`
-
-These documents answer questions that the resource lists cannot:
-
-- what do these sources collectively suggest?
-- where do they agree?
-- where do they differ?
-- what patterns are emerging across them?
-
-### Candidate output: reading paths
-Examples:
-
-- "If you want to understand agent orchestration, read these five in order"
-- "If you want the alignment argument from strongest to most mainstream, start here"
-- "If you want grounded writing on AI-assisted engineering, read this cluster"
-
-This is a highly practical form of derived structure. It helps turn a collection into a curriculum.
-
-### Candidate output: gap reports
-These could track:
-
-- underrepresented themes
-- overrepresented clusters
-- referenced-but-untracked people
-- themes with only one perspective represented
-- concepts that appear across entries but are not yet explicitly named
-
-This would strengthen curation without changing the core structure.
-
----
-
-## Layer 4 — Query and Retrieval Tools
-
-A knowledge base becomes significantly more useful once it can be queried directly.
-
-### What a good query layer would support
-Questions like:
-
+### Questions this layer should support
 - Show me everything here related to agent memory
-- Which people in this repo are skeptical of multi-agent complexity?
+- Which people in the repo are skeptical of multi-agent complexity?
 - What are the strongest sources here on alignment from different sides?
-- Which projects connect local-first files, MCP, and agent memory?
-- What recurring ideas connect Harper Reed, NK Schjødt, Simon Willison, and Steve Yegge?
+- What connects Harper Reed, Simon Willison, NK Schjødt, and Steve Yegge?
 
-### Possible implementation levels
+### Possible levels
+1. **Plain text search helpers** — grep-like scripts with clean output
+2. **Structured local index** — headings, entries, links, concepts
+3. **Semantic query layer** — local “answer from the repo” with citations
 
-#### Level 1: plain text search helpers
-Simple scripts that search the markdown corpus with sensible formatting.
-
-Useful even without embeddings.
-
-#### Level 2: structured index over headings and entries
-A small local index that knows:
-- file
-- heading
-- link target
-- entry type
-- extracted concepts
-
-This makes more precise retrieval possible.
-
-#### Level 3: semantic query layer
-A local semantic search or "answer from the repo" tool with file-and-heading citations.
-
-This would be powerful, but should only be introduced if the simpler forms prove worth using.
-
-### Design principle
-The query layer should answer from the local repository first. It should not silently turn into general web search. The point is to help think with the collection.
+### Rule
+This layer should answer from the local repository first. It should help think with the collection, not silently turn into general web search.
 
 ---
 
-## The Most Promising Immediate Direction: A Concept Layer
+## The Most Promising Next Step: A Concept Layer
 
-If this repository develops one new capability first, it should probably be a **concept layer**.
+If this repo adds one new capability first, it should probably be a **concept layer**.
 
-Right now the repo knows:
+Right now the collection is good at tracking:
 
-- who
-- what article
-- what project
+- people
+- articles
+- projects
 
-It is weaker on:
+It is weaker at tracking:
 
-- what idea
-- what recurring pattern
-- what disagreement
-- what conceptual neighborhood
+- recurring ideas
+- conceptual neighborhoods
+- tensions and disagreements
+- cross-cutting patterns
 
-A concept layer addresses exactly that gap.
+A concept layer would fill that gap.
 
-### Why a concept layer matters
-It would make the repo better at:
+### What a concept layer should do
+A good concept index should:
 
-- navigation by idea rather than by source type
-- surfacing relationships across otherwise separate entries
-- supporting synthesis work
-- supporting future query tools
-- preventing the same insight from being rediscovered repeatedly
+- define recurring ideas in plain language
+- connect related people, articles, and projects
+- make overlap explicit instead of pretending concepts are cleanly separate
+- support synthesis and retrieval
+- stay generated and revisable until it proves itself
 
-### Why it should start as generated, not canonical
-A concept model will change as the repository grows. Starting with a generated concept index in `ai-generated/` allows experimentation without locking the repo into a structure too early.
+### What it should not do
+It should not become a giant taxonomy, a tagging system for its own sake, or a rigid hierarchy.
 
-Only once a concept layer proves repeatedly useful should it become a first-class maintained structure.
+---
 
 ## Worked Example: A Concept Entry
 
-The best way to evaluate whether a concept layer would actually be useful is to sketch one real entry in full. That forces decisions about granularity, overlap, annotation depth, and linking behavior.
-
-What follows is not presented as the final correct format. It is a concrete test case.
+The best way to test whether a concept layer would actually be useful is to write one real concept entry in full.
 
 ### Example concept: Memory for agents
 
 **Definition**
 
-The problem of how an agent retains, retrieves, and uses information across time instead of starting every task from a blank context window. In practice this includes explicit memory stores, task records, searchable past work, linked notes, and other structures that let useful context persist beyond a single session.
+How an agent retains, retrieves, and reuses information across time instead of starting every task from a blank context window. This includes task records, searchable past work, linked notes, communication history, and other structures that let useful context persist across sessions.
 
 **Why it matters**
 
-This concept sits close to the center of modern agent design. A powerful model with no memory is trapped in a short, expensive cycle of repeated rediscovery: each session has to reconstruct intent, prior attempts, constraints, and unfinished work from scratch. That is workable for short tasks, but it breaks down as tasks get longer, more parallel, or more cumulative.
+A powerful model with no memory has to keep rediscovering everything: prior attempts, constraints, unfinished work, and relevant context. That is manageable for short tasks, but it becomes expensive and brittle as work gets longer, more parallel, or more cumulative.
 
-In this collection, “memory for agents” appears in at least three distinct forms:
+Within this collection, “memory for agents” appears in at least three forms:
 
-1. **Task memory** — systems like [Beads](../resources/projects.md#beads), [Gastown](../resources/projects.md#gastown), and [Gas City](../resources/projects.md#gas-city) use explicit work records so agents can claim, resume, coordinate, and report work.
-2. **Context memory** — [Lilian Weng’s agent overview](../resources/articles.md#llm-powered-autonomous-agents) treats memory as one of the core components of an agent architecture, alongside planning, tool use, and action.
-3. **Knowledge memory** — Harper Reed’s [My now immaculate knowledge graph of life](../resources/articles.md#my-now-immaculate-knowledge-graph-of-life) points to a different but adjacent pattern: using agents to convert messy information into durable linked knowledge that can later become context for humans or agents.
+1. **Architectural memory** — [LLM Powered Autonomous Agents](../resources/articles.md#llm-powered-autonomous-agents) treats memory as one of the four core components of an agent.
+2. **Task memory** — [Beads](../resources/projects.md#beads), [Gastown](../resources/projects.md#gastown), and [Gas City](../resources/projects.md#gas-city) make work persistent, resumable, and visible.
+3. **Knowledge memory** — Harper Reed’s [My now immaculate knowledge graph of life](../resources/articles.md#my-now-immaculate-knowledge-graph-of-life) shows a related pattern: turning messy information into durable linked knowledge that can later be retrieved and reused.
 
-The concept matters because it connects infrastructure, cognition, and curation. It is not just a technical storage problem. It is a question of what information should persist, in what form, and how it becomes usable again later.
+The concept is useful because it connects cognition, infrastructure, and curation. It is not just a storage problem. It is a design problem about what should persist, in what form, and for whom.
 
 **What this concept is not**
 
-This concept overlaps with several others, but should not collapse into them:
-
-- It is **not identical to context engineering**. Context engineering is about what goes into the model’s working memory right now. Memory for agents is about what survives across sessions and can be brought back later.
-- It is **not identical to knowledge management** in the generic PKM sense. The focus here is not personal organization broadly, but information structures that improve agent continuity and effectiveness.
-- It is **not identical to multi-agent orchestration**. Orchestration is about coordinating concurrent work. Memory is one of the enabling substrates that makes orchestration possible.
-- It is **not identical to agentic knowledge gardening**. Knowledge gardening is one way of producing durable memory, but the concept of agent memory also includes task ledgers, searchable transcripts, and workflow state.
-
-This kind of boundary section is important because concept entries will inevitably overlap. The goal is not to eliminate overlap entirely, but to give each concept a clear center of gravity.
+- It is **not the same as context engineering**. Context engineering is about what goes into the active working context now. Memory for agents is about what survives across sessions and can be brought back later.
+- It is **not generic knowledge management**. The focus here is not personal organization in general, but structures that improve agent continuity and effectiveness.
+- It is **not the same as multi-agent orchestration**. Orchestration is about coordination; memory is one of the substrates that makes coordination durable.
+- It is **not the same as agentic knowledge gardening**. Knowledge gardening is one way of producing durable memory, but agent memory also includes task ledgers, searchable history, and persistent workflow state.
 
 **Related people**
 
-- [Lilian Weng](../resources/people.md#lilian-weng) — provides the clearest high-level architectural framing for memory as a core agent component.
-- [Steve Yegge](../resources/people.md#steve-yegge) — memory appears in his ecosystem as explicit task records and persistent multi-agent coordination primitives.
-- [Jeffrey Emanuel](../resources/people.md#jeffrey-emanuel) — his tooling cluster treats durable task state, searchable session history, and agent-to-agent communication as mutually reinforcing.
-- [Harper Reed](../resources/people.md#harper-reed) — interesting here not for task orchestration but for turning messy life/work data into linked, reusable knowledge.
+- [Lilian Weng](../resources/people.md#lilian-weng)
+- [Steve Yegge](../resources/people.md#steve-yegge)
+- [Jeffrey Emanuel](../resources/people.md#jeffrey-emanuel)
+- [Harper Reed](../resources/people.md#harper-reed)
 
 **Related articles**
 
-- [LLM Powered Autonomous Agents](../resources/articles.md#llm-powered-autonomous-agents) — the canonical architectural overview; memory is one of the four main components.
-- [My now immaculate knowledge graph of life](../resources/articles.md#my-now-immaculate-knowledge-graph-of-life) — a useful adjacent example of converting raw material into durable, linked context.
-- [Agentic Engineering Patterns](../resources/articles.md#agentic-engineering-patterns) — relevant because long-lived workflows implicitly depend on better retrieval, decomposition, and context handling.
-- [2025: The Year in LLMs](../resources/articles.md#2025-the-year-in-llms) — useful for concepts like context rot, which sharpen the case for externalizing memory rather than overstuffing the active context window.
+- [LLM Powered Autonomous Agents](../resources/articles.md#llm-powered-autonomous-agents)
+- [My now immaculate knowledge graph of life](../resources/articles.md#my-now-immaculate-knowledge-graph-of-life)
+- [Agentic Engineering Patterns](../resources/articles.md#agentic-engineering-patterns)
+- [2025: The Year in LLMs](../resources/articles.md#2025-the-year-in-llms)
 
 **Related projects**
 
-- [Beads](../resources/projects.md#beads) — the clearest example in the repo of explicit machine-readable task memory.
-- [Gastown](../resources/projects.md#gastown) — uses Beads and higher-level coordination structures to make multi-agent work resumable and visible.
-- [Gas City](../resources/projects.md#gas-city) — generalizes those memory and coordination primitives into an SDK.
-- [Agentic Coding Flywheel](../resources/projects.md#agentic-coding-flywheel) — relevant because its tools collectively create persistence across agents, sessions, and workflows.
+- [Beads](../resources/projects.md#beads)
+- [Gastown](../resources/projects.md#gastown)
+- [Gas City](../resources/projects.md#gas-city)
+- [Agentic Coding Flywheel](../resources/projects.md#agentic-coding-flywheel)
 
 **Adjacent concepts**
 
-- **Context engineering** — what the model sees now.
-- **Agentic knowledge gardening** — turning messy information into durable, linked knowledge.
-- **Multi-agent orchestration** — coordination patterns that often rely on persistent task state.
-- **Local-first knowledge** — the storage philosophy that makes memory inspectable and durable.
-- **Prompt templates / agent contracts** — the protocol layer that tells agents how to use memory structures.
+- context engineering
+- agentic knowledge gardening
+- multi-agent orchestration
+- local-first knowledge
+- prompt templates / agent contracts
 
-A good concept index would not try to force these into a strict hierarchy. It would simply make the neighboring relationships explicit.
+**Tensions**
 
-**Tensions and disagreements**
-
-There are at least three tensions inside this concept:
-
-1. **Implicit vs explicit memory** — Should memory live mostly in retrieved documents and notes, or in structured task stores and ledgers?
-2. **Human-readable vs machine-optimized memory** — A note system that is pleasant for a human to browse may not be the best substrate for automated retrieval and coordination; the reverse is also true.
-3. **Local-first vs platform-native memory** — There is a real difference between memory stored in local files under version control and memory trapped inside a SaaS product or proprietary agent runtime.
-
-These tensions are exactly why the concept is useful. It is not just a bucket of related links. It is a place where different design choices can be compared.
+- **Implicit vs explicit memory** — retrieved notes versus structured task state
+- **Human-readable vs machine-optimized memory** — the best form for browsing is not always the best form for automation
+- **Local-first vs platform-native memory** — inspectable files versus memory trapped inside a proprietary tool
 
 **Open questions**
 
-- Which memory forms matter most in practice for agents: task state, semantic retrieval, linked notes, or communication history?
-- When does a simple file-based memory system stop being enough?
-- Which forms of memory genuinely improve agent performance, and which merely create more material to search through?
-- Can a personal knowledge base like this repo become part of an agent’s memory substrate without becoming over-engineered?
+- Which forms of memory matter most in practice: task state, semantic retrieval, linked notes, or communication history?
+- When does a file-based memory system stop being enough?
+- Which forms of memory genuinely improve agent performance, and which just create more material to search through?
+- Could this repo itself become part of an agent memory substrate without becoming over-engineered?
 
-### What this example reveals about the design
+### What the example clarifies
 
-A worked example like this makes several design questions more concrete.
+This example makes several design choices concrete:
 
-#### 1. A concept should be broader than one source, narrower than a whole field
-“Memory for agents” works because it connects multiple entries while still naming a specific problem. “AI agents” would be too broad; “Harper Reed’s graph workflow” would be too narrow.
+- a concept should be broader than one source but narrower than a whole field
+- overlap is unavoidable, so boundaries should be explicit
+- a concept entry needs interpretation, not just backlinks
+- the threshold for a concept is practical usefulness, not just repeated wording
 
-#### 2. Overlap is unavoidable, so boundaries should be explicit
-The right move is not to pretend concepts are perfectly separate. It is to include a short “what this is not” or “adjacent concepts” section so overlap becomes navigable instead of confusing.
+---
 
-#### 3. A useful concept entry needs interpretation, not just backlinks
-A bare list of links would be weak. The real value comes from a short explanation of why the concept matters and how the sources relate.
+## Rules for Concept Entries
 
-#### 4. The threshold for a concept should be practical
+If this repository experiments with a concept layer, concept entries should be kept minimal but meaningful.
+
+## Minimal schema
+A useful concept entry should include:
+
+1. **Definition**
+2. **Why it matters**
+3. **What it is not / boundaries**
+4. **Related people**
+5. **Related articles**
+6. **Related projects**
+7. **Adjacent concepts**
+8. **Tensions or disagreements**
+9. **Open questions**
+
+That is enough structure to make an entry genuinely useful without turning it into a mini-essay.
+
+## Threshold for adding a concept
 A concept likely deserves an entry when it:
-- recurs across multiple sources
-- helps connect otherwise separate parts of the collection
-- supports useful questions or syntheses
-- has enough internal coherence to define in plain language
 
-That is a much better test than simply asking whether a phrase appears often.
+- appears across at least three distinct sources or source types
+- helps connect otherwise separate parts of the collection
+- can be defined clearly in plain language
+- supports useful retrieval or synthesis questions
+
+A phrase is not enough. A concept should earn its place by being a useful lens over the collection.
+
+## Overlap policy
+Do not try to eliminate overlap entirely. Instead:
+
+- allow concepts to overlap
+- give each one a clear center of gravity
+- use “what it is not” and “adjacent concepts” to make boundaries visible
+
+That is more realistic than pretending concepts form a perfect taxonomy.
 
 ---
 
@@ -508,149 +333,108 @@ That is a much better test than simply asking whether a phrase appears often.
 A healthy version of this system would divide work like this.
 
 ## Human responsibilities
-- choose what belongs
-- decide what is signal and what is noise
+- decide what belongs
+- maintain the anti-hype filter and quality bar
 - write or approve final annotations
-- maintain the repo's tone and standards
 - decide when new structure is warranted
 - reject unnecessary complexity
 
 ## Agent responsibilities
-- fetch and read source material
+- fetch and read sources
 - draft annotations from actual content
 - suggest cross-links
 - identify recurring concepts
-- produce syntheses and comparison docs
-- generate reading paths and gap reports
+- generate syntheses, reading paths, and gap reports
 - answer local questions from the corpus
-- maintain lightweight indexes or derived files
+- maintain lightweight derived indexes
 
-This preserves the repo's strongest quality: it is a **curated collection with taste**, not just a warehouse of AI-generated summaries.
+This preserves the repo’s strongest quality: it is a curated collection with taste, not just a heap of generated summaries.
 
 ---
 
-## How This Could Develop Over Time
+## Recommended Evolution Path
 
-A good evolution path would be gradual.
+This should develop gradually.
 
-## Phase 1 — Better derived documents
-No structural changes to the repo. Just add better generated artifacts.
-
-Priority outputs:
-- concept index
+## Phase 1 — Add better derived documents
+Create:
+- a concept index
 - one or two thematic syntheses
 - perhaps a reading-path document
 
-This phase tests usefulness without commitment.
+This tests whether the idea layer is genuinely useful.
 
-## Phase 2 — Lightweight query support
-Add one or two small local tools for retrieving information from the corpus.
+## Phase 2 — Add lightweight query support
+Start with simple local retrieval:
+- grep-like helpers
+- “show me all entries related to X”
+- perhaps later, cited local question answering
 
-Possibilities:
-- grep-like search with clean output
-- "show me all entries related to X"
-- "answer from repo with citations"
+This improves day-to-day use.
 
-This phase improves day-to-day use.
-
-## Phase 3 — Ingestion support
-Once retrieval and synthesis are useful, tighten the intake workflow so new material automatically fits the structure better.
-
-Possibilities:
-- duplicate detection
-- suggested concept tags or associations
+## Phase 3 — Improve intake
+Once concept and query layers prove useful, tighten the intake workflow:
+- duplicate checks
 - cross-link suggestions
-- draft notes for `librarian-notes.md`
+- concept suggestions
+- possible notes for `librarian-notes.md`
 
-This phase improves maintenance quality.
+This improves consistency.
 
-## Phase 4 — Promote only what proves itself
-If one generated structure becomes indispensable, then and only then consider promoting it into a more formal repo structure.
+## Phase 4 — Formalize only what proves itself
+If a generated structure becomes indispensable, promote it.
 
 Examples:
-- a stable concept index might eventually deserve a dedicated `resources/concepts.md`
-- a frequently used local query script might become an `agent-skill`
-- repeated synthesis patterns might become reusable templates
+- a stable concept index might later become `resources/concepts.md`
+- a frequently used retrieval workflow might become an `agent-skill`
 
-The rule should be: **promote proven structure, not imagined structure**.
+But only after use has justified it.
+
+### Recommended first experiment
+The most practical next experiment would be:
+
+1. create `ai-generated/concept-index.md`
+2. start with only 5–10 concept entries
+3. use it for real retrieval and synthesis tasks
+4. evaluate whether it improves thinking and writing
+5. only then decide whether concepts should become more formal
+
+That is a small enough test to be realistic and a concrete enough test to be informative.
 
 ---
 
 ## Guardrails
 
-Several risks are predictable and worth naming explicitly.
+To keep this useful, a few constraints matter.
 
-## 1. Over-engineering
-The repo should not become an elaborate knowledge-management product. Keep the infrastructure proportional to the value it creates.
+## 1. Avoid over-engineering
+This repo should not turn into a knowledge-management product. Infrastructure should stay proportional to value.
 
-## 2. Generated sprawl
-`ai-generated/` can become noisy if every idea turns into a file. Generated documents should exist because they answer a real need.
+## 2. Avoid generated sprawl
+`ai-generated/` should contain useful working documents, not every possible derivative artifact.
 
-## 3. Mistaking generated output for truth
-Generated syntheses are useful working documents, not automatically correct accounts. They should cite the underlying collection and remain replaceable.
+## 3. Keep generated output non-canonical
+Generated syntheses should remain replaceable and clearly downstream of the curated collection.
 
-## 4. Premature taxonomy
-Avoid creating permanent top-level structures before they have proven useful in generated form.
+## 4. Avoid premature taxonomy
+Do not create permanent structures before generated versions have proven useful.
 
-## 5. Replacing curation with summarisation
-The repo's distinctiveness comes from taste and annotation quality. Generated tools should amplify that, not flatten it.
-
----
-
-## What Success Would Look Like
-
-A successful evolution of this repo would not necessarily look dramatic. It would feel like this:
-
-- adding new material becomes more coherent and less repetitive
-- recurring ideas become easier to spot and revisit
-- the repo becomes easier to query when trying to think through a topic
-- syntheses become easier to produce because the conceptual connections are already partially visible
-- gaps in the collection become more obvious
-- agents become more helpful because the repository has stronger local structure
-
-In other words: the repo would become less like a good list and more like a good working library.
+## 5. Do not replace curation with summarization
+The repo’s distinctiveness comes from taste, standards, and annotation quality. Generated structure should amplify that, not flatten it.
 
 ---
 
-## Concrete Near-Term Recommendations
+## Success Criteria
 
-If choosing the smallest high-leverage next steps, the best sequence is likely:
+This direction is working if it makes the repository feel more like a working library and less like a good list.
 
-### 1. Create a generated concept index
-This is the strongest candidate for the first new artifact. It adds an idea layer without forcing a restructure.
+Concrete signs of success would be:
 
-### 2. Add a small local query tool
-Even a minimal textual query interface would significantly improve the practical usability of the collection.
+- new material is easier to place and connect
+- recurring ideas are easier to spot and revisit
+- syntheses become easier to write
+- gaps become easier to see
+- questions about the collection can be answered more directly
+- agents become more useful because the repo has stronger local structure
 
-### 3. Tighten the intake workflow
-Once the concept and query layers are useful, improve how new sources are added so they slot into the structure consistently.
-
-That order matters:
-
-- first improve organisation
-- then improve use
-- then improve maintenance
-
----
-
-## Final View
-
-The most promising direction for this repository is not "AI-generated notes" in the generic sense. It is **agent-assisted knowledge gardening**:
-
-- human-curated sources
-- local file-based durability
-- generated conceptual structure
-- lightweight retrieval tools
-- syntheses that stay close to source material
-- gradual development driven by actual use
-
-The repo already contains the hard part: judgment, taste, and a clear anti-hype filter.
-
-What should be added is not more content for its own sake, but better ways to:
-
-- connect what is already here
-- ask questions of it
-- derive insight from it
-- let agents help with structure without taking over curation
-
-That would make `ai-resources` more than a collection. It would make it a durable, queryable, evolving knowledge system.
+That is the real promise here: not more content, but better ways to connect, retrieve, and think with what is already in the collection.
