@@ -48,6 +48,13 @@ Use this file at the end of the experiment.
 - The strongest conceptual gain so far is replacing one overloaded word, **memory**, with three functions: **retrieval, representation, maintenance**.
 - The next real test is whether that reframing helps enough in synthesis and later retrieval to justify reworking parts of the concept index.
 
+## Interim note after concept-index retrieval phase
+
+- The concept index was useful as a **framing and adjacency tool** rather than as a direct answer engine.
+- It helped surface the right neighboring ideas quickly: `memory for agents`, `context engineering`, `agentic knowledge gardening`, and `local-first knowledge`.
+- It did not yet encode the new adjacent-fields distinction directly enough, which suggests the concept layer is useful but still incomplete.
+- The follow-up note produced a practical split for this repo: retrieve selectively, represent minimally but explicitly, and maintain derived layers aggressively.
+
 ## Lessons learned so far
 
 ### 1. Search by function, not by keyword
@@ -83,6 +90,9 @@ In this run, the eventual synthesis structure — retrieval / representation / m
 
 ### 6. Adjacent fields are most useful when they change vocabulary
 The biggest gain was not just new content, but better language for the problem. Future information gathering should actively look for better problem decompositions, not just more supporting sources.
+
+### 7. Concept indexes help most when they expose neighbors, not when they try to be complete
+In the retrieval phase, the concept index was most useful for surfacing adjacent frames and preventing collapse back into one vague word. That suggests concept layers should optimize for **navigation and framing** before they try to become exhaustive.
 
 ---
 

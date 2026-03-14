@@ -125,7 +125,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: What deserves a new concept entry versus just a note under an existing one?
 
 - ID: T12
-  Status: todo
+  Status: done
   Type: synthesize
   Field: cross-cutting
   Question: Draft the first synthesis from the accepted corpus.
@@ -134,7 +134,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Which claims are supported versus merely suggestive?
 
 - ID: T13
-  Status: todo
+  Status: done
   Type: synthesize
   Field: cross-cutting
   Question: In a separate pass, use `ai-generated/concept-index.md` plus the new synthesis to answer one follow-up question.
