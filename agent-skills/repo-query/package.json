@@ -1,0 +1,9 @@
+{
+  "name": "repo-query",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Query a local markdown knowledge repository for concepts, source entries, and synthesis sections",
+  "scripts": {
+    "query": "node query.js"
+  }
+}
