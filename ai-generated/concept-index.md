@@ -46,6 +46,9 @@ A capable model with no memory has to keep rediscovering intent, constraints, pr
 **Adjacent concepts**
 
 - [Context engineering](#context-engineering)
+- [Retrieval](#retrieval)
+- [Representation](#representation)
+- [Maintenance](#maintenance)
 - [Agentic knowledge gardening](#agentic-knowledge-gardening)
 - [Multi-agent orchestration](#multi-agent-orchestration)
 - [Local-first knowledge](#local-first-knowledge)
@@ -55,6 +58,107 @@ A capable model with no memory has to keep rediscovering intent, constraints, pr
 - What kinds of memory actually improve agent performance?
 - When is a note system enough, and when do you need a structured task store?
 - Which memory forms are for humans, and which are for agents?
+
+---
+
+## Retrieval
+
+**Definition**
+
+The problem of finding the smallest relevant piece of prior information for the current task. In this repo, retrieval means surfacing the right entries, concepts, notes, or synthesis sections rather than replaying whole files by default.
+
+**Why it matters**
+
+A memory layer that stores useful information but cannot surface it well is only a storage layer. Retrieval became much more explicit after the adjacent-fields experiment: relevance, evaluation, and query refinement are design problems in their own right.
+
+**Connected sources**
+
+- [adjacent-fields-for-agent-memory.md](./adjacent-fields-for-agent-memory.md)
+- [retrieved-vs-represented-vs-maintained-for-this-repo.md](./retrieved-vs-represented-vs-maintained-for-this-repo.md)
+- [2025: The Year in LLMs](../resources/articles.md#2025-the-year-in-llms)
+- [Agentic Engineering Patterns](../resources/articles.md#agentic-engineering-patterns)
+- [Context engineering](#context-engineering)
+
+**Adjacent concepts**
+
+- [Memory for agents](#memory-for-agents)
+- [Context engineering](#context-engineering)
+- [Representation](#representation)
+- [Maintenance](#maintenance)
+
+**Useful questions**
+
+- What is the right retrieval unit: file, section, entry, or concept?
+- How should retrieval quality be evaluated in a small curated corpus?
+- When should retrieval expand to adjacent concepts?
+
+---
+
+## Representation
+
+**Definition**
+
+The problem of deciding what durable knowledge should look like: plain documents, concept entries, task records, links, schemas, or some mixture of these.
+
+**Why it matters**
+
+Representation determines what can later be retrieved, compared, and maintained. The adjacent-fields work suggests that representation should stay minimal, scoped, and question-driven rather than becoming a formal structure for its own sake.
+
+**Connected sources**
+
+- [adjacent-fields-for-agent-memory.md](./adjacent-fields-for-agent-memory.md)
+- [retrieved-vs-represented-vs-maintained-for-this-repo.md](./retrieved-vs-represented-vs-maintained-for-this-repo.md)
+- [knowledge-gardening-for-ai-resources.md](./knowledge-gardening-for-ai-resources.md)
+- [Toward Principles for the Design of Ontologies Used for Knowledge Sharing](https://tomgruber.org/writing/onto-design/)
+- [Ontology Development 101: A Guide to Creating Your First Ontology](https://protege.stanford.edu/publications/ontology_development/ontology101.html)
+
+**Adjacent concepts**
+
+- [Memory for agents](#memory-for-agents)
+- [Retrieval](#retrieval)
+- [Maintenance](#maintenance)
+- [Agentic knowledge gardening](#agentic-knowledge-gardening)
+- [Local-first knowledge](#local-first-knowledge)
+
+**Useful questions**
+
+- What deserves an explicit concept entry rather than staying in a document?
+- How much structure is enough before maintenance cost outweighs value?
+- Which relationships are worth representing explicitly?
+
+---
+
+## Maintenance
+
+**Definition**
+
+The ongoing work required to keep a knowledge layer trustworthy: ownership, review, pruning, updating, and marking what is exploratory versus stable.
+
+**Why it matters**
+
+This was the biggest missing layer before the adjacent-fields experiment. Knowledge decays by default. Without maintenance, a memory layer becomes cluttered, stale, and harder to trust even if retrieval and representation are good.
+
+**Connected sources**
+
+- [adjacent-fields-for-agent-memory.md](./adjacent-fields-for-agent-memory.md)
+- [retrieved-vs-represented-vs-maintained-for-this-repo.md](./retrieved-vs-represented-vs-maintained-for-this-repo.md)
+- [Knowledge Base Maintenance: A Practical Framework](https://www.helpscout.com/blog/knowledge-base-maintenance/)
+- [Why we use a ‘docs as code’ approach for technical documentation](https://technology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/)
+- [Anti-hype curation](#anti-hype-curation)
+
+**Adjacent concepts**
+
+- [Memory for agents](#memory-for-agents)
+- [Retrieval](#retrieval)
+- [Representation](#representation)
+- [Local-first knowledge](#local-first-knowledge)
+- [Anti-hype curation](#anti-hype-curation)
+
+**Useful questions**
+
+- What needs regular review or pruning?
+- Which layers should be treated as exploratory versus stable?
+- What maintenance rules keep generated layers from becoming junk drawers?
 
 ---
 
