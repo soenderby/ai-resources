@@ -21,17 +21,188 @@ For each accepted source, capture:
 - Uncertainties / limits:
 ```
 
+## Source: [Information retrieval system evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/information-retrieval-system-evaluation-1.html)
+- Field: IR
+- Key concepts:
+  - evaluation requires a document set, information needs, and relevance judgments
+  - relevance should be judged against the information need, not just keyword overlap
+  - tuning on the test set overstates real performance
+- Operational takeaway:
+  - If this repo or a future memory tool retrieves prior knowledge, it needs explicit evaluation tasks and relevance judgments rather than vague impressions that "it found something useful."
+- Why this matters for agent memory:
+  - Agent memory retrieval is easy to over-credit. This source provides a discipline for asking whether retrieval actually returns the right context.
+- What this might change in repo/tool design:
+  - create small benchmark questions for the repo
+  - track which entries or concepts should count as relevant answers
+  - separate development tuning from final evaluation in retrieval experiments
+- Adjacent existing concepts:
+  - memory for agents
+  - context engineering
+  - anti-hype curation
+- What does not transfer:
+  - classic binary relevance judgments are too simple for many knowledge tasks; repo retrieval often has degrees of usefulness, not just relevant/nonrelevant.
+- Evidence strength: strong
+- Uncertainties / limits:
+  - Strong on evaluation discipline; less direct on how retrieval should be implemented.
+
+## Source: [Relevance feedback and query expansion](https://nlp.stanford.edu/IR-book/html/htmledition/relevance-feedback-and-query-expansion-1.html)
+- Field: IR
+- Key concepts:
+  - synonymy hurts recall
+  - retrieval often improves through query reformulation
+  - systems can support both global expansion and local feedback-driven refinement
+- Operational takeaway:
+  - Treat retrieval as iterative. If the first lookup into agent memory fails or is partial, the system should support expansion, reformulation, or follow-up retrieval.
+- Why this matters for agent memory:
+  - A one-shot search over notes, concepts, or task records may miss relevant material simply because the first phrasing was too narrow.
+- What this might change in repo/tool design:
+  - support related-concept expansion in future query tools
+  - treat concept index entries as query reformulation aids
+  - add "adjacent concepts" deliberately to improve retrieval paths
+- Adjacent existing concepts:
+  - context engineering
+  - memory for agents
+  - concept index
+- What does not transfer:
+  - IR-style query expansion can introduce lots of noise if applied naively to a small, curated corpus.
+- Evidence strength: strong
+- Uncertainties / limits:
+  - Strong on retrieval strategy; weaker on maintenance and representation.
+
+## Source: [Toward Principles for the Design of Ontologies Used for Knowledge Sharing](https://tomgruber.org/writing/onto-design/)
+- Field: KR
+- Key concepts:
+  - knowledge structures should be engineered against explicit criteria
+  - clarity and coherence matter more than theoretical elegance
+  - extensibility and minimal ontological commitment reduce future lock-in
+- Operational takeaway:
+  - Any explicit structure for agent memory should stay as light as possible while still being clear and extendable.
+- Why this matters for agent memory:
+  - It gives a principled way to resist over-structuring memory systems. Not everything should become a rigid schema.
+- What this might change in repo/tool design:
+  - evaluate concept structures by clarity, extensibility, and minimal commitment
+  - prefer structures that can grow incrementally
+  - avoid prematurely formalizing concepts that are still unstable
+- Adjacent existing concepts:
+  - memory for agents
+  - local-first knowledge
+  - anti-hype curation
+- What does not transfer:
+  - full ontology engineering is heavier than what this repo likely needs; the value here is in the design criteria, not in importing the whole apparatus.
+- Evidence strength: strong
+- Uncertainties / limits:
+  - Foundational and transferable, but still one step removed from modern agent workflows.
+
+## Source: [Ontology Development 101: A Guide to Creating Your First Ontology](https://protege.stanford.edu/publications/ontology_development/ontology101.html)
+- Field: KR
+- Key concepts:
+  - define domain and scope first
+  - reuse existing vocabularies where possible
+  - ontology design is iterative
+  - represent only what you need to answer real questions
+- Operational takeaway:
+  - If we add more explicit structure to the repo, start from concrete questions and narrow scope rather than from a grand taxonomy.
+- Why this matters for agent memory:
+  - It offers a practical method for building just enough representation to support retrieval and synthesis.
+- What this might change in repo/tool design:
+  - scope future concept layers around real use cases
+  - reuse existing concept vocabulary before inventing new terms
+  - add structure in small increments with clear question coverage
+- Adjacent existing concepts:
+  - concept index
+  - agentic knowledge gardening
+  - anti-hype curation
+- What does not transfer:
+  - much ontology tooling and formal language machinery is unnecessary for a small local-first knowledge garden.
+- Evidence strength: strong
+- Uncertainties / limits:
+  - Strong on method; less direct on evaluation and maintenance.
+
+## Source: [Managing the Knowledge Life Cycle](https://sloanreview.mit.edu/article/managing-the-knowledge-life-cycle/)
+- Field: KM
+- Key concepts:
+  - knowledge changes form as it moves from idea to common practice
+  - different lifecycle stages need different tools and strategies
+  - codification and personalization are not one-time strategic choices; they can both matter at different stages
+- Operational takeaway:
+  - Agent-memory systems may need stage-aware handling: early material may need conversation and iteration, while mature material may need codification and broad reuse.
+- Why this matters for agent memory:
+  - It challenges the assumption that one storage form should fit all knowledge equally well.
+- What this might change in repo/tool design:
+  - distinguish exploratory notes from mature concepts and stable syntheses
+  - adopt different maintenance expectations for working notes versus durable entries
+  - think of promotion and pruning as lifecycle transitions
+- Adjacent existing concepts:
+  - knowledge memory
+  - agentic knowledge gardening
+  - human as quality gate
+- What does not transfer:
+  - the article is organizational and strategic; it does not directly tell us how to implement retrieval or structure in a small repo.
+- Evidence strength: medium
+- Uncertainties / limits:
+  - Useful lifecycle lens, but not very concrete on local technical practice.
+
+## Source: [Why we use a ‘docs as code’ approach for technical documentation](https://technology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/)
+- Field: KM
+- Key concepts:
+  - documentation stays aligned when it shares workflow with the underlying work
+  - version control, review, and shared ownership improve reliability
+  - retiring legacy content is part of maintainability
+- Operational takeaway:
+  - Durable knowledge works better when it lives in the same operational substrate as the work it supports.
+- Why this matters for agent memory:
+  - This is one of the strongest arguments in the batch for local-first, repo-native memory. It makes memory inspectable, reviewable, and easier to keep in sync.
+- What this might change in repo/tool design:
+  - keep memory artifacts close to the underlying work
+  - treat review and retirement as first-class parts of memory maintenance
+  - prefer git-native workflows for durable agent knowledge
+- Adjacent existing concepts:
+  - local-first knowledge
+  - memory for agents
+  - agentic knowledge gardening
+- What does not transfer:
+  - Docs-as-code assumes an ecosystem already comfortable with git and software workflows; that may not generalize outside technical teams.
+- Evidence strength: strong
+- Uncertainties / limits:
+  - Very strong for this repo and similar environments; weaker as a general theory of knowledge management.
+
+## Source: [Knowledge Base Maintenance: A Practical Framework](https://www.helpscout.com/blog/knowledge-base-maintenance/)
+- Field: KM
+- Key concepts:
+  - maintenance needs an owner
+  - review and update must be built into normal workload
+  - design for maintainability matters as much as initial structure
+  - pruning and removal are part of quality
+- Operational takeaway:
+  - A useful memory layer needs explicit ownership, review cadence, and low-friction update paths or it will decay into clutter.
+- Why this matters for agent memory:
+  - Memory quality is not just retrieval and representation. It is ongoing hygiene.
+- What this might change in repo/tool design:
+  - add maintenance expectations to future concept/memory artifacts
+  - prefer smaller atomic entries over giant omnibus notes
+  - define pruning or review triggers for generated memory layers
+- Adjacent existing concepts:
+  - anti-hype curation
+  - local-first knowledge
+  - concept index
+- What does not transfer:
+  - customer-support knowledge bases are not identical to research or agent-memory systems; some workflow specifics will not map directly.
+- Evidence strength: medium
+- Uncertainties / limits:
+  - Practical and directly useful, but vendor-published and less conceptually rigorous than the stronger foundational sources.
+
 ## Cross-cutting notes
 
-Use this section for:
-- recurring concepts across fields
-- tensions between retrieval, representation, and maintenance
-- ideas that seem portable into this repo
-- ideas that sound good but seem too abstract
-- concepts that do **not** transfer cleanly
-
----
-
-## Cross-cutting notes
-
-_None yet._
+- The adjacent fields line up surprisingly cleanly around three functions:
+  - **IR** → how to retrieve the right thing
+  - **KR** → what shape durable structure should take
+  - **KM** → how to keep the whole system from decaying
+- The repo's current agent-memory thinking is strongest on retrieval and persistence, but weaker on maintenance discipline. KM adds the missing operational hygiene layer.
+- The strongest shared warning from KR and KM is against overbuilding structure too early. Both suggest starting from concrete questions and minimal commitment.
+- The strongest IR takeaway is that retrieval should be evaluated and iterated, not treated as obvious or self-validating.
+- A possible future agent-memory stack for this repo might therefore need four layers:
+  - durable substrate (files/git)
+  - lightweight structure (concepts, tasks, links)
+  - retrieval support (querying, expansion, relevance)
+  - maintenance protocol (ownership, pruning, review)
+- What still seems missing after this pass: stronger sources on evaluation metrics for small curated corpora, and more practical sources on representation choices beyond ontology-oriented KR.

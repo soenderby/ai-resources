@@ -26,7 +26,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
 ---
 
 - ID: T01
-  Status: todo
+  Status: done
   Type: find
   Field: IR
   Question: Find 5–8 candidate sources from information retrieval that seem relevant to retrieval, ranking, relevance, indexing, or search quality.
@@ -35,7 +35,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Which IR concepts transfer cleanly to agent workflows?
 
 - ID: T02
-  Status: todo
+  Status: done
   Type: find
   Field: KR
   Question: Find 5–8 candidate sources from knowledge representation relevant to durable structure, schema, entities, relations, graphs, or state representation.
@@ -44,7 +44,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: What representations are useful without becoming ontology theater?
 
 - ID: T03
-  Status: todo
+  Status: done
   Type: find
   Field: KM
   Question: Find 5–8 candidate sources from knowledge management relevant to capture, curation, lifecycle, maintenance, or reuse.
@@ -53,7 +53,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Which KM practices transfer to local-first agent systems?
 
 - ID: T04
-  Status: todo
+  Status: done
   Type: screen
   Field: IR
   Question: Screen IR candidates and accept the strongest 2–4 sources.
@@ -62,7 +62,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Which sources are operationally useful rather than merely interesting?
 
 - ID: T05
-  Status: todo
+  Status: done
   Type: screen
   Field: KR
   Question: Screen KR candidates and accept the strongest 2–4 sources.
@@ -71,7 +71,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Which sources have transferable structure rather than abstract vocabulary?
 
 - ID: T06
-  Status: todo
+  Status: done
   Type: screen
   Field: KM
   Question: Screen KM candidates and accept the strongest 2–4 sources.
@@ -80,7 +80,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Which sources are about usable maintenance practices rather than generic management language?
 
 - ID: T07
-  Status: todo
+  Status: done
   Type: read
   Field: IR
   Question: Read accepted IR sources and extract operational concepts.
@@ -89,7 +89,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: How would these concepts change retrieval in this repo?
 
 - ID: T08
-  Status: todo
+  Status: done
   Type: read
   Field: KR
   Question: Read accepted KR sources and extract operational concepts.
@@ -98,7 +98,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: What should be represented explicitly versus left in documents?
 
 - ID: T09
-  Status: todo
+  Status: done
   Type: read
   Field: KM
   Question: Read accepted KM sources and extract operational concepts.
@@ -107,7 +107,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: What maintenance practices prevent knowledge decay?
 
 - ID: T10
-  Status: todo
+  Status: done
   Type: compare
   Field: cross-cutting
   Question: Compare the strongest IR, KR, and KM concepts. Which solve retrieval, representation, and maintenance respectively?
@@ -116,7 +116,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Are these complementary layers rather than competing approaches?
 
 - ID: T11
-  Status: todo
+  Status: doing
   Type: compare
   Field: cross-cutting
   Question: Compare adjacent-field concepts against current repo concepts such as memory for agents, context engineering, and agentic knowledge gardening.

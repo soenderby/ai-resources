@@ -71,10 +71,106 @@ These are prompts for source-finding. They are intentionally broader than "agent
 
 ## Accepted sources
 
-_Add accepted sources here as they are validated and read._
+## [Information retrieval system evaluation](https://nlp.stanford.edu/IR-book/html/htmledition/information-retrieval-system-evaluation-1.html)
+- Field: IR
+- Status: accepted
+- Source type: primary
+- Signal: 5
+- Transferability: high
+- Core concept: Retrieval quality needs explicit relevance judgments, test collections, and disciplined evaluation instead of intuition.
+- Why it might matter: Agent memory retrieval also needs evaluation criteria; otherwise "it seems useful" becomes the only test.
+- Decision / notes: Strong foundational source for retrieval evaluation and relevance as an explicit design object.
+
+## [Relevance feedback and query expansion](https://nlp.stanford.edu/IR-book/html/htmledition/relevance-feedback-and-query-expansion-1.html)
+- Field: IR
+- Status: accepted
+- Source type: primary
+- Signal: 4
+- Transferability: high
+- Core concept: Retrieval improves when systems help reformulate queries using feedback and expansion rather than treating the first query as final.
+- Why it might matter: Suggests agent memory retrieval may need iterative refinement, not one-shot lookup.
+- Decision / notes: Good complement to evaluation; especially useful for thinking about retrieval over accumulated notes and task records.
+
+## [Toward Principles for the Design of Ontologies Used for Knowledge Sharing](https://tomgruber.org/writing/onto-design/)
+- Field: KR
+- Status: accepted
+- Source type: primary
+- Signal: 5
+- Transferability: high
+- Core concept: Knowledge structures are engineered artifacts and should be judged by design criteria such as clarity, coherence, extensibility, minimal encoding bias, and minimal ontological commitment.
+- Why it might matter: Strong candidate source for thinking about what explicit structure an agent-memory layer should and should not impose.
+- Decision / notes: Foundational and still very usable; especially valuable as an antidote to over-structuring.
+
+## [Ontology Development 101: A Guide to Creating Your First Ontology](https://protege.stanford.edu/publications/ontology_development/ontology101.html)
+- Field: KR
+- Status: accepted
+- Source type: primary
+- Signal: 4
+- Transferability: high
+- Core concept: Start by defining domain and scope, reuse existing vocabularies where possible, and build ontologies iteratively from practical questions.
+- Why it might matter: Highly transferable to building explicit concept and relation layers without drifting into ontology theater.
+- Decision / notes: Practical counterpart to Gruber; useful for scoping and incremental structure.
+
+## [Managing the Knowledge Life Cycle](https://sloanreview.mit.edu/article/managing-the-knowledge-life-cycle/)
+- Field: KM
+- Status: accepted
+- Source type: primary
+- Signal: 4
+- Transferability: medium
+- Core concept: Different kinds of knowledge need different management strategies at different lifecycle stages; no single tool fits all stages.
+- Why it might matter: Suggests agent-memory systems may need stage-aware handling rather than one universal storage pattern.
+- Decision / notes: More strategic than tactical, but valuable for lifecycle thinking and for resisting one-size-fits-all memory claims.
+
+## [Why we use a ‘docs as code’ approach for technical documentation](https://technology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/)
+- Field: KM
+- Status: accepted
+- Source type: primary
+- Signal: 5
+- Transferability: high
+- Core concept: Useful knowledge stays aligned when it lives in version control, shares workflows with the underlying work, and has shared ownership.
+- Why it might matter: Very strong fit for local-first agent memory and for this repo specifically.
+- Decision / notes: One of the most directly transferable sources in the batch.
+
+## [Knowledge Base Maintenance: A Practical Framework](https://www.helpscout.com/blog/knowledge-base-maintenance/)
+- Field: KM
+- Status: accepted
+- Source type: secondary
+- Signal: 4
+- Transferability: high
+- Core concept: Knowledge quality depends on ownership, regular review, explicit maintenance processes, and design for maintainability.
+- Why it might matter: Strong practical source for preventing memory layers from decaying into clutter.
+- Decision / notes: Vendor-published, but unusually operational and directly relevant to maintenance and hygiene.
 
 ---
 
 ## Rejected sources
 
-_Add rejected sources here with short reasons so the same dead ends are not revisited._
+## [Evaluation Measures in Information Retrieval](https://www.pinecone.io/learn/offline-evaluation/)
+- Field: IR
+- Status: rejected
+- Source type: secondary
+- Signal: 3
+- Transferability: medium
+- Core concept: Overview of common offline ranking metrics.
+- Why it might matter: Practical metric overview.
+- Decision / notes: Rejected as a weaker duplicate of the Stanford IR material already accepted.
+
+## [Docs as Code](https://www.writethedocs.org/guide/docs-as-code/)
+- Field: KM
+- Status: rejected
+- Source type: secondary
+- Signal: 3
+- Transferability: medium
+- Core concept: Documentation should use code-like workflows and tooling.
+- Why it might matter: Supports local-first, versioned knowledge practices.
+- Decision / notes: Rejected as a weaker, more general duplicate of the more concrete GDS docs-as-code source.
+
+## [What’s the Difference Between an Ontology and a Knowledge Graph?](https://enterprise-knowledge.com/whats-the-difference-between-an-ontology-and-a-knowledge-graph/)
+- Field: KR
+- Status: rejected
+- Source type: secondary
+- Signal: 3
+- Transferability: medium
+- Core concept: Ontologies define semantics; knowledge graphs apply them to instance data.
+- Why it might matter: Could help clarify representation layers.
+- Decision / notes: Rejected for now as too secondary and explanatory relative to the stronger foundational KR sources already accepted.
