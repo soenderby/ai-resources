@@ -42,6 +42,50 @@ Use this file at the end of the experiment.
 
 ---
 
+## Interim note after first gathering pass
+
+- The task-ledger structure was already useful for keeping source-finding, screening, reading, and synthesis separate.
+- The strongest conceptual gain so far is replacing one overloaded word, **memory**, with three functions: **retrieval, representation, maintenance**.
+- The next real test is whether that reframing helps enough in synthesis and later retrieval to justify reworking parts of the concept index.
+
+## Lessons learned so far
+
+### 1. Search by function, not by keyword
+Searching for "memory" was much less useful than searching for:
+- retrieval
+- relevance
+- query refinement
+- representation
+- lifecycle
+- maintenance
+- governance
+
+This should be the default strategy in future adjacent-field research.
+
+### 2. Separate finding from acceptance
+The experiment became much cleaner once source-finding and source-selection were treated as different steps. Future work should keep the two-gate pattern:
+1. find candidates
+2. accept only the strongest few
+
+### 3. Force every accepted source to yield an operational takeaway
+The notes got much better once each source had to answer:
+- what transfers?
+- what changes in design?
+- what does not transfer?
+
+If a source cannot produce those, it probably should not be accepted.
+
+### 4. Capture non-transfer explicitly
+This was one of the most useful changes. It prevents elegant but unusable ideas from silently contaminating the synthesis.
+
+### 5. The best synthesis structure often appears in the notes first
+In this run, the eventual synthesis structure — retrieval / representation / maintenance — emerged from cross-cutting notes before it appeared in the synthesis itself. Future runs should look for repeated organizing distinctions in the notes before drafting.
+
+### 6. Adjacent fields are most useful when they change vocabulary
+The biggest gain was not just new content, but better language for the problem. Future information gathering should actively look for better problem decompositions, not just more supporting sources.
+
+---
+
 ## Outcome summary
 
 _Not filled in yet._

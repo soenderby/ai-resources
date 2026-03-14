@@ -116,7 +116,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Are these complementary layers rather than competing approaches?
 
 - ID: T11
-  Status: doing
+  Status: done
   Type: compare
   Field: cross-cutting
   Question: Compare adjacent-field concepts against current repo concepts such as memory for agents, context engineering, and agentic knowledge gardening.

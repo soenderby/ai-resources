@@ -205,4 +205,9 @@ For each accepted source, capture:
   - lightweight structure (concepts, tasks, links)
   - retrieval support (querying, expansion, relevance)
   - maintenance protocol (ownership, pruning, review)
+- Mapping to current repo concepts:
+  - **memory for agents** currently bundles all three functions and should be treated more carefully
+  - **context engineering** overlaps mostly with retrieval and selection into active context
+  - **agentic knowledge gardening** overlaps mostly with representation and maintenance
+  - **local-first knowledge** is best understood as the substrate beneath retrieval/representation/maintenance rather than as one of those functions itself
 - What still seems missing after this pass: stronger sources on evaluation metrics for small curated corpora, and more practical sources on representation choices beyond ontology-oriented KR.
