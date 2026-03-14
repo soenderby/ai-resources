@@ -107,3 +107,68 @@ The main thing that was still missing was a single compact index of outputs. It 
 - The concept index was useful as a framing and adjacency layer.
 - The most useful vocabulary shift was from "memory" to **retrieval / representation / maintenance**.
 - Future work should make outputs easier to scan at a glance.
+
+## Final review
+
+### 1. Did structured research tasks help?
+Yes. Separating **find → screen → read → compare → synthesize** made the work much cleaner than a loose notes-first process. The biggest gains were:
+- less source sprawl
+- clearer stopping points
+- easier resumption after interruption
+- better separation between raw collection and actual judgment
+
+The main cost was some bookkeeping overhead, but it was small relative to the clarity it added.
+
+### 2. Did the concept index help?
+Yes, but in a specific way. It helped most as:
+- a framing aid
+- an adjacency surface
+- a bridge between source entries and syntheses
+
+It helped less as a direct answer mechanism. That is an important design lesson: concept layers should optimize first for **navigation and framing**, not completeness.
+
+### 3. What did adjacent fields contribute?
+- **Information retrieval** contributed the strongest discipline around relevance, evaluation, and iterative retrieval.
+- **Knowledge representation** contributed the strongest discipline around scope, minimal commitment, and resisting over-structuring.
+- **Knowledge management** contributed the missing operational layer: ownership, lifecycle, review, pruning, and maintenance.
+
+The biggest overall gain was not just more sources, but a better decomposition of the problem.
+
+### 4. What did not transfer well?
+- large-scale IR assumptions transferred only partially to a small curated corpus
+- heavyweight ontology machinery was mostly too much for this repo
+- large-organization KM governance models were only partly relevant
+
+This confirms that adjacent-field work is most useful when it yields **adapted principles**, not direct imports.
+
+### 5. What concrete changes followed?
+This experiment directly produced:
+- `ai-generated/adjacent-fields-for-agent-memory.md`
+- `ai-generated/retrieved-vs-represented-vs-maintained-for-this-repo.md`
+- concept-index updates for `retrieval`, `representation`, and `maintenance`
+- the `repo-query` skill
+- `ai-generated/maintenance-rules-for-derived-layers.md`
+
+That is a strong sign the experiment produced operational results, not just interesting reading.
+
+### 6. Would I use this process again?
+Yes.
+
+Use again when:
+- the question is broad enough to benefit from adjacent fields
+- source quality needs disciplined screening
+- synthesis will span multiple sessions
+
+Use a lighter process when:
+- the question is narrow
+- the needed sources are already known
+- the goal is a quick note rather than a real synthesis
+
+### 7. Biggest overhead and biggest benefit
+- **Biggest overhead:** maintaining multiple experiment files without a compact artifact index
+- **Biggest benefit:** the process forced better distinctions earlier, which made the syntheses sharper and more useful
+
+### 8. What should happen next?
+- use `repo-query` in a few real retrieval tasks and note failure modes
+- decide whether an `artifacts.md` file should become a standard part of future experiment workspaces
+- keep testing whether the new concept distinctions help in real work, not just in design notes

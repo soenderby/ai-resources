@@ -143,7 +143,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: Did the concept layer materially improve retrieval or framing?
 
 - ID: T14
-  Status: todo
+  Status: done
   Type: review
   Field: cross-cutting
   Question: Review the experiment itself. Did the task ledger help? Did the concept index help? What did not transfer well? What should become a reusable tool or process?
