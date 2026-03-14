@@ -142,6 +142,7 @@ This was the biggest missing layer before the adjacent-fields experiment. Knowle
 
 - [adjacent-fields-for-agent-memory.md](./adjacent-fields-for-agent-memory.md)
 - [retrieved-vs-represented-vs-maintained-for-this-repo.md](./retrieved-vs-represented-vs-maintained-for-this-repo.md)
+- [maintenance-rules-for-derived-layers.md](./maintenance-rules-for-derived-layers.md)
 - [Knowledge Base Maintenance: A Practical Framework](https://www.helpscout.com/blog/knowledge-base-maintenance/)
 - [Why we use a ‘docs as code’ approach for technical documentation](https://technology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/)
 - [Anti-hype curation](#anti-hype-curation)
