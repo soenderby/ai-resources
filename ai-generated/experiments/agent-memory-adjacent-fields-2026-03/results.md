@@ -94,8 +94,16 @@ The biggest gain was not just new content, but better language for the problem. 
 ### 7. Concept indexes help most when they expose neighbors, not when they try to be complete
 In the retrieval phase, the concept index was most useful for surfacing adjacent frames and preventing collapse back into one vague word. That suggests concept layers should optimize for **navigation and framing** before they try to become exhaustive.
 
+### 8. The task ledger materially reduced restart friction
+On resumption, `tasks.md` made the project state legible quickly: what had been completed, what artifacts existed, and what remained. `sources.md` and `notes.md` were enough to recover the reasoning path without re-reading all source material.
+
+The main thing that was still missing was a single compact index of outputs. It took a little longer than ideal to confirm which synthesis artifacts had already been created. Future experiment workspaces may benefit from a short `artifacts.md` or a small "current state" block in `README.md`.
+
 ---
 
 ## Outcome summary
 
-_Not filled in yet._
+- Structured tasks did reduce restart friction.
+- The concept index was useful as a framing and adjacency layer.
+- The most useful vocabulary shift was from "memory" to **retrieval / representation / maintenance**.
+- Future work should make outputs easier to scan at a glance.

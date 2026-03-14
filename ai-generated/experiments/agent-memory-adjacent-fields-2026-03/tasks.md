@@ -152,7 +152,7 @@ Use this as a lightweight research ledger. Keep it structured, resumable, and se
   Open questions: What should be repeated, changed, or dropped next time?
 
 - ID: T15
-  Status: todo
+  Status: done
   Type: review
   Field: cross-cutting
   Question: Resume the work after an interruption and note how much the task ledger reduced restart friction.
