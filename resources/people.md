@@ -96,6 +96,17 @@ Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on 
 
 ---
 
+## Daniel Terhorst-North
+- Website: https://dannorth.net/
+- About: https://dannorth.net/about/
+- CUPID: https://cupid.dev/
+
+Articles: [CUPID](articles.md#cupid)
+
+Long-time software consultant and the originator of Behaviour-Driven Development. Not an AI writer, but worth tracking here because his software-design heuristics become more useful, not less, in the age of coding agents. CUPID is a strong antidote to code that is technically busy but unpleasant to change: it puts the quality bar on composition, predictability, idiom, and domain fit rather than on abstract class-structure rules.
+
+---
+
 ## Eliezer Yudkowsky
 - Website: https://www.yudkowsky.net/
 - LessWrong: https://www.lesswrong.com/users/eliezer_yudkowsky

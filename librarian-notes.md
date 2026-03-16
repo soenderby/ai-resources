@@ -12,6 +12,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-09** — Actively filtering against people who write about AI primarily to be seen rather than to share genuine learning. The popularity of the topic has created a lot of noise from people capitalising on it. When evaluating new sources, ask: does this person build things and write about what they actually learned, or do they write about what others built?
 
+**2026-03-16** — Adjacent software-engineering sources are in scope when they sharpen the quality bar for agent-produced code. CUPID is worth keeping not as generic craft literature, but as a practical review lens for whether agent-generated software is composable, predictable, idiomatic, and shaped by the domain rather than by framework defaults.
+
 ---
 
 ## Patterns Noticed

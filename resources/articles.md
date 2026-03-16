@@ -182,14 +182,16 @@ Key quote from the newsletter: *"Now the output quality has crossed a threshold 
 ---
 
 ## [CUPID](https://cupid.dev/)
-A set of software design properties, started as a response to SOLID. Likely contains useful framing for thinking about agent and tool design.
+By [Daniel Terhorst-North](people.md#daniel-terhorst-north). A compact software-design rubric presented as an antidote to SOLID-by-rote. The important move is that it judges code from the outside in — by whether it is pleasant to change, easy to combine, unsurprising, natural in its language and ecosystem, and shaped by the problem domain rather than by framework categories.
 
-The five CUPID properties:
-- **Composable** — plays well with others
-- **Unix philosophy** — does one thing well
-- **Predictable** — does what you expect
-- **Idiomatic** — feels natural
-- **Domain-based** — the code models the problem domain in language and structure
+The five CUPID properties are:
+- **Composable** — plays well with others; small surface area, intention-revealing APIs, minimal dependencies
+- **Unix philosophy** — does one thing well; closer to single purpose than to narrow SRP-style decomposition
+- **Predictable** — behaves as expected, is deterministic, and is observable
+- **Idiomatic** — feels natural to people fluent in the language, tools, and local team conventions
+- **Domain-based** — the code models the problem domain in names, structure, and boundaries
+
+Useful here because coding agents make it easy to generate large amounts of code that is locally correct but globally unpleasant — framework-shaped, non-idiomatic, hard to compose, and difficult to trust. CUPID gives a better review checklist for agent-produced software than most class-design slogans. It also sits in a strong lineage: Fowler's "code humans can understand," Gabriel's "habitability," Beck's simple-design rules, and ADR-style explicit local conventions.
 
 ---
 
