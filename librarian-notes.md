@@ -102,6 +102,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-17** — The biggest gap in the judgment memory space is maintenance. Everyone agrees stale judgment is dangerous ("agents trust documentation absolutely"), but no source described systematic pruning. The Codified Context paper's biweekly review and drift detector are the closest, and the Codebase Context MCP's memory decay is the most automated. This gap is worth watching.
 
+**2026-03-17** — Wrote `ai-generated/ensuring-code-quality-with-agents.md`, a thorough synthesis essay covering the full topic: why quality discipline increases with agents, the shift from producer to quality gate, planning before generation, feedback loops, design principles as review heuristics (Parnas, Ousterhout, Hickey, Evans, CUPID, Gabriel), context engineering, judgment memory, task shape, legacy code, multi-agent quality, and security. Draws on nearly every source cluster in the repo. Written long and dense for completeness; intended for a concision pass later.
+
 ---
 
 ## Open Questions
