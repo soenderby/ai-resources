@@ -189,6 +189,7 @@ A large share of agent quality is really context quality. Many failures attribut
 - [Memory for agents](#memory-for-agents)
 - [Zero-framework cognition](#zero-framework-cognition)
 - [Supervision fatigue](#supervision-fatigue)
+- [Software quality with agents](#software-quality-with-agents)
 
 **Useful questions**
 
