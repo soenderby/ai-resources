@@ -257,3 +257,18 @@ By [Michael Nygard](people.md#michael-nygard). The blog post that popularized AD
 
 ## [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy/)
 By [Rich Hickey](people.md#rich-hickey). An exceptional talk that earns its place here because the simple-versus-easy distinction is so useful. Hickey's point is that "easy" means near at hand or familiar, while "simple" means not tangled. That is an especially important distinction when agents make it cheap to generate code that feels easy, patterned, and productive while still increasing the system's long-term complexity.
+
+---
+
+## [Stop Coding and Start Planning](https://every.to/source-code/stop-coding-and-start-planning)
+By Kieran Klaassen. The strongest piece I found in Every's compounding-engineering cluster. Its specific contribution is the **three-fidelity** model: quick obvious fixes, bounded but non-obvious work where planning pays off most, and genuinely uncertain work where disposable prototypes are needed to discover the shape of the problem before writing the real plan. Worth keeping not for the rhetoric of "stop coding," but for the practical move of using prototypes to turn fuzzy work into a sequence of plan-able tasks. Complements [My LLM Codegen Workflow ATM](https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/) and is embodied in the open-source [Compound Engineering Plugin](projects.md#compound-engineering-plugin).
+
+---
+
+## [Autoresearch: Liquid Parse+Render Performance](https://github.com/Shopify/liquid/blob/2543fdc1a101f555db208fb0deeb2e3bf1ae9e36/auto/autoresearch.md)
+By Shopify. An unusually concrete example of constrained autonomous optimization inside a mature production codebase. The document gives the agent a real benchmark, a single optimization target, explicit correctness constraints, off-limits files, a baseline, and a progress log tied to specific commits. Valuable less as "AI does research" hype than as a demonstration of how tightly scoped agent autonomy can produce interpretable improvements. Good companion to [autoresearch](projects.md#autoresearch): same basic pattern, but applied to a real software-performance problem rather than toy infrastructure.
+
+---
+
+## [What Claude Code Actually Chooses](https://amplifying.ai/research/claude-code-picks)
+By Amplifying (Edwin Ong and Alex Vikati). A useful empirical counterweight to anecdotal agent-tooling discourse. The study runs Claude Code 2,430 times against greenfield repos and asks open-ended "what should I use?" questions, then records what gets installed. The main finding is that the agent often **builds rather than buys**, and when it does pick tools it exerts a strong default-stack effect. Worth keeping because it turns a vague ecosystem concern into something measurable, even if the study is still one-agent, one-period, and partly self-extracted.

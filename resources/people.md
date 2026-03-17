@@ -92,6 +92,9 @@ Senior developer writing practical, grounded takes on AI-assisted development.
 - Blog: https://karpathy.bearblog.dev/
 - GitHub: https://github.com/karpathy
 
+Projects: [autoresearch](projects.md#autoresearch)
+Articles: [2025 LLM Year in Review](articles.md#2025-llm-year-in-review)
+
 Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
 
 ---

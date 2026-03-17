@@ -11,6 +11,11 @@ Math tends to be a lot more rigorous than software development, so it's interest
 
 ---
 
+## [autoresearch](https://github.com/karpathy/autoresearch)
+By [Andrej Karpathy](people.md#andrej-karpathy). A tiny but unusually rigorous pattern for autonomous model-improvement work: one editable training file, a fixed five-minute experiment budget, a single metric, and a keep/discard loop that advances the branch only when results improve. The key idea is not just "let agents do research," but **make the research loop measurable and reviewable enough that autonomy has something real to optimize against**. A strong primary source for agentic experimentation, and a useful complement to Shopify's [Autoresearch: Liquid Parse+Render Performance](articles.md#autoresearch-liquid-parserender-performance).
+
+---
+
 ## [Gastown](https://github.com/steveyegge/gastown)
 By [Steve Yegge](people.md#steve-yegge). A multi-agent orchestration system for running many coding agents across multiple projects simultaneously — designed around the observation that 4–10 agents quickly become chaotic without built-in management infrastructure.
 
@@ -49,6 +54,11 @@ The important idea is not simply "tickets for AI". Beads gives agents a way to r
 
 ## [pi-mono](https://github.com/badlogic/pi-mono)
 By Mario Zechner (badlogic).
+
+---
+
+## [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin)
+By Every. The most useful artifact in Every's compounding-engineering cluster because it turns a lot of marketing language into inspectable workflow. The repo encodes a concrete loop — brainstorm, plan, work, review, compound — plus reviewer agents, reusable skills, and a docs layer (`docs/plans/`, `docs/solutions/`) for carrying lessons forward. The distinctive idea here is less task tracking than **judgment memory**: capturing code-review preferences, architectural heuristics, and solved-problem writeups so future agents inherit taste instead of starting blank. Best read alongside [Stop Coding and Start Planning](articles.md#stop-coding-and-start-planning).
 
 ---
 
