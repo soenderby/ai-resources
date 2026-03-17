@@ -24,7 +24,7 @@ When beginning a session in this repo, read these before doing anything:
 
 1. **`librarian-notes.md`** (this directory) — running notes across sessions: curatorial decisions, patterns noticed, gaps, open questions. This is the closest thing to memory across sessions.
 2. **`resources/people.md`** — who is already tracked, so you don't suggest adding someone already there.
-3. **`resources/articles.md`** and **`resources/projects.md`** — what's already collected, to avoid duplicates and to notice gaps.
+3. **`resources/articles.md`**, **`resources/books.md`**, and **`resources/projects.md`** — what's already collected, to avoid duplicates and to notice gaps.
 4. **`ai-generated/`** — synthesized documents that capture understanding of the field. Read if the session involves substantive research or analysis.
 
 Skipping this orientation means working blind to what's already in the collection.
@@ -43,6 +43,7 @@ ai-resources/
 ├── agent-skills/          ← reusable skills for pi and Claude Code
 └── resources/
     ├── articles.md        ← specific articles, posts, and reference sites
+    ├── books.md           ← book-length sources worth keeping
     ├── people.md          ← people worth following, with all their links
     └── projects.md        ← open source projects and tools
 ```
@@ -55,8 +56,8 @@ ai-resources/
 
 1. **Fetch and read the source first.** Use `agent-skills/brave-search/content.js <url>` or the browser-tools skill. Never annotate from a URL alone.
 2. **Write a meaningful annotation** — see quality guidelines below.
-3. **Place in the right file** — articles.md, people.md, or projects.md.
-4. **Update cross-links** — if a person entry exists, add their article/project to their entry. If an article is by someone in people.md, link to them with `[Name](people.md#name)`.
+3. **Place in the right file** — articles.md, books.md, people.md, or projects.md.
+4. **Update cross-links** — if a person entry exists, add their article/book/project to their entry. If an article or book is by someone in people.md, link to them with `[Name](people.md#name)`.
 5. **Update `librarian-notes.md`** if the session surfaced something worth remembering — a decision, a pattern, a gap, something explicitly rejected and why.
 6. **Commit** with a short descriptive message in present tense.
 
@@ -75,6 +76,12 @@ Who they are and what makes them worth following. What angle or perspective do t
 ```markdown
 ## [Title](url)
 By [Author](people.md#author). What the piece is about and why it belongs here. Capture the specific insight, not just the topic. Note connections to other entries if relevant.
+```
+
+**Book** (`resources/books.md`):
+```markdown
+## [Title](url)
+By [Author](people.md#author). What the book contributes that makes it worth preserving here. Capture the distinctive idea or lens, not just the topic.
 ```
 
 **Project** (`resources/projects.md`):

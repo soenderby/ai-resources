@@ -212,3 +212,48 @@ By [Eliezer Yudkowsky](people.md#eliezer-yudkowsky) and Nate Soares. The 2025 bo
 
 ## [The Alignment Forum](https://www.alignmentforum.org/)
 The central online hub for technical AI alignment research. Launched in 2018 from the LessWrong community. Writing from researchers at Anthropic, DeepMind, OpenAI, MIRI, and the Alignment Research Center appears here, alongside independent contributors. Includes writing by [Eliezer Yudkowsky](people.md#eliezer-yudkowsky) and [Paul Christiano](people.md#paul-christiano). The depth varies — some posts are research papers in blog form, others are speculative — but the signal-to-noise ratio is higher than most AI writing online. The sister site [LessWrong](https://www.lesswrong.com/) is broader in scope and is where new contributors typically start.
+
+---
+
+## [Design Principles and Design Patterns](https://www.techonline.com/tech-papers/design-principles-and-design-patterns/)
+By [Robert C. Martin](people.md#robert-c-martin). Historically important because this is the 2000 paper that bundled the five principles later remembered as SOLID. Most useful when read not as a morality tale about class structure, but as a dependency-management lens for avoiding software rot. Good companion to [CUPID](https://cupid.dev/): Martin helps with the direction of dependencies, while CUPID is stronger on whether the resulting code is pleasant to inhabit.
+
+---
+
+## [On the Criteria To Be Used in Decomposing Systems into Modules](http://sunnyday.mit.edu/16.355/parnas-criteria.html)
+By [David Parnas](people.md#david-parnas). One of the foundational papers in software design. The distinctive move is simple and still under-applied: decompose systems around design decisions likely to change, not around processing steps in a workflow. A very strong source for evaluating agent-produced modularity, which otherwise tends to follow request flow, file type, or framework layers rather than true information hiding.
+
+---
+
+## [A Behavioral Notion of Subtyping](http://www.cs.cmu.edu/afs/cs/project/venari/www/subtype-toplas.html)
+By [Barbara Liskov](people.md#barbara-liskov) and [Jeannette M. Wing](people.md#jeannette-m-wing). The real source behind the Liskov Substitution Principle. Worth keeping because it replaces slogan-level SOLID advice with the stronger behavioral claim that properties proved about a supertype should continue to hold for its subtypes. Useful mainly as a corrective against cargo-cult OO design rules.
+
+---
+
+## [No Silver Bullet: Essence and Accidents of Software Engineering](https://www.cgl.ucsf.edu/Outreach/pc204/NoSilverBullet.html)
+By [Fred Brooks](people.md#fred-brooks). Still the clearest short statement of essential versus accidental complexity. Its value here is partly as an antidote to AI hype: better tools can remove some accidental complexity, but they do not eliminate the hard part of software, which lives in the conceptual construct itself. Pairs naturally with [The Mythical Man-Month](books.md#the-mythical-man-month) and with more recent complexity-focused work like [A Philosophy of Software Design](books.md#a-philosophy-of-software-design).
+
+---
+
+## [Canon TDD](https://tidyfirst.substack.com/p/canon-tdd)
+By [Kent Beck](people.md#kent-beck). A concise clarification from the source, written largely to rebut strawman versions of TDD. The useful part is the explicit workflow: keep a test list, turn one item into a runnable test, make it pass, then optionally refactor before repeating. Helpful because many critiques of TDD are really critiques of something else.
+
+---
+
+## [Test Driven Development](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
+By [Martin Fowler](people.md#martin-fowler). The best short web explanation of TDD I found. Fowler is especially good on why test-first work matters for design, not just verification: it forces attention onto the interface first, and TDD only works properly when paired with refactoring. A good compact companion to [Test Driven Development: By Example](books.md#test-driven-development-by-example).
+
+---
+
+## [Characterization Testing](https://michaelfeathers.silvrback.com/characterization-testing)
+By [Michael Feathers](people.md#michael-feathers). A small but very important extension of the testing conversation from greenfield code to legacy systems. The core insight is that when you do not know what a piece of code is supposed to do, you can still write tests to describe what it actually does before you change it. Particularly relevant to agent-assisted development, since agents are most dangerous in opaque codebases where intent is already unclear.
+
+---
+
+## [Documenting Architecture Decisions](https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+By [Michael Nygard](people.md#michael-nygard). The blog post that popularized ADRs. Its lasting contribution is not just the template, but the argument that small, modular records are a better fit for real projects than giant architecture documents that nobody reads or updates. Very useful in an agent-heavy workflow, where design rationale disappears even faster unless it is written down explicitly.
+
+---
+
+## [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy/)
+By [Rich Hickey](people.md#rich-hickey). An exceptional talk that earns its place here because the simple-versus-easy distinction is so useful. Hickey's point is that "easy" means near at hand or familiar, while "simple" means not tangled. That is an especially important distinction when agents make it cheap to generate code that feels easy, patterned, and productive while still increasing the system's long-term complexity.

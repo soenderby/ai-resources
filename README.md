@@ -11,6 +11,7 @@ ai-resources/
 ├── ai-generated/          ← documents produced by AI agents
 └── resources/
     ├── articles.md        ← specific articles, posts, and reference sites
+    ├── books.md           ← book-length sources worth keeping
     ├── people.md          ← people worth following
     └── projects.md        ← open source projects and tools
 ```

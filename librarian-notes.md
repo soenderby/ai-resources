@@ -14,6 +14,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-16** — Adjacent software-engineering sources are in scope when they sharpen the quality bar for agent-produced code. CUPID is worth keeping not as generic craft literature, but as a practical review lens for whether agent-generated software is composable, predictable, idiomatic, and shaped by the domain rather than by framework defaults.
 
+**2026-03-16** — Created `resources/books.md`. The adjacent software-quality material is now book-heavy enough to deserve its own file; future sessions on design, testing, XP, or complexity should read `books.md` alongside `articles.md`.
+
 ---
 
 ## Patterns Noticed
@@ -79,6 +81,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 **2026-03-12** — Final adjacent-fields experiment review: the structured research workflow was worth the overhead, mainly because it improved screening, resumption, and synthesis quality. The biggest gain was a better decomposition of the problem (`retrieval / representation / maintenance`); the biggest operational gap was the lack of a compact artifact index inside the experiment workspace.
 
 **2026-03-12** — Document review process is now clear enough to write down explicitly. Recurring pattern: first drafts are usually strong on coverage but weak on concision and concreteness; the highest-value review passes add worked examples, sharpen distinctions, compress repetition, and force explicit uncertainty. Worth treating review as part of the normal generation workflow, not as optional polish.
+
+**2026-03-16** — The strongest adjacent software-quality cluster now looks like a layered stack rather than a bag of craft slogans: Parnas on decomposition, Beck on feedback loops, Ousterhout on module depth, Evans and CUPID on domain fit, Nygard on decision memory, and Gabriel on habitability. Worth preserving and reading as a system.
 
 ---
 

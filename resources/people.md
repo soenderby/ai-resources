@@ -151,3 +151,143 @@ Former head of the language model alignment team at OpenAI, then founder of the 
 Chief AI Scientist at Meta and Silver Professor at NYU. Turing Award winner (2018, shared with Geoffrey Hinton and Yoshua Bengio) for foundational work on deep learning and convolutional neural networks. The most credible and vocal technical voice against the AI existential risk narrative.
 
 His argument is not "don't worry, be happy." It has a specific technical basis: current LLMs can't reason, plan, or model the physical world, making them nowhere near the kind of intelligence the doom scenarios require. And when we do eventually build systems that capable, we will — like engineers designing turbojets — build safety in by design. "AI is not some sort of natural phenomenon that will just emerge and become dangerous. *We* design it and *we* build it." He has engaged in direct public debates with Yudkowsky, and argues the existential risk framing is both premature and actively harmful — it stokes fear without substance, and crowds out practical near-term concerns. His 2022 paper [*A Path Towards Autonomous Machine Intelligence*](https://openreview.net/pdf?id=BZ5a1r-kVsf) lays out his positive alternative: a world-model architecture (JEPA) as the path to genuinely capable and safe AI. His primary long-form writing is on LinkedIn; his X account is mostly links to those posts.
+
+---
+
+## Kent Beck
+- Website: https://kentbeck.com/
+- Substack: https://tidyfirst.substack.com/
+
+Books: [Extreme Programming Explained: Embrace Change](books.md#extreme-programming-explained-embrace-change), [Test Driven Development: By Example](books.md#test-driven-development-by-example). Articles: [Canon TDD](articles.md#canon-tdd)
+
+One of the most important software-design thinkers in this repo's adjacent-quality cluster: creator of Extreme Programming, co-creator of JUnit, and the primary source for TDD as an engineering practice. Especially worth tracking here because his work treats software quality as a live feedback system — small steps, tests, refactoring, and close attention to what the next change will cost.
+
+---
+
+## Robert C. Martin
+- Website: http://cleancoder.com/
+- Consulting site: https://sites.google.com/site/unclebobconsultingllc/
+
+Articles: [Design Principles and Design Patterns](articles.md#design-principles-and-design-patterns)
+
+One of the central popularizers of modern software design principles. Worth keeping here less for the broader Clean Code culture around him than for the more specific contribution of turning dependency management, package design, and software rot into a set of memorable heuristics. Best read alongside counterweights like [CUPID](articles.md#cupid).
+
+---
+
+## Martin Fowler
+- Website: https://martinfowler.com/
+- About: https://martinfowler.com/aboutMe.html
+
+Articles: [Test Driven Development](articles.md#test-driven-development)
+
+One of the clearest writers in software engineering. Fowler's value in this collection is not novelty so much as precision: he consistently explains design and development practices in a way that makes them easier to reason about and easier to disagree with cleanly. A strong bridge figure between XP, refactoring, architecture, and practical software design.
+
+---
+
+## Michael Feathers
+- Blog: https://michaelfeathers.silvrback.com/
+- Bio: https://www.r7krecon.com/michael-feathers-bio
+
+Books: [Working Effectively with Legacy Code](books.md#working-effectively-with-legacy-code). Articles: [Characterization Testing](articles.md#characterization-testing)
+
+Best known for turning legacy-code changeability into a concrete discipline rather than a complaint. Particularly useful in the context of coding agents because his work starts from the real-world situation where the code is already messy, the intended behavior is unclear, and safety has to be built up incrementally.
+
+---
+
+## David Parnas
+- IEEE profile: https://www.computer.org/profiles/david-parnas
+- Wikipedia: https://en.wikipedia.org/wiki/David_Parnas
+
+Articles: [On the Criteria To Be Used in Decomposing Systems into Modules](articles.md#on-the-criteria-to-be-used-in-decomposing-systems-into-modules)
+
+A foundational software engineering thinker. Parnas matters here because information hiding is still one of the best available tests for whether a design actually reduces complexity or merely rearranges it. An especially useful corrective for agent-produced architectures that decompose around workflow steps instead of volatile design decisions.
+
+---
+
+## Fred Brooks
+- Homepage: https://www.cs.unc.edu/~brooks/
+- Turing Award profile: https://amturing.acm.org/award_winners/brooks_1002187.cfm
+
+Books: [The Mythical Man-Month](books.md#the-mythical-man-month). Articles: [No Silver Bullet: Essence and Accidents of Software Engineering](articles.md#no-silver-bullet-essence-and-accidents-of-software-engineering)
+
+One of the classic sources on why software remains hard. Brooks is worth preserving in this repo because he offers a durable anti-hype baseline: some complexity is accidental and reducible, but much of the real difficulty lives in conceptual integrity, coordination, and the intrinsic shape of the problem itself.
+
+---
+
+## John Ousterhout
+- Website: https://web.stanford.edu/~ouster/
+- Book page: https://web.stanford.edu/~ouster/cgi-bin/book.php
+
+Books: [A Philosophy of Software Design](books.md#a-philosophy-of-software-design)
+
+A strong modern source on complexity management. Ousterhout's emphasis on deep modules, obscurity, and change amplification makes him particularly relevant for evaluating generated code, which often appears neat while leaking too many details across boundaries.
+
+---
+
+## Eric Evans
+- Website: https://www.domainlanguage.com/
+- DDD resources: https://www.domainlanguage.com/ddd/
+
+Books: [Domain-Driven Design: Tackling Complexity in the Heart of Software](books.md#domain-driven-design-tackling-complexity-in-the-heart-of-software)
+
+The key figure in domain-driven design. Worth tracking here because Evans gives one of the strongest arguments that software quality depends on keeping code aligned with the domain's language and distinctions rather than with database tables, transport formats, or framework defaults — exactly the failure mode agent-generated systems often drift into.
+
+---
+
+## Rich Hickey
+- GitHub: https://github.com/richhickey
+- Talk profile: https://www.infoq.com/profile/Rich-Hickey/
+
+Articles: [Simple Made Easy](articles.md#simple-made-easy)
+
+Creator of Clojure and one of the most useful thinkers on simplicity in software. He matters here because the distinction between simple and easy is an excellent lens for agent-assisted development: generated code can be easy to obtain, familiar, and pattern-shaped while still making the system more entangled.
+
+---
+
+## Michael Nygard
+- Author page: https://www.cognitect.com/authors/MichaelNygard.html
+- Article: https://www.cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+
+Articles: [Documenting Architecture Decisions](articles.md#documenting-architecture-decisions)
+
+Best known for bringing Architecture Decision Records into common practice. Nygard is useful in this repo because he focuses attention on design memory — not just what the system is, but why it ended up this way. That becomes more important, not less, when agents make structural changes cheaper and more frequent.
+
+---
+
+## Richard P. Gabriel
+- Website: https://dreamsongs.com/
+- Bio: https://dreamsongs.com/Bio.html
+
+Books: [Patterns of Software](books.md#patterns-of-software)
+
+A software thinker with an unusually strong human and architectural sensibility. Gabriel's ideas about habitability and piecemeal growth are highly relevant to agent-era code quality: software is not just generated and executed, it is lived in, repaired, extended, and made legible to future people.
+
+---
+
+## Barbara Liskov
+- MIT CSAIL: https://www.csail.mit.edu/person/barbara-liskov
+- Home page: http://www.pmg.csail.mit.edu/~liskov/
+
+Articles: [A Behavioral Notion of Subtyping](articles.md#a-behavioral-notion-of-subtyping)
+
+One of the most important figures in programming languages and software design, and the real intellectual source behind the Liskov Substitution Principle. Worth keeping here because her work grounds one part of SOLID in actual behavioral semantics rather than in catchphrases.
+
+---
+
+## Jeannette M. Wing
+- Columbia page: https://www.cs.columbia.edu/~wing/
+- Columbia profile: https://datascience.columbia.edu/people/jeannette-m-wing/
+
+Articles: [A Behavioral Notion of Subtyping](articles.md#a-behavioral-notion-of-subtyping)
+
+A major computer scientist whose joint paper with Barbara Liskov gave the strongest formal account of behavioral subtyping. Included here mainly so the repo's SOLID lineage points back to the actual source rather than only to later rephrasings.
+
+---
+
+## Bertrand Meyer
+- Blog: https://bertrandmeyer.com/
+- Book links: https://bertrandmeyer.com/books/
+
+Books: [Object-Oriented Software Construction](books.md#object-oriented-software-construction)
+
+One of the foundational OO methodologists. Important in this collection because the Open-Closed Principle originates with Meyer, and because his work reminds you that many ideas later flattened into SOLID slogans once sat inside a much richer account of abstraction, contracts, and software construction.
