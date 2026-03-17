@@ -77,3 +77,23 @@ The flywheel idea: each tool makes the others more useful. The whole ecosystem c
 
 ## [pi-skills](https://github.com/badlogic/pi-skills)
 By Mario Zechner (badlogic). A collection of reusable skills for the pi coding agent. Upstream source for the skills in [agent-skills/](../agent-skills/).
+
+---
+
+## [Codified Context Infrastructure](https://github.com/arisvas4/codified-context-infrastructure)
+By [Aris Vasilopoulos](people.md#aris-vasilopoulos). The companion repository for the [Codified Context paper](articles.md#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase). Contains the actual three-tier context infrastructure developed across 283 sessions on a 108,000-line C# system: a constitution file, 19 specialized domain-expert agent specs, 34 knowledge-base documents, and a context drift detector. The most inspectable large-scale artifact for how judgment memory is structured, maintained, and loaded. Worth studying not for the C# specifics but for the architectural patterns: how to organize context at scale, how to route agents to the right context, and what maintenance costs look like in practice.
+
+---
+
+## [Archgate](https://github.com/archgate/cli)
+Turns Architecture Decision Records into an executable governance layer. Each ADR can have a companion `.rules.ts` file with automated checks. Runs in CI, pre-commit hooks, and feeds context to AI agents via MCP. The key move: from passive decision memory to **enforced** decision memory. "Your ADRs become Cursor's governance context, guiding code generation toward your architectural standards." Shows the full loop: document a decision → encode a rule → check in CI → enforce at merge → feed to agents during coding. Also has an AI agent plugin that reads ADRs before writing code and captures new architectural patterns back into ADRs. See [archgate.dev](https://archgate.dev/). Connects to the [ADR tradition](articles.md#documenting-architecture-decisions) and the broader [judgment memory](../ai-generated/judgment-memory.md) theme.
+
+---
+
+## [Awesome Reviewers](https://github.com/baz-scm/awesome-reviewers)
+By Baz/Tessl. A curated collection of 470+ code review prompts across 15 programming languages, mined from real PR comments in 1,000+ open source projects (Next.js, LangChain, FastAPI, and others). The mechanism is: mine real review comments → abstract into patterns → encode as reusable AI-ready prompts. This is the most concrete artifact for what the [judgment memory synthesis](../ai-generated/judgment-memory.md) calls the "lessons-to-guidance loop" — turning experienced-engineer review judgment into durable agent context. See the companion blog post: [Turning Code Reviews into AI Prompts](articles.md#turning-code-reviews-into-ai-prompts).
+
+---
+
+## [Codebase Context MCP](https://github.com/PatrickSys/codebase-context)
+An MCP server that detects team coding conventions from code and git history — not from manually authored rules files. Tracks adoption percentages and trends (rising/declining patterns). The most distinctive features: **automatic convention detection** (vs. requiring manual rule authoring), **memory decay** (stale memories get flagged instead of blindly trusted), and **battle scars** — "decisions, failures, workarounds that look wrong but exist for a reason" that are recorded once and surfaced automatically so agents don't "clean up" something deliberate. Also includes golden-file references and preflight checks before edits. The strongest example of judgment memory that is extracted rather than authored.

@@ -272,3 +272,43 @@ By Shopify. An unusually concrete example of constrained autonomous optimization
 
 ## [What Claude Code Actually Chooses](https://amplifying.ai/research/claude-code-picks)
 By Amplifying (Edwin Ong and Alex Vikati). A useful empirical counterweight to anecdotal agent-tooling discourse. The study runs Claude Code 2,430 times against greenfield repos and asks open-ended "what should I use?" questions, then records what gets installed. The main finding is that the agent often **builds rather than buys**, and when it does pick tools it exerts a strong default-stack effect. Worth keeping because it turns a vague ecosystem concern into something measurable, even if the study is still one-agent, one-period, and partly self-extracted.
+
+---
+
+## [Agent READMEs: An Empirical Study of Context Files for Agentic Coding](https://arxiv.org/html/2511.12884v1)
+By Gao et al. The strongest empirical study of what developers actually put in agent context files. Analyses 2,303 files across Claude Code (CLAUDE.md), Codex (AGENTS.md), and Copilot (copilot-instructions.md). Classifies instructions into 16 categories and finds them heavily skewed toward functional operations — coding conventions, build/test commands, project structure — while non-functional requirements like security and performance are almost absent. The most important finding for this collection: these are **living configuration artifacts**, not static documents. 67% of Claude Code files were modified in multiple commits, with median update intervals of roughly 24 hours. Files grow through incremental additions and rarely shrink. Connects to the broader question of [judgment memory](../ai-generated/judgment-memory.md): what developers choose to persist for agents is mostly operational procedure, not the harder-to-articulate rationale and taste that would make agent judgment compound over time.
+
+---
+
+## [Codified Context: Infrastructure for AI Agents in a Complex Codebase](https://arxiv.org/html/2602.20478v1)
+By [Aris Vasilopoulos](people.md#aris-vasilopoulos). An experience report from developing a 108,000-line C# system across 283 AI-assisted sessions. The distinctive contribution is a **three-tier architecture** for agent context: (1) a "constitution" (~660 lines, always loaded) with conventions, naming standards, and trigger tables; (2) 19 specialized domain-expert agents (~9,300 lines total) invoked per task, each embedding project-specific failure modes and patterns; (3) a knowledge base of 34 retrievable specification documents (~16,250 lines). Over half of each agent spec is domain knowledge — failure modes, patterns, formulas — rather than behavioral instructions. Key quote: **"AI automation consistently eliminated tedium but not judgment."** Also reports concrete maintenance costs (1–2 hrs/week), documents failure modes (specification staleness causing silent failures — "agents trust documentation absolutely"), and includes a context drift detector. The companion repo is at [codified-context-infrastructure](../resources/projects.md#codified-context-infrastructure). The strongest single source on what it looks like to build and maintain judgment memory at scale. See also: [judgment memory synthesis](../ai-generated/judgment-memory.md).
+
+---
+
+## [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+By Anthropic. Frames **context engineering** as the successor to prompt engineering: not what to say, but what configuration of context is most likely to produce the right behavior. Introduces key architectural concepts: the **attention budget** (context as a finite, depletable resource), **context rot** (quality degradation as the window fills with stale or irrelevant material), **compaction** (periodically summarizing to reclaim space), and **progressive disclosure** (loading detail only when needed). CLAUDE.md is the "hot" always-loaded context; tools like grep and MCP enable just-in-time retrieval. The most important framing move: context engineering is not just about prompts — it's about the entire information architecture surrounding an agent, including what gets persisted across sessions and what gets thrown away. Complements the [Agent READMEs](#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding) paper (what people actually put in context) and the [Codified Context](#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase) paper (how one developer scaled it).
+
+---
+
+## [Turning Code Reviews into AI Prompts](https://tessl.io/blog/turning-code-reviews-into-ai-prompts/)
+By Tessl/Baz. The clearest example found of what the [judgment memory synthesis](../ai-generated/judgment-memory.md) calls the **lessons-to-guidance loop**. Key insight: "Code review feedback is like **tribal knowledge** — hard-earned lessons that rarely get documented but shape how teams write and maintain quality code." Baz's [Awesome Reviewers](projects.md#awesome-reviewers) project mines real PR comments from 1,000+ open source projects (Next.js, LangChain, FastAPI), abstracts them into patterns, and encodes them as 470+ reusable AI-ready prompts across 15 languages. The mechanism — mine → abstract → encode — is a concrete production pipeline for turning human review judgment into durable agent context. The term "tribal knowledge" names the pre-capture state of what judgment memory stores.
+
+---
+
+## [AGENTS.md Specification](https://agents.md/)
+A simple, open format for guiding coding agents, used by over 60,000 open-source projects. Tool-agnostic — supported by Codex, Copilot, Cursor, and many others. The standard itself is the artifact: it defines a standardized location (`AGENTS.md` in the project root, with nested files in subdirectories for scoped instructions) where project conventions, architectural context, and operational instructions live. Worth tracking as the convergence point for how agent context files get stored in repositories. See [agentsmd/agents.md](https://github.com/agentsmd/agents.md) for the spec repo. Complements the [Agent READMEs](#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding) paper, which studies what people actually put in these files.
+
+---
+
+## [How to Write a Great agents.md](https://github.blog/ai-and-ml/github-copilot/how-to-write-a-great-agents-md-lessons-from-over-2500-repositories/)
+By GitHub. Practical guidance based on analysis of 2,500+ repositories. Recommends including: persona definition, tech stack context, project file structure, explicit build/test commands, workflow descriptions, and code style examples with concrete good/bad pairs. A useful complement to the [Agent READMEs](#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding) study — where the academic paper describes what developers *do* include, this piece describes what they *should* include.
+
+---
+
+## [AI Generated Architecture Decision Records](https://adolfi.dev/blog/ai-generated-adr/)
+By Adolfi.dev. Describes a workflow where AGENTS.md is configured with "Always create an ADR when changes are made to the codebase that affect the overall architecture" — so the agent creates Architecture Decision Records while the context for the decision is still fresh. This is a production mechanism for decision memory: instead of hoping someone will remember to write the ADR later, the agent captures it as part of the work. A bridge between the traditional ADR literature ([Nygard](articles.md#documenting-architecture-decisions)) and agent-era practice. See also: [Archgate](projects.md#archgate), which takes this further by making ADRs executable.
+
+---
+
+## [Using ADRs with AI Coding Assistants](https://blog.thestateofme.com/2025/07/10/using-architecture-decision-records-adrs-with-ai-coding-assistants/)
+By Chris Swan. Short but insightful. ADRs are "enough structure to ensure key points are addressed, but in natural language, which is perfect for things based on Large Language Models." Predicts ADRs will move from "elite team" practice to boilerplate for AI-assisted development. The most interesting line: this "becomes more important as we shift to **agent swarm approaches**, where you're effectively managing a team" — connecting decision memory to multi-agent coordination. Natural companion to [Documenting Architecture Decisions](articles.md#documenting-architecture-decisions) and the [Codified Context](#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase) paper.

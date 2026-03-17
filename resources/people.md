@@ -294,3 +294,13 @@ A major computer scientist whose joint paper with Barbara Liskov gave the strong
 Books: [Object-Oriented Software Construction](books.md#object-oriented-software-construction)
 
 One of the foundational OO methodologists. Important in this collection because the Open-Closed Principle originates with Meyer, and because his work reminds you that many ideas later flattened into SOLID slogans once sat inside a much richer account of abstraction, contracts, and software construction.
+
+---
+
+## Aris Vasilopoulos
+- GitHub: https://github.com/arisvas4
+
+Projects: [Codified Context Infrastructure](projects.md#codified-context-infrastructure)
+Articles: [Codified Context: Infrastructure for AI Agents in a Complex Codebase](articles.md#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase)
+
+Author of the most detailed public account of building and maintaining context infrastructure for AI agents at scale. Developed a three-tier system (constitution + specialized agents + knowledge base) across 283 sessions on a 108,000-line C# system, then wrote it up as an academic paper with a companion repo. Worth tracking because he reports the things most people skip: maintenance costs, failure modes, what breaks when specs go stale, and the overhead of keeping documentation aligned with code. The key insight from his work — "AI automation consistently eliminated tedium but not judgment" — is one of the sharpest observations in this collection.

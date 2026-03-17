@@ -46,6 +46,7 @@ A capable model with no memory has to keep rediscovering intent, constraints, pr
 **Adjacent concepts**
 
 - [Context engineering](#context-engineering)
+- [Judgment memory](#judgment-memory)
 - [Retrieval](#retrieval)
 - [Representation](#representation)
 - [Maintenance](#maintenance)
@@ -58,6 +59,7 @@ A capable model with no memory has to keep rediscovering intent, constraints, pr
 - What kinds of memory actually improve agent performance?
 - When is a note system enough, and when do you need a structured task store?
 - Which memory forms are for humans, and which are for agents?
+- What distinguishes high-value judgment memory from low-value configuration?
 
 ---
 
@@ -143,13 +145,15 @@ This was the biggest missing layer before the adjacent-fields experiment. Knowle
 - [adjacent-fields-for-agent-memory.md](./adjacent-fields-for-agent-memory.md)
 - [retrieved-vs-represented-vs-maintained-for-this-repo.md](./retrieved-vs-represented-vs-maintained-for-this-repo.md)
 - [maintenance-rules-for-derived-layers.md](./maintenance-rules-for-derived-layers.md)
+- [judgment-memory.md](./judgment-memory.md)
 - [Knowledge Base Maintenance: A Practical Framework](https://www.helpscout.com/blog/knowledge-base-maintenance/)
-- [Why we use a ‘docs as code’ approach for technical documentation](https://technology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/)
+- [Why we use a 'docs as code' approach for technical documentation](https://technology.blog.gov.uk/2017/08/25/why-we-use-a-docs-as-code-approach-for-technical-documentation/)
 - [Anti-hype curation](#anti-hype-curation)
 
 **Adjacent concepts**
 
 - [Memory for agents](#memory-for-agents)
+- [Judgment memory](#judgment-memory)
 - [Retrieval](#retrieval)
 - [Representation](#representation)
 - [Local-first knowledge](#local-first-knowledge)
@@ -167,7 +171,7 @@ This was the biggest missing layer before the adjacent-fields experiment. Knowle
 
 **Definition**
 
-The design problem of getting the right information into the model’s active working context: constraints, prior decisions, source material, tools, plans, and instructions. If memory is what survives across time, context engineering is what gets loaded right now.
+The design problem of getting the right information into the model's active working context: constraints, prior decisions, source material, tools, plans, and instructions. If memory is what survives across time, context engineering is what gets loaded right now.
 
 **Why it matters**
 
@@ -175,18 +179,23 @@ A large share of agent quality is really context quality. Many failures attribut
 
 **Connected sources**
 
+- [Effective Context Engineering for AI Agents](../resources/articles.md#effective-context-engineering-for-ai-agents)
 - [NK's AI Cookbook](../resources/articles.md#nks-ai-cookbook)
-- [Don’t Build Multi-Agents](../resources/articles.md#dont-build-multi-agents)
+- [Don't Build Multi-Agents](../resources/articles.md#dont-build-multi-agents)
 - [2025: The Year in LLMs](../resources/articles.md#2025-the-year-in-llms)
 - [Building Effective AI Agents](../resources/articles.md#building-effective-ai-agents)
 - [Agentic Engineering Patterns](../resources/articles.md#agentic-engineering-patterns)
+- [Codified Context: Infrastructure for AI Agents in a Complex Codebase](../resources/articles.md#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase)
+- [Agent READMEs: An Empirical Study of Context Files for Agentic Coding](../resources/articles.md#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding)
 - [Lilian Weng](../resources/people.md#lilian-weng)
 - [Simon Willison](../resources/people.md#simon-willison)
 - [NK Schjødt](../resources/people.md#nk-schjødt)
+- [Aris Vasilopoulos](../resources/people.md#aris-vasilopoulos)
 
 **Adjacent concepts**
 
 - [Memory for agents](#memory-for-agents)
+- [Judgment memory](#judgment-memory)
 - [Zero-framework cognition](#zero-framework-cognition)
 - [Supervision fatigue](#supervision-fatigue)
 - [Software quality with agents](#software-quality-with-agents)
@@ -212,7 +221,7 @@ This is one of the central engineering questions in the current agent wave. A lo
 **Connected sources**
 
 - [How we built our multi-agent research system](../resources/articles.md#how-we-built-our-multi-agent-research-system)
-- [Don’t Build Multi-Agents](../resources/articles.md#dont-build-multi-agents)
+- [Don't Build Multi-Agents](../resources/articles.md#dont-build-multi-agents)
 - [Everything is a RALPH Loop](../resources/articles.md#everything-is-a-ralph-loop)
 - [Emerging Principles of Agent Design](../resources/articles.md#emerging-principles-of-agent-design)
 - [BeadHub: Coordination for AI Programming Teams](../resources/articles.md#beadhub-coordination-for-ai-programming-teams)
@@ -307,7 +316,7 @@ A local-first substrate is what makes the rest of this knowledge-garden idea cre
 
 **Definition**
 
-Steve Yegge’s principle that the harness should stay thin and deterministic while reasoning stays in the model. Code should handle plumbing, validation, and execution; the model should handle interpretation, judgment, and decisions.
+Steve Yegge's principle that the harness should stay thin and deterministic while reasoning stays in the model. Code should handle plumbing, validation, and execution; the model should handle interpretation, judgment, and decisions.
 
 **Why it matters**
 
@@ -317,7 +326,7 @@ This is one of the clearest philosophical splits in the repo. It is not just a c
 
 - [Zero-Framework Cognition](../resources/articles.md#zero-framework-cognition)
 - [Building Effective AI Agents](../resources/articles.md#building-effective-ai-agents)
-- [Don’t Send an Agent to do Code’s Job](../resources/articles.md#dont-send-an-agent-to-do-codes-job)
+- [Don't Send an Agent to do Code's Job](../resources/articles.md#dont-send-an-agent-to-do-codes-job)
 - [Everything is a RALPH Loop](../resources/articles.md#everything-is-a-ralph-loop)
 - [Steve Yegge](../resources/people.md#steve-yegge)
 - [Geoffrey Huntley](../resources/people.md#geoffrey-huntley)
@@ -350,7 +359,7 @@ This idea shows up repeatedly across the repo and explains a lot of the emotiona
 **Connected sources**
 
 - [The Human-in-the-Loop is Tired](../resources/articles.md#the-human-in-the-loop-is-tired)
-- [AI Doesn’t Reduce Work—It Intensifies It](../resources/articles.md#ai-doesnt-reduce-workit-intensifies-it)
+- [AI Doesn't Reduce Work-It Intensifies It](../resources/articles.md#ai-doesnt-reduce-workit-intensifies-it)
 - [My LLM Codegen Workflow ATM](../resources/articles.md#my-llm-codegen-workflow-atm)
 - [NK's AI Cookbook](../resources/articles.md#nks-ai-cookbook)
 - [Critical Thinking during the age of AI](../resources/articles.md#critical-thinking-during-the-age-of-ai)
@@ -377,7 +386,7 @@ This idea shows up repeatedly across the repo and explains a lot of the emotiona
 
 **Definition**
 
-The cognitive cost of monitoring, reviewing, and course-correcting high-volume AI output while holding intent in your head. Closely related to the repo’s broader concern with work intensification.
+The cognitive cost of monitoring, reviewing, and course-correcting high-volume AI output while holding intent in your head. Closely related to the repo's broader concern with work intensification.
 
 **Why it matters**
 
@@ -386,7 +395,7 @@ This is one of the most important non-technical concepts in the collection becau
 **Connected sources**
 
 - [The Human-in-the-Loop is Tired](../resources/articles.md#the-human-in-the-loop-is-tired)
-- [AI Doesn’t Reduce Work—It Intensifies It](../resources/articles.md#ai-doesnt-reduce-workit-intensifies-it)
+- [AI Doesn't Reduce Work-It Intensifies It](../resources/articles.md#ai-doesnt-reduce-workit-intensifies-it)
 - [NK's AI Cookbook](../resources/articles.md#nks-ai-cookbook)
 - [Real AI Agents and Real Work](../resources/articles.md#real-ai-agents-and-real-work)
 - [Abi Awomosu](../resources/people.md#abi-awomosu)
@@ -419,6 +428,7 @@ This has become one of the clearest adjacent themes in the collection. As genera
 **Connected sources**
 
 - [software-quality-with-agents.md](./software-quality-with-agents.md)
+- [judgment-memory.md](./judgment-memory.md)
 - [CUPID](../resources/articles.md#cupid)
 - [On the Criteria To Be Used in Decomposing Systems into Modules](../resources/articles.md#on-the-criteria-to-be-used-in-decomposing-systems-into-modules)
 - [Canon TDD](../resources/articles.md#canon-tdd)
@@ -434,6 +444,7 @@ This has become one of the clearest adjacent themes in the collection. As genera
 **Adjacent concepts**
 
 - [Human as quality gate](#human-as-quality-gate)
+- [Judgment memory](#judgment-memory)
 - [Supervision fatigue](#supervision-fatigue)
 - [Context engineering](#context-engineering)
 - [Anti-hype curation](#anti-hype-curation)
@@ -444,6 +455,7 @@ This has become one of the clearest adjacent themes in the collection. As genera
 - Which quality checks should be expressed as tests, conventions, or ADRs?
 - What should humans keep authority over even if agents can generate it?
 - Is the code shaped by the domain, or by the framework and the prompt?
+- How do you make judgment compound across sessions rather than resetting?
 
 ---
 
@@ -492,3 +504,47 @@ This file should be used, not admired. The next test is practical:
 5. revise based on use, not theory
 
 If it proves useful, this can grow. If it does not, it should be simplified or replaced.
+
+---
+
+## Judgment memory
+
+**Definition**
+
+Durable captured judgment that changes how future agents plan, implement, review, or decide. The subset of persistent agent context that encodes rationale, heuristics, preferences, lessons, and failure-mode knowledge rather than mere facts or configuration. The term is this repo's working label - nobody else uses it yet.
+
+**Why it matters**
+
+An agent that loads "use 2-space indentation" follows a rule. An agent that loads "use composition over inheritance because our domain model evolves faster than our type hierarchy" has inherited judgment. Judgment memory is the attempt to make the hard-won lessons of experienced developers persist across agent sessions, rather than requiring a human to re-apply taste and rationale every time. It sits at the intersection of three existing concepts in this index: [memory for agents](#memory-for-agents) (judgment memory is the highest-value kind), [context engineering](#context-engineering) (judgment is the highest-value content to engineer), and [software quality with agents](#software-quality-with-agents) (judgment is what makes quality compound over time rather than resetting with each session).
+
+**Connected sources**
+
+- [judgment-memory.md](./judgment-memory.md) - full synthesis document
+- [judgment-memory-research/](./judgment-memory-research/) - sources, terminology, artifact analysis
+- [Codified Context: Infrastructure for AI Agents in a Complex Codebase](../resources/articles.md#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase)
+- [Agent READMEs: An Empirical Study of Context Files for Agentic Coding](../resources/articles.md#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding)
+- [Effective Context Engineering for AI Agents](../resources/articles.md#effective-context-engineering-for-ai-agents)
+- [Turning Code Reviews into AI Prompts](../resources/articles.md#turning-code-reviews-into-ai-prompts)
+- [Compound Engineering Plugin](../resources/projects.md#compound-engineering-plugin)
+- [Codified Context Infrastructure](../resources/projects.md#codified-context-infrastructure)
+- [Archgate](../resources/projects.md#archgate)
+- [Awesome Reviewers](../resources/projects.md#awesome-reviewers)
+- [Codebase Context MCP](../resources/projects.md#codebase-context-mcp)
+- [Documenting Architecture Decisions](../resources/articles.md#documenting-architecture-decisions)
+- [Aris Vasilopoulos](../resources/people.md#aris-vasilopoulos)
+
+**Adjacent concepts**
+
+- [Memory for agents](#memory-for-agents) - judgment memory is a specific kind; task memory and general context are distinct
+- [Context engineering](#context-engineering) - the discipline of managing context; judgment memory is one kind of content being managed
+- [Software quality with agents](#software-quality-with-agents) - the quality problem judgment memory tries to solve
+- [Maintenance](#maintenance) - the biggest open problem for judgment memory; stale judgment is worse than no judgment
+- [Human as quality gate](#human-as-quality-gate) - judgment memory is an attempt to encode what the human quality gate knows
+
+**Useful questions**
+
+- What kinds of judgment are worth capturing, and what should stay in the developer's head?
+- How do you maintain judgment memory without it going stale or bloating?
+- Is manually authored judgment better than automatically captured judgment, and when?
+- Can judgment transfer across projects, or is it inherently context-dependent?
+- What's the right balance between judgment (rationale, heuristics) and configuration (rules, commands)?
