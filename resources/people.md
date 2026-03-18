@@ -34,7 +34,7 @@ Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about
 - Substack: https://www.oneusefulthing.org/
 - Wharton profile: https://mgmt.wharton.upenn.edu/profile/emollick/
 
-Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work)
+Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work), [The Shape of the Thing](articles.md#the-shape-of-the-thing)
 
 Associate professor at Wharton. Writes *One Useful Thing* — a research-backed take on AI's implications for work, education, and life. Hundreds of thousands of subscribers. Completely different axis from the practitioners in this list: empirical, evidence-citing, and focused on what actually changes for knowledge workers rather than how to build agents.
 
@@ -53,13 +53,15 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Beads](projects.md#beads)  
-Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30)
+Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire)
 
 ---
 
 ## Geoffrey Huntley
 - Website/blog: https://ghuntley.com/
 - Project: [Latent Patterns](https://latentpatterns.com/) — especially the [principles](https://latentpatterns.com/principles) and [glossary](https://latentpatterns.com/glossary)
+
+Articles: [Everything is a RALPH Loop](articles.md#everything-is-a-ralph-loop), [AI as economic warfare](articles.md#ai-as-economic-warfare), [Cognitive security](articles.md#cognitive-security), [Porting software](articles.md#porting-software), [Frontier interview](articles.md#frontier-interview)
 
 ---
 
@@ -75,7 +77,7 @@ Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic 
 - Substack: https://addyo.substack.com/
 - LinkedIn: https://www.linkedin.com/in/addyosmani
 
-Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai)
+Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Comprehension Debt](articles.md#comprehension-debt)
 
 Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author — recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 

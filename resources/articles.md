@@ -312,3 +312,38 @@ By Adolfi.dev. Describes a workflow where AGENTS.md is configured with "Always c
 
 ## [Using ADRs with AI Coding Assistants](https://blog.thestateofme.com/2025/07/10/using-architecture-decision-records-adrs-with-ai-coding-assistants/)
 By Chris Swan. Short but insightful. ADRs are "enough structure to ensure key points are addressed, but in natural language, which is perfect for things based on Large Language Models." Predicts ADRs will move from "elite team" practice to boilerplate for AI-assisted development. The most interesting line: this "becomes more important as we shift to **agent swarm approaches**, where you're effectively managing a team" — connecting decision memory to multi-agent coordination. Natural companion to [Documenting Architecture Decisions](articles.md#documenting-architecture-decisions) and the [Codified Context](#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase) paper.
+
+---
+
+## [Comprehension Debt](https://medium.com/@addyosmani/comprehension-debt-the-hidden-cost-of-ai-generated-code-285a25dac57e)
+By [Addy Osmani](people.md#addy-osmani). Coins the term **comprehension debt** — the growing gap between how much code exists in a system and how much any human genuinely understands. Unlike technical debt, it "breeds false confidence" because the codebase looks clean and the tests pass. Key observations: AI generates code faster than humans can evaluate it (speed asymmetry), tests have a hard ceiling ("you can't write a test for behavior you haven't thought to specify"), and specs detailed enough to substitute for understanding are "more or less the program." Cites an Anthropic study where passive AI delegation lowered comprehension scores by 17%, while question-driven AI use preserved understanding. A strong addition to the repo's quality-with-agents cluster, sitting alongside [supervision fatigue](#the-human-in-the-loop-is-tired) and [work intensification](#ai-doesnt-reduce-workit-intensifies-it) as a third distinct cost of cheap generation.
+
+---
+
+## [The AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163)
+By [Steve Yegge](people.md#steve-yegge). A substantial piece on agent-induced burnout, framed through the Colin Robinson "energy vampire" metaphor. The core insight is economic, not psychological: AI genuinely makes you 10x productive, so the question becomes who captures that value — you or your employer? If the company captures all of it, you burn out. If you capture all of it, the company dies. Proposes the `$/hr` ratio as a personal defense mechanism: you can't control the numerator, but you control the denominator. Also takes accountability for the "unrealistic beauty standards" set by early adopters (including himself), calls out startup culture as an extraction accelerant, and argues the new sustainable workday is 3–4 hours of deep cognitive work. A strong companion to [The Human-in-the-Loop is Tired](#the-human-in-the-loop-is-tired): same phenomenon, but viewed through the lens of value capture and labor economics rather than subjective developer experience.
+
+---
+
+## [The Shape of the Thing](https://www.oneusefulthing.org/p/the-shape-of-the-thing)
+By [Ethan Mollick](people.md#ethan-mollick). Major update to Mollick's view of where AI is heading. Three important signals: (1) the StrongDM "Software Factory" — a three-person team where code is neither written nor reviewed by humans, agents test each other in simulated customer environments, and each engineer spends ~$1,000/day on tokens; (2) recursive self-improvement is now an explicit roadmap item at every major lab — Amodei says Anthropic engineers "barely write code themselves," OpenAI says GPT-5.3 Codex was "instrumental in creating itself"; (3) the February 2026 week that previewed coming instability (Citrini market panic → Block layoffs → Pentagon/Anthropic conflict — each not quite what it seemed, but together showing what happens when AI capability collides with markets, jobs, and policy simultaneously). Mollick's framing: "We can see the shape of the Thing now, but we can still influence the Thing itself."
+
+---
+
+## [AI as economic warfare](https://ghuntley.com/warfare/)
+By [Geoffrey Huntley](people.md#geoffrey-huntley). Frames open-source AI models — particularly from China — as potential economic warfare between nation-states. The argument: open source has always been a financial weapon (Linux vs. Windows, OpenOffice vs. Office), but this may be the first time it's deployed at the national level. Chinese labs release frontier-competitive models for free while the US pours trillions into research. Asks what happens to a country whose economy depends on AI if the spigot gets turned off through sanctions or war. More speculative than the collection's usual standard, but addresses a genuine gap: the repo has almost no coverage of the geopolitical and economic dimensions of the AI race.
+
+---
+
+## [Cognitive security](https://ghuntley.com/cogsec/)
+By [Geoffrey Huntley](people.md#geoffrey-huntley). Follow-up to [AI as economic warfare](#ai-as-economic-warfare). If people outsource daily decisions to a single AI model, they're outsourcing their cognitive security to whoever controls that model. References Anthropic's Golden Gate Claude experiment as evidence that model weights can be surgically modified post-training to make any concept inescapable. Speculates about futures where search companies and social networks let advertisers bid to rank higher in model weights — "most people would never know because they've outsourced their cognitive capability to a model." Proposes raising your own model as the only real protection. Speculative but names a real dependency risk.
+
+---
+
+## [Porting software](https://ghuntley.com/porting/)
+By [Geoffrey Huntley](people.md#geoffrey-huntley). A short practical recipe for porting codebases between languages using RALPH loops: compress tests into specs, compress source into specs with citations to the original implementation, then execute a classic RALPH loop in the target language using the specs as PRDs. The key trick is that citations in the specs tease the agent into reading the original source code, while the spec layer decouples the target implementation from the source language.
+
+---
+
+## [Frontier interview](https://ghuntley.com/frontier/)
+By [Geoffrey Huntley](people.md#geoffrey-huntley). Interview transcript covering several provocative claims: software development (typing code) is being commoditized while software engineering (designing safe systems, automations, risk management) remains essential; traditional open-source libraries are increasingly pointless because generating first-party code avoids maintainer burnout, supply-chain attacks, and dependency toil; software products are becoming hyper-commodities easily reimplemented via AI; and the real moats now lie in non-technical areas — contracts, relationships, distribution, taste. Worth keeping for the "open source is dead" argument, which connects to the [economic warfare](#ai-as-economic-warfare) piece.

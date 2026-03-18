@@ -104,6 +104,18 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-17** — Wrote `ai-generated/ensuring-code-quality-with-agents.md`, a thorough synthesis essay covering the full topic: why quality discipline increases with agents, the shift from producer to quality gate, planning before generation, feedback loops, design principles as review heuristics (Parnas, Ousterhout, Hickey, Evans, CUPID, Gabriel), context engineering, judgment memory, task shape, legacy code, multi-agent quality, and security. Draws on nearly every source cluster in the repo. Written long and dense for completeness; intended for a concision pass later.
 
+**2026-03-17** — Polled all followed sources. Osmani's "Comprehension Debt" coined a term that extends the quality cluster in a distinct direction: not supervision fatigue (the feeling), not work intensification (the organizational pattern), but the growing gap between code that exists and code anyone understands. This is now a three-part cost model for cheap generation: fatigue + intensification + comprehension loss.
+
+**2026-03-17** — Yegge's "AI Vampire" adds a fourth dimension to the above — the economics of extraction. Who captures the value of 10x productivity? The piece also takes unusual accountability: Yegge acknowledges that he and other early adopters are setting unrealistic standards.
+
+**2026-03-17** — Mollick's "The Shape of the Thing" is the most significant new framing piece. The StrongDM Software Factory is the most radical production experiment tracked in the collection: no human code writing, no human code review, agents test agents. Recursive self-improvement is now explicitly on every major lab's roadmap, not a theoretical concern.
+
+**2026-03-17** — Huntley's geopolitical cluster (economic warfare + cognitive security) addresses two gaps identified on 2026-03-09: non-Western perspective and economics/business dimensions. The pieces are more speculative than the collection's usual bar, but the underlying questions — who controls the models your business depends on, what happens if the spigot is turned off — are real dependency risks.
+
+**2026-03-17** — Simon Willison's Agentic Engineering Patterns continues to grow: new chapters on "How Coding Agents Work" (mechanics explainer) and "Subagents" (explore, parallel, specialist patterns). The guide is becoming one of the most substantial references in the collection, as predicted on 2026-03-09.
+
+**2026-03-17** — Karpathy's autoresearch (already in collection) went mainstream: Fortune coverage, Shopify's Lütke tried it and got 19% performance gain overnight, being called "the Karpathy Loop." His vibe-coded labor market exposure analysis (taken down after misinterpretation) is culturally interesting but not collection-worthy as a source.
+
 ---
 
 ## Open Questions
