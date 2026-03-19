@@ -118,6 +118,12 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 ---
 
+**2026-03-19** — Researched context pruning for the Pi coding agent. The key finding is that the relationship between pruning and cost is non-obvious: pruning saves tokens but breaks prompt caches, and on API-billed plans the cache penalty can easily exceed the token savings. The math only works clearly in three cases: (1) subscription/flat-rate billing where tokens are free, (2) very large redundancies (>10k tokens), or (3) batching pruning with compaction events that already break the cache. OpenCode's DCP extension handles this correctly by only recalculating pruning during compress events. For Pi, the strongest first move is a diagnostic `/context` command, not automatic pruning. Full analysis in `ai-generated/context-pruning-research.md`.
+
+**2026-03-19** — Discovered three relevant Pi packages during context-pruning research: pi-context (agent-driven git-like context management), pi-extension-observational-memory (custom compaction), and pi-mcp-adapter (token-efficient MCP). None do DCP-style automatic rule-based pruning. The opencode DCP plugin is the strongest existing implementation of the idea, with three zero-cost strategies (dedup, supersede writes, purge errors) and one LLM-driven strategy (compress). No direct port to Pi exists.
+
+---
+
 ## Open Questions
 
 **2026-03-09** — Steve Yegge's *Beads* project (memory system for coding agents) is listed as a project but has no annotation. Worth reading properly and annotating — it's foundational to Gas Town and Emanuel's work.
