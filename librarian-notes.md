@@ -12,6 +12,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-09** — Actively filtering against people who write about AI primarily to be seen rather than to share genuine learning. The popularity of the topic has created a lot of noise from people capitalising on it. When evaluating new sources, ask: does this person build things and write about what they actually learned, or do they write about what others built?
 
+**2026-03-15** — For ecosystem patterns like Ralph loops, include the highest-signal independent implementations (real scripts, real usage evidence), and also include at least one official provider implementation as a separate reference even if it is not the strongest technical source. Rationale: official provider support is strategically important signal about standardization/adoption.
+
 **2026-03-16** — Adjacent software-engineering sources are in scope when they sharpen the quality bar for agent-produced code. CUPID is worth keeping not as generic craft literature, but as a practical review lens for whether agent-generated software is composable, predictable, idiomatic, and shaped by the domain rather than by framework defaults.
 
 **2026-03-16** — Created `resources/books.md`. The adjacent software-quality material is now book-heavy enough to deserve its own file; future sessions on design, testing, XP, or complexity should read `books.md` alongside `articles.md`.

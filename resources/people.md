@@ -61,7 +61,7 @@ Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memor
 - Website/blog: https://ghuntley.com/
 - Project: [Latent Patterns](https://latentpatterns.com/) — especially the [principles](https://latentpatterns.com/principles) and [glossary](https://latentpatterns.com/glossary)
 
-Articles: [Everything is a RALPH Loop](articles.md#everything-is-a-ralph-loop), [AI as economic warfare](articles.md#ai-as-economic-warfare), [Cognitive security](articles.md#cognitive-security), [Porting software](articles.md#porting-software), [Frontier interview](articles.md#frontier-interview)
+Articles: [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-software-engineer), [Everything is a RALPH Loop](articles.md#everything-is-a-ralph-loop), [AI as economic warfare](articles.md#ai-as-economic-warfare), [Cognitive security](articles.md#cognitive-security), [Porting software](articles.md#porting-software), [Frontier interview](articles.md#frontier-interview)
 
 ---
 

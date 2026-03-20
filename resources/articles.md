@@ -119,8 +119,18 @@ By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. 
 
 ---
 
+## [Ralph Wiggum as a "software engineer"](https://ghuntley.com/ralph/)
+By [Geoffrey Huntley](people.md#geoffrey-huntley). The primary source for the Ralph technique in its most concrete form: **`while :; do cat PROMPT.md | claude-code; done`**. Valuable because it goes beyond framing and shows the operational mechanics in detail — one item per loop, deterministic context allocation, explicit backpressure (tests/build/typecheck), plan/build prompt stacks, and iterative prompt tuning based on observed failure modes.
+
+---
+
 ## [Everything is a RALPH Loop](https://ghuntley.com/loop/)
-By [Geoffrey Huntley](people.md#geoffrey-huntley). Introduces the **RALPH** orchestration pattern: a monolithic loop (not microservices) that runs a single task per iteration, throwing tokens at it until done. Argues for vertical scaling over multi-agent complexity at this stage. Companion thinking to Gas Town — where Gas Town focuses on orchestration/spinning plates, Huntley's "Loom" project aims for evolutionary software that optimises itself autonomously.
+By [Geoffrey Huntley](people.md#geoffrey-huntley). A shorter conceptual companion to the original Ralph post. Emphasises the key strategic claim: start with a **monolithic loop** and vertical scaling before reaching for multi-agent microservice-style complexity. Useful as the framing piece, while [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-software-engineer) carries most of the operational detail.
+
+---
+
+## [We Put a Coding Agent in a While Loop and It Shipped 6 Repos Overnight](https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md)
+By RepoMirror. A useful field report because it is a concrete, public case study rather than theory: overnight headless Claude loops, >1,000 commits across multiple repos, and an honest account of both wins and rough edges. Also links to the generated prompt and loop scripts, making it easy to inspect what was actually run.
 
 ---
 

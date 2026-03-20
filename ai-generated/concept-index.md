@@ -245,6 +245,42 @@ This is one of the central engineering questions in the current agent wave. A lo
 
 ---
 
+## Ralph loop
+
+**Definition**
+
+A monolithic agent orchestration pattern built around repeated iterations of the same core task prompt, where each loop attempts one bounded increment of work, evaluates results, and continues until explicit completion criteria are met.
+
+**Why it matters**
+
+It is one of the cleanest examples in the repo of "start simple, then harden": the minimal version is just a `while` loop feeding a prompt, but practical implementations quickly surface real control-plane concerns like completion signaling, backpressure, loop safety, and state persistence.
+
+**Connected sources**
+
+- [Ralph Wiggum as a "software engineer"](../resources/articles.md#ralph-wiggum-as-a-software-engineer)
+- [Everything is a RALPH Loop](../resources/articles.md#everything-is-a-ralph-loop)
+- [We Put a Coding Agent in a While Loop and It Shipped 6 Repos Overnight](../resources/articles.md#we-put-a-coding-agent-in-a-while-loop-and-it-shipped-6-repos-overnight)
+- [Ralph](../resources/projects.md#ralph)
+- [ralph-claude-code](../resources/projects.md#ralph-claude-code)
+- [Ralph Wiggum Plugin for Claude Code](../resources/projects.md#ralph-wiggum-plugin-for-claude-code)
+- [Ralph Loop Template](./ralph-loop-template.md)
+- [Geoffrey Huntley](../resources/people.md#geoffrey-huntley)
+
+**Adjacent concepts**
+
+- [Context engineering](#context-engineering)
+- [Multi-agent orchestration](#multi-agent-orchestration)
+- [Zero-framework cognition](#zero-framework-cognition)
+- [Human as quality gate](#human-as-quality-gate)
+
+**Useful questions**
+
+- What should persist between loop iterations: files, plans, summaries, or all three?
+- Which loop guardrails are essential versus premature complexity?
+- When is a Ralph-style single-loop architecture preferable to multi-agent orchestration?
+
+---
+
 ## Agentic knowledge gardening
 
 **Definition**

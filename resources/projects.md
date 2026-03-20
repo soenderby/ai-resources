@@ -52,6 +52,26 @@ The important idea is not simply "tickets for AI". Beads gives agents a way to r
 
 ---
 
+## [Ralph](https://github.com/snarktank/ralph)
+By snarktank. A practical, inspectable implementation of the Ralph loop pattern for Amp and Claude Code. The core value is that it keeps the technique concrete: fresh agent instance each iteration, persistent state in `prd.json` + `progress.txt` + git history, one-story-at-a-time execution, and explicit completion signaling. High-signal as a reference implementation you can actually run and study.
+
+---
+
+## [ralph-claude-code](https://github.com/frankbria/ralph-claude-code)
+By frankbria. A production-hardened Ralph implementation focused on Claude Code. Useful not for introducing the concept, but for showing what happens when a simple loop is pushed toward real operational reliability: dual-condition exit gating, circuit-breaker behavior, rate-limit handling, session continuity, and extensive test coverage.
+
+---
+
+## [RepoMirror](https://github.com/repomirrorhq/repomirror)
+By RepoMirror. A repo-transformation tool inspired by Ralph loops, with generated `prompt.md` and loop scripts (`.repomirror/ralph.sh`, `sync-forever`) that make the workflow inspectable and modifiable. Worth keeping because it demonstrates a concrete pattern for packaging Ralph-style loops into an open-box scaffold rather than a black-box product.
+
+---
+
+## [Ralph Wiggum Plugin for Claude Code](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum)
+By Anthropic. Official provider implementation of Ralph-style looping as a Claude Code plugin via Stop hooks. Distinctive because it moves the loop from an external bash script into the session runtime itself: intercept exit attempts, feed the prompt back, and continue until a completion promise or iteration limit is hit.
+
+---
+
 ## [pi-mono](https://github.com/badlogic/pi-mono)
 By Mario Zechner (badlogic).
 
