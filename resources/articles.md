@@ -31,6 +31,11 @@ Complements the Pydantic article well: same problem space (developer experience 
 
 ---
 
+## [They Don’t Feel It — Yet](https://ai-blog.nkschjoedt.com/they-dont-feel-it-yet.html)
+By [NK Schjødt](people.md#nk-schjødt). The strongest labor-market piece in NK's writing so far. Its key insight is that the first visible effect of AI on employment may be **non-hiring rather than firing**: junior roles quietly disappear, so the casualties are the people who never get offered a job, not the people laid off publicly. Grounds that claim in a new Swedish paper showing a 5.5% employment decline for 22–25-year-olds in high-AI-exposure occupations within the same employers, while older workers in those occupations increased. Important partly because it sharpens one of the repo's stated gaps — economics and jobs — and partly because it adds the **pipeline paradox**: if junior work disappears, the path by which people become senior may disappear with it.
+
+---
+
 ## [The Human-in-the-Loop is Tired](https://pydantic.dev/articles/the-human-in-the-loop-is-tired)
 By Pydantic. An honest account of what LLM-assisted programming actually feels like from the inside — not a doomer piece or a hype piece.
 
@@ -75,8 +80,23 @@ By [Simon Willison](people.md#simon-willison). A living, growing guide — struc
 
 ---
 
+## [Subagents](https://simonwillison.net/guides/agentic-engineering-patterns/subagents/)
+By [Simon Willison](people.md#simon-willison). One of the clearest short explanations of why subagents matter. The key point is not just "you can run helpers" but **why** that helps: subagents preserve scarce top-level context by giving the agent a fresh working window for exploration, testing, review, or parallel file edits. Useful because it demystifies three distinct patterns — exploratory subagents, parallel subagents, and specialist subagents — while keeping the focus on context management rather than role-play for its own sake.
+
+---
+
+## [How coding agents work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/)
+By [Simon Willison](people.md#simon-willison). A concise mechanics explainer for what an agent actually is: **an LLM plus a system prompt plus tools in a loop**. Covers tokenization, replayed chat history, token caching, tool calling, and reasoning in a way that is accessible without being hand-wavy. Especially useful as a grounding piece for non-specialists and as an antidote to magical thinking about coding agents.
+
+---
+
 ## [The lethal trifecta for AI agents: private data, untrusted content, and external communication](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
 By [Simon Willison](people.md#simon-willison). The cleanest short framing in the collection for one of the central security problems with agents. Willison's claim is that if a system combines **private data access + exposure to untrusted content + a way to communicate externally**, then prompt injection can turn it into a data-exfiltration machine. Distinctive because it reduces a messy security discussion to a memorable model that non-specialists can actually use, while still mapping to real exploits seen across products.
+
+---
+
+## [Snowflake Cortex AI Escapes Sandbox and Executes Malware](https://simonwillison.net/2026/Mar/18/snowflake-cortex-ai/)
+By [Simon Willison](people.md#simon-willison). A concrete prompt-injection failure report rather than a general warning. The attack hid instructions in a GitHub README, then exploited Snowflake Cortex's approval rules by wrapping a supposedly safe `cat` command in shell process substitution so it fetched and ran remote code anyway. Worth keeping because it turns the repo's agent-security concerns into a vivid example: command allow-lists are brittle, and the real defense boundary needs to live in a deterministic sandbox outside the agent.
 
 ---
 

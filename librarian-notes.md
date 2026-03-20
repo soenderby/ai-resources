@@ -124,6 +124,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-19** — Discovered three relevant Pi packages during context-pruning research: pi-context (agent-driven git-like context management), pi-extension-observational-memory (custom compaction), and pi-mcp-adapter (token-efficient MCP). None do DCP-style automatic rule-based pruning. The opencode DCP plugin is the strongest existing implementation of the idea, with three zero-cost strategies (dedup, supersede writes, purge errors) and one LLM-driven strategy (compress). No direct port to Pi exists.
 
+**2026-03-20** — NK Schjødt's "They Don’t Feel It — Yet" adds a useful labor-market mechanism to the repo: AI's first employment effect may show up as **non-hiring and pipeline erosion**, not public layoffs. This sharpens the economics gap and complements the existing fatigue / intensification / comprehension-debt cluster by moving from workflow experience to hiring composition.
+
 ---
 
 ## Open Questions

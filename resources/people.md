@@ -68,7 +68,7 @@ Articles: [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-
 ## Simon Willison
 - Weblog: https://simonwillison.net/
 
-Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication)
+Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](articles.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware)
 
 ---
 
@@ -85,6 +85,8 @@ Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previous
 
 ## NK Schjødt
 - Blog: https://ai-blog.nkschjoedt.com/
+
+Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don’t Feel It — Yet](articles.md#they-dont-feel-it-yet)
 
 Senior developer writing practical, grounded takes on AI-assisted development.
 
