@@ -98,7 +98,9 @@ The flywheel idea: each tool makes the others more useful. The whole ecosystem c
 ---
 
 ## [pi-skills](https://github.com/badlogic/pi-skills)
-By Mario Zechner (badlogic). A collection of reusable skills for the pi coding agent. Upstream source for the skills in [agent-skills/](../agent-skills/).
+By Mario Zechner (badlogic). The upstream repository for reusable **skills** — portable instruction/tool bundles that extend Pi and, in many cases, other coding agents such as Claude Code, Codex CLI, Amp, and Droid. Worth tracking because it is a concrete artifact of an emerging cross-agent pattern: package repeated workflows (web search, browser automation, Google tooling, transcription, editor integration) as inspectable, file-based capability modules instead of re-explaining them every session.
+
+For this repo specifically, it matters both as the source for `agent-skills/` and as evidence that the Anthropic-style skill format is becoming real ecosystem infrastructure rather than a Pi-only feature. Pairs naturally with [pi-mono](#pi-mono), which provides the underlying agent/toolkit stack.
 
 ---
 

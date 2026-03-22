@@ -76,7 +76,7 @@ By [Simon Willison](people.md#simon-willison). Annual review of the LLM landscap
 ---
 
 ## [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
-By [Simon Willison](people.md#simon-willison). A living, growing guide — structured like a book, published chapter by chapter. Distinguishes **agentic engineering** (professional engineers using coding agents to amplify expertise) from vibe coding (no attention paid to the code). Covers practical patterns for getting reliable results. Continuously updated.
+By [Simon Willison](people.md#simon-willison). A living handbook for working seriously with coding agents. Its value is not just that it collects tips, but that it is slowly becoming a **coherent operating philosophy**: writing code is cheap now, expertise shifts toward problem framing and review, hoard reusable prompts and workflows, use Git and tests aggressively, and prefer techniques that preserve understanding rather than surrendering it. Distinguishes **agentic engineering** (professionals using agents to amplify expertise) from vibe coding, and serves as one of the repo's best continuously updated practitioner references.
 
 ---
 
@@ -190,12 +190,12 @@ By [Steve Yegge](people.md#steve-yegge). Yegge's name for a strong architectural
 ---
 
 ## [Welcome to the Wasteland: A Thousand Gas Towns](https://steve-yegge.medium.com/welcome-to-the-wasteland-a-thousand-gas-towns-a5eb9bc8dc1f)
-By [Steve Yegge](people.md#steve-yegge). Launch post for [The Wasteland](../resources/projects.md#the-wasteland). Explains the vision: federating Gas Towns at scale to solve the "ideas > capacity" problem. Interesting framing — every major AI tooling breakthrough has involved a ~100x increase in token spend, and federating Gas Towns is how you get another 100x.
+By [Steve Yegge](people.md#steve-yegge). Launch post for [The Wasteland](../resources/projects.md#the-wasteland), and the clearest articulation of what Yegge thinks comes after single-user agent swarms: **federated work markets for rigs**. The distinctive idea is not just "many Gas Towns" but a public work-and-reputation protocol built around wanted boards, claims, evidence-backed completions, validator-issued stamps, trust ladders, and portable reputation carried across wastelands. Worth keeping because it pushes the repo's orchestration cluster outward from intra-repo coordination into inter-rig governance, reputation, and labor-market structure.
 
 ---
 
 ## [The Future of Coding Agents](https://steve-yegge.medium.com/the-future-of-coding-agents-e9451a84207c)
-By [Steve Yegge](people.md#steve-yegge). Written three days after launching Gas Town. Predictions for 2026: models will get smarter, coding agent shops will shift from building workers to building factories, and big companies that haven't leaned in are in trouble. Also explains the backstory of Gas Town through four failed orchestrator attempts.
+By [Steve Yegge](people.md#steve-yegge). Important mainly for one framing that recurs across the repo: today's tools are obsessed with making a better **worker ant**, but the real shift is toward **factories and colonies**. Yegge argues that coding-agent vendors will need an "orchestrator API surface" so agents can act as reliable colony workers inside larger systems, not just as glorified pair programmers. The long backstory of Gas Town's failed predecessors is useful because it shows the architectural turn from trying to make one agent better toward making many agents coordinate. Also doubles as an unusually concrete field report on how quickly model upgrades and community contributions can harden an orchestration system after launch.
 
 ---
 
