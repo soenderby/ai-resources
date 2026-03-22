@@ -20,6 +20,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-20** — Changed startup orientation from "read the full corpus" to a staged approach: `librarian-notes.md` + compact indexes/manifests first (`resources/index.md`, `ai-generated/README.md`), then full canonical or generated files only when the task needs them. Reason: the old literal startup read added ~28k tokens before `ai-generated/` and ~95k tokens if the whole generated directory was loaded, which is too much context to pay by default.
 
+**2026-03-20** — Split librarian memory conceptually into **hot memory** (`librarian-notes.md`) and **archived memory** (`librarian-archive.md`). Archive only when entries are old enough that their value is mainly historical or thematic; keep startup-critical rules, active gaps, open questions, and repeatedly useful preferences in hot memory. Future agents should search the archive map / tags first and read only matching sections, not the whole archive.
+
 ---
 
 ## Patterns Noticed

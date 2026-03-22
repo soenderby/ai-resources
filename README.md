@@ -7,6 +7,8 @@ It is a very interesting and fast developing area. I keep finding new interestin
 
 ```
 ai-resources/
+├── librarian-notes.md     ← hot memory for startup orientation
+├── librarian-archive.md   ← archived memory, read selectively
 ├── agent-skills/          ← reusable skills for pi and Claude Code
 ├── ai-generated/
 │   ├── README.md          ← compact manifest for generated docs

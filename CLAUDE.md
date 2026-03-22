@@ -22,13 +22,17 @@ This is a personal knowledge base about AI, LLMs, and agents. It is maintained b
 
 When beginning a session in this repo, do a **staged orientation** so you do not load unnecessary context up front:
 
-1. **Always read `librarian-notes.md`** (this directory) — running notes across sessions: curatorial decisions, patterns noticed, gaps, open questions. This is the closest thing to memory across sessions.
+1. **Always read `librarian-notes.md`** (this directory) — the hot memory layer: running notes across sessions, current curatorial decisions, active patterns, gaps, open questions.
 2. **Read `resources/index.md`** — compact inventory of who and what is already tracked.
 3. **Read full canonical files only when the task needs them**:
    - `resources/people.md` for person additions, updates, or person/article/project cross-links
    - `resources/articles.md`, `resources/books.md`, and/or `resources/projects.md` when adding entries, checking duplicates in detail, or doing broad gap analysis
-4. **Read `ai-generated/README.md` before opening anything in `ai-generated/`**.
-5. **Read only the specific generated docs relevant to the task**. Do **not** read the whole `ai-generated/` directory by default. A repo-wide pass across generated docs is only warranted for broad synthesis, repo-organization, or derived-layer maintenance work.
+4. **Use `librarian-archive.md` selectively, not by default**. Read it only when:
+   - the task is broad synthesis, repo history, or repo-organization work
+   - `librarian-notes.md` or another file points to archived background
+   - the task clearly matches an archived theme; in that case, search the archive headings/tags first and read only the relevant section(s)
+5. **Read `ai-generated/README.md` before opening anything in `ai-generated/`**.
+6. **Read only the specific generated docs relevant to the task**. Do **not** read the whole `ai-generated/` directory by default. A repo-wide pass across generated docs is only warranted for broad synthesis, repo-organization, or derived-layer maintenance work.
 
 Skipping even the compact orientation means working blind to what's already in the collection.
 
@@ -40,7 +44,8 @@ Skipping even the compact orientation means working blind to what's already in t
 ai-resources/
 ├── README.md
 ├── CLAUDE.md              ← you are here
-├── librarian-notes.md     ← memory across sessions
+├── librarian-notes.md     ← hot memory read at session start
+├── librarian-archive.md   ← archived memory; read selectively via archive map / search
 ├── .gitignore
 ├── ai-generated/
 │   ├── README.md          ← compact manifest for generated docs; read this first
@@ -118,7 +123,12 @@ Separate all entries with `---`.
 
 ## Librarian Memory
 
-`librarian-notes.md` is a running file updated across sessions. Update it when:
+The repo has two memory layers:
+
+- **`librarian-notes.md`** — hot memory, read at session start
+- **`librarian-archive.md`** — archived memory, read selectively via its archive map / tags / headings
+
+Update `librarian-notes.md` when:
 
 - A curatorial decision is made that isn't obvious from the guidelines — especially rejections and why
 - A connection between entries is noticed that isn't captured in the files themselves
@@ -126,7 +136,28 @@ Separate all entries with `---`.
 - Something significant is learned about the field that should inform future curation
 - The curator explicitly says something that reveals taste or preference worth preserving
 
-Keep entries short. This file is a memory aid, not a journal. Date each entry.
+### Archive policy
+
+Review `librarian-notes.md` for archiving when it starts becoming startup-heavy (roughly >150 lines or >6k tokens, or when a cleanup pass is already underway).
+
+Keep in `librarian-notes.md`:
+- recent entries that are still likely to affect near-term work
+- active gaps and open questions
+- standing curatorial rules or preferences likely to matter in ordinary sessions
+- anything repeatedly useful enough to deserve hot-memory status
+
+Move to `librarian-archive.md`:
+- older entries whose main value is historical context
+- closed investigations and one-off observations
+- detailed background on a theme that no longer needs to be loaded every session
+
+When archiving:
+- preserve the original dated entry text in `librarian-archive.md`
+- place it under a thematic heading with searchable tags
+- keep an archive-map summary near the top of `librarian-archive.md` so future agents can decide what to open
+- leave a short hot-memory note behind only if the archived material still has an active implication
+
+Keep entries short. `librarian-notes.md` is a memory aid, not a journal. Date each entry.
 
 ---
 
