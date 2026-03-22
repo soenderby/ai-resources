@@ -6,9 +6,9 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 32 tracked people
-- `articles.md` — 70 tracked articles / reference sites
-- `books.md` — 8 tracked books
+- `people.md` — 36 tracked people
+- `articles.md` — 72 tracked articles / reference sites
+- `books.md` — 13 tracked books
 - `projects.md` — 18 tracked projects
 
 ---
@@ -47,6 +47,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Jeannette M. Wing
 - Bertrand Meyer
 - Aris Vasilopoulos
+- Melvin Conway
+- Matthew Skelton
+- Nicole Forsgren
+- Titus Winters
 
 ---
 
@@ -122,6 +126,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Cognitive security
 - Porting software
 - Frontier interview
+- End-to-End Arguments in System Design
+- How Do Committees Invent?
 
 ---
 
@@ -135,6 +141,11 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Object-Oriented Software Construction
 - Working Effectively with Legacy Code
 - Patterns of Software
+- Refactoring: Improving the Design of Existing Code
+- Team Topologies
+- Growing Object-Oriented Software, Guided by Tests
+- Accelerate
+- Software Engineering at Google
 
 ---
 

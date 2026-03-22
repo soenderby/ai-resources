@@ -377,3 +377,13 @@ By [Geoffrey Huntley](people.md#geoffrey-huntley). A short practical recipe for 
 
 ## [Frontier interview](https://ghuntley.com/frontier/)
 By [Geoffrey Huntley](people.md#geoffrey-huntley). Interview transcript covering several provocative claims: software development (typing code) is being commoditized while software engineering (designing safe systems, automations, risk management) remains essential; traditional open-source libraries are increasingly pointless because generating first-party code avoids maintainer burnout, supply-chain attacks, and dependency toil; software products are becoming hyper-commodities easily reimplemented via AI; and the real moats now lie in non-technical areas — contracts, relationships, distribution, taste. Worth keeping for the "open source is dead" argument, which connects to the [economic warfare](#ai-as-economic-warfare) piece.
+
+---
+
+## [End-to-End Arguments in System Design](https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf)
+By J. H. Saltzer, David P. Reed, and David D. Clark. A foundational systems-design principle that still maps directly to modern agent architecture: functions requiring full correctness (integrity, security, true acknowledgment of completion) must be validated at the endpoints, while lower layers can only offer partial checks and performance improvements. Especially useful as a lens for judging where to put safety guarantees in agent systems — deterministic control-plane boundaries in code, not trust in model behavior alone.
+
+---
+
+## [How Do Committees Invent?](https://www.melconway.com/Home/Conways_Law.html)
+By [Melvin Conway](people.md#melvin-conway). The original 1968 paper behind Conway's Law: systems mirror the communication structures of the organizations that build them. Still one of the clearest arguments that architecture is organizational as much as technical. A strong conceptual companion to [Team Topologies](books.md#team-topologies) and to current multi-agent coordination work in this collection.

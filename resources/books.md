@@ -41,3 +41,28 @@ By [Michael Feathers](people.md#michael-feathers). The best practical book in th
 
 ## [Patterns of Software](https://archive.org/details/PatternsOfSoftware)
 By [Richard P. Gabriel](people.md#richard-p-gabriel). A wide-ranging book, but the reason it belongs here is Gabriel's human-centered software lens: habitability, pattern languages, and piecemeal growth. It is one of the best sources for the idea that code is not just an artifact to generate, but a place people must be able to inhabit and change comfortably over time.
+
+---
+
+## [Refactoring: Improving the Design of Existing Code](https://martinfowler.com/books/refactoring.html)
+By [Martin Fowler](people.md#martin-fowler). The canonical source on behavior-preserving structural change. Its enduring contribution is methodological: make many small, safe changes (backed by tests) rather than periodic heroic rewrites. Especially useful in an agent-heavy workflow where generation is cheap and design drift accumulates quickly.
+
+---
+
+## [Team Topologies](https://teamtopologies.com/book)
+By [Matthew Skelton](people.md#matthew-skelton) and Manuel Pais. A practical organizational-design model centered on flow: four team types (stream-aligned, enabling, complicated-subsystem, platform), three interaction modes, and explicit cognitive-load management. Distinctive because it operationalizes Conway's Law and the reverse Conway maneuver as everyday engineering decisions, not abstract theory.
+
+---
+
+## [Growing Object-Oriented Software, Guided by Tests](https://www.oreilly.com/library/view/growing-object-oriented/9780321574442/)
+By Steve Freeman and Nat Pryce. One of the best practical accounts of test-driven development as a design discipline, not just a correctness check. The strongest idea is the nested feedback-loop model (unit tests, acceptance tests, delivery cadence) that keeps architecture changeable while work is in flight.
+
+---
+
+## [Accelerate](https://itrevolution.com/product/accelerate/)
+By [Nicole Forsgren](people.md#nicole-forsgren), Jez Humble, and Gene Kim. An empirical benchmark for software-delivery performance. Its key contribution is the four-metric model (lead time, deployment frequency, time to restore, change fail rate) and the finding that speed and stability improve together in high-performing teams.
+
+---
+
+## [Software Engineering at Google](https://abseil.io/resources/swe-book)
+By [Titus Winters](people.md#titus-winters), Tom Manshreck, and Hyrum Wright. Valuable for one framing that should age well: software engineering is "programming integrated over time." Focuses on sustainability under real organizational scale—time, growth, and trade-off discipline—rather than on one-off programming output.

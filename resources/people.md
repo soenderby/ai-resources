@@ -185,7 +185,7 @@ One of the central popularizers of modern software design principles. Worth keep
 - Website: https://martinfowler.com/
 - About: https://martinfowler.com/aboutMe.html
 
-Articles: [Test Driven Development](articles.md#test-driven-development)
+Books: [Refactoring: Improving the Design of Existing Code](books.md#refactoring-improving-the-design-of-existing-code). Articles: [Test Driven Development](articles.md#test-driven-development)
 
 One of the clearest writers in software engineering. Fowler's value in this collection is not novelty so much as precision: he consistently explains design and development practices in a way that makes them easier to reason about and easier to disagree with cleanly. A strong bridge figure between XP, refactoring, architecture, and practical software design.
 
@@ -308,3 +308,43 @@ Projects: [Codified Context Infrastructure](projects.md#codified-context-infrast
 Articles: [Codified Context: Infrastructure for AI Agents in a Complex Codebase](articles.md#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase)
 
 Author of the most detailed public account of building and maintaining context infrastructure for AI agents at scale. Developed a three-tier system (constitution + specialized agents + knowledge base) across 283 sessions on a 108,000-line C# system, then wrote it up as an academic paper with a companion repo. Worth tracking because he reports the things most people skip: maintenance costs, failure modes, what breaks when specs go stale, and the overhead of keeping documentation aligned with code. The key insight from his work — "AI automation consistently eliminated tedium but not judgment" — is one of the sharpest observations in this collection.
+
+---
+
+## Melvin Conway
+- Homepage: https://www.melconway.com/
+- Conway's Law paper: https://www.melconway.com/Home/Conways_Law.html
+
+Articles: [How Do Committees Invent?](articles.md#how-do-committees-invent)
+
+Author of the 1968 paper that gave us Conway's Law — the observation that system design mirrors organizational communication structure. Included here because this idea remains foundational for modern software architecture, platform design, and multi-agent/multi-team coordination.
+
+---
+
+## Matthew Skelton
+- Website: https://matthewskelton.net/
+- Team Topologies: https://teamtopologies.com/
+
+Books: [Team Topologies](books.md#team-topologies)
+
+Engineering consultant and co-author of Team Topologies. Particularly valuable for turning Conway's Law into practical organizational design: cognitive-load boundaries, interaction modes, and team structures explicitly optimized for flow.
+
+---
+
+## Nicole Forsgren
+- DORA: https://dora.dev/
+- Book page: https://itrevolution.com/product/accelerate/
+
+Books: [Accelerate](books.md#accelerate)
+
+Researcher and one of the core figures behind the DORA/DevOps metrics work. Worth following because she brings rigorous empirical methods to software-delivery performance, giving this repo a stronger evidence base for evaluating engineering process claims.
+
+---
+
+## Titus Winters
+- SWE book page: https://abseil.io/resources/swe-book
+- O'Reilly page: https://www.oreilly.com/library/view/software-engineering-at/9781492082781/
+
+Books: [Software Engineering at Google](books.md#software-engineering-at-google)
+
+Google engineer and co-editor/co-author of *Software Engineering at Google*. Valuable for the framing of software engineering as long-horizon system stewardship — balancing time, scale, and trade-offs rather than optimizing for local code output.

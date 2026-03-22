@@ -26,6 +26,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-20** — Archived the detailed 2026-03-12 repo-memory / derived-layer experiment cluster to [`librarian-archive.md#derived-layer-design`](librarian-archive.md#derived-layer-design). Read that section for background on concept-index design, retrieval / representation / maintenance, `repo-query`, and why `ai-generated/` is treated as exploratory.
 
+**2026-03-22** — Dropbox triage: prioritize durable primary sources over broad secondary surveys when importing adjacent software-engineering material. Added a focused high-signal cluster (Refactoring, Team Topologies, GOOS, Accelerate, Software Engineering at Google, End-to-End Arguments, Conway's original paper). Deferred Dapper/Fundamentals for lower immediate fit; rejected the RAG survey for now as fast-aging synthesis relative to curation cost.
+
 ---
 
 ## Patterns Noticed
