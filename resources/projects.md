@@ -5,9 +5,9 @@ Interesting open source projects related to AI, LLMs, and agents.
 ---
 
 ## [Residue](https://github.com/no-way-labs/residue)
-A project to create a proof for a mathematical proposition using LLM agents.
+A mathematically serious agent-research project built around Knuth's 2026 "Claude's Cycles" problem: find Hamiltonian decompositions of `Z_m^3` Cayley digraphs for all `m > 2`. What makes it worth keeping is not just that it reports a result, but that the whole search process is unusually inspectable: two different models explore the space in parallel, an orchestrator transfers artifacts between them, and every exploration is logged against a shared structured prompt.
 
-Math tends to be a lot more rigorous than software development, so it's interesting to see how problems are approached in that setting. The project uses a process of explorations to try different approaches to the same problem — a useful pattern to study.
+The most interesting contribution is methodological. The "Residue" prompt structures **record-keeping rather than reasoning**: log strategy, outcome, failure constraints, surviving structure, and periodic synthesis, so dead ends become reusable information instead of forgotten token burn. Because the domain is mathematics, verification is unusually crisp, which makes this one of the best concrete examples in the repo of agentic exploration under strong external checks.
 
 ---
 
@@ -73,7 +73,9 @@ By Anthropic. Official provider implementation of Ralph-style looping as a Claud
 ---
 
 ## [pi-mono](https://github.com/badlogic/pi-mono)
-By Mario Zechner (badlogic).
+By Mario Zechner (badlogic). The monorepo behind the Pi ecosystem: not just the coding agent itself, but a reusable stack of packages for multi-provider LLM access, agent runtime/state management, terminal and web UIs, Slack integration, and vLLM pod management. Worth keeping because it shows Pi as a **composable agent toolkit**, not merely a CLI product.
+
+The interesting angle for this collection is architectural breadth with a local-first, inspectable substrate. The repo exposes the layers an agent environment is built from — model API, runtime, interfaces, deployment tooling — and pairs naturally with [pi-skills](#pi-skills), which sits one layer up as reusable workflow/context packaging.
 
 ---
 

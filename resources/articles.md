@@ -170,7 +170,7 @@ By Juan Reyero. Sharp statement of the next coordination problem after single-us
 ---
 
 ## [The Bitter Lesson](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
-By Rich Sutton.
+By Rich Sutton. One of the clearest short statements of a pattern that keeps reappearing in AI: hand-crafted domain knowledge wins early and feels intellectually satisfying, but the big long-run gains come from **general methods that scale with computation**. Sutton's canonical examples are search and learning. It belongs here partly as historical grounding and partly because it explains a lot of the repo's current agent-infrastructure bias: thin orchestration, reusable primitives, and skepticism of brittle local heuristics all make more sense if you take the bitter lesson seriously. Explicitly cited in [Gas City](projects.md#gas-city)'s design rationale.
 
 ---
 
@@ -185,7 +185,7 @@ By [Steve Yegge](people.md#steve-yegge). The primary source for [Beads](projects
 ---
 
 ## [Zero-Framework Cognition](https://steve-yegge.medium.com/zero-framework-cognition-a-way-to-build-resilient-ai-applications-56b090ed3e69)
-By [Steve Yegge](people.md#steve-yegge). A way to build resilient AI applications.
+By [Steve Yegge](people.md#steve-yegge). Yegge's name for a strong architectural claim: keep the harness a **thin, safe, deterministic shell** and push semantic decisions back into the model. IO, validation, policy gates, and execution belong in code; ranking, classification, planning, and other heuristic judgment calls are "ZFC violations" if they get reimplemented locally with regexes and ad-hoc rules. Distinctive because it turns a vague instinct — "don't smuggle brittle intelligence into the framework" — into an explicit review vocabulary, and ties it back to Fowler's "smart endpoints and dumb pipes" and Karpathy's Software 2.0/3.0 framing. Best read in tension with [Don’t Send an Agent to do Code’s Job](https://medium.com/hybrd-engineering/dont-send-an-agent-to-do-code-s-job-080ef837420d), which pushes some of that control-plane logic back into deterministic code.
 
 ---
 
