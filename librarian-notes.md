@@ -18,6 +18,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 **2026-03-16** — Created `resources/books.md`. The adjacent software-quality material is now book-heavy enough to deserve its own file; future sessions on design, testing, XP, or complexity should read `books.md` alongside `articles.md`.
 
+**2026-03-20** — Changed startup orientation from "read the full corpus" to a staged approach: `librarian-notes.md` + compact indexes/manifests first (`resources/index.md`, `ai-generated/README.md`), then full canonical or generated files only when the task needs them. Reason: the old literal startup read added ~28k tokens before `ai-generated/` and ~95k tokens if the whole generated directory was loaded, which is too much context to pay by default.
+
 ---
 
 ## Patterns Noticed

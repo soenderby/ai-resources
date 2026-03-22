@@ -20,14 +20,17 @@ This is a personal knowledge base about AI, LLMs, and agents. It is maintained b
 
 ## Start of Session
 
-When beginning a session in this repo, read these before doing anything:
+When beginning a session in this repo, do a **staged orientation** so you do not load unnecessary context up front:
 
-1. **`librarian-notes.md`** (this directory) — running notes across sessions: curatorial decisions, patterns noticed, gaps, open questions. This is the closest thing to memory across sessions.
-2. **`resources/people.md`** — who is already tracked, so you don't suggest adding someone already there.
-3. **`resources/articles.md`**, **`resources/books.md`**, and **`resources/projects.md`** — what's already collected, to avoid duplicates and to notice gaps.
-4. **`ai-generated/`** — synthesized documents that capture understanding of the field. Read if the session involves substantive research or analysis.
+1. **Always read `librarian-notes.md`** (this directory) — running notes across sessions: curatorial decisions, patterns noticed, gaps, open questions. This is the closest thing to memory across sessions.
+2. **Read `resources/index.md`** — compact inventory of who and what is already tracked.
+3. **Read full canonical files only when the task needs them**:
+   - `resources/people.md` for person additions, updates, or person/article/project cross-links
+   - `resources/articles.md`, `resources/books.md`, and/or `resources/projects.md` when adding entries, checking duplicates in detail, or doing broad gap analysis
+4. **Read `ai-generated/README.md` before opening anything in `ai-generated/`**.
+5. **Read only the specific generated docs relevant to the task**. Do **not** read the whole `ai-generated/` directory by default. A repo-wide pass across generated docs is only warranted for broad synthesis, repo-organization, or derived-layer maintenance work.
 
-Skipping this orientation means working blind to what's already in the collection.
+Skipping even the compact orientation means working blind to what's already in the collection.
 
 ---
 
@@ -39,9 +42,12 @@ ai-resources/
 ├── CLAUDE.md              ← you are here
 ├── librarian-notes.md     ← memory across sessions
 ├── .gitignore
-├── ai-generated/          ← documents produced by AI agents (synthesis, analysis)
+├── ai-generated/
+│   ├── README.md          ← compact manifest for generated docs; read this first
+│   └── ...                ← generated syntheses, analyses, templates
 ├── agent-skills/          ← reusable skills for pi and Claude Code
 └── resources/
+    ├── index.md           ← compact inventory of tracked people, articles, books, projects
     ├── articles.md        ← specific articles, posts, and reference sites
     ├── books.md           ← book-length sources worth keeping
     ├── people.md          ← people worth following, with all their links

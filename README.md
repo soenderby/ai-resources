@@ -8,8 +8,11 @@ It is a very interesting and fast developing area. I keep finding new interestin
 ```
 ai-resources/
 ├── agent-skills/          ← reusable skills for pi and Claude Code
-├── ai-generated/          ← documents produced by AI agents
+├── ai-generated/
+│   ├── README.md          ← compact manifest for generated docs
+│   └── ...                ← generated syntheses and analyses
 └── resources/
+    ├── index.md           ← compact inventory of tracked sources
     ├── articles.md        ← specific articles, posts, and reference sites
     ├── books.md           ← book-length sources worth keeping
     ├── people.md          ← people worth following
