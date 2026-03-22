@@ -138,7 +138,7 @@ Update `librarian-notes.md` when:
 
 ### Archive policy
 
-Review `librarian-notes.md` for archiving when it starts becoming startup-heavy (roughly >150 lines or >6k tokens, or when a cleanup pass is already underway).
+Review `librarian-notes.md` for archiving when it starts becoming startup-heavy (roughly >220 lines or >10k tokens, or when a cleanup pass is already underway).
 
 Keep in `librarian-notes.md`:
 - recent entries that are still likely to affect near-term work
