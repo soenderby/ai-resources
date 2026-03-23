@@ -76,7 +76,7 @@ By [Simon Willison](people.md#simon-willison). Annual review of the LLM landscap
 ---
 
 ## [Agentic Engineering Patterns](https://simonwillison.net/guides/agentic-engineering-patterns/)
-By [Simon Willison](people.md#simon-willison). A living handbook for working seriously with coding agents. Its value is not just that it collects tips, but that it is slowly becoming a **coherent operating philosophy**: writing code is cheap now, expertise shifts toward problem framing and review, hoard reusable prompts and workflows, use Git and tests aggressively, and prefer techniques that preserve understanding rather than surrendering it. Distinguishes **agentic engineering** (professionals using agents to amplify expertise) from vibe coding, and serves as one of the repo's best continuously updated practitioner references.
+By [Simon Willison](people.md#simon-willison). A living handbook for working seriously with coding agents. Its value is not just that it collects tips, but that it is slowly becoming a **coherent operating philosophy**: writing code is cheap now, expertise shifts toward problem framing and review, hoard reusable prompts and workflows, use Git and tests aggressively, and prefer techniques that preserve understanding rather than surrendering it. Distinguishes **agentic engineering** (professionals using agents to amplify expertise) from vibe coding, and serves as one of the repo's best continuously updated practitioner references. As of March 2026 the guide includes chapters on what agentic engineering is, how coding agents work, subagents, using Git with agents, and Red/Green TDD — and was the basis for a [three-hour NICAR 2026 workshop](https://simonw.github.io/nicar-2026-coding-agents/) on coding agents for data analysis.
 
 ---
 
@@ -97,6 +97,11 @@ By [Simon Willison](people.md#simon-willison). The cleanest short framing in the
 
 ## [Snowflake Cortex AI Escapes Sandbox and Executes Malware](https://simonwillison.net/2026/Mar/18/snowflake-cortex-ai/)
 By [Simon Willison](people.md#simon-willison). A concrete prompt-injection failure report rather than a general warning. The attack hid instructions in a GitHub README, then exploited Snowflake Cortex's approval rules by wrapping a supposedly safe `cat` command in shell process substitution so it fetched and ran remote code anyway. Worth keeping because it turns the repo's agent-security concerns into a vivid example: command allow-lists are brittle, and the real defense boundary needs to live in a deterministic sandbox outside the agent.
+
+---
+
+## [Thoughts on OpenAI acquiring Astral and uv/ruff/ty](https://simonwillison.net/2026/Mar/19/openai-acquiring-astral/)
+By [Simon Willison](people.md#simon-willison). Substantive analysis of OpenAI's acquisition of Astral — the company behind `uv`, `ruff`, and `ty`, three increasingly load-bearing Python ecosystem tools. The key tensions: (1) **talent vs product acquisition** — Astral has some of the best Rust engineers in the industry (including BurntSushi), and the Codex CLI is a Rust application; (2) **competitive dynamics** — Anthropic acquired the Bun runtime for Claude Code in December 2025, and both companies are competing fiercely for the $200/month coding agent subscription revenue; (3) **open-source infrastructure risk** — `uv` had 126M PyPI downloads last month and the Python community has worried about VC-backed ownership of key tooling since 2024; (4) **forking as exit strategy** — the permissive license means the worst case is "fork and move on," but that theory hasn't been tested at scale. Also surfaces Astral's previously unannounced Series A and B rounds. Worth keeping as a primary-source analysis of the emerging pattern where AI companies acquire key developer infrastructure.
 
 ---
 
@@ -342,6 +347,11 @@ By Adolfi.dev. Describes a workflow where AGENTS.md is configured with "Always c
 
 ## [Using ADRs with AI Coding Assistants](https://blog.thestateofme.com/2025/07/10/using-architecture-decision-records-adrs-with-ai-coding-assistants/)
 By Chris Swan. Short but insightful. ADRs are "enough structure to ensure key points are addressed, but in natural language, which is perfect for things based on Large Language Models." Predicts ADRs will move from "elite team" practice to boilerplate for AI-assisted development. The most interesting line: this "becomes more important as we shift to **agent swarm approaches**, where you're effectively managing a team" — connecting decision memory to multi-agent coordination. Natural companion to [Documenting Architecture Decisions](articles.md#documenting-architecture-decisions) and the [Codified Context](#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase) paper.
+
+---
+
+## [Is the IDE dead?](https://addyo.substack.com/p/death-of-the-ide)
+By [Addy Osmani](people.md#addy-osmani). Argues that the IDE isn't dying but being **de-centered** — the primary workspace is shifting from line-by-line editing to agent orchestration surfaces where humans specify intent, delegate to parallel agents, observe progress, and review diffs. Surveys the convergence across tools (Cursor Glass, Conductor, Claude Code Web, Copilot Agent, Jules, Vibe KanBan, cmux) and identifies five recurring patterns: **work isolation** via git worktrees, **task state as the primary UI**, **background/async agents**, **attention management** for parallel sessions, and **lifecycle integration** with issues/PRs/CI. The balanced conclusion — the editor becomes one subordinate instrument rather than the front door — makes it more useful than the typical "X is dead" piece. Connects to the repo's supervision fatigue and comprehension debt clusters: if reviewing twelve parallel agent diffs is the new normal, the interface for managing that attention matters as much as the code itself.
 
 ---
 

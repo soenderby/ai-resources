@@ -68,7 +68,7 @@ Articles: [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-
 ## Simon Willison
 - Weblog: https://simonwillison.net/
 
-Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](articles.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware)
+Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](articles.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral](articles.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
 
 ---
 
@@ -77,7 +77,7 @@ Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic 
 - Substack: https://addyo.substack.com/
 - LinkedIn: https://www.linkedin.com/in/addyosmani
 
-Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Comprehension Debt](articles.md#comprehension-debt)
+Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt)
 
 Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author — recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 

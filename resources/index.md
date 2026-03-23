@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 36 tracked people
-- `articles.md` — 72 tracked articles / reference sites
+- `articles.md` — 74 tracked articles / reference sites
 - `books.md` — 13 tracked books
 - `projects.md` — 18 tracked projects
 
@@ -73,6 +73,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - How coding agents work
 - The lethal trifecta for AI agents: private data, untrusted content, and external communication
 - Snowflake Cortex AI Escapes Sandbox and Executes Malware
+- Thoughts on OpenAI acquiring Astral and uv/ruff/ty
 - Emerging Principles of Agent Design
 - Building Effective AI Agents
 - A practical guide to building agents
@@ -119,6 +120,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - How to Write a Great agents.md
 - AI Generated Architecture Decision Records
 - Using ADRs with AI Coding Assistants
+- Is the IDE dead?
 - Comprehension Debt
 - The AI Vampire
 - The Shape of the Thing
