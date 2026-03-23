@@ -47,6 +47,7 @@ Start here instead of reading the whole directory. Open only the files that are 
 ## Adjacent-field and topic-specific research
 
 - `adjacent-fields-for-agent-memory.md` — synthesis of what information retrieval, knowledge representation, and knowledge management contribute to agent-memory thinking.
+- `growing-the-garden-outline.md` — essay outline on how the repo should evolve over time, informed by knowledge management research across six fields (Zettelkasten, Wikipedia, intelligence classification, skills durability, information science, legal databases). Covers the source/concept tension, navigation at scale, staleness, and what to resist.
 
 ---
 
