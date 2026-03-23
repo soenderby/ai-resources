@@ -6,8 +6,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 37 tracked people
-- `articles.md` — 73 tracked articles / reference sites
+- `people.md` — 38 tracked people
+- `articles.md` — 74 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 16 tracked books
 - `projects.md` — 18 tracked projects
@@ -53,6 +53,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Nicole Forsgren
 - Titus Winters
 - Andy Matuschak
+- Maggie Appleton
 
 ---
 
@@ -131,6 +132,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - How to Write Usefully
 - Professional Writing: The CGSC Writing Guide (ST 22-2)
 - Outsourcing Cognition: The Psychological Costs of AI-Era Convenience
+- A Treatise on AI Chatbots Undermining the Enlightenment
 
 ---
 

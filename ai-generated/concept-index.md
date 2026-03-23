@@ -721,6 +721,7 @@ This is the deepest challenge for AI-assisted knowledge work. If an agent writes
 - [Comprehension Debt](../resources/articles.md#comprehension-debt)
 - [The Human-in-the-Loop is Tired](../resources/articles.md#the-human-in-the-loop-is-tired)
 - [Outsourcing Cognition](../resources/articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience)
+- [A Treatise on AI Chatbots Undermining the Enlightenment](../resources/articles.md#a-treatise-on-ai-chatbots-undermining-the-enlightenment)
 - [growing-the-garden.md](./growing-the-garden.md) — sections on annotation drift and false comprehension
 
 **Adjacent concepts**

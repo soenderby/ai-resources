@@ -363,3 +363,13 @@ Google engineer and co-editor/co-author of *Software Engineering at Google*. Val
 Articles: [Evergreen Notes](articles.md#evergreen-notes)
 
 Applied researcher focused on tools for thought — user interfaces that expand what people can think and do. Previously built iOS at Apple and led R&D at Khan Academy. Created Quantum Country (the mnemonic medium — a hybrid of prose and spaced repetition) and Orbit. His public working notes site is one of the most influential examples of a digital garden: a thinking environment shared openly as an experiment. The key contribution relevant to this collection is the **evergreen notes** framework — especially the principle that notes should be concept-oriented, not source-oriented. This directly informs how curated knowledge collections (including AI agent context) should be structured.
+
+---
+
+## Maggie Appleton
+- Personal site / digital garden: https://maggieappleton.com/
+- Bluesky: https://bsky.app/profile/maggieappleton.com
+
+Articles: [A Treatise on AI Chatbots Undermining the Enlightenment](articles.md#a-treatise-on-ai-chatbots-undermining-the-enlightenment)
+
+Designer, illustrator, and writer working on tools for thought and information architecture. Previously design lead at Elicit (AI research tool). Her digital garden is one of the best-known examples of the form — densely linked, visually rich, and openly evolving. Her writing sits at the intersection of design, cognitive science, and AI, with a distinctive focus on how interfaces shape thinking. The Enlightenment essay is characteristic: she identifies a design problem (sycophantic AI), traces it to architectural causes (RLHF, universal chatbot interface), and proposes concrete alternatives (critical thinking modes, routing, model training changes) — all while being genuinely bullish on AI's potential to augment rather than replace human thought.
