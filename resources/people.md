@@ -352,3 +352,14 @@ Researcher and one of the core figures behind the DORA/DevOps metrics work. Wort
 Books: [Software Engineering at Google](books.md#software-engineering-at-google)
 
 Google engineer and co-editor/co-author of *Software Engineering at Google*. Valuable for the framing of software engineering as long-horizon system stewardship — balancing time, scale, and trade-offs rather than optimizing for local code output.
+
+---
+
+## Andy Matuschak
+- Personal site: https://andymatuschak.org/
+- Public working notes: https://notes.andymatuschak.org/
+- Patreon: https://www.patreon.com/quantumcountry
+
+Articles: [Evergreen Notes](articles.md#evergreen-notes)
+
+Applied researcher focused on tools for thought — user interfaces that expand what people can think and do. Previously built iOS at Apple and led R&D at Khan Academy. Created Quantum Country (the mnemonic medium — a hybrid of prose and spaced repetition) and Orbit. His public working notes site is one of the most influential examples of a digital garden: a thinking environment shared openly as an experiment. The key contribution relevant to this collection is the **evergreen notes** framework — especially the principle that notes should be concept-oriented, not source-oriented. This directly informs how curated knowledge collections (including AI agent context) should be structured.

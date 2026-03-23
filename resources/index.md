@@ -6,8 +6,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 36 tracked people
-- `articles.md` — 67 tracked articles / reference sites
+- `people.md` — 37 tracked people
+- `articles.md` — 69 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 13 tracked books
 - `projects.md` — 18 tracked projects
@@ -52,6 +52,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Matthew Skelton
 - Nicole Forsgren
 - Titus Winters
+- Andy Matuschak
 
 ---
 
@@ -124,6 +125,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Frontier interview
 - End-to-End Arguments in System Design
 - How Do Committees Invent?
+- The Garden and the Stream: a Technopastoral
+- Evergreen Notes
 
 ---
 

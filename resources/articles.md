@@ -356,3 +356,13 @@ By J. H. Saltzer, David P. Reed, and David D. Clark. A foundational systems-desi
 
 ## [How Do Committees Invent?](https://www.melconway.com/Home/Conways_Law.html)
 By [Melvin Conway](people.md#melvin-conway). The original 1968 paper behind Conway's Law: systems mirror the communication structures of the organizations that build them. Still one of the clearest arguments that architecture is organizational as much as technical. A strong conceptual companion to [Team Topologies](books.md#team-topologies) and to current multi-agent coordination work in this collection.
+
+---
+
+## [The Garden and the Stream: a Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)
+By Mike Caufield. The essay that named the most important distinction in personal knowledge work on the web: **gardens** (topological, integrative, iterative — knowledge accumulates through linking and rearrangement) versus **streams** (chronological, conversational, self-assertive — ideas rush past in a feed). Traces the garden model back to Vannevar Bush's 1945 Memex vision, where the core verbs were **link, annotate, change, copy, summarize** — all gardening verbs that the stream-dominated web largely abandoned. Caufield's argument: "the predominant form of the social web is an impoverished model for learning and research." Worth keeping not as web nostalgia but because the distinction is directly structural: this repo is a garden, not a stream, and the events.md split is a concrete application of Caufield's principle — separating the durable topological layer from the time-ordered stream of news.
+
+---
+
+## [Evergreen Notes](https://notes.andymatuschak.org/Evergreen_notes)
+By [Andy Matuschak](people.md#andy-matuschak). A reference site and living example of concept-oriented knowledge work. The core principles: evergreen notes should be **atomic** (one idea per note), **concept-oriented** (organized by concept, not by source), **densely linked** (connections are the value), and arranged by **associative ontology rather than hierarchical taxonomy**. The most important principle for curated collections: concept-oriented organization means you discover connections across sources over time, because new material is added in relation to what's already there rather than filed chronologically. Matuschak's public notes site is itself a working example — a research environment shared as an experiment in working with the garage door up. Directly relevant to agent context engineering: the same principles that make a human knowledge garden navigable also make an agent knowledge base retrievable.
