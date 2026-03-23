@@ -447,6 +447,7 @@ This is one of the most important non-technical concepts in the collection becau
 - [AI Doesn't Reduce Work-It Intensifies It](../resources/articles.md#ai-doesnt-reduce-workit-intensifies-it)
 - [NK's AI Cookbook](../resources/articles.md#nks-ai-cookbook)
 - [Real AI Agents and Real Work](../resources/articles.md#real-ai-agents-and-real-work)
+- [Outsourcing Cognition](../resources/articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience)
 - [Abi Awomosu](../resources/people.md#abi-awomosu)
 - [Ethan Mollick](../resources/people.md#ethan-mollick)
 
@@ -719,6 +720,7 @@ This is the deepest challenge for AI-assisted knowledge work. If an agent writes
 - [How to Read a Book](../resources/books.md#how-to-read-a-book)
 - [Comprehension Debt](../resources/articles.md#comprehension-debt)
 - [The Human-in-the-Loop is Tired](../resources/articles.md#the-human-in-the-loop-is-tired)
+- [Outsourcing Cognition](../resources/articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience)
 - [growing-the-garden.md](./growing-the-garden.md) — sections on annotation drift and false comprehension
 
 **Adjacent concepts**

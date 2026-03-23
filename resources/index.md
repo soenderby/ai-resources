@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 37 tracked people
-- `articles.md` — 72 tracked articles / reference sites
+- `articles.md` — 73 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 16 tracked books
 - `projects.md` — 18 tracked projects
@@ -130,6 +130,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Politics and the English Language
 - How to Write Usefully
 - Professional Writing: The CGSC Writing Guide (ST 22-2)
+- Outsourcing Cognition: The Psychological Costs of AI-Era Convenience
 
 ---
 
