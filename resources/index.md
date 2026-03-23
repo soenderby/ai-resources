@@ -7,10 +7,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 38 tracked people
-- `articles.md` — 74 tracked articles / reference sites
+- `articles.md` — 78 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 16 tracked books
-- `projects.md` — 18 tracked projects
+- `projects.md` — 19 tracked projects
 
 ---
 
@@ -133,6 +133,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Professional Writing: The CGSC Writing Guide (ST 22-2)
 - Outsourcing Cognition: The Psychological Costs of AI-Era Convenience
 - A Treatise on AI Chatbots Undermining the Enlightenment
+- Prompting agents: What works and why
+- Memory as Ontology: A Constitutional Memory Architecture for Persistent Digital Citizens
+- Role Prompting (LLM Persona Prompting)
+- From Biased Chatbots to Biased Agents
 
 ---
 
@@ -189,3 +193,4 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Archgate
 - Awesome Reviewers
 - Codebase Context MCP
+- Animesis
