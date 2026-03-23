@@ -7,7 +7,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 36 tracked people
-- `articles.md` — 74 tracked articles / reference sites
+- `articles.md` — 67 tracked articles / reference sites
+- `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 13 tracked books
 - `projects.md` — 18 tracked projects
 
@@ -67,20 +68,16 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
 - Critical Thinking during the age of AI
 - The Anthropic Economic Index
-- 2025: The Year in LLMs
 - Agentic Engineering Patterns
 - Subagents
 - How coding agents work
 - The lethal trifecta for AI agents: private data, untrusted content, and external communication
-- Snowflake Cortex AI Escapes Sandbox and Executes Malware
-- Thoughts on OpenAI acquiring Astral and uv/ruff/ty
 - Emerging Principles of Agent Design
 - Building Effective AI Agents
 - A practical guide to building agents
 - How we built our multi-agent research system
 - Don’t Build Multi-Agents
 - Building proactive AI agents
-- 2025 LLM Year in Review
 - Ralph Wiggum as a "software engineer"
 - Everything is a RALPH Loop
 - We Put a Coding Agent in a While Loop and It Shipped 6 Repos Overnight
@@ -94,7 +91,6 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Welcome to the Wasteland: A Thousand Gas Towns
 - The Future of Coding Agents
 - Software Survival 3.0
-- Minotaur Capital Quarterly — December 2025
 - CUPID
 - Rationality: From AI to Zombies
 - AGI Ruin: A List of Lethalities
@@ -111,7 +107,6 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Simple Made Easy
 - Stop Coding and Start Planning
 - Autoresearch: Liquid Parse+Render Performance
-- What Claude Code Actually Chooses
 - Agent READMEs: An Empirical Study of Context Files for Agentic Coding
 - Codified Context: Infrastructure for AI Agents in a Complex Codebase
 - Effective Context Engineering for AI Agents
@@ -123,13 +118,24 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Is the IDE dead?
 - Comprehension Debt
 - The AI Vampire
-- The Shape of the Thing
 - AI as economic warfare
 - Cognitive security
 - Porting software
 - Frontier interview
 - End-to-End Arguments in System Design
 - How Do Committees Invent?
+
+---
+
+## Events tracked
+
+- 2025: The Year in LLMs
+- 2025 LLM Year in Review
+- The Shape of the Thing
+- Snowflake Cortex AI Escapes Sandbox and Executes Malware
+- Thoughts on OpenAI acquiring Astral and uv/ruff/ty
+- Minotaur Capital Quarterly — December 2025
+- What Claude Code Actually Chooses
 
 ---
 

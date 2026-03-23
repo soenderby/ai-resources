@@ -34,7 +34,9 @@ Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about
 - Substack: https://www.oneusefulthing.org/
 - Wharton profile: https://mgmt.wharton.upenn.edu/profile/emollick/
 
-Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work), [The Shape of the Thing](articles.md#the-shape-of-the-thing)
+Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work)
+
+Events: [The Shape of the Thing](events.md#the-shape-of-the-thing)
 
 Associate professor at Wharton. Writes *One Useful Thing* — a research-backed take on AI's implications for work, education, and life. Hundreds of thousands of subscribers. Completely different axis from the practitioners in this list: empirical, evidence-citing, and focused on what actually changes for knowledge workers rather than how to build agents.
 
@@ -68,7 +70,9 @@ Articles: [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-
 ## Simon Willison
 - Weblog: https://simonwillison.net/
 
-Articles: [2025: The Year in LLMs](articles.md#2025-the-year-in-llms), [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](articles.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral](articles.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
+Articles: [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication)
+
+Events: [2025: The Year in LLMs](events.md#2025-the-year-in-llms), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](events.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral](events.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
 
 ---
 
@@ -97,7 +101,7 @@ Senior developer writing practical, grounded takes on AI-assisted development.
 - GitHub: https://github.com/karpathy
 
 Projects: [autoresearch](projects.md#autoresearch)
-Articles: [2025 LLM Year in Review](articles.md#2025-llm-year-in-review)
+Events: [2025 LLM Year in Review](events.md#2025-llm-year-in-review)
 
 Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
 

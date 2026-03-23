@@ -6,6 +6,8 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 ## Curatorial Decisions
 
+**2026-03-23** — Created `resources/events.md` to structurally separate time-bound entries (industry events, incident reports, annual reviews, state-of-field assessments, empirical snapshots) from durable concept/framework/technique entries in `articles.md`. Moved 7 entries. The placement test: if the primary value depends on *when* it was written — if reading it in two years without that date would be misleading — it's an event. Events carry a `*YYYY-MM*` date line. Decision informed by research across six fields (Zettelkasten/evergreen notes, Wikipedia notability, intelligence classification, skills durability frameworks, information science half-life, legal digests) — all converge on structural separation as the standard solution. The bimodal observation (knowledge is either very durable or very perishable, with little genuine middle ground) makes a binary split workable.
+
 **2026-03-09** — Decided against creating a dedicated agent skill for maintaining this repo. The structure is still evolving, and a skill would risk over-constraining it. Chose to put the relevant context in CLAUDE.md instead. Revisit when the format has been stable for longer.
 
 **2026-03-09** — Minotaur Capital Quarterly (Dec 2025) added despite being JS-rendered and hard to extract. Worth keeping because it's a rare example of a non-tech industry (investment management) giving an honest account of crossing the "actually useful" threshold with LLMs. The quote that warranted it: *"If capable LLMs were free and infinitely fast, you'd always prefer brute force iteration over careful human design."*

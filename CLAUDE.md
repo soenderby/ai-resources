@@ -52,8 +52,9 @@ ai-resources/
 │   └── ...                ← generated syntheses, analyses, templates
 ├── agent-skills/          ← reusable skills for pi and Claude Code
 └── resources/
-    ├── index.md           ← compact inventory of tracked people, articles, books, projects
-    ├── articles.md        ← specific articles, posts, and reference sites
+    ├── index.md           ← compact inventory of tracked people, articles, events, books, projects
+    ├── articles.md        ← durable articles: concepts, frameworks, techniques, named ideas
+    ├── events.md          ← time-bound pieces: industry events, incident reports, annual reviews, dated snapshots
     ├── books.md           ← book-length sources worth keeping
     ├── people.md          ← people worth following, with all their links
     └── projects.md        ← open source projects and tools
@@ -67,8 +68,8 @@ ai-resources/
 
 1. **Fetch and read the source first.** Use `agent-skills/brave-search/content.js <url>` or the browser-tools skill. Never annotate from a URL alone.
 2. **Write a meaningful annotation** — see quality guidelines below.
-3. **Place in the right file** — articles.md, books.md, people.md, or projects.md.
-4. **Update cross-links** — if a person entry exists, add their article/book/project to their entry. If an article or book is by someone in people.md, link to them with `[Name](people.md#name)`.
+3. **Place in the right file** — articles.md for durable concepts/frameworks/techniques, events.md for time-bound pieces (industry events, incident reports, annual reviews, dated snapshots), books.md, people.md, or projects.md. The test: if the primary value depends on *when* it was written — if reading it in two years without that date would be misleading — it's an event.
+4. **Update cross-links** — if a person entry exists, add their article/event/book/project to their entry. If an article or event is by someone in people.md, link to them with `[Name](people.md#name)`. In people.md, use separate `Articles:` and `Events:` lines when a person has entries in both files.
 5. **Update `librarian-notes.md`** if the session surfaced something worth remembering — a decision, a pattern, a gap, something explicitly rejected and why.
 6. **Commit** with a short descriptive message in present tense.
 
@@ -87,6 +88,14 @@ Who they are and what makes them worth following. What angle or perspective do t
 ```markdown
 ## [Title](url)
 By [Author](people.md#author). What the piece is about and why it belongs here. Capture the specific insight, not just the topic. Note connections to other entries if relevant.
+```
+
+**Event** (`resources/events.md`):
+```markdown
+## [Title](url)
+*YYYY-MM*
+
+By [Author](people.md#author). What the piece captures and why it's worth preserving as a dated record. Events are time-bound: industry events, incident reports, annual reviews, state-of-field assessments, and empirical snapshots whose value depends on when they were written.
 ```
 
 **Book** (`resources/books.md`):
