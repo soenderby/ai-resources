@@ -9,7 +9,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - `people.md` — 37 tracked people
 - `articles.md` — 72 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
-- `books.md` — 15 tracked books
+- `books.md` — 16 tracked books
 - `projects.md` — 18 tracked projects
 
 ---
@@ -162,6 +162,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Software Engineering at Google
 - How to Read a Book
 - On Writing Well
+- The Craft of Research
 
 ---
 
