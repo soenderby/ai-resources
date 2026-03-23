@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 37 tracked people
-- `articles.md` — 69 tracked articles / reference sites
+- `articles.md` — 71 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 13 tracked books
 - `projects.md` — 18 tracked projects
@@ -127,6 +127,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - How Do Committees Invent?
 - The Garden and the Stream: a Technopastoral
 - Evergreen Notes
+- Politics and the English Language
+- How to Write Usefully
 
 ---
 
