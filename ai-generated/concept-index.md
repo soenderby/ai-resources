@@ -713,6 +713,9 @@ This is the deepest challenge for AI-assisted knowledge work. If an agent writes
 
 - [How to Write Usefully](../resources/articles.md#how-to-write-usefully)
 - [Politics and the English Language](../resources/articles.md#politics-and-the-english-language)
+- [Professional Writing: The CGSC Writing Guide](../resources/articles.md#professional-writing-the-cgsc-writing-guide-st-22-2)
+- [On Writing Well](../resources/books.md#on-writing-well)
+- [How to Read a Book](../resources/books.md#how-to-read-a-book)
 - [Comprehension Debt](../resources/articles.md#comprehension-debt)
 - [The Human-in-the-Loop is Tired](../resources/articles.md#the-human-in-the-loop-is-tired)
 - [growing-the-garden.md](./growing-the-garden.md) — sections on annotation drift and false comprehension

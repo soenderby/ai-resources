@@ -7,9 +7,9 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 37 tracked people
-- `articles.md` — 71 tracked articles / reference sites
+- `articles.md` — 72 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
-- `books.md` — 13 tracked books
+- `books.md` — 15 tracked books
 - `projects.md` — 18 tracked projects
 
 ---
@@ -129,6 +129,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Evergreen Notes
 - Politics and the English Language
 - How to Write Usefully
+- Professional Writing: The CGSC Writing Guide (ST 22-2)
 
 ---
 
@@ -159,6 +160,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Growing Object-Oriented Software, Guided by Tests
 - Accelerate
 - Software Engineering at Google
+- How to Read a Book
+- On Writing Well
 
 ---
 
