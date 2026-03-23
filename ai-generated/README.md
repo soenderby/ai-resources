@@ -49,7 +49,8 @@ Start here instead of reading the whole directory. Open only the files that are 
 - `adjacent-fields-for-agent-memory.md` — synthesis of what information retrieval, knowledge representation, and knowledge management contribute to agent-memory thinking.
 - `growing-the-garden-outline.md` — outline for the essay below; retained for editorial reference.
 - `growing-the-garden.md` — essay on how the repo should evolve over time, informed by knowledge management research (Zettelkasten, digital gardens, information foraging, library science, intelligence classification). Covers the source/concept tension, human-AI curation failure modes, the case against curation, growth pathologies, and what to resist.
-- `writing-research-ai-outline.md` — outline for a synthesis on writing, research, and AI assistance. Three parts: what good writing and research look like (canonical sources), what AI assistance does to the human and the output (empirical evidence), and what we don't know (stated gaps). Ready for development.
+- `writing-research-ai-outline.md` — outline for the essay below; retained for editorial reference.
+- `writing-research-ai.md` — synthesis on writing, research, and AI assistance. Part 1: what good writing and research look like (canonical sources — Orwell, Graham, Zinsser, Booth, Adler, CGSC guide). Part 2: what AI assistance does to the output and to the human (cognitive offloading taxonomy, empirical evidence). Part 3: what we don't know (four stated gaps — no validated AI-writing methodology, no validated AI-research methodology, no evidence on human vs. AI curation value, no longitudinal cognitive data). Ready for review.
 
 ---
 
