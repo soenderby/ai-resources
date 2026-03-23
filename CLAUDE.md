@@ -66,12 +66,13 @@ ai-resources/
 
 ### Workflow
 
-1. **Fetch and read the source first.** Use `agent-skills/brave-search/content.js <url>` or the browser-tools skill. Never annotate from a URL alone.
+1. **Fetch and read the source first.** Use `agent-skills/brave-search/content.js <url>` or the browser-tools skill. Never annotate from a URL alone. When the agent drafts an annotation, the curator is encouraged to engage with the source directly — reading it, not just reviewing the summary. An annotation that exists without understanding behind it is a form of debt, not an asset.
 2. **Write a meaningful annotation** — see quality guidelines below.
 3. **Place in the right file** — articles.md for durable concepts/frameworks/techniques, events.md for time-bound pieces (industry events, incident reports, annual reviews, dated snapshots), books.md, people.md, or projects.md. The test: if the primary value depends on *when* it was written — if reading it in two years without that date would be misleading — it's an event.
 4. **Update cross-links** — if a person entry exists, add their article/event/book/project to their entry. If an article or event is by someone in people.md, link to them with `[Name](people.md#name)`. In people.md, use separate `Articles:` and `Events:` lines when a person has entries in both files.
 5. **Update `librarian-notes.md`** if the session surfaced something worth remembering — a decision, a pattern, a gap, something explicitly rejected and why.
-6. **Commit** with a short descriptive message in present tense.
+6. **Note connections.** When adding an entry, check whether it strengthens, complicates, or contradicts something already in the collection. Record significant connections in `librarian-notes.md`. Accumulation is the default; synthesis requires deliberate effort.
+7. **Commit** with a short descriptive message in present tense.
 
 ### Entry Formats
 
@@ -115,6 +116,8 @@ Separate all entries with `---`.
 ### What Makes a Good Annotation
 
 - **Capture the specific idea, not the general topic.** "Article about AI agents" is useless. "Coins the term 'lethal trifecta' for agents that have private data access + external communication + exposure to untrusted content" is useful.
+- **Apply the "So What?" test.** Why does this source matter to the collection? An annotation should make clear not just what the piece says, but what the reader gains from knowing about it and how it connects to what's already here.
+- **Be specific rather than vague.** A clear, specific annotation serves the reader better than a broad one, even if the source itself is tentative or exploratory. "Proposes that open-source AI models may function as economic weapons between nation-states" is specific. "Discusses geopolitics and AI" is vague. Specificity is about precision, not forcefulness.
 - **Note what's distinctive.** Why is this worth tracking over the hundreds of similar things that exist?
 - **Note connections** to other entries in the collection when they exist.
 - **Write for clarity.** Assume the reader is intelligent but may not know the jargon.
@@ -179,6 +182,8 @@ Documents produced by AI agents — synthesis, analysis, pattern extraction. Eac
 ```
 
 File names: descriptive, lowercase, hyphen-separated. These are snapshots of understanding at a point in time and will become outdated as the field moves.
+
+Generated essays and syntheses benefit from at least one critical review pass before being considered done. The review should test: does the essay identify genuine weaknesses in its own argument? Does it engage seriously with counterarguments, or does it raise objections only to dismiss them? Are gaps in evidence stated honestly?
 
 ---
 
