@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 38 tracked people
-- `articles.md` — 78 tracked articles / reference sites
+- `articles.md` — 81 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 16 tracked books
 - `projects.md` — 19 tracked projects
@@ -137,6 +137,9 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Memory as Ontology: A Constitutional Memory Architecture for Persistent Digital Citizens
 - Role Prompting (LLM Persona Prompting)
 - From Biased Chatbots to Biased Agents
+- Gas Town's Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
+- Effective harnesses for long-running agents
+- Context Rot: How Increasing Input Tokens Impacts LLM Performance
 
 ---
 

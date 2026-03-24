@@ -370,6 +370,6 @@ Applied researcher focused on tools for thought — user interfaces that expand 
 - Personal site / digital garden: https://maggieappleton.com/
 - Bluesky: https://bsky.app/profile/maggieappleton.com
 
-Articles: [A Treatise on AI Chatbots Undermining the Enlightenment](articles.md#a-treatise-on-ai-chatbots-undermining-the-enlightenment)
+Articles: [A Treatise on AI Chatbots Undermining the Enlightenment](articles.md#a-treatise-on-ai-chatbots-undermining-the-enlightenment), [Gas Town's Agent Patterns, Design Bottlenecks, and Vibecoding at Scale](articles.md#gas-towns-agent-patterns-design-bottlenecks-and-vibecoding-at-scale)
 
 Designer, illustrator, and writer working on tools for thought and information architecture. Previously design lead at Elicit (AI research tool). Her digital garden is one of the best-known examples of the form — densely linked, visually rich, and openly evolving. Her writing sits at the intersection of design, cognitive science, and AI, with a distinctive focus on how interfaces shape thinking. The Enlightenment essay is characteristic: she identifies a design problem (sycophantic AI), traces it to architectural causes (RLHF, universal chatbot interface), and proposes concrete alternatives (critical thinking modes, routing, model training changes) — all while being genuinely bullish on AI's potential to augment rather than replace human thought.
