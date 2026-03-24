@@ -136,7 +136,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Prompting agents: What works and why
 - Memory as Ontology: A Constitutional Memory Architecture for Persistent Digital Citizens
 - Role Prompting (LLM Persona Prompting)
-- From Biased Chatbots to Biased Agents
+- From Biased Chatbots to Biased Agents: Examining Role Assignment Effects on LLM Agent Robustness
 - Gas Town's Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
 - Effective harnesses for long-running agents
 - Context Rot: How Increasing Input Tokens Impacts LLM Performance
