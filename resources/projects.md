@@ -48,7 +48,17 @@ The `wl` CLI tool (the `gastownhall/wasteland` repo) is the concrete federation 
 ## [Beads](https://github.com/steveyegge/beads)
 By [Steve Yegge](people.md#steve-yegge). A git-native issue tracker designed specifically as **external memory for coding agents**. Work items live in the repo as structured JSONL records rather than in a hosted tracker, which means they travel with branches, can be queried locally, and persist across agent sessions.
 
-The important idea is not simply "tickets for AI". Beads gives agents a way to reason about **dependencies, readiness, discovered work, parent/child structure, and in-progress claims** without relying on fragile markdown plans or human memory. That makes it a foundational substrate for long-horizon agent work and coordination — the memory layer underneath [Gastown](#gastown), and part of the same broader pattern later extended by tools like [BeadHub](articles.md#beadhub-coordination-for-ai-programming-teams).
+The important idea is not simply "tickets for AI". Beads gives agents a way to reason about **dependencies, readiness, discovered work, parent/child structure, and in-progress claims** without relying on fragile markdown plans or human memory. That makes it a foundational substrate for long-horizon agent work and coordination — the memory layer underneath [Gastown](#gastown), and part of the same broader pattern later extended by tools like [BeadHub](articles.md#beadhub-coordination-for-ai-programming-teams). See also [ticket](#ticket) and [Beans](#beans) for alternative approaches to the same problem.
+
+---
+
+## [ticket](https://github.com/wedow/ticket)
+A single-file bash script that distills Beads' core idea — dependency-graph-based task tracking for agents — down to its minimum viable form. Tickets are markdown files with YAML frontmatter in `.tickets/`, which means agents can search them as regular text rather than parsing JSONL. Zero dependencies beyond coreutils; `jq` optional for queries. Ships with a `migrate-beads` command for smooth transition. The strongest "less is more" counterpoint to [Beads](#beads): same core primitives (`ready`, `blocked`, dependency trees, priority levels), none of the orchestration infrastructure. The HN discussion around its launch is revealing — multiple users cite Beads' growing complexity as the reason they switched. Plugin system via `tk-<cmd>` executables in PATH.
+
+---
+
+## [Beans](https://github.com/hmans/beans)
+A flat-file issue tracker for humans and coding agents, written in Go. Tasks are plain markdown in a `.beans/` directory. The distinctive design choice is a **GraphQL query interface** that lets agents request exactly the fields they need — a deliberate token-efficiency optimization that the JSONL and markdown approaches don't address. Also distinctive: completed tasks are **archived as project memory** rather than deleted, so agents can query past work for context on earlier decisions. Includes a built-in TUI, a `beans prime` command that injects task context into agent sessions (via Claude Code hooks or equivalent), and a roadmap generator. Less focused on dependency graphs than [Beads](#beads) or [ticket](#ticket); more focused on the query and memory dimensions of the problem.
 
 ---
 

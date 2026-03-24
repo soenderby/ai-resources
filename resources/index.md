@@ -10,7 +10,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - `articles.md` — 83 tracked articles / reference sites
 - `events.md` — 7 tracked events / dated snapshots
 - `books.md` — 16 tracked books
-- `projects.md` — 19 tracked projects
+- `projects.md` — 21 tracked projects
 
 ---
 
@@ -186,6 +186,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Gas City
 - The Wasteland
 - Beads
+- ticket
+- Beans
 - Ralph
 - ralph-claude-code
 - RepoMirror
