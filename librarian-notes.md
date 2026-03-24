@@ -86,7 +86,7 @@ Running memory across sessions. Short entries, dated. Not a journal — just wha
 
 ---
 
-**2026-03-17** — Completed judgment memory research (see `ai-generated/judgment-memory-research/`). The concept names something real: durable captured judgment that changes how future agents plan, implement, review, or decide. No existing term covers it precisely — "agent context files" names the container, "codified context" is broader, "design rationale" is narrower. Keeping "judgment memory" as the repo's working label.
+**2026-03-17** — Completed judgment memory research (see `ai-generated/judgment-memory.md`). The concept names something real: durable captured judgment that changes how future agents plan, implement, review, or decide. No existing term covers it precisely — "agent context files" names the container, "codified context" is broader, "design rationale" is narrower. Keeping "judgment memory" as the repo's working label.
 
 **2026-03-17** — The strongest new source discovered is the "Codified Context Infrastructure" paper (Vasilopoulos, arXiv:2602.20478) — a three-tier architecture (hot constitution + specialized agents + cold knowledge base) developed across 283 sessions on a 108k-line C# system. Reports maintenance cost (~1-2 hrs/week), failure modes (specification staleness), and a context drift detector. The companion repo has inspectable artifacts. This should be added to articles.md and projects.md.
 
