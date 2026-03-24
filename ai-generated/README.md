@@ -51,6 +51,10 @@ Start here instead of reading the whole directory. Open only the files that are 
 - `growing-the-garden.md` — essay on how the repo should evolve over time, informed by knowledge management research (Zettelkasten, digital gardens, information foraging, library science, intelligence classification). Covers the source/concept tension, human-AI curation failure modes, the case against curation, growth pathologies, and what to resist.
 - `writing-research-ai.md` — synthesis on writing, research, and AI assistance. Part 1: what good writing and research look like (canonical sources — Orwell, Graham, Zinsser, Booth, Adler, CGSC guide). Part 2: what AI assistance does to the output and to the human (cognitive offloading taxonomy, empirical evidence). Part 3: what we don't know (four stated gaps — no validated AI-writing methodology, no validated AI-research methodology, no evidence on human vs. AI curation value, no longitudinal cognitive data). Ready for review.
 
+## Experiments
+
+- `experiments/agent-memory-adjacent-fields-2026-03/` — 2026-03-12 experiment testing whether adjacent disciplines (information retrieval, knowledge representation, knowledge management) improve how the repo thinks about agent memory. Contains task log, source selection rubric, raw notes, and synthesized results. The results fed into `adjacent-fields-for-agent-memory.md`.
+
 ---
 
 ## Rule of thumb
