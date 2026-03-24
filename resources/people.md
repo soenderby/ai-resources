@@ -63,6 +63,8 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 Projects: [Gastown](projects.md#gastown), [Beads](projects.md#beads)  
 Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire)
 
+Long-time tech industry voice (Amazon, Google, Sourcegraph) and one of the most prolific builders and writers in this collection's agent-orchestration cluster. Creator of Gas Town, Beads, and the broader Wasteland ecosystem. His central bet: the future of coding agents is not better individual assistants but factories and colonies — many agents coordinating through shared memory, structured work tracking, and federated reputation. Writes with conviction and at length; the signal-to-noise ratio is high but the volume is large. His architectural ideas (zero-framework cognition, Beads as external agent memory, the Wasteland's federated work protocol) have influenced several other people and projects tracked here.
+
 ---
 
 ## Geoffrey Huntley
@@ -70,6 +72,8 @@ Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memor
 - Project: [Latent Patterns](https://latentpatterns.com/) — especially the [principles](https://latentpatterns.com/principles) and [glossary](https://latentpatterns.com/glossary)
 
 Articles: [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-software-engineer), [Everything is a RALPH Loop](articles.md#everything-is-a-ralph-loop), [AI as economic warfare](articles.md#ai-as-economic-warfare), [Cognitive security](articles.md#cognitive-security), [Porting software](articles.md#porting-software), [Frontier interview](articles.md#frontier-interview)
+
+The originator of the Ralph loop pattern — the idea that a coding agent in a `while true` loop with deterministic checks (tests, builds, typechecks) as backpressure is a surprisingly effective production technique. Also writes provocatively on the geopolitical and economic dimensions of AI (economic warfare, cognitive security, the death of open-source libraries). His blog is dense, opinionated, and practical. Runs Latent Patterns, a consultancy focused on agentic engineering principles and glossary-building for the emerging field.
 
 ---
 
@@ -79,6 +83,8 @@ Articles: [Ralph Wiggum as a "software engineer"](articles.md#ralph-wiggum-as-a-
 Articles: [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication)
 
 Events: [2025: The Year in LLMs](events.md#2025-the-year-in-llms), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](events.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral](events.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
+
+Co-creator of Django and creator of Datasette. One of the most consistent and trustworthy voices writing about LLMs and coding agents. His blog is updated almost daily — part working notes, part industry analysis, part security watchdog. The *Agentic Engineering Patterns* guide is becoming one of the most substantial continuously updated references in the collection. Distinctive for his emphasis on security (prompt injection, the lethal trifecta) alongside practical agent-usage patterns, and for coining or popularizing several terms that are sticking in the field.
 
 ---
 
