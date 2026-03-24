@@ -9,6 +9,8 @@ People worth following in the AI, LLM, and agent space.
 - GitHub: https://github.com/Dicklesworthstone
 - X: https://x.com/doodlestein
 
+Projects: [Agentic Coding Flywheel](projects.md#agentic-coding-flywheel)
+
 Building what he calls the **Agentic Coding Flywheel** — a self-reinforcing ecosystem of 14 tools for multi-agent software development. Agents coordinate via email (MCP Agent Mail), track work via Beads, search past sessions (CASS), guard against destructive commands (DCG), and orchestrate across tmux panes (NTM). Each tool amplifies the others. He's also the person Yegge credits with the discovery that combining MCP Agent Mail with Beads produces spontaneous agent collaboration — the "agent village" pattern that seeded Gas Town's design.
 
 Currently also building more ambitious infrastructure: FrankenSQLite (clean-room SQLite with MVCC versioning), FrankenTerm (terminal hypervisor for agent swarms), and bio-inspired neural architectures.
@@ -25,6 +27,8 @@ Currently also building more ambitious infrastructure: FrankenSQLite (clean-room
 
 ## Harper Reed
 - Blog: https://harper.blog/
+
+Articles: [My LLM Codegen Workflow ATM](articles.md#my-llm-codegen-workflow-atm), [My now immaculate knowledge graph of life](articles.md#my-now-immaculate-knowledge-graph-of-life)
 
 Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about LLM workflows with a hacker sensibility — less polished than the other practitioners in this list, more experimental and hands-on. Known for the widely-cited "My LLM codegen workflow atm" post.
 
@@ -45,6 +49,8 @@ Associate professor at Wharton. Writes *One Useful Thing* — a research-backed 
 ## Lilian Weng
 - Blog: https://lilianweng.github.io/
 - GitHub: https://github.com/lilianweng
+
+Articles: [LLM Powered Autonomous Agents](articles.md#llm-powered-autonomous-agents)
 
 Researcher at OpenAI. Writes long, dense technical posts on agent architecture, memory systems, prompting, and alignment. Her posts read more like literature reviews than blog posts — she synthesises dozens of papers into coherent frameworks. The most technically rigorous writing in this collection. Her 2023 agent overview is still the canonical reference for anyone building agent systems.
 
