@@ -43,6 +43,7 @@ Start here instead of reading the whole directory. Open only the files that are 
 
 - `software-quality-with-agents.md` — compact synthesis on software-quality concerns in agent-assisted development.
 - `ensuring-code-quality-with-agents.md` — much longer essay covering the same broader topic in depth.
+- `stacked-diffs-and-agents.md` — hypothesis that stacked diffs (small, dependent, independently reviewable commits) can address the review bottleneck created by agent-generated code. Explicitly flagged as early-stage: limited sources, one with commercial interest. Outlines plausible benefits, limitations, and what evidence would strengthen or weaken the case.
 
 ## Adjacent-field and topic-specific research
 
