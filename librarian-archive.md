@@ -25,6 +25,9 @@ When using the archive:
 ## Archive map
 
 - **Derived-layer design (2026-03-12 experiment cluster)** — read for repo-organization, concept-index, retrieval / representation / maintenance, `repo-query`, and why `ai-generated/` is treated as exploratory; see [#derived-layer-design](#derived-layer-design)
+- **Early pattern observations (2026-03-09)** — practitioner/research balance, alignment arc, gender diversity, Yegge/Emanuel/Huntley cluster, Gas Town stack, Willison living doc; see [#early-pattern-observations](#early-pattern-observations)
+- **Early connection observations (2026-03-11 / 2026-03-16)** — Orca/Gas Town convergence, software quality stack, concept index design, Every/judgment memory distinction; see [#early-connection-observations](#early-connection-observations)
+- **Early curatorial decisions (2026-03-09 / 2026-03-16)** — agent skill deferral, Minotaur Capital inclusion, books.md creation; see [#early-curatorial-decisions](#early-curatorial-decisions)
 
 ---
 
@@ -44,6 +47,47 @@ Tags should be short and concrete: people names, project names, repo areas, or r
 ---
 
 ## Archived sections
+
+## Early pattern observations
+Tags: patterns, alignment, gender, yegge, emanuel, huntley, gas-town, willison, practitioner-research-balance
+
+**2026-03-09** — The collection has a strong concentration of practitioner-builders (Yegge, Huntley, Emanuel, Reed) and is lighter on academic/research perspectives (Mollick, Weng added recently). Worth actively seeking more voices from the research side.
+
+**2026-03-09** — The alignment cluster added today (Yudkowsky → Bostrom → Russell → Christiano) has an internal progression worth noting: Yudkowsky is the originator and most pessimistic; Bostrom brought the argument to mainstream philosophy and policy; Russell brought it into mainstream CS academia; Christiano is the most technically active and most optimistic of the four. Together they cover the full arc from founding intuition to current research practice.
+
+**2026-03-09** — Most sources are male. Abi Awomosu is currently the only exception and brings a distinctly different perspective. Worth being conscious of this when evaluating new sources. *(Note: Maggie Appleton, Nicole Forsgren, Barbara Liskov, Jeannette Wing, and Lilian Weng have since been added.)*
+
+**2026-03-09** — There is a cluster of interconnected people: Yegge → Emanuel (credits Emanuel's MCP Agent Mail discovery as seeding Gas Town's agent-village pattern) → Huntley (building parallel "Loom" project, references Gas Town). These people are actively influencing each other's work. Worth watching this cluster.
+
+**2026-03-09** — The Gas Town ecosystem has clarified into a proper stack: Dolt (Tim Sehn) → Beads (Yegge) → Gas City (community SDK) → Gas Town (reference pack) → The Wasteland (federation layer). Gas City is the newest layer — extracted from Gas Town to make the orchestration primitives reusable. The Wasteland `wl` CLI is the concrete federation client. Yegge's article "Welcome to the Wasteland" (already in articles.md) covers the launch; the GitHub repos now annotated separately.
+
+**2026-03-09** — Simon Willison's *Agentic Engineering Patterns* is a living document being updated weekly. It will likely become one of the most substantial references in the collection over time. Worth revisiting periodically. *(Confirmed by 2026-03-17: continues to grow.)*
+
+---
+
+## Early connection observations
+Tags: orca, gas-town, gas-city, software-quality, concept-index, every, judgment-memory
+
+**2026-03-11** — The local Orca project and Gas Town / Gas City share the same core architecture (tmux sessions, git worktrees, Beads for work tracking, prompt-template-based agent contracts) despite being built independently. This convergence suggests these are the irreducible building blocks of multi-agent orchestration for coding. The most interesting difference is in intelligence location: Orca pushes all reasoning to the model (the harness is a "thin, deterministic shell"), while Gas Town distributes intelligence across specialized roles, and Gas City decouples it entirely into user-supplied prompt templates. The Orca project is also notably self-improving — agents running inside it have authored ~60% of its commits.
+
+**2026-03-16** — The strongest adjacent software-quality cluster now looks like a layered stack rather than a bag of craft slogans: Parnas on decomposition, Beck on feedback loops, Ousterhout on module depth, Evans and CUPID on domain fit, Nygard on decision memory, and Gabriel on habitability. Worth preserving and reading as a system.
+
+**2026-03-16** — Added `Software quality with agents` to the concept index. It seems useful as a bridge concept between the repo's AI workflow material and the adjacent software-engineering sources, without needing to index every individual design virtue separately.
+
+**2026-03-16** — Second pass on the concept index suggests **not** splitting `software quality with agents` yet into `changeability`, `domain fit`, `habitability`, etc. Those sub-ideas are real, but keeping them bundled is more consistent with the repo's current "small and use-driven" rule. Split only if repeated retrieval or synthesis work shows they need independent entries.
+
+**2026-03-16** — The Every material was worth keeping mainly at the **artifact** level, not the branding level. The useful distinction it surfaced is between **task memory** (what work exists and its state) and **judgment memory** (review heuristics, architectural taste, solved-problem writeups). Every's plugin is strongest on judgment memory; keep the concrete workflow artifacts and filter out the grander claims about tests, docs, or review becoming unnecessary.
+
+---
+
+## Early curatorial decisions
+Tags: agent-skill, minotaur-capital, books-file
+
+**2026-03-09** — Decided against creating a dedicated agent skill for maintaining this repo. The structure is still evolving, and a skill would risk over-constraining it. Chose to put the relevant context in CLAUDE.md instead. Revisit when the format has been stable for longer.
+
+**2026-03-09** — Minotaur Capital Quarterly (Dec 2025) added despite being JS-rendered and hard to extract. Worth keeping because it's a rare example of a non-tech industry (investment management) giving an honest account of crossing the "actually useful" threshold with LLMs. The quote that warranted it: *"If capable LLMs were free and infinitely fast, you'd always prefer brute force iteration over careful human design."*
+
+**2026-03-16** — Created `resources/books.md`. The adjacent software-quality material is now book-heavy enough to deserve its own file; future sessions on design, testing, XP, or complexity should read `books.md` alongside `articles.md`.
 
 ## Derived-layer design
 Tags: ai-generated, concept-index, retrieval, representation, maintenance, repo-query, knowledge-gardening, adjacent-fields
