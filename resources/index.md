@@ -6,10 +6,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 41 tracked people
+- `people.md` — 42 tracked people
 - `articles.md` — 89 tracked articles / reference sites
 - `events.md` — 8 tracked events / dated snapshots
-- `books.md` — 16 tracked books
+- `books.md` — 17 tracked books
 - `projects.md` — 22 tracked projects
 
 ---
@@ -57,6 +57,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Mario Zechner
 - Subbarao Kambhampati
 - Sam Rose
+- Sebastian Raschka
 
 ---
 
@@ -185,6 +186,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - How to Read a Book
 - On Writing Well
 - The Craft of Research
+- Build a Large Language Model (From Scratch)
 
 ---
 

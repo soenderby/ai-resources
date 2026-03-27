@@ -399,6 +399,18 @@ Developer educator who creates interactive visual essays that teach technical co
 
 ---
 
+## Sebastian Raschka
+- Personal site: https://sebastianraschka.com/
+- Newsletter (Ahead of AI): https://magazine.sebastianraschka.com/
+- GitHub: https://github.com/rasbt
+- LLMs-from-scratch repo: https://github.com/rasbt/LLMs-from-scratch
+
+Books: [Build a Large Language Model (From Scratch)](books.md#build-a-large-language-model-from-scratch)
+
+LLM research engineer (previously at Lightning AI) and former statistics professor at the University of Wisconsin-Madison. The most prominent "build it yourself to understand it" educator in the LLM space. His *LLMs-from-scratch* repo (50k+ stars) implements a ChatGPT-like model step by step in PyTorch, and his *Ahead of AI* newsletter (150k+ subscribers) covers LLM research with a focus on architecture, training, and practical implementation. What makes him distinctive: he sits at the intersection of research depth and pedagogical clarity — his architecture comparisons and visual guides are technical enough for researchers but accessible enough for practitioners who want to understand what's actually happening inside the models they use. Complements [Sam Rose](people.md#sam-rose) (interactive visual explainers for broader audiences) by going deeper into implementation.
+
+---
+
 ## Subbarao Kambhampati
 - Research group: https://yochan-lab.github.io/
 - Google Scholar: https://scholar.google.com/citations?user=MFnojdEAAAAJ
