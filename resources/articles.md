@@ -43,6 +43,8 @@ Introduces the idea of the **human reward function problem**: the satisfying par
 
 Also coins **supervision fatigue** — the cognitive load of holding intent in your head while the machine generates high-volume, mostly-correct output that still needs your judgment. Draws a useful parallel to the responsive design transition: craft doesn't die, it shifts. Deep expertise becomes more valuable, not less, because you're now the quality gate for far more output.
 
+Also noted by: [Osmani (O'Reilly CodeCon, March 2026)](https://addyosmani.com/blog/code-agent-orchestra/) — "verification is the bottleneck, not generation" as the central constraint in multi-agent orchestration; [Zechner](articles.md#thoughts-on-slowing-the-fuck-down) — the same observation grounded in mechanism (no learning, no bottleneck, delayed pain).
+
 ---
 
 ## [AI Doesn’t Reduce Work—It Intensifies It](https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it)
@@ -322,6 +324,8 @@ By [Addy Osmani](people.md#addy-osmani). Argues that the IDE isn't dying but bei
 ## [Comprehension Debt](https://medium.com/@addyosmani/comprehension-debt-the-hidden-cost-of-ai-generated-code-285a25dac57e)
 By [Addy Osmani](people.md#addy-osmani). Coins the term **comprehension debt** — the growing gap between how much code exists in a system and how much any human genuinely understands. Unlike technical debt, it "breeds false confidence" because the codebase looks clean and the tests pass. Key observations: AI generates code faster than humans can evaluate it (speed asymmetry), tests have a hard ceiling ("you can't write a test for behavior you haven't thought to specify"), and specs detailed enough to substitute for understanding are "more or less the program." Cites an Anthropic study where passive AI delegation lowered comprehension scores by 17%, while question-driven AI use preserved understanding. A strong addition to the repo's quality-with-agents cluster, sitting alongside [supervision fatigue](#the-human-in-the-loop-is-tired) and [work intensification](#ai-doesnt-reduce-workit-intensifies-it) as a third distinct cost of cheap generation.
 
+Also noted by: [Zechner](articles.md#thoughts-on-slowing-the-fuck-down) — "merchants of learned complexity," the same gap explained through mechanism (local-only agent decisions + training data bias → enterprise-grade complexity in weeks); [Osmani (O'Reilly CodeCon, March 2026)](https://addyosmani.com/blog/code-agent-orchestra/) — revisits comprehension debt in a multi-agent context and warns that "if you lose understanding of your own system, you have lost the ability to fix it"; [Willison](https://simonwillison.net/tags/cognitive-debt/) — tags the pattern as "cognitive debt" across multiple link blog posts.
+
 ---
 
 ## [The AI Vampire](https://steve-yegge.medium.com/the-ai-vampire-eda6e4f07163)
@@ -391,6 +395,8 @@ By Jazaieri et al. (Frontiers in Psychology, December 2025). The strongest sourc
 
 ## [Thoughts on slowing the fuck down](https://mariozechner.at/posts/2026-03-25-thoughts-on-slowing-the-fuck-down/)
 By [Mario Zechner](people.md#mario-zechner). The creator of the [Pi](projects.md#pi-mono) coding agent framework argues that developers have traded discipline for speed and are agentically coding themselves into corners. The distinctive contribution is a **causal mechanism chain** for why agent-driven codebases rot faster than human-made ones, not just a description of symptoms. Three arguments: (1) **Compounding booboos** — agents don't learn from mistakes, there's no natural bottleneck slowing the accumulation (a human "cannot shit out 20,000 lines of code in a few hours"), and pain is delayed until the codebase is unrecoverable. (2) **"Merchants of learned complexity"** — agents cargo-cult bad architecture from training data and only ever have a local view of the codebase, producing enterprise-grade complexity in weeks instead of years. (3) **"Agentic search has low recall"** — the bigger the codebase, the more the agent misses existing code and duplicates, creating a vicious cycle of duplication → growth → even lower recall. His concrete advice: set daily limits on agent-generated code matched to your review capacity; write architecture and API design by hand because the friction is what produces understanding. A strong complement to the existing cluster: [Comprehension Debt](articles.md#comprehension-debt) names the output gap, [supervision fatigue](articles.md#the-human-in-the-loop-is-tired) names the experience, [cognitive offloading](articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience) names the psychological mechanism — Zechner names the **engineering mechanics** underneath all three.
+
+Also noted by: [Osmani (O'Reilly CodeCon, March 2026)](https://addyosmani.com/blog/code-agent-orchestra/) — independently arrives at the same "human bottleneck was a feature" argument from a multi-agent orchestration angle: "at human pace, errors compound slowly and pain forces early correction"; [Appleton](articles.md#gas-towns-agent-patterns-design-bottlenecks-and-vibecoding-at-scale) — "you can move so fast you never stop to think," framed through the design bottleneck.
 
 ---
 
