@@ -6,6 +6,8 @@ Running memory across sessions. Short entries, dated. Not a journal - just what'
 
 ## Curatorial Decisions
 
+**2026-03-26** - Added Mario Zechner (Pi creator) to people.md and his "Thoughts on slowing the fuck down" to articles.md. Reviewed and rejected five other feed items: Osmani's "Code Agent Orchestra" (conference talk roundup of already-tracked patterns), OpenAI's Model Spec blog post (corporate process documentation), OpenAI Safety Bug Bounty (program announcement), OpenAI teen safety policies (product release), OpenAI Foundation update (philanthropy press release). The Willison link blog post amplifying Zechner was skipped in favour of the primary source.
+
 **2026-03-23** - Added a writing and research cluster to the collection: Orwell, Graham, Zinsser, Booth et al., Adler & Van Doren, CGSC Writing Guide, and the cognitive offloading paper (Jazaieri et al.). These are adjacent to AI the same way the software engineering sources are - they inform how to work well, not what to work on. The scope creep is acknowledged; these sources serve the repo's self-understanding more than its stated subject.
 
 **2026-03-23** - The cognitive offloading taxonomy (assistive → substitutive → disruptive) from Jazaieri et al. gives precise language for a risk this repo faces: AI-drafted annotations can look like analytical engagement while the curator only engaged inspectionally. The taxonomy is now referenced in the concept index under "writing as thinking." The CLAUDE.md engagement checkpoint is an encouragement, not a requirement - a deliberate choice accepting that the risk is real but enforcement would be performative.

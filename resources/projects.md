@@ -83,7 +83,7 @@ By Anthropic. Official provider implementation of Ralph-style looping as a Claud
 ---
 
 ## [pi-mono](https://github.com/badlogic/pi-mono)
-By Mario Zechner (badlogic). The monorepo behind the Pi ecosystem: not just the coding agent itself, but a reusable stack of packages for multi-provider LLM access, agent runtime/state management, terminal and web UIs, Slack integration, and vLLM pod management. Worth keeping because it shows Pi as a **composable agent toolkit**, not merely a CLI product.
+By [Mario Zechner](people.md#mario-zechner). The monorepo behind the Pi ecosystem: not just the coding agent itself, but a reusable stack of packages for multi-provider LLM access, agent runtime/state management, terminal and web UIs, Slack integration, and vLLM pod management. Worth keeping because it shows Pi as a **composable agent toolkit**, not merely a CLI product.
 
 The interesting angle for this collection is architectural breadth with a local-first, inspectable substrate. The repo exposes the layers an agent environment is built from — model API, runtime, interfaces, deployment tooling — and pairs naturally with [pi-skills](#pi-skills), which sits one layer up as reusable workflow/context packaging.
 
@@ -108,7 +108,7 @@ The flywheel idea: each tool makes the others more useful. The whole ecosystem c
 ---
 
 ## [pi-skills](https://github.com/badlogic/pi-skills)
-By Mario Zechner (badlogic). The upstream repository for reusable **skills** — portable instruction/tool bundles that extend Pi and, in many cases, other coding agents such as Claude Code, Codex CLI, Amp, and Droid. Worth tracking because it is a concrete artifact of an emerging cross-agent pattern: package repeated workflows (web search, browser automation, Google tooling, transcription, editor integration) as inspectable, file-based capability modules instead of re-explaining them every session.
+By [Mario Zechner](people.md#mario-zechner). The upstream repository for reusable **skills** — portable instruction/tool bundles that extend Pi and, in many cases, other coding agents such as Claude Code, Codex CLI, Amp, and Droid. Worth tracking because it is a concrete artifact of an emerging cross-agent pattern: package repeated workflows (web search, browser automation, Google tooling, transcription, editor integration) as inspectable, file-based capability modules instead of re-explaining them every session.
 
 For this repo specifically, it matters both as the source for `agent-skills/` and as evidence that the Anthropic-style skill format is becoming real ecosystem infrastructure rather than a Pi-only feature. Pairs naturally with [pi-mono](#pi-mono), which provides the underlying agent/toolkit stack.
 
