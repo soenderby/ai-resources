@@ -158,7 +158,7 @@ By Rich Sutton. One of the clearest short statements of a pattern that keeps rea
 ---
 
 ## [Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)
-By OpenAI. Useful because it reframes prompt injection as a **social engineering** problem rather than just a string-filtering problem. The most important move is architectural: assume some manipulative inputs will get through, and design the system so that dangerous consequences are constrained anyway via source-sink analysis, confirmations, and limited-action pathways. Pairs well with Simon Willison's [lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/): one gives the memorable risk model, the other gives a concrete defense mindset.
+By OpenAI. Useful because it reframes prompt injection as a **social engineering** problem rather than just a string-filtering problem. The most important move is architectural: assume some manipulative inputs will get through, and design the system so that dangerous consequences are constrained anyway via source-sink analysis, confirmations, and limited-action pathways. Pairs well with Simon Willison's [lethal trifecta](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication): one gives the memorable risk model, the other gives a concrete defense mindset.
 
 ---
 

@@ -60,7 +60,7 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 - Medium: https://steve-yegge.medium.com/
 - GitHub: https://github.com/steveyegge
 
-Projects: [Gastown](projects.md#gastown), [Beads](projects.md#beads)  
+Projects: [Gastown](projects.md#gastown), [Gas City](projects.md#gas-city), [Beads](projects.md#beads), [The Wasteland](projects.md#the-wasteland)  
 Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire)
 
 Long-time tech industry voice (Amazon, Google, Sourcegraph) and one of the most prolific builders and writers in this collection's agent-orchestration cluster. Creator of Gas Town, Beads, and the broader Wasteland ecosystem. His central bet: the future of coding agents is not better individual assistants but factories and colonies — many agents coordinating through shared memory, structured work tracking, and federated reputation. Writes with conviction and at length; the signal-to-noise ratio is high but the volume is large. His architectural ideas (zero-framework cognition, Beads as external agent memory, the Wasteland's federated work protocol) have influenced several other people and projects tracked here.
