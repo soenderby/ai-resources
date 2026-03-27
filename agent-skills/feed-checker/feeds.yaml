@@ -72,6 +72,10 @@ people:
     feeds:
       - https://simonwillison.net/atom/everything/
 
+  - name: Mario Zechner
+    feeds:
+      - https://mariozechner.at/posts/rss.xml
+
   - name: Steve Yegge
     feeds:
       - https://medium.com/feed/@steve-yegge
