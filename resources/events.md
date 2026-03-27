@@ -56,3 +56,10 @@ Key quote from the newsletter: *"Now the output quality has crossed a threshold 
 *2025-12*
 
 By Amplifying (Edwin Ong and Alex Vikati). A useful empirical counterweight to anecdotal agent-tooling discourse. The study runs Claude Code 2,430 times against greenfield repos and asks open-ended "what should I use?" questions, then records what gets installed. The main finding is that the agent often **builds rather than buys**, and when it does pick tools it exerts a strong default-stack effect. Worth keeping because it turns a vague ecosystem concern into something measurable, even if the study is still one-agent, one-period, and partly self-extracted.
+
+---
+
+## [Scaling Long-Running Autonomous Coding](https://cursor.com/blog/scaling-agents)
+*2026-03*
+
+By Cursor. Documents experiments running hundreds of concurrent coding agents on single projects for weeks, producing over a million lines of code. The most valuable finding is about **coordination architecture**: flat self-coordination failed (agents became risk-averse, avoided hard problems, and duplicated work); the solution was a **Planner-Worker hierarchy** where Planners explore the codebase and create tasks (recursively spawning sub-planners), Workers execute assigned tasks without worrying about the big picture, and a Judge assesses completion. Also notable: model choice matters for role — GPT-5.2 was a better planner than GPT-5.1-Codex (trained specifically for coding), suggesting planning and execution require different model strengths. A recurring theme: removing complexity helped more than adding it (an integrator role for quality control created more bottlenecks than it solved). Worth keeping as the most detailed public report on multi-agent coordination at scale, with specific failure modes and solutions. Connects to the [planning patterns synthesis](../ai-generated/agent-planning-patterns.md) and to [Don't Build Multi-Agents](articles.md#dont-build-multi-agents) as a counterexample — multi-agent works here because the tasks are highly parallelisable.

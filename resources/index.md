@@ -6,11 +6,11 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 39 tracked people
-- `articles.md` — 84 tracked articles / reference sites
-- `events.md` — 7 tracked events / dated snapshots
+- `people.md` — 40 tracked people
+- `articles.md` — 87 tracked articles / reference sites
+- `events.md` — 8 tracked events / dated snapshots
 - `books.md` — 16 tracked books
-- `projects.md` — 21 tracked projects
+- `projects.md` — 22 tracked projects
 
 ---
 
@@ -55,6 +55,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Andy Matuschak
 - Maggie Appleton
 - Mario Zechner
+- Subbarao Kambhampati
 
 ---
 
@@ -144,6 +145,9 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Stacked Diffs Versus Pull Requests
 - How I got Claude to write code I could actually ship
 - Thoughts on slowing the fuck down
+- LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks
+- ExecPlans: Using PLANS.md for Multi-Hour Problem Solving
+- Planning for Agents
 
 ---
 
@@ -156,6 +160,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Thoughts on OpenAI acquiring Astral and uv/ruff/ty
 - Minotaur Capital Quarterly — December 2025
 - What Claude Code Actually Chooses
+- Scaling Long-Running Autonomous Coding
 
 ---
 
@@ -203,3 +208,4 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Awesome Reviewers
 - Codebase Context MCP
 - Animesis
+- Spec Kit

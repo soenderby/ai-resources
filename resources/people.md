@@ -388,6 +388,16 @@ Designer, illustrator, and writer working on tools for thought and information a
 
 ---
 
+## Subbarao Kambhampati
+- Research group: https://yochan-lab.github.io/
+- Google Scholar: https://scholar.google.com/citations?user=MFnojdEAAAAJ
+
+Articles: [LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks](articles.md#llms-cant-plan-but-can-help-planning-in-llm-modulo-frameworks)
+
+Professor of computer science at Arizona State University, former president of AAAI. The most prominent and rigorous voice arguing that LLMs cannot plan or reason autonomously. His research group has produced the key benchmarks (PlanBench) and empirical results showing that LLM self-critique is unreliable and that claims of LLM planning ability typically rest on hidden external verification. His proposed LLM-Modulo framework — LLMs as idea generators with external critics — has become the reference architecture for understanding how to get reliable planning out of unreliable planners. Worth following because he backs strong claims with specific evidence rather than vibes, and because his "LLMs as approximate knowledge sources" framing is the most precise characterisation of what models actually contribute to planning tasks.
+
+---
+
 ## Mario Zechner
 - Blog: https://mariozechner.at/
 - GitHub: https://github.com/badlogic
