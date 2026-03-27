@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 42 tracked people
-- `articles.md` — 89 tracked articles / reference sites
+- `articles.md` — 90 tracked articles / reference sites
 - `events.md` — 8 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 22 tracked projects
@@ -152,6 +152,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Planning for Agents
 - Quantization from the Ground Up
 - Prompt Caching: 10x Cheaper LLM Tokens, but How?
+- Parse, Don't Validate
 
 ---
 
