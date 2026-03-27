@@ -131,6 +131,26 @@ Separate all entries with `---`.
 - Anything you haven't read
 - Hot takes, hype, content driven by commercial interest rather than genuine insight
 
+### Corroboration: "Also noted by"
+
+A source that makes the same point as an existing entry doesn't warrant a standalone entry — but the fact that the point is made independently elsewhere is itself useful information. Convergence across different practitioners, contexts, or disciplines is a signal of robustness, not redundancy.
+
+When a reviewed source corroborates an existing entry without adding a new idea, record it as an **"Also noted by"** line at the end of the canonical entry's annotation:
+
+```markdown
+Also noted by: [Author (context, date)](url) — brief note on what angle they bring;
+[Another author](url) — brief note on their angle.
+```
+
+Rules:
+- **The source must have been read.** No blind links. The corroboration line is lightweight, but it still carries the collection's implicit guarantee that someone evaluated the source.
+- **Different context or voice.** "Same person says the same thing again" doesn't qualify. "Different practitioner arrives at the same conclusion from different experience" does.
+- **Brief.** Each corroboration is a sentence fragment, not a paragraph. Name the who and the angle, nothing more.
+- **Link internally when possible.** If the corroborating source is already a full entry in the collection, link to it rather than to the external URL.
+- **External links for non-entries.** Sources that aren't full entries get a URL so the reader can follow the thread.
+
+This gives rejected sources a home when they have genuine corroborative value, without lowering the bar for standalone entries.
+
 ---
 
 ## Librarian Memory
