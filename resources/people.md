@@ -388,6 +388,17 @@ Designer, illustrator, and writer working on tools for thought and information a
 
 ---
 
+## Sam Rose
+- Personal site / interactive essays: https://samwho.dev/
+- ngrok blog: https://ngrok.com/blog/author/sam-rose
+- X: https://x.com/samwhoo
+
+Articles: [Quantization from the Ground Up](articles.md#quantization-from-the-ground-up), [Prompt Caching: 10x Cheaper LLM Tokens, but How?](articles.md#prompt-caching-10x-cheaper-llm-tokens-but-how)
+
+Developer educator who creates interactive visual essays that teach technical concepts from first principles. Each post takes 1–3 months to build, with custom interactive visualizations (sliders, histograms, live model comparisons) that let readers manipulate the concepts directly. Previously covered general CS topics (hashing, load balancing, Turing machines) at samwho.dev; since joining ngrok in late 2025 has turned the same approach to LLM internals. Worth following because he fills a gap in the collection: the most accessible primary-source explainer of how the technology actually works at the implementation level. He reads the papers, reads the code, downloads models, runs experiments himself, and then builds tools to teach what he learned. Simon Willison called his prompt caching essay "one of the clearest and most accessible introductions to LLM internals I've seen anywhere."
+
+---
+
 ## Subbarao Kambhampati
 - Research group: https://yochan-lab.github.io/
 - Google Scholar: https://scholar.google.com/citations?user=MFnojdEAAAAJ

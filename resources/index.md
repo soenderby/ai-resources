@@ -6,8 +6,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 40 tracked people
-- `articles.md` — 87 tracked articles / reference sites
+- `people.md` — 41 tracked people
+- `articles.md` — 89 tracked articles / reference sites
 - `events.md` — 8 tracked events / dated snapshots
 - `books.md` — 16 tracked books
 - `projects.md` — 22 tracked projects
@@ -56,6 +56,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Maggie Appleton
 - Mario Zechner
 - Subbarao Kambhampati
+- Sam Rose
 
 ---
 
@@ -148,6 +149,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks
 - ExecPlans: Using PLANS.md for Multi-Hour Problem Solving
 - Planning for Agents
+- Quantization from the Ground Up
+- Prompt Caching: 10x Cheaper LLM Tokens, but How?
 
 ---
 
