@@ -22,10 +22,39 @@ By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. 
 
 ---
 
+## [Minotaur Capital Quarterly — December 2025](https://www.minotaurcapital.com/reports/quarterly/2025-12)
+*2025-12*
+
+By Minotaur Capital. An Australian global equities fund that uses LLMs end-to-end in their investment process — from idea generation and triage to portfolio construction and risk management. Their December 2025 quarterly is interesting as a real-world account of an industry outside tech adopting agents seriously.
+
+Key quote from the newsletter: *"Now the output quality has crossed a threshold where it's genuinely useful, and it's cheap. If capable LLMs were free and infinitely fast, you'd always prefer brute force iteration over careful human design."* — a good articulation of the threshold moment we're in. Note: the full newsletter is JS-rendered and may require a browser to read.
+
+---
+
+## [What Claude Code Actually Chooses](https://amplifying.ai/research/claude-code-picks)
+*2025-12*
+
+By Amplifying (Edwin Ong and Alex Vikati). A useful empirical counterweight to anecdotal agent-tooling discourse. The study runs Claude Code 2,430 times against greenfield repos and asks open-ended "what should I use?" questions, then records what gets installed. The main finding is that the agent often **builds rather than buys**, and when it does pick tools it exerts a strong default-stack effect. Worth keeping because it turns a vague ecosystem concern into something measurable, even if the study is still one-agent, one-period, and partly self-extracted.
+
+---
+
 ## [Why SWE-bench Verified no longer measures frontier coding capabilities](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified)
 *2026-02*
 
 By OpenAI. A detailed autopsy of why SWE-bench Verified — the most widely reported benchmark for autonomous coding — has become unreliable. Two findings: (1) **flawed tests reject correct solutions** — an audit of 138 problems that frontier models struggled with found 59.4% had material test design issues (35.5% with "narrow" tests enforcing specific implementation details like function names not mentioned in the problem, 18.8% with "wide" tests checking functionality beyond what was described); (2) **training data contamination** — all frontier models tested (GPT-5.2, Claude Opus 4.5, Gemini 3 Flash) could reproduce verbatim gold patches or problem-specific details, indicating exposure during training. The most novel insight is the interaction: **contaminated models are more likely to solve underspecified tasks** because they have the "right" answer from training, not from genuine reasoning — meaning benchmark improvements increasingly reflect training exposure, not real capability. Recommends SWE-bench Pro as a less contaminated alternative. Relevant to the collection's interest in the gap between measured and real AI productivity — see [METR's developer productivity study](#measuring-the-impact-of-early-2025-ai-on-experienced-open-source-developer-productivity) for the parallel finding that user belief about productivity gains can diverge sharply from measured reality.
+
+---
+
+## [Finding Comfort in the Uncertainty](https://annievella.com/posts/finding-comfort-in-the-uncertainty/)
+*2026-02*
+
+By Annie Vella. Report from an invite-only retreat on the future of software development, hosted by [Martin Fowler](people.md#martin-fowler) and Thoughtworks in Deer Valley, Utah — the same mountains where the Agile Manifesto was written — with ~40 practitioners, researchers, and original Agile signatories. Unconference format, 30+ sessions.
+
+The most important takeaway: **nobody has this figured out.** The sharpest minds in software sat in a room and left with more questions than answers. People going hardest on AI openly admitted it's exhausting them — spinning up multiple agents is "genuinely addictive," but the cognitive load when they all return at once is unsustainable. The people experiencing this most are the most senior and enthusiastic, making it easy to miss the warning signs.
+
+Eight themes emerged independently across sessions: the bottleneck has moved from engineering capacity to decision fatigue and organizational absorption ("humanity is not ready for this much software"); code may be "just another projection" of intended behavior, with the domain model or test suite as the durable artifact; trust debt and cognitive debt are growing as the gap widens between what we produce and what we understand; platform engineering keeps emerging as the enabling layer; nobody has a good taxonomy for agents yet; organizational readiness gates everything; the human role is being redefined but not yet designed ("the skills, pathways, and even the *dignity* of this new work haven't been designed"); and "The Ledger" — the idea that we need a complete, verifiable record of everything agents do — surfaced independently in at least four separate conversations.
+
+Valuable as a counterweight to the collection's tendency toward sources that propose solutions. This captures the honest state of not knowing, from people with the standing to know if answers existed. Connects to the [bottleneck-shifts-upward cluster](articles.md#the-human-in-the-loop-is-tired), [comprehension debt](articles.md#comprehension-debt), [cognitive offloading](articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience), the [planning cluster](../ai-generated/agent-planning-patterns.md), and the [harness engineering](articles.md#harness-engineering-leveraging-codex-in-an-agent-first-world) verification thread.
 
 ---
 
@@ -47,35 +76,6 @@ By [Simon Willison](people.md#simon-willison). A concrete prompt-injection failu
 *2026-03*
 
 By [Simon Willison](people.md#simon-willison). Substantive analysis of OpenAI's acquisition of Astral — the company behind `uv`, `ruff`, and `ty`, three increasingly load-bearing Python ecosystem tools. The key tensions: (1) **talent vs product acquisition** — Astral has some of the best Rust engineers in the industry (including BurntSushi), and the Codex CLI is a Rust application; (2) **competitive dynamics** — Anthropic acquired the Bun runtime for Claude Code in December 2025, and both companies are competing fiercely for the $200/month coding agent subscription revenue; (3) **open-source infrastructure risk** — `uv` had 126M PyPI downloads last month and the Python community has worried about VC-backed ownership of key tooling since 2024; (4) **forking as exit strategy** — the permissive license means the worst case is "fork and move on," but that theory hasn't been tested at scale. Also surfaces Astral's previously unannounced Series A and B rounds. Worth keeping as a primary-source analysis of the emerging pattern where AI companies acquire key developer infrastructure.
-
----
-
-## [Minotaur Capital Quarterly — December 2025](https://www.minotaurcapital.com/reports/quarterly/2025-12)
-*2025-12*
-
-By Minotaur Capital. An Australian global equities fund that uses LLMs end-to-end in their investment process — from idea generation and triage to portfolio construction and risk management. Their December 2025 quarterly is interesting as a real-world account of an industry outside tech adopting agents seriously.
-
-Key quote from the newsletter: *"Now the output quality has crossed a threshold where it's genuinely useful, and it's cheap. If capable LLMs were free and infinitely fast, you'd always prefer brute force iteration over careful human design."* — a good articulation of the threshold moment we're in. Note: the full newsletter is JS-rendered and may require a browser to read.
-
----
-
-## [What Claude Code Actually Chooses](https://amplifying.ai/research/claude-code-picks)
-*2025-12*
-
-By Amplifying (Edwin Ong and Alex Vikati). A useful empirical counterweight to anecdotal agent-tooling discourse. The study runs Claude Code 2,430 times against greenfield repos and asks open-ended "what should I use?" questions, then records what gets installed. The main finding is that the agent often **builds rather than buys**, and when it does pick tools it exerts a strong default-stack effect. Worth keeping because it turns a vague ecosystem concern into something measurable, even if the study is still one-agent, one-period, and partly self-extracted.
-
----
-
-## [Finding Comfort in the Uncertainty](https://annievella.com/posts/finding-comfort-in-the-uncertainty/)
-*2026-02*
-
-By Annie Vella. Report from an invite-only retreat on the future of software development, hosted by [Martin Fowler](people.md#martin-fowler) and Thoughtworks in Deer Valley, Utah — the same mountains where the Agile Manifesto was written — with ~40 practitioners, researchers, and original Agile signatories. Unconference format, 30+ sessions.
-
-The most important takeaway: **nobody has this figured out.** The sharpest minds in software sat in a room and left with more questions than answers. People going hardest on AI openly admitted it's exhausting them — spinning up multiple agents is "genuinely addictive," but the cognitive load when they all return at once is unsustainable. The people experiencing this most are the most senior and enthusiastic, making it easy to miss the warning signs.
-
-Eight themes emerged independently across sessions: the bottleneck has moved from engineering capacity to decision fatigue and organizational absorption ("humanity is not ready for this much software"); code may be "just another projection" of intended behavior, with the domain model or test suite as the durable artifact; trust debt and cognitive debt are growing as the gap widens between what we produce and what we understand; platform engineering keeps emerging as the enabling layer; nobody has a good taxonomy for agents yet; organizational readiness gates everything; the human role is being redefined but not yet designed ("the skills, pathways, and even the *dignity* of this new work haven't been designed"); and "The Ledger" — the idea that we need a complete, verifiable record of everything agents do — surfaced independently in at least four separate conversations.
-
-Valuable as a counterweight to the collection's tendency toward sources that propose solutions. This captures the honest state of not knowing, from people with the standing to know if answers existed. Connects to the [bottleneck-shifts-upward cluster](articles.md#the-human-in-the-loop-is-tired), [comprehension debt](articles.md#comprehension-debt), [cognitive offloading](articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience), the [planning cluster](../ai-generated/agent-planning-patterns.md), and the [harness engineering](articles.md#harness-engineering-leveraging-codex-in-an-agent-first-world) verification thread.
 
 ---
 

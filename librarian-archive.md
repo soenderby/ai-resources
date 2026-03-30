@@ -28,6 +28,9 @@ When using the archive:
 - **Early pattern observations (2026-03-09)** — practitioner/research balance, alignment arc, gender diversity, Yegge/Emanuel/Huntley cluster, Gas Town stack, Willison living doc; see [#early-pattern-observations](#early-pattern-observations)
 - **Early connection observations (2026-03-11 / 2026-03-16)** — Orca/Gas Town convergence, software quality stack, concept index design, Every/judgment memory distinction; see [#early-connection-observations](#early-connection-observations)
 - **Early curatorial decisions (2026-03-09 / 2026-03-16)** — agent skill deferral, Minotaur Capital inclusion, books.md creation; see [#early-curatorial-decisions](#early-curatorial-decisions)
+- **Judgment memory research connections (2026-03-17)** — detailed findings from the judgment memory investigation: four production mechanisms, maintenance gap, Codified Context paper, Agent READMEs paper, quality synthesis essay, poll results (Osmani comprehension debt, Yegge AI Vampire, Mollick Shape of the Thing, Huntley geopolitics, Willison growth, Karpathy mainstream); see [#judgment-memory-research](#judgment-memory-research)
+- **Context pruning research (2026-03-19)** — Pi-specific: pruning vs. prompt cache tradeoffs, Pi packages discovered, OpenCode DCP plugin analysis; see [#context-pruning-research](#context-pruning-research)
+- **Mid-March additions and connections (2026-03-20 to 2026-03-26)** — NK labor market, role/identity research, Animesis connections, Appleton/Anthropic/Chroma additions, stacked diffs cluster, planning research tensions, ExecPlans/Spec Kit complementarity, planner-worker model differences; see [#mid-march-additions](#mid-march-additions)
 
 ---
 
@@ -117,3 +120,54 @@ Tags: ai-generated, concept-index, retrieval, representation, maintenance, repo-
 **2026-03-12** — Final adjacent-fields experiment review: the structured research workflow was worth the overhead, mainly because it improved screening, resumption, and synthesis quality. The biggest gain was a better decomposition of the problem (`retrieval / representation / maintenance`); the biggest operational gap was the lack of a compact artifact index inside the experiment workspace.
 
 **2026-03-12** — Document review process is now clear enough to write down explicitly. Recurring pattern: first drafts are usually strong on coverage but weak on concision and concreteness; the highest-value review passes add worked examples, sharpen distinctions, compress repetition, and force explicit uncertainty. Worth treating review as part of the normal generation workflow, not as optional polish.
+
+---
+
+## Judgment memory research
+Tags: judgment-memory, codified-context, agent-context-files, maintenance, quality
+
+**2026-03-17** - Completed judgment memory research (see `ai-generated/judgment-memory.md`). The concept names something real: durable captured judgment that changes how future agents plan, implement, review, or decide. No existing term covers it precisely - "agent context files" names the container, "codified context" is broader, "design rationale" is narrower. Keeping "judgment memory" as the repo's working label.
+
+**2026-03-17** - The strongest new source discovered is the "Codified Context Infrastructure" paper (Vasilopoulos, arXiv:2602.20478) - a three-tier architecture (hot constitution + specialized agents + cold knowledge base) developed across 283 sessions on a 108k-line C# system. Reports maintenance cost (~1-2 hrs/week), failure modes (specification staleness), and a context drift detector. The companion repo has inspectable artifacts.
+
+**2026-03-17** - The "Agent READMEs" paper (arXiv:2511.12884) provides the best empirical data on agent context files: 2,303 files across Claude Code, Codex, and Copilot. Key finding: these are "living configuration artifacts" - 67% modified in multiple commits, with updates roughly daily. Instructions heavily skewed toward functional operations; non-functional requirements (security, performance) are rare.
+
+**2026-03-17** - Four distinct production mechanisms for judgment memory emerged: (1) manually authored (CLAUDE.md, ADRs), (2) automatically captured by agents (auto memory), (3) automatically detected from codebase (Codebase Context MCP), (4) mined from human practice at scale (Awesome Reviewers). These have different effort/quality tradeoffs.
+
+**2026-03-17** - The biggest gap in the judgment memory space is maintenance. Everyone agrees stale judgment is dangerous ("agents trust documentation absolutely"), but no source described systematic pruning. The Codified Context paper's biweekly review and drift detector are the closest, and the Codebase Context MCP's memory decay is the most automated. This gap is worth watching.
+
+**2026-03-17** - Wrote `ai-generated/ensuring-code-quality-with-agents.md`, a thorough synthesis essay covering the full topic. Draws on nearly every source cluster in the repo. Written long and dense for completeness; intended for a concision pass later.
+
+**2026-03-17** - Polled all followed sources. Osmani's "Comprehension Debt" coined a term that extends the quality cluster in a distinct direction. Yegge's "AI Vampire" adds economics of extraction. Mollick's "The Shape of the Thing" is the most significant new framing piece (StrongDM Software Factory, recursive self-improvement on every lab's roadmap). Huntley's geopolitical cluster addresses non-Western and economics gaps. Willison's Agentic Engineering Patterns continues to grow. Karpathy's autoresearch went mainstream.
+
+---
+
+## Context pruning research
+Tags: pi, context-engineering, prompt-caching, pruning
+
+**2026-03-19** - Researched context pruning for the Pi coding agent. Key finding: pruning saves tokens but breaks prompt caches, and the cache penalty can easily exceed the token savings. The math only works clearly in three cases: (1) subscription/flat-rate billing, (2) very large redundancies (>10k tokens), or (3) batching pruning with compaction events that already break the cache. OpenCode's DCP extension handles this correctly. Full analysis in `ai-generated/context-pruning-research.md`.
+
+**2026-03-19** - Discovered three relevant Pi packages: pi-context, pi-extension-observational-memory, pi-mcp-adapter. None do DCP-style automatic rule-based pruning. The opencode DCP plugin is the strongest existing implementation.
+
+---
+
+## Mid-March additions
+Tags: labor-market, roles, identity, memory, planning, stacked-diffs
+
+**2026-03-20** - NK Schjødt's "They Don't Feel It - Yet" adds a useful labor-market mechanism: AI's first employment effect may show up as non-hiring and pipeline erosion, not public layoffs.
+
+**2026-03-23** - Researched agent roles, persistent identities, and memory systems. Role prompting reliably controls style but does not reliably improve accuracy. Persistent identity is being tackled at multiple levels (context files, dedicated memory systems, ontological approach). Multi-agent role frameworks converging on "crew of specialized agents" pattern.
+
+**2026-03-23** - Animesis paper's four "missing dimensions" (governance, continuity, rights, cognition) connect to judgment memory cluster. Codified Context paper is a practical version of roughly the first two Animesis governance layers.
+
+**2026-03-23** - Added Appleton's Gas Town critique, Anthropic's long-running agent harnesses, and Chroma's context rot research. Appleton's "code distance" framework is a useful contribution. Anthropic harnesses fills a gap (two-agent initializer + coder pattern). Context rot research is the empirical anchor.
+
+**2026-03-23** - Appleton's Gas Town piece strengthens design-as-bottleneck pattern. Now shows up from at least four angles: Appleton, Pydantic, HBR, Osmani.
+
+**2026-03-23** - Added stacked diffs cluster. Hypothesis plausible but thin on evidence. Cursor/Graphite acquisition is the strongest industry signal.
+
+**2026-03-26** - Planning research surfaced a productive tension. Kambhampati and Chase converge: the LLM should generate ideas, not plan the workflow. Resolution: having the agent draft a plan works, but only if you treat the draft as a candidate for critique. Connects planning cluster to supervision/oversight cluster.
+
+**2026-03-26** - ExecPlans format and Spec Kit workflow are complementary. ExecPlans is format specification; Spec Kit is workflow specification.
+
+**2026-03-26** - Cursor's finding that planning and execution benefit from different models has implications for multi-agent architecture — planner-worker separation reflects genuinely different capability requirements.
