@@ -441,3 +441,15 @@ Articles: [The Middle Loop](articles.md#the-middle-loop)
 Events: [Finding Comfort in the Uncertainty](events.md#finding-comfort-in-the-uncertainty)
 
 Software engineer and researcher based in New Zealand, currently completing a Masters of Engineering at the University of Auckland on the impact of AI on software engineering. Her longitudinal study (158 engineers, 28 countries, six months) produced the first empirical evidence for a creation-to-verification shift and coined the term "supervisory engineering work" and the "middle loop" model. Worth following because she combines genuine practitioner experience (decades across Apple, Microsoft, Meta) with academic rigour — she measures what others assert — and because her research questions (what is the new work, what does it feel like, is anyone designing for it) are exactly the ones the field needs answered.
+
+---
+
+## Daniel Chalef
+- Zep: https://www.getzep.com/
+- GitHub (Graphiti): https://github.com/getzep/graphiti
+- arXiv paper: https://arxiv.org/abs/2501.13956
+
+Articles: [Zep: A Temporal Knowledge Graph Architecture for Agent Memory](articles.md#zep-a-temporal-knowledge-graph-architecture-for-agent-memory)
+Projects: [Graphiti](projects.md#graphiti)
+
+Founder of Zep (YC W24), creator of Graphiti. Building the most adopted open-source temporal knowledge graph engine for AI agent memory. His clearest contribution is the argument that agent memory is fundamentally different from knowledge retrieval — it requires temporal tracking, causal reasoning, and fact invalidation, none of which vector-based RAG provides. Worth following with the same caveat as Harrison Chase: commercial interest is real (Zep Cloud), but the open-source contribution is genuine and the specific claims are backed by published benchmarks.

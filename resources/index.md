@@ -6,11 +6,11 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 43 tracked people
-- `articles.md` — 94 tracked articles / reference sites
+- `people.md` — 44 tracked people
+- `articles.md` — 95 tracked articles / reference sites
 - `events.md` — 10 tracked events / dated snapshots
 - `books.md` — 17 tracked books
-- `projects.md` — 22 tracked projects
+- `projects.md` — 23 tracked projects
 - `glossary.md` — 10 terms under active semantic diffusion
 
 ---
@@ -60,6 +60,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Sam Rose
 - Sebastian Raschka
 - Annie Vella
+- Daniel Chalef
 
 ---
 
@@ -154,6 +155,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Planning for Agents
 - Quantization from the Ground Up
 - Prompt Caching: 10x Cheaper LLM Tokens, but How?
+- Zep: A Temporal Knowledge Graph Architecture for Agent Memory
 - Parse, Don't Validate
 - Harness engineering: leveraging Codex in an agent-first world
 - How we monitor internal coding agents for misalignment
@@ -223,3 +225,4 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Codebase Context MCP
 - Animesis
 - Spec Kit
+- Graphiti
