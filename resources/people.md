@@ -430,3 +430,14 @@ Articles: [Thoughts on slowing the fuck down](articles.md#thoughts-on-slowing-th
 Projects: [pi-mono](projects.md#pi-mono), [pi-skills](projects.md#pi-skills)
 
 Creator of [Pi](projects.md#pi-mono), one of the most widely used open-source coding agent frameworks (used by OpenClaw, among others), and previously known for [libGDX](https://libgdx.com/), a major cross-platform game development framework. Worth following because he is a rare voice who builds the tools *and* publicly criticises how people use them. His writing is blunt, experience-grounded, and anti-hype — the kind of practitioner perspective this collection prioritises.
+
+---
+
+## Annie Vella
+- Blog: https://annievella.com/
+- LinkedIn: https://www.linkedin.com/in/annievella/
+
+Articles: [The Middle Loop](articles.md#the-middle-loop)
+Events: [Finding Comfort in the Uncertainty](events.md#finding-comfort-in-the-uncertainty)
+
+Software engineer and researcher based in New Zealand, currently completing a Masters of Engineering at the University of Auckland on the impact of AI on software engineering. Her longitudinal study (158 engineers, 28 countries, six months) produced the first empirical evidence for a creation-to-verification shift and coined the term "supervisory engineering work" and the "middle loop" model. Worth following because she combines genuine practitioner experience (decades across Apple, Microsoft, Meta) with academic rigour — she measures what others assert — and because her research questions (what is the new work, what does it feel like, is anyone designing for it) are exactly the ones the field needs answered.

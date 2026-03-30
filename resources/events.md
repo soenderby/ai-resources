@@ -66,6 +66,19 @@ By Amplifying (Edwin Ong and Alex Vikati). A useful empirical counterweight to a
 
 ---
 
+## [Finding Comfort in the Uncertainty](https://annievella.com/posts/finding-comfort-in-the-uncertainty/)
+*2026-02*
+
+By Annie Vella. Report from an invite-only retreat on the future of software development, hosted by [Martin Fowler](people.md#martin-fowler) and Thoughtworks in Deer Valley, Utah — the same mountains where the Agile Manifesto was written — with ~40 practitioners, researchers, and original Agile signatories. Unconference format, 30+ sessions.
+
+The most important takeaway: **nobody has this figured out.** The sharpest minds in software sat in a room and left with more questions than answers. People going hardest on AI openly admitted it's exhausting them — spinning up multiple agents is "genuinely addictive," but the cognitive load when they all return at once is unsustainable. The people experiencing this most are the most senior and enthusiastic, making it easy to miss the warning signs.
+
+Eight themes emerged independently across sessions: the bottleneck has moved from engineering capacity to decision fatigue and organizational absorption ("humanity is not ready for this much software"); code may be "just another projection" of intended behavior, with the domain model or test suite as the durable artifact; trust debt and cognitive debt are growing as the gap widens between what we produce and what we understand; platform engineering keeps emerging as the enabling layer; nobody has a good taxonomy for agents yet; organizational readiness gates everything; the human role is being redefined but not yet designed ("the skills, pathways, and even the *dignity* of this new work haven't been designed"); and "The Ledger" — the idea that we need a complete, verifiable record of everything agents do — surfaced independently in at least four separate conversations.
+
+Valuable as a counterweight to the collection's tendency toward sources that propose solutions. This captures the honest state of not knowing, from people with the standing to know if answers existed. Connects to the [bottleneck-shifts-upward cluster](articles.md#the-human-in-the-loop-is-tired), [comprehension debt](articles.md#comprehension-debt), [cognitive offloading](articles.md#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience), the [planning cluster](../ai-generated/agent-planning-patterns.md), and the [harness engineering](articles.md#harness-engineering-leveraging-codex-in-an-agent-first-world) verification thread.
+
+---
+
 ## [Scaling Long-Running Autonomous Coding](https://cursor.com/blog/scaling-agents)
 *2026-03*
 
