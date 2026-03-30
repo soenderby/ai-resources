@@ -22,6 +22,13 @@ By [Andrej Karpathy](people.md#andrej-karpathy). Paradigm-level review of 2025. 
 
 ---
 
+## [Why SWE-bench Verified no longer measures frontier coding capabilities](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified)
+*2026-02*
+
+By OpenAI. A detailed autopsy of why SWE-bench Verified — the most widely reported benchmark for autonomous coding — has become unreliable. Two findings: (1) **flawed tests reject correct solutions** — an audit of 138 problems that frontier models struggled with found 59.4% had material test design issues (35.5% with "narrow" tests enforcing specific implementation details like function names not mentioned in the problem, 18.8% with "wide" tests checking functionality beyond what was described); (2) **training data contamination** — all frontier models tested (GPT-5.2, Claude Opus 4.5, Gemini 3 Flash) could reproduce verbatim gold patches or problem-specific details, indicating exposure during training. The most novel insight is the interaction: **contaminated models are more likely to solve underspecified tasks** because they have the "right" answer from training, not from genuine reasoning — meaning benchmark improvements increasingly reflect training exposure, not real capability. Recommends SWE-bench Pro as a less contaminated alternative. Relevant to the collection's interest in the gap between measured and real AI productivity — see [METR's developer productivity study](#measuring-the-impact-of-early-2025-ai-on-experienced-open-source-developer-productivity) for the parallel finding that user belief about productivity gains can diverge sharply from measured reality.
+
+---
+
 ## [The Shape of the Thing](https://www.oneusefulthing.org/p/the-shape-of-the-thing)
 *2026-03*
 

@@ -7,8 +7,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 42 tracked people
-- `articles.md` — 90 tracked articles / reference sites
-- `events.md` — 8 tracked events / dated snapshots
+- `articles.md` — 92 tracked articles / reference sites
+- `events.md` — 9 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 22 tracked projects
 
@@ -153,6 +153,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Quantization from the Ground Up
 - Prompt Caching: 10x Cheaper LLM Tokens, but How?
 - Parse, Don't Validate
+- Harness engineering: leveraging Codex in an agent-first world
+- How we monitor internal coding agents for misalignment
 
 ---
 
@@ -166,6 +168,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Minotaur Capital Quarterly — December 2025
 - What Claude Code Actually Chooses
 - Scaling Long-Running Autonomous Coding
+- Why SWE-bench Verified no longer measures frontier coding capabilities
 
 ---
 
