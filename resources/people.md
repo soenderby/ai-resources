@@ -201,7 +201,7 @@ One of the central popularizers of modern software design principles. Worth keep
 - Website: https://martinfowler.com/
 - About: https://martinfowler.com/aboutMe.html
 
-Books: [Refactoring: Improving the Design of Existing Code](books.md#refactoring-improving-the-design-of-existing-code). Articles: [Test Driven Development](articles.md#test-driven-development)
+Books: [Refactoring: Improving the Design of Existing Code](books.md#refactoring-improving-the-design-of-existing-code). Articles: [Test Driven Development](articles.md#test-driven-development), [Semantic Diffusion](articles.md#semantic-diffusion)
 
 One of the clearest writers in software engineering. Fowler's value in this collection is not novelty so much as precision: he consistently explains design and development practices in a way that makes them easier to reason about and easier to disagree with cleanly. A strong bridge figure between XP, refactoring, architecture, and practical software design.
 

@@ -56,6 +56,7 @@ ai-resources/
     ├── articles.md        ← durable articles: concepts, frameworks, techniques, named ideas
     ├── events.md          ← time-bound pieces: industry events, incident reports, annual reviews, dated snapshots
     ├── books.md           ← book-length sources worth keeping
+    ├── glossary.md        ← AI terms under active semantic diffusion, with precise meanings and drift notes
     ├── people.md          ← people worth following, with all their links
     └── projects.md        ← open source projects and tools
 ```
@@ -72,7 +73,8 @@ ai-resources/
 4. **Update cross-links** — if a person entry exists, add their article/event/book/project to their entry. If an article or event is by someone in people.md, link to them with `[Name](people.md#name)`. In people.md, use separate `Articles:` and `Events:` lines when a person has entries in both files.
 5. **Update `librarian-notes.md`** if the session surfaced something worth remembering — a decision, a pattern, a gap, something explicitly rejected and why.
 6. **Note connections.** When adding an entry, check whether it strengthens, complicates, or contradicts something already in the collection. Record significant connections in `librarian-notes.md`. Accumulation is the default; synthesis requires deliberate effort.
-7. **Commit** with a short descriptive message in present tense.
+7. **Update `glossary.md`** if a source uses a term precisely that the glossary tracks, or if a source demonstrates semantic diffusion of an AI term. The glossary is selective — only terms where the meaning drift matters for understanding the collection.
+8. **Commit** with a short descriptive message in present tense.
 
 ### Entry Formats
 

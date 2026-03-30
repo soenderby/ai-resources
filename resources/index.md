@@ -7,10 +7,11 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 43 tracked people
-- `articles.md` — 93 tracked articles / reference sites
+- `articles.md` — 94 tracked articles / reference sites
 - `events.md` — 10 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 22 tracked projects
+- `glossary.md` — 10 terms under active semantic diffusion
 
 ---
 
@@ -156,6 +157,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Parse, Don't Validate
 - Harness engineering: leveraging Codex in an agent-first world
 - How we monitor internal coding agents for misalignment
+- Semantic Diffusion
 - The Middle Loop
 
 ---
