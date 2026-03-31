@@ -9,7 +9,7 @@ The methods cluster naturally into several families:
 1. **Historical and analog methods** — systems developed before digital tools
 2. **Structured note-taking methods** — formats for capturing information in the moment
 3. **Knowledge management systems** — frameworks for organizing and connecting knowledge over time
-4. **Reference management** — tools for managing sources and citations
+4. **Reference management and retention** — tools for managing sources, citations, and long-term retention
 5. **Digital organizational frameworks** — systems for structuring files and projects
 6. **Reading and comprehension methods** — structured approaches to extracting knowledge from sources
 7. **Visual and spatial methods** — maps, diagrams, and spatial organization
@@ -371,7 +371,7 @@ A complete research workflow centered on index cards, described in *How to Write
 
 ---
 
-## 4. Reference Management
+## 4. Reference Management and Retention
 
 ### Zotero (2006–present)
 
@@ -452,7 +452,7 @@ Example: `15.23` = Area 10–19 (Life Admin) → Category 15 (Travel) → Item .
 
 Collaboratively or personally editable interlinked web pages.
 
-**History**: Ward Cunningham created the first wiki, WikiWikiWeb, in 1994–95, as a supplement to the Portland Pattern Repository (a site about software design patterns). The concept of easy, interlinked, editable pages proved extraordinarily powerful — Wikipedia (2001) is the most visible descendant. Personal wikis emerged as knowledge management tools: TiddlyWiki (2004, a self-contained wiki in a single HTML file), DokuWiki, and others.
+**History**: Ward Cunningham created the first wiki, WikiWikiWeb, in 1994–95, as a supplement to the Portland Pattern Repository (a site about software design patterns). The concept of easy, interlinked, editable pages proved extraordinarily powerful — Wikipedia (2001) is the most visible descendant. Personal wikis emerged as knowledge management tools: TiddlyWiki (2004), DokuWiki, and others.
 
 **Structure**: Pages linked by wiki-links (typically `[[Page Name]]`). No inherent hierarchy — structure emerges from links. Pages can be created, edited, and linked at any time.
 
@@ -538,7 +538,7 @@ Named after physicist Richard Feynman, though formalized by others after his dea
 
 ### Mind Mapping (1974)
 
-Popularized by Tony Buzan through the BBC TV show "Use Your Head" (1974) and later his book *The Mind Map Book* (1993), though visual note-taking has much older roots — Leonardo da Vinci used branching visual notes, and Porphyry created tree-like concept maps of Aristotle's categories in 300 AD.
+Popularized by Tony Buzan through the BBC TV show "Use Your Head" (1974) and later his book *The Mind Map Book* (1993), though visual note-taking has much older roots — Leonardo da Vinci used branching visual notes, and Porphyry created tree-like concept maps of Aristotle's categories in the 3rd century AD.
 
 **Structure**: A central concept in the middle of the page. Major themes branch outward. Sub-themes branch from those. Uses color, images, and single keywords (not sentences).
 
