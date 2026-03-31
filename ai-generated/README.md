@@ -46,6 +46,10 @@ Start here instead of reading the whole directory. Open only the files that are 
 - `ensuring-code-quality-with-agents.md` — much longer essay covering the same broader topic in depth.
 - `stacked-diffs-and-agents.md` — hypothesis that stacked diffs (small, dependent, independently reviewable commits) can address the review bottleneck created by agent-generated code. Explicitly flagged as early-stage: limited sources, one with commercial interest. Outlines plausible benefits, limitations, and what evidence would strengthen or weaken the case.
 
+## Research methodology and knowledge management
+
+- `research-organization-methods.md` — comprehensive survey of methods and techniques for organizing large amounts of research materials, sources, notes, and drafts. Covers historical methods (commonplace books, index cards, lab notebooks), structured note-taking (Cornell, outlining, charting, mapping), knowledge management systems (Zettelkasten, PARA/CODE, evergreen notes, GTD, Eco's card system), reference management tools, digital frameworks (Johnny Decimal), reading methods (SQ3R, Feynman technique, Adler's levels), visual methods (mind mapping, concept mapping), and research methodology approaches (systematic review, grounded theory, qualitative coding). Includes comparison tables and synthesis of fundamental trade-offs.
+
 ## Adjacent-field and topic-specific research
 
 - `adjacent-fields-for-agent-memory.md` — synthesis of what information retrieval, knowledge representation, and knowledge management contribute to agent-memory thinking.
