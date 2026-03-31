@@ -29,13 +29,13 @@ The oldest formal system for organizing personal research. A commonplace book is
 
 **Who used them**: Scholars, writers, lawyers, physicians, clergy, educated women (despite being formally excluded from higher education — Elizabeth Lyttelton, Lady Katherine Ranelagh, and others maintained sophisticated commonplace books). John Milton, Erasmus Darwin, and countless others.
 
-**Structure**: Entries organized under subject headings, sometimes with alphabetical indices. Unlike diaries (chronological and introspective), commonplace books are thematic and outward-facing — they compile *external* knowledge, not internal reflection.
+**How it works**: You read a text and encounter a passage worth preserving — a striking argument, a useful fact, a well-turned phrase. You copy it into your notebook under an appropriate subject heading ("Courage," "On Friendship," "Methods of Inquiry"). If no heading exists, you create one. Over time, material accumulates under each heading, creating a personal anthology organized by your own categories. An alphabetical index at the front of the book lets you find headings quickly. The key act is *selection and placement* — choosing what to excerpt and deciding where it belongs forces you to engage with the material rather than passively consuming it. A typical entry might read: under the heading "Memory," a passage from Cicero on the art of recollection, followed by a personal observation about how it connects to a passage from Seneca filed under the same heading.
 
-**Strengths**: Extremely flexible. Forces active engagement with sources (you must decide what to excerpt and under which heading). Creates a personal reference library organized by your own categories.
+**Strengths**: Extremely flexible. Forces active engagement with sources. Creates a personal reference library organized by your own categories. The act of choosing a heading is itself a form of analysis.
 
-**Weaknesses**: Fixed binding makes reorganization difficult (Gessner's innovation of loose slips addressed this). No inherent mechanism for connecting ideas across headings. Retrieval depends entirely on the quality of your headings and indices.
+**Weaknesses**: Fixed binding makes reorganization difficult (Gessner's innovation of loose slips addressed this). No inherent mechanism for connecting ideas *across* headings — an idea filed under "Memory" doesn't link to a related idea filed under "Learning" unless you remember both. Retrieval depends entirely on the quality of your headings and indices.
 
-**When it works best**: For individuals who read widely and want a personal repository of useful passages and ideas. Less suited to projects requiring complex cross-referencing between ideas.
+**Key distinction from Zettelkasten**: Commonplace books *collect* — they gather material under headings. Zettelkasten *connects* — it links ideas to each other regardless of topic. A commonplace book is organized by *category*; a Zettelkasten is organized by *relationship*. The commonplace book asks "what is this about?"; the Zettelkasten asks "what does this connect to?"
 
 **Key source**: Ann Moss, *Printed Commonplace-Books and the Structuring of Renaissance Thought* (Oxford, 1996).
 
@@ -43,31 +43,33 @@ The oldest formal system for organizing personal research. A commonplace book is
 
 ### Index Cards / Card Files (17th century onward)
 
-The physical precursor to modern note-taking systems. Small pieces of information written on individual cards, which can be freely rearranged, sorted, and cross-referenced.
+A medium for research organization: small pieces of information written on individual cards, which can be freely rearranged, sorted, and cross-referenced. Not a method in itself, but the substrate on which several important methods are built.
 
 **History**: Thomas Harrison (c. 1640s) designed the first card cabinet, the *Arca studiorum* ("ark of studies"), using metal hooks labeled by subject heading. Vincent Placcius improved the system in *De arte excerpendi* (1689). By the 18th century, card files had become standard tools for scholars and organizations. The library card catalog is the most famous institutional adaptation.
 
-**Who used them**: Scholars, librarians, researchers, and most notably Niklas Luhmann (see Zettelkasten below). Umberto Eco advocated a card-based system in *How to Write a Thesis* (1977), using distinct card types — bibliography cards, reading cards, and ideas cards.
+**How it works**: The standard practice uses 3×5 or 4×6 inch cards (larger cards for longer notes, smaller for bibliographic references). Each card holds one idea, one fact, or one source — the principle of atomicity. A heading or category label goes in a corner for filing. Cards are stored in boxes or drawers, typically organized alphabetically by topic, by source, or by a numbering system. Retrieval happens by browsing the relevant section of the box or by consulting a separate index card that lists where related cards can be found.
 
-**Strengths**: Physical cards can be freely rearranged, sorted, and grouped. Each card is atomic — one idea or one source per card. Supports serendipitous discovery through physical browsing.
+**Who uses them and when**: Researchers managing sources for a book or thesis. Writers gathering material across many sources over months or years. Anyone who needs to physically rearrange ideas during outlining — spreading cards on a table to find an argument's structure is a common practice that no digital tool fully replicates.
 
-**Weaknesses**: Doesn't scale well beyond a few thousand cards without an elaborate indexing system. Physically fragile. No automatic backup.
+**Strengths**: Physical cards can be freely rearranged, sorted, and grouped. The tactile act of writing and sorting aids memory. Cards support spatial arrangement during outlining — you can see your entire argument laid out on a table. Each card is atomic, making recombination easy.
+
+**Weaknesses**: Doesn't scale well beyond a few thousand cards without an elaborate indexing system. Physically fragile. No automatic backup. No search — you must know where to look.
+
+**Key distinction from Zettelkasten**: Index cards are a *medium*; Zettelkasten is a *system* built on that medium. Using index cards doesn't make you a Zettelkasten practitioner any more than using a notebook makes you a commonplace book practitioner. What Luhmann added was a specific linking and numbering system that turned a card collection into a network. Most card users (Eco, Holiday, Greene) organize by category; Luhmann organized by connection.
 
 ---
 
 ### Laboratory Notebooks (17th century onward)
 
-Bound notebooks used by scientists to record experiments, observations, methods, and results in chronological order.
+Bound notebooks used by scientists to record experiments, observations, methods, and results in chronological order. The only research organization method on this list where the system itself can serve as legal evidence.
 
-**Structure**: Typically follows a strict protocol: date, objective, materials/methods, results, and discussion (sometimes called OMRAD). Every entry is dated and sequentially numbered. Pages should not be removed. In institutional and industrial settings, notebooks may be countersigned by witnesses for patent and legal purposes.
+**How it works**: At the start of each work session, the researcher dates a new entry and records what they plan to do (objective), what materials and methods they're using, what they observe (results), and what they think it means (discussion) — sometimes called the OMRAD structure. Every page is numbered sequentially. Pages are never removed or overwritten; errors are crossed out with a single line so the original remains legible. In institutional and industrial settings, entries may be countersigned by a witness to establish priority for patent claims. The researcher maintains a table of contents or index at the front, updated regularly, to enable thematic retrieval across the chronological stream. Increasingly, physical notebooks are being replaced or supplemented by Electronic Lab Notebooks (ELNs) such as LabArchives, Benchling, or eLabFTW, which add searchability, automatic timestamping, and backup — though some researchers find that the friction of handwriting aids careful observation.
 
-**Who uses them**: Scientists, engineers, clinical researchers. Required by institutions like NIH (where lab notebooks are considered federal records).
+**Who uses them**: Scientists, engineers, clinical researchers. Required by institutions like NIH (where lab notebooks are considered federal records). The practice is standard in chemistry, biology, and physics labs, and increasingly in computational research.
 
-**Strengths**: Creates a complete, chronological, legally defensible record of research activity. The discipline of daily recording forces articulation of methods and observations that would otherwise be lost.
+**Strengths**: Creates a complete, chronological, legally defensible record of research activity. The discipline of daily recording forces articulation of methods and observations that would otherwise be lost. In patent disputes or fraud investigations, the notebook is primary evidence.
 
-**Weaknesses**: Chronological organization makes thematic retrieval difficult. Finding a specific observation from months ago requires paging through unrelated entries (unless supplemented with an index).
-
-**When it works best**: Experimental research where the sequence of observations matters and legal or institutional requirements demand a complete record. Less suited to literature-based or conceptual research.
+**Weaknesses**: Chronological organization makes thematic retrieval difficult — finding a specific observation from months ago requires either a good index or paging through unrelated entries. Not suited to literature-based or conceptual research where the sequence of observations is less important than the connections between ideas.
 
 ---
 
@@ -81,7 +83,9 @@ The practice of writing notes in the margins of books — glosses, comments, cri
 
 **Strengths**: Zero friction — annotations happen at the moment of engagement, in context. Captures the reader's reaction alongside the source text. Marginalia in physical books creates a spatial, visual record that can be quickly re-scanned.
 
-**Weaknesses**: Annotations are trapped in the source document. In physical books, they can't be searched, reorganized, or cross-referenced. The key challenge is *extraction* — getting marginalia out of individual sources and into a system where they can be connected. This is precisely the problem that tools like Readwise and workflows like Progressive Summarization aim to solve.
+**How the modern workflow works**: A typical digital annotation pipeline: (1) Highlight passages while reading in Kindle, a PDF reader, or a web browser with Hypothesis. (2) Readwise automatically aggregates highlights from all sources into a single feed. (3) Readwise surfaces highlights for periodic review, often exporting them to a note-taking tool like Obsidian or Notion. (4) During review, the reader processes highlights into their own notes — Zettelkasten-style permanent notes, PARA project notes, or whatever system they use. The key transition is from *captured highlight* to *processed note in your own words*.
+
+**Weaknesses**: Annotations are trapped in the source document unless deliberately extracted. In physical books, they can't be searched, reorganized, or cross-referenced. The key challenge is *extraction* — getting marginalia out of individual sources and into a system where they can be connected. Research bears this out: the Dunlosky et al. (2013) meta-analysis found highlighting to be a low-utility learning strategy on its own — it creates an illusion of engagement without forcing the deeper processing that produces understanding. Highlighting only becomes valuable when it feeds a downstream process (writing notes, creating flashcards, building arguments).
 
 **Key distinction**: Marginalia is a *capture* method, not an *organization* method. Its value depends entirely on what happens next — whether annotations are processed into notes, cards, or permanent records, or whether they remain buried in individual books.
 
@@ -102,7 +106,11 @@ A systematic format for condensing and organizing notes, devised by Walter Pauk,
 
 **Strengths**: Forces active review (you must generate questions and summaries after the initial note-taking). The cue column enables self-testing. Simple enough to use consistently.
 
-**Weaknesses**: Empirical evidence on its effectiveness is mixed — some studies show improved performance for synthesis tasks, while others find no significant difference compared to free-form notes. Best suited to lecture-based learning, less natural for research reading.
+**Weaknesses**: Empirical evidence on its effectiveness is mixed — some studies show improved performance for synthesis tasks, while others find no significant difference compared to free-form notes. Best suited to lecture-based learning; less natural for research reading where you control the pace.
+
+**In practice**: A Cornell page for a research article might look like: in the right column, notes on a study's methodology, key findings, and the author's interpretation. In the left cue column, written afterward: "What was the sample size?" "How does this contradict Smith 2019?" "Useful for Chapter 3 argument." At the bottom, a two-sentence summary: "This study found X using method Y. Strongest evidence so far for Z, but limited by small sample." The cue column is what makes Cornell more than just note-taking — it turns notes into a self-testing tool.
+
+**After capture**: Cornell notes are a starting point, not a destination. The pages must still be processed — key ideas extracted into permanent notes, outlines, or concept maps — or they become inert records that are rarely revisited.
 
 ---
 
@@ -114,15 +122,19 @@ The most common note-taking approach in Western education. Information is organi
 
 **Strengths**: Shows logical structure and relationships between ideas. Easy to review. Works well for material that is inherently hierarchical.
 
-**Weaknesses**: Requires that the material has a clear hierarchical structure — struggles with cross-cutting themes or non-linear relationships. Can become rigid.
+**Weaknesses**: Requires that the material has a clear hierarchical structure — struggles with cross-cutting themes or non-linear relationships. Outlining is as much a *presentation* tool as a *discovery* tool: it works best when you already understand the structure, less well when you're trying to find it. Digital outliners (Workflowy, Dynalist, the outliner mode in Roam and Logseq) address some physical limitations — infinitely nestable, collapsible, and rearrangeable — but the core assumption remains: your material is hierarchical.
 
 ---
 
 ### The Charting Method
 
-Notes organized in a table/matrix format, with columns for different categories and rows for individual items.
+Notes organized in a table or matrix format, with columns for different categories and rows for individual items.
 
-**When it works best**: Comparing multiple items across consistent dimensions — comparing studies in a literature review, comparing features of tools, or tracking arguments across sources.
+**How it works**: Create a table where columns represent dimensions of comparison — author, date, method, key findings, limitations, relevance to your question — and each row is a source or study. As you read each source, fill in the row. The result is a structured comparison that makes patterns and gaps visible at a glance.
+
+**When it works best**: Comparing multiple items across consistent dimensions. Particularly powerful for literature reviews, where you need to compare 20+ studies on the same question. The charting method is essentially what systematic reviewers call "data extraction" — the formal step of pulling standardized information from each included study into a common table.
+
+**Weaknesses**: Only works when your sources share comparable dimensions. Useless for material that doesn't fit a grid. Can reduce complex arguments to oversimplified cells.
 
 ---
 
@@ -138,7 +150,11 @@ Each new piece of information is written as a separate numbered sentence. No hie
 
 ### The Mapping Method
 
-A visual note-taking method where ideas radiate outward from a central concept, similar to mind mapping but typically less formalized. Relationships between ideas are shown through spatial proximity and connecting lines.
+A visual note-taking method where ideas radiate outward from a central concept, with relationships shown through spatial proximity and connecting lines. Less formalized than Buzan's mind mapping (see Section 7) — no rules about keywords, colors, or images. Practitioners simply draw connections as they hear or read them.
+
+**When it works**: Lectures or readings where ideas are loosely connected and don't follow a clear hierarchy — the spatial layout captures relationships that outlining would miss. Also useful in brainstorming sessions and early-stage research exploration.
+
+**Weaknesses**: Maps are difficult to review linearly. Hard to share or digitize. Doesn't produce material that feeds directly into writing without significant reworking.
 
 ---
 
@@ -156,11 +172,13 @@ A systematic analog method for rapid capture, task management, and reflection, c
 
 **Who uses it**: Originally developed to manage ADHD; adopted widely by students, professionals, and anyone who wants a unified analog system. Large online community.
 
-**Strengths**: Extremely flexible — the system is a framework, not a rigid template. The migration ritual forces regular review and pruning. Combines task management, journaling, and note-taking in a single system. The physical notebook creates friction that encourages intentionality.
+**Strengths**: Extremely flexible — the system is a framework, not a rigid template. Combines task management, journaling, and note-taking in a single system. The physical notebook creates friction that encourages intentionality.
 
-**Weaknesses**: Purely analog — no search, no backup. Doesn't scale to large research projects. The creative community around bullet journaling has drifted heavily toward aesthetic decoration, which can obscure the system's utility as a productivity tool.
+**The key mechanism is migration**: At the end of each month, you review every unfinished task. For each one, you ask: is this still worth doing? If yes, you physically rewrite it in the new month's log. If no, you cross it out. This forced rewriting is the system's secret weapon — it makes procrastination *visible* and creates a regular moment of reckoning with your commitments. Tasks that keep getting migrated month after month reveal themselves as either genuinely important (schedule them) or secretly unimportant (drop them). This is why the method works particularly well for people with ADHD or chronic overwhelm: the migration ritual externalizes the executive-function work that their brains struggle with.
 
-**Relevance to research**: Bullet journaling is more a task/life management system than a research organization method, but its rapid logging and migration concepts apply directly to managing the stream of tasks, deadlines, and loose threads that research generates.
+**Weaknesses**: Purely analog — no search, no backup. Doesn't scale to large research projects with hundreds of sources. The creative community around bullet journaling has drifted heavily toward aesthetic decoration, which can obscure the system's utility as a productivity tool.
+
+**Relevance to research**: Bullet journaling is a task and life management system, not a research organization method. But its rapid logging and migration concepts apply directly to managing the stream of tasks, deadlines, and loose threads that research generates — the things that GTD handles in the digital world, bullet journaling handles on paper.
 
 ---
 
@@ -187,7 +205,11 @@ A method of personal knowledge management using interconnected atomic notes. The
 
 **Strengths**: Optimized for long-term, cross-domain knowledge work. Forces deep processing of sources. The linking system surfaces unexpected connections — Luhmann described this as the Zettelkasten "surprising" him. Scales indefinitely (Luhmann's 90,000 cards prove this). Combats the "collector's fallacy" — you can't just hoard information, you must process it.
 
-**Weaknesses**: High upfront learning curve. Requires consistent daily practice (Luhmann averaged ~6 notes per day). The method is frequently misunderstood and oversimplified by enthusiasts. As one skeptical medical doctor noted in a review: information-dense fields (medicine, law) produce ideas at a rate that may overwhelm the note-per-idea model. The method also lacks inherent project management — it builds a knowledge base, not a task list.
+**Weaknesses**: High upfront learning curve. Requires consistent daily practice (Luhmann averaged ~6 notes per day). The method is frequently misunderstood and oversimplified by enthusiasts — many "Zettelkasten" implementations are really just tagged note collections without genuine linking. The note-per-idea model can struggle in information-dense fields: a medical doctor reviewing the method observed that a single radiology paper contains dozens of discrete clinical facts, each of which would require its own note — at that density, the processing overhead may exceed the method's benefits. The method also lacks inherent project management — it builds a knowledge base, not a task list.
+
+**Luhmann's numbering system (Folgezettel)**: A frequently misunderstood detail that is actually central to how the physical system worked. Luhmann used an alternating-number system to create branching sequences: 1, 1a, 1a1, 1a2, 1b, 2, 2a... A new note related to note 1 would be filed as 1a; a note branching from 1a would be 1a1. This meant related notes were stored *physically near each other* without requiring predefined categories. The numbering created an implicit tree structure within the sequential card file, and explicit cross-references linked across different branches. Whether this numbering system is essential to the method or an artifact of physical constraints is actively debated in the community.
+
+**The digital implementation question**: Does Zettelkasten work the same way in Obsidian as it did on physical paper? Some practitioners — most notably Scott Scheper and the "Antinet" community — argue it does not. Their case: the physical constraints of paper (sequential storage, manual search, the effort of handwriting) are *features*, not bugs. They force slower, more deliberate processing. Digital tools make linking too easy and capture too frictionless, which can recreate the collector's fallacy in digital form. The counterargument: digital tools enable backlinks, full-text search, and graph visualization, all of which extend the method's power beyond what paper allows. This is a genuine debate without a settled answer.
 
 **Key distinction**: Zettelkasten is about *thinking*, not about *organizing files*. It is a method for developing ideas, not storing documents.
 
@@ -200,16 +222,18 @@ A method of personal knowledge management using interconnected atomic notes. The
 A personal knowledge management methodology developed by Tiago Forte. Where Zettelkasten optimizes for *thinking*, BASB optimizes for *doing* — turning captured information into creative output and project results.
 
 **PARA** (organizational structure):
-- **Projects**: Short-term efforts with a defined outcome and deadline
-- **Areas**: Long-term responsibilities you maintain (health, finances, career)
-- **Resources**: Topics of ongoing interest (reference material)
-- **Archive**: Inactive items from the other three categories
+- **Projects**: Short-term efforts with a defined outcome and deadline (e.g., "Q2 report," "Kitchen renovation," "Conference paper draft")
+- **Areas**: Long-term responsibilities you maintain (e.g., "Health," "Finances," "Teaching," "Product team")
+- **Resources**: Topics of ongoing interest, not tied to a current project (e.g., "Marketing," "Cooking," "Machine learning")
+- **Archive**: Inactive items from the other three categories (completed projects, former areas of responsibility)
 
 **CODE** (workflow):
 - **Capture**: Save what resonates — don't over-analyze what to keep
 - **Organize**: File by actionability (which project or area needs this?), not by topic
 - **Distill**: Use Progressive Summarization to compress notes into layers of increasing density
 - **Express**: Turn distilled knowledge into creative output — writing, presentations, decisions
+
+**Intermediate Packets**: A key Forte concept that distinguishes BASB from simple filing. Work is broken into small, reusable units — a research summary, a draft outline, a set of curated quotes, a decision analysis — that can be recombined across projects. Instead of starting every project from scratch, you build from existing packets. This is what makes the system compound over time: each project leaves behind assets that future projects can use.
 
 **Progressive Summarization**: A layered highlighting technique for making notes discoverable over time:
 - Layer 1: Original captured notes
@@ -224,7 +248,7 @@ Each layer is only applied when you revisit a note for a specific purpose, not u
 
 **Strengths**: Tool-agnostic (works with Notion, Obsidian, Evernote, Apple Notes, etc.). Action-oriented — organizes by what you need to *do*, not what you need to *know*. Progressive Summarization solves a real problem: making notes discoverable without spending excessive time upfront. Low barrier to entry.
 
-**Weaknesses**: Critics argue Progressive Summarization is "highlighting, not thinking" — it may produce discoverable notes without deep understanding. The system doesn't inherently encourage making connections between ideas (though Forte argues that's not its purpose). Can lead to an ever-growing archive that's never reviewed.
+**Weaknesses**: Critics argue Progressive Summarization is "highlighting, not thinking" — it may produce discoverable notes without deep understanding. Nick Milo has argued that PS users become "parrots, simply regurgitating ideas" rather than developing their own thinking. The rebuttal: PS is explicitly a tool for *discoverability*, not for *understanding* — different tools for different jobs, and criticizing PS for not producing deep thinking is like criticizing a filing cabinet for not writing your paper. The more legitimate concern is that the system doesn't inherently encourage making connections between ideas, which means important cross-domain insights may never surface. Can also lead to an ever-growing archive that is never reviewed.
 
 **Key tension with Zettelkasten**: PARA organizes by project/actionability; Zettelkasten organizes by idea/connectivity. They solve different problems. Some practitioners combine both — using PARA for project management and Zettelkasten for long-term knowledge development.
 
@@ -234,25 +258,27 @@ Each layer is only applied when you revisit a note for a specific purpose, not u
 
 ### Evergreen Notes / Digital Gardens (2019–present)
 
-A philosophy of note-writing developed by Andy Matuschak, building on Zettelkasten principles but with distinct emphases.
+A philosophy of note-writing developed by Andy Matuschak, building on Zettelkasten principles but with distinct emphases. Where Zettelkasten emerged from sociology and German academic culture, Evergreen Notes emerged from software engineering and Silicon Valley's culture of building tools for thought.
 
 **Core principles**:
 - Evergreen notes are "written and organized to evolve, contribute, and accumulate over time, across projects"
 - **Atomic**: Each note about one thing
-- **Concept-oriented**: Titled and organized around concepts, not sources ("spaced repetition promotes long-term retention" rather than "Notes on Ebbinghaus 1885")
+- **Concept-oriented**: Titled and organized around concepts, not sources ("Spaced repetition promotes long-term retention" rather than "Notes on Ebbinghaus 1885")
 - **Densely linked**: Rich interconnection between notes
 - **Associative over hierarchical**: "Prefer associative ontologies to hierarchical taxonomies"
 - Notes are for *yourself* by default
 
-**Digital Gardens**: The related movement of publishing evolving notes publicly on the web. Tom Critchlow appears to have coined the term, and Maggie Appleton has curated a directory. Unlike blogs (reverse-chronological streams), digital gardens are organized spatially/topically and notes are explicitly unfinished — they grow and change over time.
+**How it works day-to-day**: Read something → identify a concept worth capturing → write a note titled as a claim or concept (not as a source reference) → link it to related notes already in your collection → periodically revisit existing notes and revise them as your understanding deepens. The key discipline is writing notes that are *concept-oriented* rather than *source-oriented*: you don't write "Notes on Bush 1945" but rather "Associative trails are more natural than hierarchical indices" and link to Bush as a source.
+
+**Digital Gardens**: The related movement of publishing evolving notes publicly on the web. Tom Critchlow appears to have coined the term, and Maggie Appleton has curated a directory. Unlike blogs (reverse-chronological streams), digital gardens are organized spatially/topically and notes are explicitly unfinished — they grow and change over time. Publishing tools include Quartz, Obsidian Publish, Jekyll-based garden templates, and custom static site generators. Gwern Branwen's site (gwern.net) is perhaps the most impressive example of a mature digital garden — it features completion levels, certainty ratings, importance markers, a changelog, and link previews, demonstrating what the philosophy looks like after years of sustained practice.
 
 **Who uses them**: Researchers, technologists, writers. Andy Matuschak (former Apple engineer, researcher at Khan Academy), Gwern Branwen, Maggie Appleton, and others maintain public digital gardens.
 
 **Strengths**: Explicitly designed for long-term intellectual development. Concept-oriented titles make notes more reusable across projects. Public digital gardens create accountability and serendipitous connection with others.
 
-**Weaknesses**: Requires significant discipline and a particular temperament. Not project-oriented — won't help you ship things. The metaphor can become precious.
+**Weaknesses**: Requires significant discipline and a particular temperament. Not project-oriented — won't help you ship things. The metaphor can become precious. And the daily practice of writing well-titled, well-linked, concept-oriented notes is genuinely difficult — most people who start eventually lapse.
 
-**Key distinction from Zettelkasten**: Matuschak uses the term "evergreen" rather than "permanent" because it implies a *living* document — notes continue to evolve, rather than being "done" once written.
+**Key distinction from Zettelkasten**: Matuschak uses the term "evergreen" rather than "permanent" because it implies a *living* document — notes continue to evolve, rather than being "done" once written. The emphasis on concept-oriented titles is also distinctive: Luhmann's notes were often more contextual and situational, while Matuschak's framework pushes toward abstraction and reusability.
 
 **Key source**: notes.andymatuschak.org.
 
@@ -271,9 +297,9 @@ A productivity system developed by David Allen, published in *Getting Things Don
 4. **Reflect**: Regular reviews (daily, weekly) to keep the system current
 5. **Engage**: Do the work with confidence that nothing is falling through cracks
 
-**Reference filing**: Allen emphasizes a simple, accessible reference filing system — alphabetical, with no more than a few seconds of friction to file or retrieve. "Your filing system should be a simple library—nothing more, nothing less."
+**The Weekly Review**: The beating heart of GTD, and the part most people skip, which is why most GTD implementations decay within weeks. Once a week (Allen suggests Friday afternoon), you: clear all inboxes to zero, review every active project and ensure each has a defined next action, review your calendar for the coming week, review your someday/maybe list, and ask "what else is on my mind?" Without the weekly review, the system's lists go stale, trust erodes, and the mind starts holding things again — defeating the entire purpose.
 
-**Relevance to research**: GTD's capture-and-process discipline directly applies to managing the stream of sources, ideas, and tasks that research generates. Many PKM practitioners use GTD for task management alongside Zettelkasten or PARA for knowledge management.
+**Relevance to research**: GTD's capture-and-process discipline directly applies to managing the stream of sources, ideas, and tasks that research generates. Allen's reference filing principle (simple, alphabetical, minimal friction) applies to organizing research materials. Many PKM practitioners use GTD for task management alongside Zettelkasten or PARA for knowledge management.
 
 **Key source**: David Allen, *Getting Things Done* (2001/2015).
 
@@ -294,7 +320,11 @@ A PKM framework developed by Nick Milo, centered on the concept of Maps of Conte
 
 **Strengths**: Bridges the gap between flat link networks (Zettelkasten) and rigid hierarchies (folders). MOCs provide structure without locking you in. Particularly useful when a note collection grows large enough that pure search and linking become insufficient for navigation.
 
-**Weaknesses**: MOCs are essentially manual curation work — they must be created and maintained. The system can become meta-heavy (spending time organizing your organization rather than doing the work). The commercial ecosystem around LYT (courses, workshops) may overstate the novelty of what is fundamentally "create index notes for your linked notes."
+**In practice**: A MOC titled "MOC — Decision Making" might link to 15 notes on cognitive biases, decision frameworks, and personal decision logs, with brief commentary on how the linked ideas relate to each other and to the theme. The MOC is not a folder — the linked notes can also appear in other MOCs ("MOC — Psychology," "MOC — Management"). MOCs are created when you notice a cluster forming, not planned in advance.
+
+**Weaknesses**: MOCs are manual curation work — they must be created and maintained. The system can become meta-heavy: when you have MOCs linking to MOCs linking to MOCs, you're spending time organizing your organization rather than doing the work. The commercial ecosystem around LYT (courses, workshops) may overstate the novelty of what is fundamentally "create index notes for your linked notes" — a practice that Luhmann himself used (his index cards that listed entry points into topic clusters served a similar function).
+
+**When MOCs fail**: When you create them preemptively (before enough notes exist to warrant one), or when you have so many that finding the right MOC becomes its own search problem.
 
 **Key insight**: MOCs solve a real scaling problem in networked note systems. When you have 50 notes, links are enough. When you have 5,000, you need navigational structure — but you want it to be emergent and flexible, not imposed upfront. MOCs are that middle layer.
 
@@ -302,7 +332,7 @@ A PKM framework developed by Nick Milo, centered on the concept of Maps of Conte
 
 ### The Ryan Holiday / Robert Greene Notecard Method
 
-A practitioner system for reading, researching, and writing books using physical index cards, developed by author Robert Greene (*The 48 Laws of Power*) and taught to Ryan Holiday (*The Obstacle is the Way*, *The Daily Stoic*) during Holiday's time as Greene's research assistant.
+A practitioner system for reading, researching, and writing books using physical index cards, developed by author Robert Greene (*The 48 Laws of Power*, *Mastery*) and taught to Ryan Holiday (*The Obstacle is the Way*, *The Daily Stoic*) during Holiday's time as Greene's research assistant. Greene is the originator; Holiday is the popularizer. Greene's research for a single book typically involves reading 300+ books and generating thousands of cards — a scale that tests any organizational system.
 
 **System**:
 1. Read a book, underlining passages and writing marginalia. Flag pages with post-it notes.
@@ -310,6 +340,8 @@ A practitioner system for reading, researching, and writing books using physical
 3. Return to the book and transfer marked passages to 4×6 index cards — one idea per card, with the theme/category written in the corner.
 4. File cards by category in a box or filing system.
 5. When writing, spread relevant cards on a table and arrange them into an outline.
+
+The final step is the method's climax: hundreds of cards laid out physically, sorted and resorted into chapters, arguments, and narrative arcs. Holiday describes this as the most creative part of the process — seeing the material spatially, moving pieces around, discovering that an anecdote filed under "Persistence" actually belongs in the introduction. No digital tool fully replicates this spatial, tactile arrangement of ideas.
 
 **Who uses it**: Holiday, Greene, and their circle. Several bestselling authors.
 
@@ -323,20 +355,17 @@ A practitioner system for reading, researching, and writing books using physical
 
 ### Umberto Eco's Index Card System (1977)
 
-In *How to Write a Thesis* (1977, English translation 2015), Eco described a comprehensive research workflow centered on index cards — written for Italian undergraduates but applicable far more broadly.
+A complete research workflow centered on index cards, described in *How to Write a Thesis* (1977, English translation 2015). Written for Italian undergraduates but applicable far more broadly — it remains the most pragmatic, least ideological guide to research organization ever published.
 
-**Card types**:
-- **Bibliography cards**: One per source, with full citation information
-- **Reading cards**: Notes from specific readings, always in your own words, always with page references
-- **Ideas cards**: Your own thoughts, reactions, and connections
+**The workflow as a sequence**: (1) Choose a topic you can manage with the time and resources you have. (2) Build a preliminary bibliography. (3) Find and read sources, starting with the most accessible. (4) Make **bibliography cards** — one per source, with full citation. (5) Make **reading cards** — notes from your reading, always in your own words, always with page references. (6) Make **ideas cards** — your own thoughts, reactions, and connections, clearly marked as yours. (7) Organize your cards into a **table of contents** — a working hypothesis of your argument's structure. (8) Write.
 
 **Key principles**:
 - "Never quote from indirect sources and pretend you've read the original"
-- Write ideas, critiques, and suggestions on *any* card — don't over-formalize
-- The table of contents is a *working hypothesis* — structure is tentative and evolves
+- Write ideas, critiques, and suggestions on *any* card — don't over-formalize the boundaries between card types
+- The table of contents is a *working hypothesis*, not a fixed outline — it evolves as your research reveals what the argument actually is, which may not be what you initially expected. This means the structure of your output is *discovered through research*, not imposed before it.
 - Manageability matters more than ambition: "Write the thesis you can actually write"
 
-**Compared to Zettelkasten**: More flexible and pragmatic. Eco allowed mixing note types on cards and didn't insist on rigid atomicity. Where Luhmann built a lifelong system, Eco described a project-scoped method for completing a specific piece of work.
+**Compared to Zettelkasten**: More flexible and pragmatic. Eco allowed mixing note types on cards and didn't insist on rigid atomicity. Where Luhmann built a lifelong system, Eco described a project-scoped method for completing a specific piece of work. The "working hypothesis" concept is Eco's most distinctive contribution — it treats the outline as something to be tested against evidence, not filled in.
 
 **Key source**: Umberto Eco, *How to Write a Thesis* (MIT Press, 2015).
 
@@ -348,9 +377,11 @@ In *How to Write a Thesis* (1977, English translation 2015), Eco described a com
 
 Free, open-source reference management software. The most widely recommended tool for academic research organization.
 
-**What it does**: Captures bibliographic metadata from the web with one click (browser plugin). Stores and organizes PDFs. Supports annotation and highlighting within PDFs. Generates citations and bibliographies in any format. Supports folders, tags, and collections. Integrates with Word, Google Docs, and LibreOffice.
+**How it fits into a research workflow**: Browse the web and find a relevant paper or article → click the Zotero browser plugin to capture full bibliographic metadata automatically → organize the saved reference into a collection for your current project → open the attached PDF and annotate it within Zotero → when writing, use Zotero's Word or Google Docs plugin to insert citations and generate a bibliography in any required format.
 
-**Who uses it**: Academics, graduate students, journalists, anyone managing large numbers of sources.
+**What it does**: Captures bibliographic metadata from the web with one click. Stores and organizes PDFs. Supports annotation and highlighting within PDFs. Generates citations and bibliographies in thousands of formats. Supports folders, tags, and collections. Integrates with Word, Google Docs, LibreOffice, and LaTeX (via BibTeX export). Increasingly, researchers connect Zotero to their note-taking systems — the Zotero Integration plugin for Obsidian, for example, can pull annotations from Zotero PDFs directly into Obsidian notes, bridging reference management and knowledge management.
+
+**Who uses it**: Academics, graduate students, journalists, anyone managing large numbers of sources. Particularly strong for researchers who need to produce formatted citations.
 
 ### Other reference managers
 
@@ -366,7 +397,7 @@ Tools that visualize relationships between academic papers:
 - **Litmaps**: Builds visual maps of literature over time
 - **Inciteful**: Finds connections between papers you specify
 
-These address a specific gap: traditional search (Google Scholar, PubMed) finds papers matching keywords, but doesn't show how papers relate to each other in a research landscape.
+These address a specific gap: traditional search (Google Scholar, PubMed) finds papers matching keywords, but doesn't show how papers relate to each other in a research landscape. In practice: start with a seed paper you know is important, then use Connected Papers or ResearchRabbit to find the papers it's most connected to — these are the ones you should probably read next.
 
 ---
 
@@ -376,13 +407,17 @@ Systems for scheduling review of material at increasing intervals to maximize lo
 
 **History**: Hermann Ebbinghaus first described the forgetting curve in 1885 — the exponential decay of memory over time. Sebastian Leitner developed a physical flashcard box system in 1972, where cards move to higher boxes (longer review intervals) when answered correctly. Piotr Wozniak created SuperMemo in 1985 — the first computer-based spaced repetition system, with algorithms that optimized review intervals based on individual performance. Anki (2006, open-source) became the most widely adopted tool.
 
+**How it works in practice**: Open Anki (or similar tool) → review the cards due today, typically 30–80 cards taking 10–20 minutes → for each card, see the prompt and try to recall the answer → reveal the answer and rate your recall ("Again" / "Hard" / "Good" / "Easy") → the algorithm schedules the next review: cards you recalled easily might not appear again for weeks or months; cards you struggled with reappear within minutes or days. Over time, the algorithm converges on the minimum review frequency needed to maintain each piece of knowledge in long-term memory.
+
 **Who uses it**: Medical students (memorizing vast amounts of clinical knowledge), language learners, law students, and increasingly anyone engaged in knowledge-heavy work. Andy Matuschak has written extensively about spaced repetition as a tool for developing understanding, not just memorizing facts.
 
 **Strengths**: Mathematically grounded in memory research. Extremely effective for retaining factual knowledge over long periods. Anki is free and extensible.
 
-**Weaknesses**: Works best for discrete, testable facts — less suited to complex conceptual understanding or nuanced arguments. Creating good flashcards is itself a skill. Can become a rote-memorization trap if cards are poorly designed (testing recognition rather than understanding). Requires daily discipline.
+**Weaknesses**: Works best for discrete, testable facts — less suited to complex conceptual understanding or nuanced arguments. Creating good flashcards is itself a skill (testing understanding rather than recognition requires carefully designed prompts). Can become a rote-memorization trap if cards are poorly designed. Requires daily discipline — skipping review sessions causes a backlog that compounds quickly.
 
-**Key insight**: Spaced repetition addresses a problem that most PKM systems ignore — the *retention* of organized knowledge over time. You can have the most beautifully organized Zettelkasten in the world, but if you never revisit and can't recall the ideas when you need them, the system fails. Some practitioners integrate spaced repetition with their note systems (e.g., Logseq has built-in flashcard support; Obsidian has spaced repetition plugins).
+**Emerging integration**: Andy Matuschak's experiment with quantum.country embeds spaced repetition prompts directly into expository text — as you read an essay about quantum computing, review questions appear inline, and the system schedules future reviews of those prompts. This blurs the line between reading and retention, making spaced repetition a *reading* method rather than a separate study activity. It's the most interesting recent evolution of the technique.
+
+**Key insight**: Spaced repetition addresses a problem that most PKM systems ignore — the *retention* of organized knowledge over time. You can have the most beautifully organized Zettelkasten in the world, but if you never revisit and can't recall the ideas when you need them, the system fails. Some practitioners integrate spaced repetition with their note systems (e.g., Logseq has built-in flashcard support; Obsidian has spaced repetition plugins; RemNote was designed from the ground up to combine notes and flashcards).
 
 ---
 
@@ -402,14 +437,14 @@ Example: `15.23` = Area 10–19 (Life Admin) → Category 15 (Travel) → Item .
 **Core constraints**:
 - Maximum 10 areas, maximum 10 categories per area
 - Only 2 levels of hierarchy — nothing deeper
-- Every item gets a unique, permanent number
+- Every item gets a unique, permanent number following the AC.ID convention (Area-Category dot ID): `15.23` means Area 10–19, Category 15, Item 23
 - An index links everything together
 
 **Who uses it**: Individuals and small teams organizing file systems, project documentation, or personal information. Originally developed for managing an Australian government activity.
 
-**Strengths**: Imposes discipline through constraints. Numbers are stable (unlike alphabetical names, which shift when new items are added). The two-level limit prevents the "folders within folders within folders" problem. Easy to communicate ("it's in fifteen twenty-three").
+**Strengths**: Imposes discipline through constraints. Numbers are stable (unlike alphabetical names, which shift when new items are added). The two-level limit prevents the "folders within folders within folders" problem. Easy to communicate ("it's in fifteen twenty-three"). Most people memorize their category numbers within weeks.
 
-**Weaknesses**: The 10×10 constraint may feel restrictive for complex domains. Doesn't address *content* organization — it's about *where files live*, not about connecting ideas.
+**Weaknesses**: The 10×10 constraint can feel restrictive for complex domains. What happens when you need an 11th category? (The answer is to reconsider whether two categories should be merged, or whether you've misdrawn your area boundaries — but this isn't always satisfying.) What about an item that genuinely spans two areas? (The answer is: pick one and note the cross-reference in the index — but this introduces the same filing ambiguity the system is supposed to eliminate.) Doesn't address *content* organization — it's about *where files live*, not about connecting ideas.
 
 ---
 
@@ -421,11 +456,11 @@ Collaboratively or personally editable interlinked web pages.
 
 **Structure**: Pages linked by wiki-links (typically `[[Page Name]]`). No inherent hierarchy — structure emerges from links. Pages can be created, edited, and linked at any time.
 
-**Who uses it**: Software developers (internal documentation wikis), academics, and personal knowledge managers. TiddlyWiki has a dedicated community of PKM practitioners.
+**Who uses it**: Software developers (internal documentation wikis are standard in most tech companies), academics, and personal knowledge managers. TiddlyWiki — a self-contained wiki in a single HTML file, no server required, infinitely extensible with plugins — has a dedicated community of PKM practitioners who value its portability and privacy.
 
 **Strengths**: The wiki-link — the ability to create a link to a page that doesn't exist yet, then fill it in later — is one of the most important innovations in knowledge organization. It allows structure to emerge incrementally. Wikis are inherently non-linear and associative.
 
-**Weaknesses**: Wikis can become sprawling and unmaintained. Internal links can break. Without curation, a personal wiki becomes a graveyard of half-finished pages. Collaborative wikis face the "tragedy of the commons" — anyone can edit, but no one is responsible for maintenance.
+**Weaknesses**: Wikis rot. Pages go stale. Links break when pages are renamed or deleted. Without active curation, a personal wiki becomes a graveyard of half-finished pages. The central question with any wiki is: who does the gardening? For personal wikis, the answer is "only you, and you'll stop eventually." Collaborative wikis face the "tragedy of the commons" — anyone can edit, but no one is responsible for maintenance.
 
 **Legacy**: The wiki-link concept directly influenced Roam Research, Obsidian, Logseq, and the entire modern PKM tool ecosystem. The `[[double bracket link]]` syntax that these tools use is descended from wiki conventions.
 
@@ -435,7 +470,7 @@ Collaboratively or personally editable interlinked web pages.
 
 Some researchers, particularly journalists and field researchers, use intentionally simple systems: a single chronological stream of dated notes or files, supplemented by search.
 
-**Philosophy**: Don't spend time filing — spend time searching. Modern full-text search is good enough that filing overhead isn't worth it.
+**Philosophy**: Don't spend time filing — spend time searching. Modern full-text search is good enough that filing overhead isn't worth it. This isn't laziness — it's a deliberate philosophy. Many programmers, for instance, use plain-text files with tools like ripgrep and argue that any time spent on folder structures is wasted. The counterargument: search requires you to remember *what* to search for, and if you've forgotten an idea exists, no search query will find it. Filing and linking create paths to rediscovery; search only works when you already know what you're looking for.
 
 **Tools**: A folder of date-named text files. Apple Notes. Bear. A physical notebook with page numbers and a simple index.
 
@@ -451,10 +486,10 @@ Some researchers, particularly journalists and field researchers, use intentiona
 
 ### SQ3R (1941)
 
-**Survey, Question, Read, Recite, Review**. A reading comprehension method developed by Francis P. Robinson in *Effective Study* (1941/1946).
+**Survey, Question, Read, Recite, Review**. A reading comprehension method developed by Francis P. Robinson in *Effective Study* (1941/1946). One of the oldest structured study methods still in widespread use, and the ancestor of many later variants (PQ4R, PQRST, KWL).
 
 **Steps**:
-1. **Survey**: Skim the text — headings, summaries, structure — to build a framework
+1. **Survey**: Skim the text — headings, summaries, structure — to build a framework (3–5 minutes)
 2. **Question**: Turn headings into questions; generate curiosity before reading
 3. **Read**: Read actively, seeking answers to your questions
 4. **Recite**: After each section, recall and articulate the main points in your own words
@@ -464,7 +499,7 @@ Some researchers, particularly journalists and field researchers, use intentiona
 
 **Strengths**: Makes reading active rather than passive. The question-generation step primes the brain for relevant information. Recitation engages retrieval practice, which strengthens memory.
 
-**Weaknesses**: Can feel mechanical. More suited to textbook reading than to exploratory research reading.
+**Weaknesses**: Can feel mechanical. Designed for *studying* a single text for comprehension, not for *triaging* dozens of sources to find the few worth reading deeply. Research reading often demands rapid skimming and selection — SQ3R is too slow for that initial triage phase. Best used after you've already decided a text is worth deep engagement.
 
 ---
 
@@ -472,11 +507,13 @@ Some researchers, particularly journalists and field researchers, use intentiona
 
 Four levels of reading, each building on the previous:
 1. **Elementary**: Basic literacy — understanding words and sentences
-2. **Inspectional**: Systematic skimming and superficial reading — what is this book about?
-3. **Analytical**: Thorough, active reading — what is the author arguing? Is it true? Does it matter?
-4. **Syntopical**: Reading multiple books on the same subject, constructing an analysis that may not exist in any single source
+2. **Inspectional**: Systematic skimming and superficial reading — what is this book about? What is its structure? What kind of book is it? This is the level most useful for research triage.
+3. **Analytical**: Thorough, active reading — what is the author arguing? What are the key terms? Is the argument valid? What follows from it?
+4. **Syntopical**: Reading multiple books on the same subject, constructing an analysis that may not exist in any single source. This is the most demanding level, and the one most directly relevant to research.
 
-**Relevance to research organization**: Syntopical reading is essentially the skill of literature review — and it requires organizational systems to manage the cross-referencing of ideas across many sources.
+**Syntopical reading as a method**: Adler describes five steps: (1) Find the relevant passages across many books — not every page of every book, but the passages where each author addresses your question. (2) Construct a neutral terminology — different authors use different words for the same concept, so you must establish a shared vocabulary. (3) Define the questions clearly — frame the issues so that each author's position can be compared. (4) Analyze the discussion — where do authors agree, disagree, and why? (5) Analyze the disagreement itself — is it about facts, definitions, or values? This is not just "reading lots of books" — it is a systematic methodology for cross-source analysis.
+
+**Why this matters for organization**: Syntopical reading is impossible without an organizational system. You cannot hold 20 authors' positions in your head simultaneously. This is where Adler's method connects to card systems, charting methods, and concept maps: you need external tools to track which author said what, under which terms, and how their positions relate. The charting method (see Section 2) is essentially the practical implementation of syntopical reading.
 
 **Key source**: Mortimer Adler & Charles Van Doren, *How to Read a Book* (Simon & Schuster, 1972). (Already tracked in this repo's books.md.)
 
@@ -493,7 +530,7 @@ Named after physicist Richard Feynman, though formalized by others after his dea
 4. Go back to the source material and fill the gaps
 5. Simplify further, using analogies
 
-**When it works**: For testing and deepening understanding of concepts you've already encountered. Not a method for *organizing* research per se, but for *processing* it — transforming information into genuine understanding.
+**When it works**: For testing and deepening understanding of concepts you've already encountered. The Feynman Technique is a *processing* tool, not a capture or organization tool — use it after you've gathered and organized material, to test whether you actually understand it. The gaps it reveals tell you exactly where to focus further reading.
 
 ---
 
@@ -514,7 +551,9 @@ Popularized by Tony Buzan through the BBC TV show "Use Your Head" (1974) and lat
 
 **Strengths**: Mirrors how the brain associates ideas (radiant, not linear). Excellent for brainstorming and exploring a topic's breadth. Visually memorable.
 
-**Weaknesses**: Doesn't capture depth or nuance well. Hard to use for dense, information-rich material. Doesn't scale — a mind map with 500 branches is unusable. Not suited to rigorous citation or source management.
+**When mind maps are genuinely useful in research**: At the start of a project (mapping the territory of a new topic), when planning a paper's structure, when brainstorming connections between disparate ideas, and when presenting complex relationships to others. Not for dense note-taking or citation management.
+
+**Weaknesses**: Doesn't capture depth or nuance well. Hard to use for dense, information-rich material. Doesn't scale — a mind map with 500 branches is unusable. Not suited to rigorous citation or source management. Digital mind mapping tools (MindMeister, XMind, Miro) add searchability, sharing, and unlimited canvas size, but lose the tactile, spatial memory benefits of paper.
 
 ---
 
@@ -522,15 +561,15 @@ Popularized by Tony Buzan through the BBC TV show "Use Your Head" (1974) and lat
 
 Developed by Joseph D. Novak at Cornell University in the 1970s, based on David Ausubel's theory of meaningful learning.
 
-**How it differs from mind mapping**: Concept maps use *labeled links* between concepts to form *propositions* — "photosynthesis → requires → sunlight" is a proposition. Mind maps use spatial proximity and branches. Concept maps are about meaning; mind maps are about association.
+**How it differs from mind mapping**: Concept maps use *labeled links* between concepts to form *propositions* — explicit, testable statements. For example: "Plants → perform → photosynthesis → requires → sunlight." Each pair of concepts connected by a labeled link is a proposition. Mind maps use spatial proximity and branches but don't label the relationships. Concept maps are about *meaning*; mind maps are about *association*.
 
 **Structure**: Concepts in boxes or circles, connected by labeled arrows or lines. Hierarchical (most general concepts at top, more specific below). Cross-links between different branches show creative connections.
 
-**Who uses it**: Educators, scientists, organizational researchers. NASA, Procter & Gamble, and the US Navy have used concept mapping for knowledge management.
+**Who uses it**: Educators, scientists, organizational researchers. NASA, Procter & Gamble, and the US Navy have used concept mapping for knowledge management. The canonical software tool is CmapTools (free, from IHMC), built by Novak's research team.
 
-**Strengths**: Makes relationships between concepts explicit and testable (you can read a concept map as a series of propositions). Helps identify misconceptions. Good for analyzing how different ideas relate.
+**Strengths**: Makes relationships between concepts explicit and testable (you can read a concept map as a series of propositions). Helps identify misconceptions — if you can't label the link between two concepts, you may not understand the relationship. Good for analyzing how different ideas relate.
 
-**Weaknesses**: Time-consuming to create well. Requires clarity about what the relationships *are* — vague connections don't work. Less suited to brainstorming than mind maps.
+**Weaknesses**: Time-consuming to create well. Requires clarity about what the relationships *are* — vague connections ("relates to") don't produce useful propositions. Less suited to brainstorming than mind maps because the demand for explicit labels slows the process down.
 
 **Key source**: Novak & Cañas, "The Theory Underlying Concept Maps and How to Construct Them" (IHMC, 2006).
 
@@ -542,18 +581,20 @@ A method for organizing qualitative data by grouping related items, developed by
 
 **Process**:
 1. Record individual ideas, observations, or data points on separate cards or sticky notes
-2. Silently sort cards into groups based on natural affinity (similarity of meaning)
+2. **Silently** sort cards into groups based on natural affinity (similarity of meaning) — the silent sorting is the method's most distinctive and important feature
 3. Label each group
 4. Identify relationships between groups
 5. Draw a diagram showing the structure
 
+**Why silent sorting matters**: The rule that initial sorting is done without discussion prevents dominant voices from imposing their categories on the data. When people sort silently, they group by the meaning they see in the material rather than by what the most articulate person in the room argues for. This allows the data's own structure to emerge — a principle shared with grounded theory's insistence that categories should be discovered, not imposed.
+
 **Who uses it**: UX researchers, design thinkers, project managers, quality managers. One of the Seven Management and Planning Tools in Japanese quality management. Widely used in brainstorming sessions, user research synthesis, and any situation involving large amounts of unstructured qualitative data.
 
-**Strengths**: Works with messy, unstructured data. The silent sorting step prevents groupthink. Forces physical engagement with the material. Groups emerge from the data rather than being imposed. Works well for collaborative sense-making.
+**Strengths**: Works with messy, unstructured data. Forces physical engagement with the material. Groups emerge from the data rather than being imposed. Works well for collaborative sense-making.
 
-**Weaknesses**: Doesn't scale well beyond a few hundred items. Groups are subjective — different teams may produce different groupings. The method produces a snapshot, not a living system.
+**Weaknesses**: Doesn't scale well beyond a few hundred items. Groups are subjective — different teams may produce different groupings from the same data. The method produces a snapshot, not a living system.
 
-**Relevance to research**: The KJ method is essentially what happens when a researcher spreads their notes across a table and starts grouping them. It formalizes a practice that most researchers do intuitively during analysis.
+**Relevance to research**: The KJ method formalizes what most researchers do intuitively during analysis — spreading notes across a table and grouping them into themes. Giving the practice a name and a protocol makes it teachable and repeatable.
 
 ---
 
@@ -570,7 +611,11 @@ A formal methodology for comprehensively reviewing all available research on a s
 - Screen results against criteria
 - Extract data using standardized forms
 - Synthesize findings (sometimes quantitatively via meta-analysis)
-- Report using standardized formats (PRISMA)
+- Report using standardized formats — PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) is the dominant reporting standard, providing a checklist and flow diagram that makes the review process transparent and reproducible
+
+**The organizational demands**: A systematic review can produce hundreds or thousands of screened records. Managing this volume requires dedicated tools: Covidence and Rayyan are purpose-built screening platforms; many researchers use elaborate spreadsheets. The data extraction phase is essentially the charting method (see Section 2) applied at scale — standardized tables capturing the same dimensions from every included study.
+
+**A related method — scoping reviews**: Scoping reviews map the breadth and nature of a research area rather than answering a specific question. They're faster, less rigid, and increasingly used as a precursor to systematic reviews or to identify gaps in a field. Where a systematic review asks "what does the evidence say about X?", a scoping review asks "what kind of evidence about X exists?"
 
 **Who uses it**: Medical researchers, clinical practitioners, policy researchers, PhD students.
 
@@ -582,22 +627,26 @@ A formal methodology for comprehensively reviewing all available research on a s
 
 ### Grounded Theory (1967)
 
-A research methodology developed by sociologists Barney Glaser and Anselm Strauss, described in *The Discovery of Grounded Theory* (1967). Relevant here because it includes a distinctive approach to organizing qualitative data.
+A research methodology developed by sociologists Barney Glaser and Anselm Strauss, described in *The Discovery of Grounded Theory* (1967). Relevant here because it includes a distinctive approach to organizing qualitative data — one that shares deep philosophical commitments with Zettelkasten.
 
 **Core method**: Rather than starting with a hypothesis and testing it, grounded theory *generates* theory from data through iterative coding:
-1. **Open coding**: Label concepts as they emerge from data
-2. **Axial coding**: Group related concepts into categories
-3. **Selective coding**: Identify a core category that ties everything together
+1. **Open coding**: Label concepts as they emerge from data. A researcher interviewing teachers about classroom technology might code a passage about insufficient training time as "time pressure."
+2. **Axial coding**: Group related concepts into categories. "Time pressure," "budget constraints," and "administrative burden" might cluster into a category called "structural barriers to adoption."
+3. **Selective coding**: Identify a core category that ties everything together — the central phenomenon the theory explains.
 
-**The constant comparative method**: Continuously compare new data with existing codes and categories, refining the theory as new information arrives.
+**The constant comparative method**: Continuously compare new data with existing codes and categories, refining the theory as new information arrives. Every new interview or document is analyzed against what you've already found, forcing constant revision.
 
-**Relevance to research organization**: Grounded theory's bottom-up, emergent approach to categorization is philosophically similar to Zettelkasten — categories emerge from the material rather than being imposed on it. Any researcher organizing qualitative data (interview transcripts, field notes, documents) can adapt this approach.
+**The Glaser/Strauss split**: After their foundational collaboration, the two founders diverged significantly. Glaser insisted on pure emergence — the researcher should approach data with no preconceptions and let categories arise naturally. Strauss, working with Juliet Corbin, introduced more structured analytical procedures and acknowledged that researchers inevitably bring prior knowledge. Kathy Charmaz later developed constructivist grounded theory, emphasizing the researcher's active role in constructing (not discovering) categories. "Grounded theory" therefore means different things depending on which tradition you follow — and the differences are substantial enough to produce very different organizational approaches to the same data.
+
+**Relevance to research organization**: Grounded theory's bottom-up, emergent approach to categorization is philosophically similar to Zettelkasten — categories emerge from the material rather than being imposed on it. It is also the theoretical basis for the KJ method's silent sorting practice. Any researcher organizing qualitative data (interview transcripts, field notes, documents) can adapt this approach.
 
 ---
 
 ### Qualitative Coding (broader tradition)
 
 Beyond grounded theory, qualitative researchers use coding as a general method for organizing textual data — highlighting passages in transcripts, field notes, or documents and assigning them codes that can later be grouped, compared, and analyzed.
+
+The fundamental choice in qualitative coding is **deductive vs. inductive**: some researchers start with a pre-defined codebook derived from theory (deductive — "I know what categories I'm looking for"), while others let codes emerge from the data (inductive, as in grounded theory — "I'll see what the data tells me"). Many studies combine both: starting with a loose framework, then allowing new codes to emerge as the analysis deepens.
 
 **Tools**: NVivo, Atlas.ti, MAXQDA, Dedoose, or simply colored highlighters and spreadsheets.
 
@@ -609,7 +658,7 @@ Beyond grounded theory, qualitative researchers use coding as a general method f
 
 ### Journalistic Research Organization
 
-Journalists, especially on long-form and investigative projects, develop pragmatic systems for managing interviews, documents, court records, data sets, and published sources.
+Journalists, especially on long-form and investigative projects, develop pragmatic systems for managing interviews, documents, court records, data sets, and published sources. The defining constraint is *time*: journalists work under deadlines, which means their organizational systems prioritize speed of retrieval over elegance of structure. This is the opposite of Zettelkasten's philosophy, and it's a valid trade-off — a system that's 80% organized and accessible *now* beats a perfect system you'll finish *next month*.
 
 **Common tools and practices**:
 - **DocumentCloud**: A journalist-specific platform for uploading, annotating, searching, and sharing documents
@@ -630,6 +679,8 @@ Lawyers organize research around case files, legal precedents, statutory analysi
 
 Historians working with primary sources face unique organizational challenges — materials are often one-of-a-kind, in multiple languages, distributed across physical archives, and must be handled according to archival rules.
 
+**The provenance problem**: Unlike published sources (which have stable citations), archival materials require tracking *where* you found them — archive name, collection, series, box number, folder number, item number. This metadata burden is substantial: if you can't reconstruct the exact path to a document, you can't cite it, and you can't go back to verify it. No standard reference manager handles this natively.
+
 **Common practices**:
 - **Research logs**: Recording every archive visited, every box examined, every document photographed
 - **Tropy**: A specialized tool for organizing and annotating photographs of archival materials
@@ -647,6 +698,10 @@ A hypothetical device described by Vannevar Bush in his landmark essay "As We Ma
 
 **Why it matters**: Bush articulated the core problem of research organization with startling clarity in 1945: "There is a growing mountain of research. But there is increased evidence that we are being bogged down today as specialization extends." His proposed solution — a personal device for storing, linking, and traversing knowledge — is essentially what Zettelkasten, Obsidian, and the entire PKM movement are still trying to build, 80 years later.
 
+**The "trails" concept**: Bush didn't just envision storage and linking — he described a researcher *building trails* through material, then naming those trails and sharing them with colleagues. A trail is a curated path through a body of knowledge: "Start here, then read this, then see this connection, then notice this implication." This is essentially a guided tour through a knowledge base — conceptually similar to Maps of Content, reading lists, or curated syllabi. No modern tool has fully implemented Bush's vision of shareable, named, associative trails, though wiki link-paths and Obsidian's graph view approximate parts of it.
+
+**What was never built**: The Memex was never constructed. Bush's team at MIT built a Rapid Selector for microfilm retrieval, but the full associative-trail system remained a thought experiment. This matters because it means the Memex is a *design document* — an enormously influential one — but not an empirical proof that the system works as described.
+
 **Influence**: The Memex directly inspired Ted Nelson's concept of hypertext (1960s), which in turn influenced the development of the World Wide Web. The idea of a "personal knowledge base" with associative links runs in a direct line from Bush through Nelson to Cunningham's wikis to today's tools.
 
 **Key source**: Vannevar Bush, "As We May Think," *The Atlantic*, July 1945.
@@ -657,7 +712,11 @@ A hypothetical device described by Vannevar Bush in his landmark essay "As We Ma
 
 The concept of non-sequential text with embedded links, coined by Ted Nelson in 1963 and elaborated in his work *Literary Machines* (1981). Nelson envisioned Project Xanadu — a universal hypertext system where all documents would be interconnected and every quotation would link back to its source.
 
-**Relevance**: Hypertext is the conceptual foundation that makes digital research organization possible. Every wiki-link, every backlink in Obsidian, every hypertext reference on the web descends from Nelson's idea. Understanding hypertext as a concept clarifies why digital tools can do things that physical systems (cards, notebooks) cannot — and also what was lost in the transition from Nelson's original vision (which included bidirectional links and version tracking) to the web's simplified implementation (unidirectional links that break when pages move).
+**What Nelson actually envisioned** (and what the Web didn't implement): Nelson's hypertext included bidirectional links (if A links to B, B automatically knows about the link from A), version tracking (every change to every document preserved), and *transclusion* — the ability to embed a passage from one document in another while maintaining the live link to the original source. The World Wide Web, as implemented by Tim Berners-Lee, simplified hypertext to unidirectional links with no version tracking and no transclusion. The consequences for research organization are concrete: web links break when pages move (link rot), you can't discover who links *to* your work unless they tell you, and quoting a passage requires copying it rather than linking to it.
+
+**Why this matters now**: Obsidian's backlinks, Roam Research's block references, and wiki-style bidirectional links are partial implementations of what Nelson originally envisioned. When an Obsidian user writes a note and sees, in the backlinks panel, every other note that links to it, they're experiencing a feature Nelson described in the 1960s. The modern PKM movement is, in many ways, a grassroots attempt to build the pieces of Xanadu that the Web left out — at the personal scale, for individual researchers, rather than as a universal system.
+
+**Relevance**: Hypertext is the conceptual foundation that makes digital research organization possible. Every wiki-link, every backlink in Obsidian, every hypertext reference on the web descends from Nelson's idea. Understanding hypertext as a concept clarifies why digital tools can do things that physical systems (cards, notebooks) cannot — and also what was lost in the simplification from Nelson's vision to the Web's implementation.
 
 ---
 
@@ -687,20 +746,59 @@ Every research organization method navigates the same tensions:
 | Compare studies or sources systematically | Charting method or systematic review protocols |
 | Brainstorm the scope of a new research area | Mind mapping or concept mapping |
 | Process dense reading material | Cornell notes, SQ3R, or Feynman technique |
-| Manage day-to-day tasks alongside research | GTD |
+| Manage day-to-day tasks alongside research | GTD or Bullet Journal |
 | Maintain a personal knowledge repository | Commonplace book tradition (digital: Obsidian, Logseq) |
+| Navigate a large existing note collection | Maps of Content (LYT) |
+| Retain factual knowledge long-term | Spaced repetition (Anki, Logseq flashcards) |
 
-### The Combined Approach
+### Methods by Research Phase
 
-Most productive researchers don't use a single method in isolation. A realistic contemporary research workflow might combine:
+Different methods suit different phases of the research lifecycle:
 
-1. **Capture**: GTD-style inbox + Zotero for sources
-2. **Reading**: SQ3R or inspectional/analytical reading (Adler)
-3. **Note-taking**: Cornell or literature notes during reading
-4. **Processing**: Zettelkasten-style permanent notes or evergreen notes
-5. **Organizing files**: PARA or Johnny Decimal for project structure
-6. **Retrieval**: Tags + links + full-text search
-7. **Output**: Outlines built from note clusters → drafts → finished work
+| Phase | What you're doing | Methods that help |
+|-------|-------------------|-------------------|
+| **Exploration** | Mapping a new field, identifying what exists | Mind mapping, literature mapping tools, inspectional reading (Adler Level 2), scoping reviews |
+| **Source collection** | Finding and capturing relevant sources | Zotero, RSS feeds, literature mapping tools, web annotation (Hypothesis, Readwise) |
+| **Deep reading** | Understanding individual sources in depth | SQ3R, Cornell notes, marginalia, analytical reading (Adler Level 3) |
+| **Processing** | Turning reading into your own understanding | Zettelkasten permanent notes, Feynman technique, evergreen notes |
+| **Analysis** | Finding patterns across sources | Syntopical reading (Adler Level 4), charting method, KJ method/affinity diagrams, qualitative coding, grounded theory |
+| **Structuring** | Organizing material into an argument | Outlining, Eco's working-hypothesis table of contents, spreading cards on a table (Holiday/Greene) |
+| **Drafting** | Writing the first version | Outlines built from note clusters, intermediate packets (Forte) |
+| **Revision** | Refining the draft | Feynman technique (to test understanding), concept mapping (to check argument structure) |
+| **Maintenance** | Keeping your knowledge base alive over time | Spaced repetition, MOCs, weekly reviews (GTD), digital garden curation |
+
+### The Two Cultures of Research Organization
+
+Underlying all the specific methods, there are fundamentally two philosophies:
+
+**The Curator approach**: Carefully select, deeply process, and richly connect everything. Every source is read, digested, and transformed into your own words. Notes are linked, revised, and maintained. The knowledge base is a work of craft. Methods: Zettelkasten, Eco's card system, Evergreen Notes, concept mapping.
+
+- *Strengths*: Produces deep understanding. The knowledge compounds over time. Connections surface that would never appear through search alone.
+- *Costs*: Slow. Labor-intensive. High maintenance burden. Requires a temperament that finds the processing enjoyable rather than tedious.
+- *Risk*: Perfectionism — spending so much time processing that you never produce output.
+
+**The Collector approach**: Capture broadly, organize minimally, rely on search and project-driven retrieval. Not everything needs to be deeply processed — capture it, file it roughly, and find it when you need it. Methods: PARA, flat files, GTD reference filing, Progressive Summarization.
+
+- *Strengths*: Fast. Low overhead. Doesn't create a processing bottleneck. Scales easily.
+- *Costs*: Shallow understanding of most captured material. Connections between ideas are unlikely to surface unless you're actively looking for them.
+- *Risk*: The collector's fallacy — accumulating material that creates an illusion of knowledge without the reality of understanding.
+
+Most productive researchers lean one way temperamentally, and arguing that one approach is "right" misses the point. The question is: what kind of research are you doing, and what trade-off can you sustain? A PhD student writing a theory-heavy thesis needs curator habits. A journalist on a deadline needs collector habits. Many people need different approaches for different phases of the same project.
+
+### A Specific Combined Workflow: The PhD Student
+
+To make the "combined approach" concrete rather than generic, here is what a workflow might look like for a PhD student writing a literature-based thesis:
+
+1. **Capture**: Zotero for all sources (one-click browser capture). Readwise for highlights from books and articles. A GTD-style inbox (Todoist, a notebook, or an Obsidian daily note) for tasks, ideas, and loose threads.
+2. **Triage**: Inspectional reading (Adler Level 2) on every new source — skim the abstract, introduction, and conclusion to decide if it's worth deep reading. Takes 5–10 minutes per paper. This is where SQ3R is too slow; inspectional reading is the right tool for triage.
+3. **Deep reading**: For sources that pass triage, analytical reading (Adler Level 3) with Cornell notes or marginalia. Annotate PDFs in Zotero.
+4. **Processing**: After reading, write Zettelkasten-style permanent notes — one concept per note, in your own words, linked to related notes. This is the most cognitively demanding step and the most frequently skipped. Budget 15–30 minutes per source.
+5. **Analysis**: When enough notes accumulate around a theme, use the charting method to compare sources side by side. Create a Map of Content for each major theme of the thesis. Periodically spread notes (physical or digital) and use the KJ method to discover groupings you hadn't planned.
+6. **Structuring**: Build the thesis outline from your MOCs and note clusters — Eco's "working hypothesis" approach. Let the structure emerge from the evidence rather than forcing notes into a predetermined outline.
+7. **Writing**: Draft chapters by expanding note clusters into prose. Cite sources via Zotero integration.
+8. **Maintenance**: Weekly review (GTD) to process inboxes, update project status, and decide what to read next. Periodic review of spaced repetition cards for key concepts and definitions.
+
+This is not the only way, but it illustrates how methods from different families complement each other when combined deliberately.
 
 The key insight that runs through almost every method surveyed here: **the act of organizing is itself an act of thinking**. Filing is not overhead — it is understanding. The question is not whether to organize, but which kind of thinking you want the organizing process to force.
 
