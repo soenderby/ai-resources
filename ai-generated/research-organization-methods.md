@@ -14,6 +14,8 @@ The methods cluster naturally into several families:
 6. **Reading and comprehension methods** — structured approaches to extracting knowledge from sources
 7. **Visual and spatial methods** — maps, diagrams, and spatial organization
 8. **Research methodology approaches** — how academic disciplines organize their inquiry
+9. **Specialized and domain-specific approaches** — journalism, law, archival research
+10. **Conceptual ancestors and visionary systems** — Memex, hypertext
 
 ---
 
@@ -69,6 +71,22 @@ Bound notebooks used by scientists to record experiments, observations, methods,
 
 ---
 
+### Marginalia and Annotation (Antiquity onward)
+
+The practice of writing notes in the margins of books — glosses, comments, critiques, cross-references, and reactions.
+
+**History**: Marginalia is as old as books themselves. Biblical manuscripts contain marginal notes for liturgical use. Renaissance scholars annotated their copies of classical texts extensively — Gabriel Harvey's annotations on his books have been studied since the 19th century. Edgar Allan Poe wrote a celebrated essay on marginalia in 1844, distinguishing it from mere memoranda: marginalia is "a thought" the reader "wishes to unburthen itself of." The tradition continues through modern annotation tools.
+
+**Who uses it**: Essentially everyone who reads actively. Scholars, students, writers. In digital form: Kindle highlights, Hypothesis (web annotation), Readwise (aggregates highlights from multiple sources into a reviewable feed), PDF annotation tools.
+
+**Strengths**: Zero friction — annotations happen at the moment of engagement, in context. Captures the reader's reaction alongside the source text. Marginalia in physical books creates a spatial, visual record that can be quickly re-scanned.
+
+**Weaknesses**: Annotations are trapped in the source document. In physical books, they can't be searched, reorganized, or cross-referenced. The key challenge is *extraction* — getting marginalia out of individual sources and into a system where they can be connected. This is precisely the problem that tools like Readwise and workflows like Progressive Summarization aim to solve.
+
+**Key distinction**: Marginalia is a *capture* method, not an *organization* method. Its value depends entirely on what happens next — whether annotations are processed into notes, cards, or permanent records, or whether they remain buried in individual books.
+
+---
+
 ## 2. Structured Note-Taking Methods
 
 ### The Cornell Method (1950s)
@@ -121,6 +139,28 @@ Each new piece of information is written as a separate numbered sentence. No hie
 ### The Mapping Method
 
 A visual note-taking method where ideas radiate outward from a central concept, similar to mind mapping but typically less formalized. Relationships between ideas are shown through spatial proximity and connecting lines.
+
+---
+
+### The Rapid Logging / Bullet Journal Method (2013)
+
+A systematic analog method for rapid capture, task management, and reflection, created by Ryder Carroll and published as *The Bullet Journal Method* (2018).
+
+**Structure**: A single notebook used for everything — tasks, events, notes, and ideas — organized through:
+- **Rapid logging**: Every entry is a short, objective sentence prefixed by a bullet signifier (• for tasks, ○ for events, – for notes)
+- **Index**: A table of contents at the front, updated as you go
+- **Future log**: Overview of upcoming months
+- **Monthly log**: Calendar page + task list for the month
+- **Daily log**: Running chronological entries
+- **Migration**: At each monthly review, unfinished tasks are either migrated forward, scheduled, or struck out
+
+**Who uses it**: Originally developed to manage ADHD; adopted widely by students, professionals, and anyone who wants a unified analog system. Large online community.
+
+**Strengths**: Extremely flexible — the system is a framework, not a rigid template. The migration ritual forces regular review and pruning. Combines task management, journaling, and note-taking in a single system. The physical notebook creates friction that encourages intentionality.
+
+**Weaknesses**: Purely analog — no search, no backup. Doesn't scale to large research projects. The creative community around bullet journaling has drifted heavily toward aesthetic decoration, which can obscure the system's utility as a productivity tool.
+
+**Relevance to research**: Bullet journaling is more a task/life management system than a research organization method, but its rapid logging and migration concepts apply directly to managing the stream of tasks, deadlines, and loose threads that research generates.
 
 ---
 
@@ -239,6 +279,48 @@ A productivity system developed by David Allen, published in *Getting Things Don
 
 ---
 
+### Linking Your Thinking / Maps of Content (2020–present)
+
+A PKM framework developed by Nick Milo, centered on the concept of Maps of Content (MOCs) and the ARC workflow (Add, Relate, Communicate).
+
+**Maps of Content (MOCs)**: Navigational notes that curate links to other notes around a theme. Unlike folders (which impose rigid hierarchy) or pure link networks (which can become an undifferentiated tangle), MOCs are *optional, overlapping, and editable* structural notes. A single note can appear in multiple MOCs. MOCs themselves can link to other MOCs, creating a flexible, multi-level navigation system.
+
+**The ARC framework**:
+- **Add**: Capture new ideas
+- **Relate**: Connect ideas to each other through links and MOCs
+- **Communicate**: Express ideas as finished output
+
+**Who uses it**: Obsidian users, content creators, academics. Milo's LYT (Linking Your Thinking) workshop has been taught at UCLA and featured in Forbes and Fast Company.
+
+**Strengths**: Bridges the gap between flat link networks (Zettelkasten) and rigid hierarchies (folders). MOCs provide structure without locking you in. Particularly useful when a note collection grows large enough that pure search and linking become insufficient for navigation.
+
+**Weaknesses**: MOCs are essentially manual curation work — they must be created and maintained. The system can become meta-heavy (spending time organizing your organization rather than doing the work). The commercial ecosystem around LYT (courses, workshops) may overstate the novelty of what is fundamentally "create index notes for your linked notes."
+
+**Key insight**: MOCs solve a real scaling problem in networked note systems. When you have 50 notes, links are enough. When you have 5,000, you need navigational structure — but you want it to be emergent and flexible, not imposed upfront. MOCs are that middle layer.
+
+---
+
+### The Ryan Holiday / Robert Greene Notecard Method
+
+A practitioner system for reading, researching, and writing books using physical index cards, developed by author Robert Greene (*The 48 Laws of Power*) and taught to Ryan Holiday (*The Obstacle is the Way*, *The Daily Stoic*) during Holiday's time as Greene's research assistant.
+
+**System**:
+1. Read a book, underlining passages and writing marginalia. Flag pages with post-it notes.
+2. Wait several weeks after finishing (to let the less important material fade).
+3. Return to the book and transfer marked passages to 4×6 index cards — one idea per card, with the theme/category written in the corner.
+4. File cards by category in a box or filing system.
+5. When writing, spread relevant cards on a table and arrange them into an outline.
+
+**Who uses it**: Holiday, Greene, and their circle. Several bestselling authors.
+
+**Strengths**: The waiting period before card-writing is a built-in filter — material that doesn't survive the wait probably wasn't important. Physical cards support spatial arrangement during outlining. The category system makes cards retrievable across books. Very concrete and tactile.
+
+**Weaknesses**: Purely analog — no search, no backup. Requires significant time investment. The category system is pre-determined rather than emergent. Doesn't inherently encourage linking ideas across categories.
+
+**Compared to Zettelkasten**: Similar in its use of atomic cards, but organized by *category* rather than by *connection*. Holiday's system is project-scoped (write this book), while Luhmann's was lifelong (build a theory of society). Holiday's categories are top-down; Luhmann's structure was bottom-up.
+
+---
+
 ### Umberto Eco's Index Card System (1977)
 
 In *How to Write a Thesis* (1977, English translation 2015), Eco described a comprehensive research workflow centered on index cards — written for Italian undergraduates but applicable far more broadly.
@@ -288,6 +370,22 @@ These address a specific gap: traditional search (Google Scholar, PubMed) finds 
 
 ---
 
+### Spaced Repetition Systems (1885 concept / 1985 software)
+
+Systems for scheduling review of material at increasing intervals to maximize long-term retention. Not strictly a research *organization* method, but a critical complement: what good is organized knowledge if you can't remember it when you need it?
+
+**History**: Hermann Ebbinghaus first described the forgetting curve in 1885 — the exponential decay of memory over time. Sebastian Leitner developed a physical flashcard box system in 1972, where cards move to higher boxes (longer review intervals) when answered correctly. Piotr Wozniak created SuperMemo in 1985 — the first computer-based spaced repetition system, with algorithms that optimized review intervals based on individual performance. Anki (2006, open-source) became the most widely adopted tool.
+
+**Who uses it**: Medical students (memorizing vast amounts of clinical knowledge), language learners, law students, and increasingly anyone engaged in knowledge-heavy work. Andy Matuschak has written extensively about spaced repetition as a tool for developing understanding, not just memorizing facts.
+
+**Strengths**: Mathematically grounded in memory research. Extremely effective for retaining factual knowledge over long periods. Anki is free and extensible.
+
+**Weaknesses**: Works best for discrete, testable facts — less suited to complex conceptual understanding or nuanced arguments. Creating good flashcards is itself a skill. Can become a rote-memorization trap if cards are poorly designed (testing recognition rather than understanding). Requires daily discipline.
+
+**Key insight**: Spaced repetition addresses a problem that most PKM systems ignore — the *retention* of organized knowledge over time. You can have the most beautifully organized Zettelkasten in the world, but if you never revisit and can't recall the ideas when you need them, the system fails. Some practitioners integrate spaced repetition with their note systems (e.g., Logseq has built-in flashcard support; Obsidian has spaced repetition plugins).
+
+---
+
 ## 5. Digital Organizational Frameworks
 
 ### Johnny Decimal (2010s–present)
@@ -312,6 +410,24 @@ Example: `15.23` = Area 10–19 (Life Admin) → Category 15 (Travel) → Item .
 **Strengths**: Imposes discipline through constraints. Numbers are stable (unlike alphabetical names, which shift when new items are added). The two-level limit prevents the "folders within folders within folders" problem. Easy to communicate ("it's in fifteen twenty-three").
 
 **Weaknesses**: The 10×10 constraint may feel restrictive for complex domains. Doesn't address *content* organization — it's about *where files live*, not about connecting ideas.
+
+---
+
+### Wikis and Personal Wikis (1995 onward)
+
+Collaboratively or personally editable interlinked web pages.
+
+**History**: Ward Cunningham created the first wiki, WikiWikiWeb, in 1994–95, as a supplement to the Portland Pattern Repository (a site about software design patterns). The concept of easy, interlinked, editable pages proved extraordinarily powerful — Wikipedia (2001) is the most visible descendant. Personal wikis emerged as knowledge management tools: TiddlyWiki (2004, a self-contained wiki in a single HTML file), DokuWiki, and others.
+
+**Structure**: Pages linked by wiki-links (typically `[[Page Name]]`). No inherent hierarchy — structure emerges from links. Pages can be created, edited, and linked at any time.
+
+**Who uses it**: Software developers (internal documentation wikis), academics, and personal knowledge managers. TiddlyWiki has a dedicated community of PKM practitioners.
+
+**Strengths**: The wiki-link — the ability to create a link to a page that doesn't exist yet, then fill it in later — is one of the most important innovations in knowledge organization. It allows structure to emerge incrementally. Wikis are inherently non-linear and associative.
+
+**Weaknesses**: Wikis can become sprawling and unmaintained. Internal links can break. Without curation, a personal wiki becomes a graveyard of half-finished pages. Collaborative wikis face the "tragedy of the commons" — anyone can edit, but no one is responsible for maintenance.
+
+**Legacy**: The wiki-link concept directly influenced Roam Research, Obsidian, Logseq, and the entire modern PKM tool ecosystem. The `[[double bracket link]]` syntax that these tools use is descended from wiki conventions.
 
 ---
 
@@ -420,6 +536,27 @@ Developed by Joseph D. Novak at Cornell University in the 1970s, based on David 
 
 ---
 
+### The Affinity Diagram / KJ Method (1960s)
+
+A method for organizing qualitative data by grouping related items, developed by Japanese ethnographer Jiro Kawakita in the 1960s.
+
+**Process**:
+1. Record individual ideas, observations, or data points on separate cards or sticky notes
+2. Silently sort cards into groups based on natural affinity (similarity of meaning)
+3. Label each group
+4. Identify relationships between groups
+5. Draw a diagram showing the structure
+
+**Who uses it**: UX researchers, design thinkers, project managers, quality managers. One of the Seven Management and Planning Tools in Japanese quality management. Widely used in brainstorming sessions, user research synthesis, and any situation involving large amounts of unstructured qualitative data.
+
+**Strengths**: Works with messy, unstructured data. The silent sorting step prevents groupthink. Forces physical engagement with the material. Groups emerge from the data rather than being imposed. Works well for collaborative sense-making.
+
+**Weaknesses**: Doesn't scale well beyond a few hundred items. Groups are subjective — different teams may produce different groupings. The method produces a snapshot, not a living system.
+
+**Relevance to research**: The KJ method is essentially what happens when a researcher spreads their notes across a table and starts grouping them. It formalizes a practice that most researchers do intuitively during analysis.
+
+---
+
 ## 8. Research Methodology Approaches
 
 ### Systematic Literature Review
@@ -500,7 +637,31 @@ Historians working with primary sources face unique organizational challenges �
 
 ---
 
-## 10. Comparison and Synthesis
+## 10. Conceptual Ancestors and Visionary Systems
+
+### The Memex (1945)
+
+A hypothetical device described by Vannevar Bush in his landmark essay "As We May Think" (*The Atlantic*, July 1945). Never built, but enormously influential as a conceptual ancestor of personal computers, hypertext, and all modern PKM systems.
+
+**What Bush envisioned**: A desk-sized device using microfilm to store an individual's entire library — all books, records, and communications — "mechanized so that it may be consulted with exceeding speed and flexibility." The key innovation was **associative trails**: the user could create links between any two items, building personal paths through the information. These trails could be named, saved, and shared with others.
+
+**Why it matters**: Bush articulated the core problem of research organization with startling clarity in 1945: "There is a growing mountain of research. But there is increased evidence that we are being bogged down today as specialization extends." His proposed solution — a personal device for storing, linking, and traversing knowledge — is essentially what Zettelkasten, Obsidian, and the entire PKM movement are still trying to build, 80 years later.
+
+**Influence**: The Memex directly inspired Ted Nelson's concept of hypertext (1960s), which in turn influenced the development of the World Wide Web. The idea of a "personal knowledge base" with associative links runs in a direct line from Bush through Nelson to Cunningham's wikis to today's tools.
+
+**Key source**: Vannevar Bush, "As We May Think," *The Atlantic*, July 1945.
+
+---
+
+### Hypertext (1963 concept)
+
+The concept of non-sequential text with embedded links, coined by Ted Nelson in 1963 and elaborated in his work *Literary Machines* (1981). Nelson envisioned Project Xanadu — a universal hypertext system where all documents would be interconnected and every quotation would link back to its source.
+
+**Relevance**: Hypertext is the conceptual foundation that makes digital research organization possible. Every wiki-link, every backlink in Obsidian, every hypertext reference on the web descends from Nelson's idea. Understanding hypertext as a concept clarifies why digital tools can do things that physical systems (cards, notebooks) cannot — and also what was lost in the transition from Nelson's original vision (which included bidirectional links and version tracking) to the web's simplified implementation (unidirectional links that break when pages move).
+
+---
+
+## 11. Comparison and Synthesis
 
 ### The Fundamental Trade-offs
 
@@ -551,18 +712,27 @@ The key insight that runs through almost every method surveyed here: **the act o
 |--------|-------------|-----|
 | John Locke | Formalized commonplace book method | 1685 |
 | Conrad Gessner | Loose-slip innovation (proto-index cards) | 1550s |
+| Hermann Ebbinghaus | Discovered forgetting curve (foundation of spaced repetition) | 1885 |
 | Francis P. Robinson | SQ3R reading method | 1941 |
+| Vannevar Bush | Memex concept — visionary personal knowledge device | 1945 |
 | Walter Pauk | Cornell note-taking system | 1950s |
 | Niklas Luhmann | Zettelkasten as lifelong knowledge system | 1952–1998 |
+| Jiro Kawakita | KJ Method / affinity diagrams | 1960s |
+| Ted Nelson | Coined "hypertext" — non-sequential linked text | 1963 |
 | Barney Glaser & Anselm Strauss | Grounded theory / constant comparative method | 1967 |
 | Joseph D. Novak | Concept mapping | 1972 |
 | Tony Buzan | Mind mapping popularization | 1974 |
 | Umberto Eco | Index card research system for thesis writing | 1977 |
+| Piotr Wozniak | SuperMemo — first spaced repetition software | 1985 |
 | Mortimer Adler | Levels of reading / syntopical reading | 1940/1972 |
+| Ward Cunningham | Invented the wiki — interlinked editable pages | 1995 |
 | David Allen | Getting Things Done (GTD) | 2001 |
+| Robert Greene & Ryan Holiday | Practitioner notecard system for book writing | 2000s |
+| Ryder Carroll | Bullet Journal Method — rapid logging system | 2013 |
 | Sönke Ahrens | Popularized Zettelkasten in English | 2017 |
 | Tiago Forte | Building a Second Brain / PARA / CODE / Progressive Summarization | 2017–2022 |
 | Andy Matuschak | Evergreen notes philosophy | 2019 |
+| Nick Milo | Linking Your Thinking / Maps of Content | 2020 |
 
 ---
 
@@ -571,4 +741,6 @@ The key insight that runs through almost every method surveyed here: **the act o
 - **How do AI tools change research organization?** LLMs can summarize, connect, and retrieve — but the cognitive benefits of *doing the organizing yourself* (generation effect, forced articulation) may be lost when AI does it for you. This connects to the cognitive offloading concerns tracked elsewhere in this collection.
 - **Does any method scale to truly massive research programs?** Most methods are designed for individual researchers. How do research teams of 10–50 people organize shared knowledge?
 - **What's lost in the transition from physical to digital?** The spatial, tactile qualities of physical cards and notebooks may aid memory and creative thinking in ways that screens don't replicate.
+- **The retention gap**: Most PKM systems focus on organization and retrieval but not on *remembering*. Spaced repetition addresses this, but few practitioners integrate it systematically with their knowledge management workflow. The exception is tools like Logseq and RemNote that build flashcard support directly into the note-taking experience.
+- **The extraction problem**: Many researchers capture valuable annotations (marginalia, highlights, bookmarks) but never extract them into a usable system. Tools like Readwise attempt to bridge this gap by aggregating highlights and surfacing them for review, but the cognitive work of processing captured material into genuine understanding remains manual.
 - **Is there a single best method?** Almost certainly not. The best system is the one you actually use consistently — and that depends on your domain, your goals, and your temperament.
