@@ -90,6 +90,8 @@ By [Simon Willison](people.md#simon-willison). One of the clearest short explana
 ## [How coding agents work](https://simonwillison.net/guides/agentic-engineering-patterns/how-coding-agents-work/)
 By [Simon Willison](people.md#simon-willison). A concise mechanics explainer for what an agent actually is: **an LLM plus a system prompt plus tools in a loop**. Covers tokenization, replayed chat history, token caching, tool calling, and reasoning in a way that is accessible without being hand-wavy. Especially useful as a grounding piece for non-specialists and as an antidote to magical thinking about coding agents.
 
+Also noted by: [Raschka, "Components of a Coding Agent" (2026)](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent) — a longer, more visual walkthrough of the same territory, decomposing a coding harness into six components (repo context, prompt caching, tools/validation, context reduction, memory/transcripts, subagents) with a companion [mini-coding-agent](https://github.com/rasbt/mini-coding-agent) reference implementation in pure Python.
+
 ---
 
 ## [The lethal trifecta for AI agents: private data, untrusted content, and external communication](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
