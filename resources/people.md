@@ -112,6 +112,7 @@ Senior developer writing practical, grounded takes on AI-assisted development.
 - Blog: https://karpathy.bearblog.dev/
 - GitHub: https://github.com/karpathy
 
+Articles: [llm-wiki](articles.md#llm-wiki)
 Projects: [autoresearch](projects.md#autoresearch)
 Events: [2025 LLM Year in Review](events.md#2025-llm-year-in-review)
 

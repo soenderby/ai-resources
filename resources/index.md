@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 44 tracked people
-- `articles.md` — 95 tracked articles / reference sites
+- `articles.md` — 96 tracked articles / reference sites
 - `events.md` — 10 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 23 tracked projects
@@ -68,6 +68,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 - LLM Powered Autonomous Agents
 - My LLM Codegen Workflow ATM
+- llm-wiki
 - My now immaculate knowledge graph of life
 - NK's AI Cookbook
 - They Don’t Feel It — Yet
