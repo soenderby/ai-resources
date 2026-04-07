@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 46 tracked people
-- `articles.md` — 100 tracked articles / reference sites
+- `articles.md` — 102 tracked articles / reference sites
 - `events.md` — 10 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 23 tracked projects
@@ -168,6 +168,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Vulnerability Research Is Cooked
 - Vibe Maintainer
 - You Should Anthropomorphize Your AI. Just Not Into a Companion
+- Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence
+- Finding 0-Days with Claude
 
 ---
 
