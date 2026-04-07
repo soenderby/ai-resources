@@ -59,9 +59,9 @@ Three options:
 
 **B. Become a daemon.** `orca start` launches agents *and* stays running as a supervisor. It owns the health patrol, periodic tasks, and graceful shutdown. `orca stop` signals the daemon to drain and exit.
 
-**C. Hybrid.** `orca start` remains fire-and-forget for agent launching. A separate `orca watch` (not to be confused with the Watch tool) or `orca daemon` command starts the supervisor if the operator wants health checks and periodic tasks. The operator can run with or without the daemon.
+**C. Hybrid.** `orca start` remains fire-and-forget for agent launching. A separate `orca daemon` command starts the supervisor if the operator wants health checks and periodic tasks. The operator can run with or without the daemon.
 
-The document does not prescribe a choice. But proposals #4, #5, and #6 are only feasible under models B or C. Proposals #1, #2, #3, #7, and #8 work under any model.
+The document does not prescribe a choice, but **this decision must be made before the Go rewrite begins** — the binary structure, main loop, signal handling, and state management differ fundamentally between a stateless CLI and a daemon. Proposals #4, #5, and #6 are only feasible under models B or C. Proposals #1, #2, #3, #7, and #8 work under any model.
 
 ---
 
@@ -112,14 +112,12 @@ This is a naming and configuration distinction, not a deep architectural one. It
 
 | Gain | Cost |
 |---|---|
-| Watch can identify and track the operator session | One more file to maintain (`OPERATOR_PROMPT.md`) |
+| Watch can identify, track, and display operator and worker sessions distinctly | One more file to maintain (`OPERATOR_PROMPT.md`) |
 | New users understand the intended workflow immediately | Risk of over-formalizing a flexible pattern — the operator might want to drive orca from different sessions in different contexts, or not use an agent at all (just CLI commands from a regular shell) |
-| The operator prompt can evolve as a reusable artifact | If the prompt is too prescriptive, it constrains how the human uses the agent |
 | Naming the pattern enables designing for it (status summaries, check-in workflows) | Creates an expectation that the operator agent *should* exist, which adds a setup step for casual use |
 | Each type gets appropriate defaults (resume vs fresh, managed vs unmanaged) | Adds a type system where there was none. Every future feature must consider "does this apply to operators, workers, or both?" |
-| Watch can display operator and worker sessions differently | If someone uses orca without an operator agent (just `orca.sh start` and `orca.sh status` from a shell), the type system is unnecessary overhead |
 
-The main risk is premature formalization. If the operator agent is just "whatever interactive session I happen to be in," formalizing it adds ceremony without value. The test: does the operator prompt meaningfully improve the agent's ability to drive orca? If yes, formalize. If you'd skip reading it yourself, it's not worth maintaining.
+The main risk is premature formalization. The operator agent **must remain optional** — orca should work fine for someone who just runs `orca start` and `orca status` from a regular shell without ever setting up an operator agent. The type system should provide better defaults for people who use the pattern, not require the pattern. The test: does the operator prompt meaningfully improve the agent's ability to drive orca? If yes, formalize. If you'd skip reading it yourself, it's not worth maintaining.
 
 ### Design questions
 
@@ -201,6 +199,8 @@ The socket name should be configurable (for the case where the operator wants to
 
 The "can't see everything with plain `tmux ls`" is the real cost. It pushes the operator toward Watch (which knows all sockets) and away from raw tmux commands. This is probably fine if Watch is working well, but it's a real friction increase for ad-hoc debugging.
 
+The deeper issue is **operator-worker navigation**. Currently, the operator can `tmux switch-client -t orca-agent-1` to peek at what a worker is doing. With socket isolation, the operator's session and the worker sessions live on different tmux servers — `switch-client` doesn't work across servers. The operator would need `tmux -L orca-<project> capture-pane -t <session>` or similar workarounds. This changes muscle memory and makes the most common supervision action ("what is that agent doing right now?") harder. Watch's `g` (jump to session) command handles this, but the operator loses the ability to do it with raw tmux.
+
 ---
 
 ## 4. Drain timeout on stop
@@ -250,7 +250,7 @@ If an agent stalls (infinite loop, stuck on a broken merge, burning tokens witho
 
 Implement two lightweight health checks:
 
-**Idle detection**: `metrics.jsonl` has timestamps and durations for every completed run. A periodic check (every 60s) compares the current run's elapsed time against a threshold (configurable, default: hard cap like 30m). When triggered: kill the session, mark the issue as failed (or return it to the queue), log the event.
+**Idle detection**: A periodic check (every 60s) compares how long each active agent session has been running against a threshold (configurable, default: hard cap like 30m). The signal for elapsed time cannot come from `metrics.jsonl` — that log records *completed* runs, and a stalled agent hasn't completed anything. Instead, use one of: (a) the **tmux session's last activity time** (`tmux display-message -p '#{session_activity}'`), (b) a **heartbeat file** that the agent loop touches between steps, or (c) the **session start timestamp** from orca's own session metadata. Option (a) is simplest and requires no agent cooperation; option (b) is most precise but requires agents to actively participate. When triggered: kill the session, mark the issue as failed (or return it to the queue), log the event.
 
 **Crash-loop detection**: Track consecutive failures per agent in a simple counter file. If an agent fails N times (default 3) within M minutes (default 30), stop restarting it and flag it for operator attention. The counter resets on a successful run.
 
@@ -333,7 +333,7 @@ Orca has a single static `AGENT_PROMPT.md` (or `ORCA_PROMPT.md` per project). Ag
 
 ### What Orca should do
 
-Use Go's `text/template` for prompt rendering. Define a standard set of variables:
+Use Go's `text/template` for prompt rendering. Define a standard set of variables available to all prompts:
 
 ```go
 type PromptContext struct {
@@ -343,9 +343,19 @@ type PromptContext struct {
     WorkQuery   string // configured work query command (see #2)
     ProjectRoot string // main repo root
     OrcaHome    string // orca installation path
-    RunID       string // current run identifier (for workers)
+    RunID       string // current run identifier (for workers; empty for operator)
 }
 ```
+
+The operator prompt may need additional context (worker count, metrics summary path). Rather than a second struct, extend `PromptContext` with optional fields that are only populated for the operator:
+
+```go
+    // Operator-only fields (empty/zero for workers)
+    WorkerCount        int    // number of active worker sessions
+    MetricsSummaryPath string // path to latest metrics summary file
+```
+
+This keeps one type while making the asymmetry visible. Template authors check whether a field is populated: `{{if .MetricsSummaryPath}}...{{end}}`.
 
 One prompt template serves all agents and all projects. Per-project customization via `ORCA_PROMPT.md` overrides (checked first, falls back to default template).
 
@@ -389,13 +399,15 @@ In the Go rewrite, define clean lifecycle phases:
 ```go
 type AgentLifecycle struct {
     PreStart []string // shell commands before session creation
-    OnDeath  func()   // unexpected session death handler
+    OnDeath  []string // shell commands on unexpected session death
 }
 ```
 
+Both are shell command lists, not Go functions. This keeps hooks composable, inspectable, and configurable without recompiling orca. Orca's own internal logic (crash-loop counting, issue re-queuing) runs *after* the OnDeath hooks complete — the hooks are an extension point, not a replacement for built-in behavior.
+
 **PreStart** is where worktree setup, branch creation, and environment validation happen. It runs before any tmux session exists. If it fails, the agent doesn't start. Project-specific setup (worktree layout, branch naming) lives in PreStart hooks, not in the core agent loop.
 
-**OnDeath** fires when a session dies unexpectedly. This is where crash-loop counting (#5) and issue re-queuing happen.
+**OnDeath** fires when a session dies unexpectedly. User-provided hooks run first (e.g., project-specific cleanup). Orca's built-in behavior — crash-loop counting (#5) and issue re-queuing — runs after hooks complete.
 
 Start with these two only. A third phase — **SessionSetup** (tmux configuration after session creation: theming, keybindings, status bars) — can be added later if the need arises from real usage. Don't build it speculatively.
 
@@ -459,10 +471,8 @@ These address failure modes. Don't build them until you've seen the failures:
 
 ## Open questions
 
-1. **What is the process model?** (See "The process model question" above.) This is the most consequential architectural decision and affects the feasibility of #4, #5, and #6.
+1. **How should the operator agent receive status?** Options: read a status file (pull), receive a tmux message when something important happens (push), or include status in the prompt template at render time (ambient). The ecosystem principle is "no tool pushes information at the operator." But a notification when a worker quarantines might be worth the interruption. Start with pull (status file from periodic task #6) and add push only if the operator consistently misses important events.
 
-2. **How should the operator agent receive status?** Options: read a status file (pull), receive a tmux message when something important happens (push), or include status in the prompt template at render time (ambient). The ecosystem principle is "no tool pushes information at the operator." But a notification when a worker quarantines might be worth the interruption. Start with pull (status file from periodic task #6) and add push only if the operator consistently misses important events.
+2. **Where does the operator prompt live?** Options: in the orca repo (ships with orca), in the target project (project-specific), or generated from config (dynamic). Recommendation: a default ships with orca, projects can override with `OPERATOR_PROMPT.md` in the project root.
 
-3. **Where does the operator prompt live?** Options: in the orca repo (ships with orca), in the target project (project-specific), or generated from config (dynamic). Recommendation: a default ships with orca, projects can override with `OPERATOR_PROMPT.md` in the project root.
-
-4. **How much of this should be in orca vs. Watch?** The operator agent's identity registration, status display, and session management overlap with Watch's concerns. Proposed boundary: orca owns execution and artifacts, Watch owns observation and navigation, the operator agent uses both. Avoid duplicating functionality.
+3. **How much of this should be in orca vs. Watch?** The operator agent's identity registration, status display, and session management overlap with Watch's concerns. Proposed boundary: orca owns execution and artifacts, Watch owns observation and navigation, the operator agent uses both. Avoid duplicating functionality.
