@@ -150,3 +150,28 @@ By GitHub. Open-source toolkit for spec-driven development with coding agents. I
 
 ## [Graphiti](https://github.com/getzep/graphiti)
 By [Daniel Chalef](people.md#daniel-chalef) (Zep). Open-source temporal knowledge graph engine for AI agent memory (~14K GitHub stars). The core innovation is a **bi-temporal model**: every fact tracks four timestamps — when the system learned it (`created_at`), when it actually happened (`valid_at`), when it stopped being true (`invalid_at`), and when the system learned it was no longer true (`expired_at`). When conflicting information arrives, Graphiti detects the conflict, invalidates the old fact with a timestamp, and creates a causal edge linking old and new facts — preserving history while clearly indicating current validity. Uses a hybrid retrieval approach combining semantic search, BM25 keyword search, and sub-graph traversal. Supports custom entity and edge ontologies via Pydantic, and includes an MCP server. Directly addresses the biggest gap identified in the collection's [judgment memory research](../librarian-notes.md): maintenance of stale knowledge. Where the [Codified Context paper](articles.md#codified-context-infrastructure-for-ai-agents-in-a-complex-codebase) requires manual biweekly reviews and drift detection, Graphiti automates temporal fact management. See the [research paper](articles.md#zep-a-temporal-knowledge-graph-architecture-for-agent-memory) for benchmarks.
+
+---
+
+## [Orca](https://github.com/soenderby/orca)
+By Jakob (@soenderby), the curator of this collection. A batch execution engine for autonomous coding agents, written in bash (~4,000 lines across 10 scripts). Manages the transport layer — tmux sessions, git worktrees, file locking, task queue coordination, structured artifact capture — so that agents can focus on doing work. Deliberately narrow scope: "Orca is not an agent framework. It manages the environment agents run in, not the agents themselves."
+
+The most distinctive design choice is **where intelligence lives**: Orca pushes all reasoning to the model. The harness is a "thin, deterministic shell." It does not select tasks, rank priorities, judge quality, or decide what should happen next. The agent prompt is a protocol specification (how to claim, merge, report), not strategic guidance. Compare with [Gas Town](#gastown), which distributes intelligence across specialized roles, and [Gas City](#gas-city), which decouples it into user-supplied prompt templates. Orca is also **self-improving** — agents running inside it have authored ~60% of its commits, completing issues from the same queue the system manages. See the [generated comparison](../ai-generated/orca-gastown-gascity-comparison.md) for detailed analysis of how the three approaches differ.
+
+Part of a broader [ecosystem](https://github.com/soenderby/orca/blob/main/docs/ecosystem.md) with [Watch](#watch) (operator supervision) and a planned context management tool (Lore). Go rewrite in progress. Queue layer being replaced by [tq](#tq).
+
+---
+
+## [Watch](https://github.com/soenderby/watch)
+By Jakob (@soenderby), the curator of this collection. An operator supervision tool for agent activity, built in Go. Provides an agent-centric view across projects by reading tmux sessions, project config, agent identities, and orca artifacts.
+
+The key conceptual contribution is the **agent-centric model**: the tool is organized around *agents* (persistent identities defined by priming context), not tmux sessions. An agent may have multiple concurrent instances. Sessions are infrastructure; agents are what the operator cares about. This distinction emerged during Watch's design and became a foundational concept for the orca ecosystem. Two modes: a persistent TUI with hierarchical zoom navigation (overview → agent detail → instance detail) and a stateless CLI for scripting. Read-only — Watch observes and navigates, never mutates execution state. Part of the [orca ecosystem](#orca). Status: `0.1.0-dev`, active development.
+
+---
+
+## [tq](https://github.com/soenderby/task-queue)
+By Jakob (@soenderby), the curator of this collection. A minimal task queue for coding agents — local-first, file-based, zero dependencies. Currently in design phase (thorough [DESIGN.md](https://github.com/soenderby/task-queue/blob/main/DESIGN.md), no implementation yet). Designed to be usable both as a standalone CLI tool and as an importable Go library so that [Orca](#orca) can embed it directly without subprocess overhead.
+
+The design is defined as much by its **non-goals** as its goals: no database (no SQLite, no Dolt — storage is plain files), no daemon, no git operations (tq reads and writes files; the caller decides when to commit), no network, no orchestration, no compaction, no hierarchical IDs, no messaging, no MCP. This is a deliberate counterpoint to [Beads](#beads), which has grown to include all of these. Storage is one JSON file per issue in `.tq/issues/`, optimized for git diffs and direct file access by agents. Three statuses (`open`, `in_progress`, `closed`), one dependency type (`blocks`), dependency-aware ready computation with cycle detection. The `claim` operation is the core coordination primitive: atomically sets status and assignee so concurrent agents don't collide.
+
+Sits in the same design space as [ticket](#ticket) and [Beans](#beans) — alternatives to Beads that trade features for simplicity. tq's distinctive angle is the Go library API: the intent is for orca to import it as a module rather than shelling out, replacing the current Beads CLI integration.

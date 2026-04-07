@@ -107,3 +107,15 @@ projects:
   - name: MCP Agent Mail
     github: Dicklesworthstone/mcp_agent_mail
     owner: Jeffrey Emanuel
+
+  - name: Orca
+    github: soenderby/orca
+    owner: Jakob (@soenderby)
+
+  - name: Watch
+    github: soenderby/watch
+    owner: Jakob (@soenderby)
+
+  - name: tq
+    github: soenderby/task-queue
+    owner: Jakob (@soenderby)

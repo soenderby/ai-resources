@@ -10,7 +10,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - `articles.md` — 102 tracked articles / reference sites
 - `events.md` — 10 tracked events / dated snapshots
 - `books.md` — 17 tracked books
-- `projects.md` — 23 tracked projects
+- `projects.md` — 26 tracked projects
 - `glossary.md` — 10 terms under active semantic diffusion
 
 ---
@@ -235,3 +235,6 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Animesis
 - Spec Kit
 - Graphiti
+- Orca
+- Watch
+- tq
