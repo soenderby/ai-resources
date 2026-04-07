@@ -85,7 +85,7 @@ people:
 # Set GITHUB_TOKEN env var to raise rate limit from 60 to 5000 req/hour.
 projects:
   - name: Gastown
-    github: steveyegge/gastown
+    github: gastownhall/gastown
     owner: Steve Yegge
 
   - name: Gas City
@@ -93,7 +93,7 @@ projects:
     owner: Steve Yegge
 
   - name: Beads
-    github: steveyegge/beads
+    github: gastownhall/beads
     owner: Steve Yegge
 
   - name: The Wasteland
