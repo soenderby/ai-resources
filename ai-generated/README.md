@@ -37,6 +37,7 @@ Start here instead of reading the whole directory. Open only the files that are 
 
 - `llm-agent-patterns.md` — synthesis of recurring agent-usage patterns in the collection.
 - `orca-gastown-gascity-comparison.md` — comparison of three multi-agent orchestration approaches.
+- `orca-lessons-from-gas-city.md` — design guidance for Orca's Go rewrite: concrete concepts, techniques, and functionality from Gas City that fit Orca's philosophy. Covers operator agent formalization, configurable work queries, tmux socket isolation, drain timeout, health patrol, periodic automation, prompt templates, lifecycle hooks, and the two-session-type model.
 - `ralph-loop-template.md` — reusable template / pattern summary for Ralph-style loops.
 - `agent-planning-patterns.md` — synthesis on agent planning: why LLM-generated plans are often bad, what patterns improve them, and what makes a plan agent-executable. Covers the Kambhampati LLM-Modulo framework, domain-specific cognitive architectures, ExecPlans format, spec-driven development, and the planner-worker separation.
 
