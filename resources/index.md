@@ -6,8 +6,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 44 tracked people
-- `articles.md` — 96 tracked articles / reference sites
+- `people.md` — 46 tracked people
+- `articles.md` — 100 tracked articles / reference sites
 - `events.md` — 10 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 23 tracked projects
@@ -61,6 +61,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Sebastian Raschka
 - Annie Vella
 - Daniel Chalef
+- Lalit Maganti
+- Thomas Ptacek
 
 ---
 
@@ -162,6 +164,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - How we monitor internal coding agents for misalignment
 - Semantic Diffusion
 - The Middle Loop
+- Eight years of wanting, three months of building with AI
+- Vulnerability Research Is Cooked
+- Vibe Maintainer
+- You Should Anthropomorphize Your AI. Just Not Into a Companion
 
 ---
 

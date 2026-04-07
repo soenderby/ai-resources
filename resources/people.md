@@ -23,6 +23,8 @@ Currently also building more ambitious infrastructure: FrankenSQLite (clean-room
 
 "Digital Griot. Ex-Big Tech insider with an outsider's perspective." Author of *How Not to Use AI*. Deliberately teaches the opposite of the dominant narrative — frames AI not as a tool you command but as a medium you craft with. A useful counterweight to the practitioner-productivity angle that dominates most AI writing.
 
+Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion)
+
 ---
 
 ## Harper Reed
@@ -61,7 +63,7 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Gas City](projects.md#gas-city), [Beads](projects.md#beads), [The Wasteland](projects.md#the-wasteland)  
-Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire)
+Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire), [Vibe Maintainer](articles.md#vibe-maintainer)
 
 Long-time tech industry voice (Amazon, Google, Sourcegraph) and one of the most prolific builders and writers in this collection's agent-orchestration cluster. Creator of Gas Town, Beads, and the broader Wasteland ecosystem. His central bet: the future of coding agents is not better individual assistants but factories and colonies — many agents coordinating through shared memory, structured work tracking, and federated reputation. Writes with conviction and at length; the signal-to-noise ratio is high but the volume is large. His architectural ideas (zero-framework cognition, Beads as external agent memory, the Wasteland's federated work protocol) have influenced several other people and projects tracked here.
 
@@ -454,3 +456,23 @@ Articles: [Zep: A Temporal Knowledge Graph Architecture for Agent Memory](articl
 Projects: [Graphiti](projects.md#graphiti)
 
 Founder of Zep (YC W24), creator of Graphiti. Building the most adopted open-source temporal knowledge graph engine for AI agent memory. His clearest contribution is the argument that agent memory is fundamentally different from knowledge retrieval — it requires temporal tracking, causal reasoning, and fact invalidation, none of which vector-based RAG provides. Worth following with the same caveat as Harrison Chase: commercial interest is real (Zep Cloud), but the open-source contribution is genuine and the specific claims are backed by published benchmarks.
+
+---
+
+## Lalit Maganti
+- Blog: https://lalitm.com/
+- GitHub: https://github.com/LalitMaganti
+
+Articles: [Eight years of wanting, three months of building with AI](articles.md#eight-years-of-wanting-three-months-of-building-with-ai)
+
+Software engineer at Google working on Perfetto (performance tracing). Built syntaqlite (SQLite devtools) as a side project, documenting the process with unusual honesty and rigour — backing every claim with evidence from a project journal, coding transcripts, or commit history. His account of throwing away a month of vibe-coded work and restarting with human-driven design is the best primary-source illustration of the comprehension debt / cognitive offloading dynamic in the collection.
+
+---
+
+## Thomas Ptacek
+- Blog: https://sockpuppet.org/
+- Podcast: Security Cryptography Whatever
+
+Articles: [Vulnerability Research Is Cooked](articles.md#vulnerability-research-is-cooked)
+
+Veteran security researcher with 15+ years in professional vulnerability research and exploit development (Matasano Security, Latacora, Fly.io). One of the most respected independent voices in information security. His writing on AI and security carries weight because it comes from deep practitioner experience rather than commentary — he's done the work that AI is now automating.
