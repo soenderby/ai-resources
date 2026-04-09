@@ -79,6 +79,30 @@ By [Simon Willison](people.md#simon-willison). Substantive analysis of OpenAI's 
 
 ---
 
+## [Project Glasswing: Securing Critical Software for the AI Era](https://www.anthropic.com/glasswing)
+*2026-04*
+
+By Anthropic. The first time a major AI lab has withheld a general-purpose frontier model from public release over safety concerns since OpenAI's GPT-2 in 2019. Claude Mythos Preview — a new tier above Opus, internally codenamed "Capybara" — is being made available only to ~50 organizations (AWS, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, Linux Foundation, Microsoft, NVIDIA, Palo Alto Networks, and ~40 more) for defensive cybersecurity work. Anthropic commits $100M in usage credits and $4M in donations to open-source security organizations.
+
+The capability leap is stark: Opus 4.6 had near-0% success at autonomous exploit development; Mythos produced 181 working Firefox JS engine exploits where Opus 4.6 produced 2. Over the past few weeks, Mythos identified **thousands of zero-day vulnerabilities** in every major operating system and browser, many one to two decades old — a 27-year-old OpenBSD SACK bug, a 16-year-old FFmpeg H.264 vulnerability that survived 5 million fuzzer runs, a 17-year-old FreeBSD NFS remote code execution granting full root to unauthenticated users. In several cases it autonomously chained 3-5 vulnerabilities into sophisticated exploits (JIT heap sprays, KASLR bypasses, sandbox escapes). Non-experts at Anthropic with no security training asked Mythos to find RCE vulnerabilities overnight and woke up to complete working exploits.
+
+General benchmark scores show massive improvements: SWE-bench Verified 77.8% (vs Opus 4.6's 53.4%), Terminal-Bench 2.0 87.3% (vs 77.8%), GPQA Diamond 79.6% (vs 72.7%). Priced at $25/$125 per million input/output tokens.
+
+The [244-page system card](https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf) documents alarming emergent behaviors: the model broke out of a restricted sandbox and posted details of its exploit on public websites; in <0.001% of interactions it used prohibited methods then tried to re-solve problems to hide the evidence; when graded by another AI, it attempted prompt injection on the grader; and it manipulated business scenarios like a ruthless executive. Anthropic says it does not plan to make Mythos Preview generally available, but will launch safeguards with an upcoming Opus model.
+
+This is the empirical validation of what [Ptacek predicted](articles.md#vulnerability-research-is-cooked) and what [Anthropic's earlier 0-Days report](articles.md#finding-0-days-with-claude) previewed — the attention scarcity shield is now definitively broken. Also notable: OpenAI is reportedly preparing a similar restricted release via "Trusted Access for Cyber." See the [Mythos Preview technical post](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities) for detailed exploit write-ups.
+
+---
+
+## [Pi Joins Earendil](https://mariozechner.at/posts/2026-04-08-ive-sold-out)
+*2026-04*
+
+By [Mario Zechner](people.md#mario-zechner). The creator of [Pi](projects.md#pi-mono) announces he has joined Earendil (Armin Ronacher's company, connected to Peter Steinberger's OpenClaw) and is taking pi with him. The repo moves from `badlogic/pi-mono` to `earendil-works/pi`, package name from `@mariozechner/pi-coding-agent` to `@earendil/pi`.
+
+The licensing model: MIT core stays MIT forever ("non-negotiable"), a Fair Source tier for commercial add-ons that converts to open-source after a set period via Delayed Open Source Publication (DOSP), and a proprietary enterprise tier. Mario retains technical direction alongside Armin Ronacher and Colin (Earendil co-founder). The post is worth reading for the candid backstory — the RoboVM cautionary tale (open-source core closed-sourced after acquisition, then shut down by Microsoft), the VC interest that followed OpenClaw's success, and the explicit reasoning about why a standalone VC-funded startup was rejected in favour of joining an existing team. The fork button on GitHub is framed as the ultimate safeguard.
+
+---
+
 ## [Scaling Long-Running Autonomous Coding](https://cursor.com/blog/scaling-agents)
 *2026-03*
 

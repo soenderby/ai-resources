@@ -86,8 +86,8 @@ By Anthropic. Official provider implementation of Ralph-style looping as a Claud
 
 ---
 
-## [pi-mono](https://github.com/badlogic/pi-mono)
-By [Mario Zechner](people.md#mario-zechner). The monorepo behind the Pi ecosystem: not just the coding agent itself, but a reusable stack of packages for multi-provider LLM access, agent runtime/state management, terminal and web UIs, Slack integration, and vLLM pod management. Worth keeping because it shows Pi as a **composable agent toolkit**, not merely a CLI product.
+## [pi-mono](https://github.com/earendil-works/pi)
+By [Mario Zechner](people.md#mario-zechner). The monorepo behind the Pi ecosystem, now under Earendil (previously `badlogic/pi-mono`): not just the coding agent itself, but a reusable stack of packages for multi-provider LLM access, agent runtime/state management, terminal and web UIs, Slack integration, and vLLM pod management. Worth keeping because it shows Pi as a **composable agent toolkit**, not merely a CLI product. MIT core license stays; commercial Fair Source and proprietary enterprise tiers are planned. See [Pi Joins Earendil](events.md#pi-joins-earendil) for the backstory.
 
 The interesting angle for this collection is architectural breadth with a local-first, inspectable substrate. The repo exposes the layers an agent environment is built from — model API, runtime, interfaces, deployment tooling — and pairs naturally with [pi-skills](#pi-skills), which sits one layer up as reusable workflow/context packaging.
 

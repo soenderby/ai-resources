@@ -430,9 +430,10 @@ Professor of computer science at Arizona State University, former president of A
 - X: https://x.com/badlogicgames
 
 Articles: [Thoughts on slowing the fuck down](articles.md#thoughts-on-slowing-the-fuck-down)
+Events: [Pi Joins Earendil](events.md#pi-joins-earendil)
 Projects: [pi-mono](projects.md#pi-mono), [pi-skills](projects.md#pi-skills)
 
-Creator of [Pi](projects.md#pi-mono), one of the most widely used open-source coding agent frameworks (used by OpenClaw, among others), and previously known for [libGDX](https://libgdx.com/), a major cross-platform game development framework. Worth following because he is a rare voice who builds the tools *and* publicly criticises how people use them. His writing is blunt, experience-grounded, and anti-hype — the kind of practitioner perspective this collection prioritises.
+Creator of [Pi](projects.md#pi-mono), one of the most widely used open-source coding agent frameworks (used by OpenClaw, among others), and previously known for [libGDX](https://libgdx.com/), a major cross-platform game development framework. Now at Earendil (Armin Ronacher's company), where pi is the foundation for consumer products. Worth following because he is a rare voice who builds the tools *and* publicly criticises how people use them. His writing is blunt, experience-grounded, and anti-hype — the kind of practitioner perspective this collection prioritises.
 
 ---
 
