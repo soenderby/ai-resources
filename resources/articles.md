@@ -494,6 +494,17 @@ The defense-in-depth framing is honest about limitations: the approach "cruciall
 
 ---
 
+## [Clawdbot Bought Me a Car](https://aaronstuyvenberg.com/posts/clawd-bought-a-car)
+By AJ Stuyvenberg. The most concrete practitioner account of using a personal AI agent ([OpenClaw](projects.md#openclaw)) for a real-world, multi-day task — negotiating the purchase of a Hyundai Palisade. Stuyvenberg gave the agent access to Gmail, Google Calendar, Google Drive, and WhatsApp, then walked it through a complete car-buying workflow: price discovery (scraping Reddit for local prices), inventory search (finding specific color/trim at nearby dealers), dealer outreach (filling out contact forms, sending emails), and a multi-day negotiation (playing dealers off each other with competing quote PDFs). Result: a $4,200 dealer discount below target price.
+
+The value is in the specifics. Every prompt is documented. The failures are honest: the agent pre-filled his real phone number on dealer contact forms without asking, triggering a flood of sales calls; it sent a message meant for one thread into the wrong dealer's email ("I can't talk, I'm in a condo board meeting"); he explicitly didn't allow full autonomy, which "I'm sure would have caused additional issues." The workflow required persistent memory across days — monitoring for dealer replies via cron, resuming negotiations with context — which is what distinguishes always-on agents from chat sessions. Published January 2026, this was the post that made people take OpenClaw seriously as more than a toy.
+
+Also noted by: [Claire Vo on Lenny's Newsletter (March 2026)](https://www.lennysnewsletter.com/p/openclaw-the-complete-guide-to-building) — the most comprehensive user guide; runs 9 agents daily for 2+ months (morning briefings, sales automation, calendar management, code deployment); honest about failures including an agent that "completely screwed up my personal calendar"; names the configuration pattern (SOUL.md + USER.md + AGENTS.md) and the practical advice to "treat your agent like a new employee" with separate accounts;
+[$400 honest review (February 2026)](https://ssntpl.com/i-spent-400-testing-openclaw-ai-an-honest-review/) — the strongest critical assessment; tested across real workflows on Ubuntu and macOS; key finding: "you are not removing human effort — you are changing it from execution to babysitting"; quantifies the hidden cost of supervision time; documents the Anthropic ToS risk (users banned for running automated agents on consumer subscriptions); names the model choice trap (defaulting to Opus when Sonnet suffices);
+[Fountain City enterprise security comparison (March 2026)](https://fountaincity.tech/resources/blog/openclaw-alternatives-enterprise-security-comparison/) — the most rigorous security assessment from production users running 4+ agents; documents every 2026 CVE including CVE-2026-25253 (CVSS 8.8, one-click RCE), 820+ malicious skills in ClawHub, 135K publicly exposed instances; conclusion: "the default deployment posture is not built for environments where a breach has regulatory or financial consequences."
+
+---
+
 ## [Pi: The Minimal Agent Within OpenClaw](https://lucumr.pocoo.org/2026/1/31/pi/)
 By [Armin Ronacher](people.md#armin-ronacher). The post that revealed Pi's role as the engine underneath [OpenClaw](projects.md#openclaw), the most popular open-source personal AI agent. But the real value is the articulation of a **minimal agent philosophy** that runs counter to the tool-accumulation pattern dominating the agent ecosystem.
 
