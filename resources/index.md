@@ -6,11 +6,11 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 47 tracked people
-- `articles.md` — 103 tracked articles / reference sites
+- `people.md` — 49 tracked people
+- `articles.md` — 104 tracked articles / reference sites
 - `events.md` — 13 tracked events / dated snapshots
 - `books.md` — 17 tracked books
-- `projects.md` — 26 tracked projects
+- `projects.md` — 27 tracked projects
 - `glossary.md` — 10 terms under active semantic diffusion
 
 ---
@@ -56,6 +56,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Andy Matuschak
 - Maggie Appleton
 - Mario Zechner
+- Peter Steinberger
+- Armin Ronacher
 - Subbarao Kambhampati
 - Sam Rose
 - Sebastian Raschka
@@ -172,6 +174,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence
 - Finding 0-Days with Claude
 - Assessing Claude Mythos Preview's Cybersecurity Capabilities
+- Pi: The Minimal Agent Within OpenClaw
 
 ---
 
@@ -230,6 +233,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - RepoMirror
 - Ralph Wiggum Plugin for Claude Code
 - pi-mono
+- OpenClaw
 - Compound Engineering Plugin
 - Agentic Coding Flywheel
 - pi-skills

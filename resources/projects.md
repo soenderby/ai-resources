@@ -93,6 +93,15 @@ The interesting angle for this collection is architectural breadth with a local-
 
 ---
 
+## [OpenClaw](https://github.com/openclaw/openclaw)
+By [Peter Steinberger](people.md#peter-steinberger). The most prominent open-source personal AI agent (247K+ GitHub stars, 47K+ forks, 600+ contributors, its own Wikipedia page). Built on top of [Pi](projects.md#pi-mono) as its agent runtime, OpenClaw turns the coding agent into an always-on autonomous assistant that communicates through messaging apps (WhatsApp, Telegram, Discord, Slack, Signal, iMessage, 50+ channels).
+
+Architecture: a long-running Node.js **Gateway** daemon handles session management, channel routing, cron scheduling, webhooks, and authentication; underneath, the **Pi agent runtime** handles prompt assembly, tool execution, context compaction, memory persistence, skill loading, and sandboxing; the Gateway dispatches to any LLM provider. The key design choice: the interface is the messaging app you already use, not a new IDE or chat window. "You message it like a coworker and it does everything a person could do."
+
+Worth tracking because it represents a genuinely new category of software — the self-hosted, always-on personal AI agent — and because its explosive growth (weekend project to 100K+ stars in one week) is the strongest real-world validation that Pi's minimal-core architecture scales to consumer products. Also significant as a cultural phenomenon: spawned Moltbook (social network for AI agents), ClawCon (conference), Chinese adaptations for WeChat/DeepSeek, and prompted Anthropic trademark action. Now maintained by an independent foundation after Steinberger joined OpenAI. See [Armin Ronacher's architecture post](articles.md#pi-the-minimal-agent-within-openclaw) for how Pi and OpenClaw relate.
+
+---
+
 ## [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin)
 By Every. The most useful artifact in Every's compounding-engineering cluster because it turns a lot of marketing language into inspectable workflow. The repo encodes a concrete loop — brainstorm, plan, work, review, compound — plus reviewer agents, reusable skills, and a docs layer (`docs/plans/`, `docs/solutions/`) for carrying lessons forward. The distinctive idea here is less task tracking than **judgment memory**: capturing code-review preferences, architectural heuristics, and solved-problem writeups so future agents inherit taste instead of starting blank. Best read alongside [Stop Coding and Start Planning](articles.md#stop-coding-and-start-planning).
 

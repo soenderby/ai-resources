@@ -494,6 +494,15 @@ The defense-in-depth framing is honest about limitations: the approach "cruciall
 
 ---
 
+## [Pi: The Minimal Agent Within OpenClaw](https://lucumr.pocoo.org/2026/1/31/pi/)
+By [Armin Ronacher](people.md#armin-ronacher). The post that revealed Pi's role as the engine underneath [OpenClaw](projects.md#openclaw), the most popular open-source personal AI agent. But the real value is the articulation of a **minimal agent philosophy** that runs counter to the tool-accumulation pattern dominating the agent ecosystem.
+
+The core argument: Pi has four tools (Read, Write, Edit, Bash) and the shortest system prompt of any agent Ronacher has seen. It makes up for its tiny core with an extension system that persists state into sessions. The deliberate omission of MCP is not laziness but philosophy — "if you want the agent to do something that it doesn't do yet, you don't go and download an extension or a skill. You ask the agent to extend itself." The agent writes its own tools, hot-reloads them, tests them in a loop, and discards them when done. This inverts the usual pattern: instead of building a platform with a marketplace of capabilities, build a minimal substrate that makes capability generation cheap.
+
+Specific architectural decisions worth noting: sessions are trees (you can branch into a side-quest to fix a broken tool without wasting main context), extension state persists to disk across sessions, and the AI SDK is written so sessions can contain messages from many different model providers — acknowledging that portability between providers is limited, so the system avoids leaning into provider-specific features. Pi's extensions can render custom TUI components directly in the terminal. Ronacher's own extensions (`/answer`, `/review`, `/todos`, `/files`) demonstrate the self-extension philosophy: all were built by the agent to his specifications, not downloaded. His browser automation is a skill that uses CDP directly — "not because the alternatives don't work, but because this is just easy and natural." Connects to the collection's agent architecture cluster: the inverse of [Gas Town's](#gas-towns-agent-patterns-design-bottlenecks-and-vibecoding-at-scale) maximalist approach, and a concrete implementation of the minimal-core philosophy that [Emerging Principles of Agent Design](#emerging-principles-of-agent-design) describes abstractly.
+
+---
+
 ## [The Middle Loop](https://annievella.com/posts/the-middle-loop/)
 By [Annie Vella](people.md#annie-vella). The first research-backed naming of **supervisory engineering work** — the effort required to direct AI, evaluate its output, and correct it when it's wrong. Based on a longitudinal mixed-methods study with 158 professional software engineers across 28 countries over six months (October 2024–April 2025), conducted as part of her Masters at the University of Auckland.
 

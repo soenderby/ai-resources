@@ -437,6 +437,28 @@ Creator of [Pi](projects.md#pi-mono), one of the most widely used open-source co
 
 ---
 
+## Peter Steinberger
+- Blog: https://steipete.me/
+- GitHub: https://github.com/steipete
+- X: https://x.com/steipete
+
+Projects: [OpenClaw](projects.md#openclaw)
+
+Austrian developer who created [OpenClaw](projects.md#openclaw) (formerly Clawdbot/Moltbot), the most-starred open-source AI agent on GitHub (247K+ stars). Previously founded PSPDFKit (~€100M exit), spent 13 years building PDF tooling, burned out, and returned to coding through AI in April 2025. Built the OpenClaw prototype in an hour because he "was annoyed that it didn't exist." Joined OpenAI in February 2026; OpenClaw moved to an independent foundation. Part of the Vienna School of Agentic Coding alongside [Armin Ronacher](#armin-ronacher) and [Mario Zechner](#mario-zechner). Worth tracking as the builder who proved the "personal AI agent via messaging" paradigm at consumer scale, even if his writing is more announcement-oriented than analytical.
+
+---
+
+## Armin Ronacher
+- Blog: https://lucumr.pocoo.org/
+- GitHub: https://github.com/mitsuhiko
+- X: https://x.com/maboroshi_san
+
+Articles: [Pi: The Minimal Agent Within OpenClaw](articles.md#pi-the-minimal-agent-within-openclaw)
+
+Creator of Flask, co-founder of Sentry, now CEO of Earendil (where [Pi](projects.md#pi-mono) is the foundation for consumer products including Lefos). One of the most prolific and thoughtful writers in the agentic coding space. His blog combines deep technical detail with a clear design philosophy: minimal cores, self-extending agents, quality over velocity. The post that revealed Pi's role inside [OpenClaw](projects.md#openclaw) is the most widely read explanation of minimal agent architecture. Worth following because he builds at the intersection of open-source infrastructure and AI products, writes about what he actually learns, and consistently prioritises craft — "these systems are also capable of producing a great deal of damage... more slop, more noise, more disingenuous emails."
+
+---
+
 ## Annie Vella
 - Blog: https://annievella.com/
 - LinkedIn: https://www.linkedin.com/in/annievella/
