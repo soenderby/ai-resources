@@ -477,3 +477,14 @@ Software engineer at Google working on Perfetto (performance tracing). Built syn
 Articles: [Vulnerability Research Is Cooked](articles.md#vulnerability-research-is-cooked)
 
 Veteran security researcher with 15+ years in professional vulnerability research and exploit development (Matasano Security, Latacora, Fly.io). One of the most respected independent voices in information security. His writing on AI and security carries weight because it comes from deep practitioner experience rather than commentary — he's done the work that AI is now automating.
+
+---
+
+## Nicholas Carlini
+- Homepage: https://nicholas.carlini.com/
+- Anthropic Red Team blog: https://red.anthropic.com/
+- Google Scholar: https://scholar.google.com/citations?user=q4qDvAoAAAAJ
+
+Articles: [Finding 0-Days with Claude](articles.md#finding-0-days-with-claude), [Assessing Claude Mythos Preview's Cybersecurity Capabilities](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities)
+
+Research scientist at Anthropic leading the Frontier Red Team's cybersecurity research. Previously at Google Brain/DeepMind, with foundational work on adversarial examples and ML security. Now the person most directly responsible for demonstrating that frontier LLMs can find and exploit real-world vulnerabilities at scale — from the initial 500+ vulnerabilities with Opus 4.6 to the thousands of zero-days and autonomous exploit development with Mythos Preview. Worth following because he is producing the primary evidence behind the AI cybersecurity shift, not just commentary on it. His work is the empirical foundation for [Ptacek's structural argument](articles.md#vulnerability-research-is-cooked). Commercial context (Anthropic employee) is real, but the specific vulnerability discoveries and exploit demonstrations are independently verifiable and have been validated by external maintainers (Mozilla, OpenBSD, FreeBSD, Linux kernel).

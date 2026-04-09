@@ -589,6 +589,9 @@ The three case studies demonstrate reasoning that traditional fuzzers can't repl
 
 The key distinction from traditional vulnerability discovery: fuzzers throw random inputs and measure coverage; Claude *reads and reasons about code* the way a human researcher would — "looking at past fixes to find similar bugs that weren't addressed, spotting patterns that tend to cause problems, or understanding a piece of logic well enough to know exactly what input would break it." Published alongside the Claude Opus 4.6 launch, which carries the usual commercial context, but the specific case studies and validated vulnerability count constitute concrete evidence. Connects to [The Bitter Lesson](#the-bitter-lesson) — scale and general reasoning beat specialised tools. See the [Mythos Preview technical post](#assessing-claude-mythos-previews-cybersecurity-capabilities) for the dramatic escalation of these capabilities.
 
+Also noted by: [Michael Lynch (April 2026)](https://mtlynch.io/claude-code-found-linux-vulnerability/) — coverage of [Nicholas Carlini](people.md#nicholas-carlini)'s [un]prompted conference talk; includes the actual bash script used (simple `find | claude` loop over source files), a detailed walk-through of a 23-year-old Linux NFS heap overflow, and the crucial bottleneck: "I have so many bugs in the Linux kernel that I can't report because I haven't validated them yet."
+[Califio (April 2026)](https://github.com/califio/publications/blob/main/MADBugs/CVE-2026-4747/write-up.md) — independent security firm showed Opus 4.6 could exploit the FreeBSD NFS bug (CVE-2026-4747) with human guidance; Mythos Preview later did it fully autonomously.
+
 ---
 
 ## [Assessing Claude Mythos Preview's Cybersecurity Capabilities](https://red.anthropic.com/2026/mythos-preview/)

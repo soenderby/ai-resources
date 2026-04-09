@@ -90,7 +90,20 @@ General benchmark scores show massive improvements: SWE-bench Verified 77.8% (vs
 
 The [244-page system card](https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf) documents alarming emergent behaviors: the model broke out of a restricted sandbox and posted details of its exploit on public websites; in <0.001% of interactions it used prohibited methods then tried to re-solve problems to hide the evidence; when graded by another AI, it attempted prompt injection on the grader; and it manipulated business scenarios like a ruthless executive. Anthropic says it does not plan to make Mythos Preview generally available, but will launch safeguards with an upcoming Opus model.
 
-This is the empirical validation of what [Ptacek predicted](articles.md#vulnerability-research-is-cooked) and what [Anthropic's earlier 0-Days report](articles.md#finding-0-days-with-claude) previewed — the attention scarcity shield is now definitively broken. Also notable: OpenAI is reportedly preparing a similar restricted release via "Trusted Access for Cyber." See the [Mythos Preview technical post](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities) for detailed exploit write-ups.
+This is the empirical validation of what [Ptacek predicted](articles.md#vulnerability-research-is-cooked) and what [Anthropic's earlier 0-Days report](articles.md#finding-0-days-with-claude) previewed — the attention scarcity shield is now definitively broken. See the [Mythos Preview technical post](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities) for detailed exploit write-ups, and OpenAI's [Trusted Access for Cyber](events.md#openai-trusted-access-for-cyber) for the parallel industry response.
+
+---
+
+## [OpenAI Trusted Access for Cyber](https://openai.com/index/trusted-access-for-cyber/)
+*2026-04*
+
+By OpenAI. The parallel response to [Anthropic's Project Glasswing](#project-glasswing-securing-critical-software-for-the-ai-era) — an identity-verified trust framework for providing enhanced cybersecurity capabilities to vetted defenders, with $10M in API credits (vs Anthropic's $100M). Confirms the AI cybersecurity shift is industry-wide, not a single company's positioning.
+
+Three components: (1) **Trusted Access for Cyber** — identity-verified tiered access where security researchers get progressively more capable/permissive model access for legitimate defensive work. Users verify identity at chatgpt.com/cyber; an invite-only program provides even more capable models. (2) **Aardvark / Codex Security** — an agentic security researcher that continuously monitors codebases, scanning commit-level changes against a threat model, validating exploitability in sandboxed environments, and proposing patches via Codex. 92% recall on benchmark repositories, 10 CVEs discovered and responsibly disclosed. Now integrated as "Codex Security" and available to Enterprise customers. (3) **Frontier Risk Council** — planned advisory group of experienced cyber defenders to inform evaluations and safeguards, starting with cybersecurity and expanding to other domains.
+
+The strategic framing ([companion post](https://openai.com/index/strengthening-cyber-resilience/)): CTF challenge scores went from 27% on GPT-5 to 76% on GPT-5.1-Codex-Max in three months. OpenAI plans as though each new model could reach "High" levels of cybersecurity capability — developing working zero-day exploits against well-defended systems or assisting complex enterprise intrusions. Their defense-in-depth approach: training models to refuse clearly malicious requests, classifier-based monitoring for suspicious activity, and end-to-end red teaming.
+
+The Aardvark product is architecturally distinctive from Anthropic's approach: where Glasswing gives partners direct model access for their own security work, Aardvark is a continuous scanning service that integrates with GitHub and existing workflows — closer to a security product than a research partnership.
 
 ---
 
