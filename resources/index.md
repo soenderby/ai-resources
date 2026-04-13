@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 49 tracked people
-- `articles.md` — 106 tracked articles / reference sites
+- `articles.md` — 107 tracked articles / reference sites
 - `events.md` — 14 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 27 tracked projects
@@ -163,6 +163,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Quantization from the Ground Up
 - Prompt Caching: 10x Cheaper LLM Tokens, but How?
 - Zep: A Temporal Knowledge Graph Architecture for Agent Memory
+- The Price of Meaning: Why Every Semantic Memory System Forgets
 - Parse, Don't Validate
 - Harness engineering: leveraging Codex in an agent-first world
 - How we monitor internal coding agents for misalignment
