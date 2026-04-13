@@ -95,7 +95,7 @@ Co-creator of Django and creator of Datasette. One of the most consistent and tr
 - Substack: https://addyo.substack.com/
 - LinkedIn: https://www.linkedin.com/in/addyosmani
 
-Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt)
+Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo)
 
 Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author — recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 

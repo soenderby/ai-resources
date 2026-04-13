@@ -7,8 +7,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 49 tracked people
-- `articles.md` — 105 tracked articles / reference sites
-- `events.md` — 13 tracked events / dated snapshots
+- `articles.md` — 106 tracked articles / reference sites
+- `events.md` — 14 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 27 tracked projects
 - `glossary.md` — 10 terms under active semantic diffusion
@@ -82,6 +82,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Real AI Agents and Real Work
 - Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
 - Critical Thinking during the age of AI
+- Agentic Engine Optimization (AEO)
 - The Anthropic Economic Index
 - Agentic Engineering Patterns
 - Subagents
@@ -193,6 +194,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Why SWE-bench Verified no longer measures frontier coding capabilities
 - Project Glasswing: Securing Critical Software for the AI Era
 - OpenAI Trusted Access for Cyber
+- Our response to the Axios developer tool compromise
 - Pi Joins Earendil
 
 ---

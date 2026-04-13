@@ -318,6 +318,13 @@ By GitHub. Practical guidance based on analysis of 2,500+ repositories. Recommen
 
 ---
 
+## [Agentic Engine Optimization (AEO)](https://addyosmani.com/blog/agentic-engine-optimization/)
+By [Addy Osmani](people.md#addy-osmani). Proposes **Agentic Engine Optimization** as the documentation analogue of SEO: optimize docs for AI coding agents as first-class consumers, not only for human readers. The strongest contribution is operational, not rhetorical: concrete failure modes (silent context-window truncation, `robots.txt` lockouts, analytics blind spots when agent sessions collapse to 1-2 requests), concrete standards (`llms.txt`, `AGENTS.md`, `skill.md`, `agent-permissions.json`), and concrete instrumentation patterns (agent user-agent fingerprints and AI referral sources in server logs).
+
+The useful insight for this collection is that **token economics has become documentation architecture**. If a page is too long or too noisy, agents either truncate, skip, or hallucinate. Treating token count as a first-class documentation metric, publishing machine-readable indexes, and keeping capability summaries compact are presented as practical requirements for reliable agent behavior rather than optional documentation polish. A strong complement to [Agent READMEs](#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding), [Effective Context Engineering](#effective-context-engineering-for-ai-agents), and [Harness engineering](#harness-engineering-leveraging-codex-in-an-agent-first-world): same shift from writing content to designing the information environment agents operate in.
+
+---
+
 ## [AI Generated Architecture Decision Records](https://adolfi.dev/blog/ai-generated-adr/)
 By Adolfi.dev. Describes a workflow where AGENTS.md is configured with "Always create an ADR when changes are made to the codebase that affect the overall architecture" — so the agent creates Architecture Decision Records while the context for the decision is still fresh. This is a production mechanism for decision memory: instead of hoping someone will remember to write the ADR later, the agent captures it as part of the work. A bridge between the traditional ADR literature ([Nygard](articles.md#documenting-architecture-decisions)) and agent-era practice. See also: [Archgate](projects.md#archgate), which takes this further by making ADRs executable.
 
@@ -338,7 +345,8 @@ By [Addy Osmani](people.md#addy-osmani). Coins the term **comprehension debt** �
 
 Also noted by: [Zechner](articles.md#thoughts-on-slowing-the-fuck-down) — "merchants of learned complexity," the same gap explained through mechanism (local-only agent decisions + training data bias → enterprise-grade complexity in weeks); [Osmani (O'Reilly CodeCon, March 2026)](https://addyosmani.com/blog/code-agent-orchestra/) — revisits comprehension debt in a multi-agent context and warns that "if you lose understanding of your own system, you have lost the ability to fix it"; [Willison](https://simonwillison.net/tags/cognitive-debt/) — tags the pattern as "cognitive debt" across multiple link blog posts;
 [Maganti](articles.md#eight-years-of-wanting-three-months-of-building-with-ai) — identifies the specific "losing touch" mechanism: AI writes too much, you lose your mental model, communication with the agent breaks down;
-[Mollick (Claude Dispatch, March 2026)](https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of) — cites research showing financial professionals experienced cognitive overload from chatbot interfaces, the AI presenting walls of text that compounded disorganization.
+[Mollick (Claude Dispatch, March 2026)](https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of) — cites research showing financial professionals experienced cognitive overload from chatbot interfaces, the AI presenting walls of text that compounded disorganization;
+[Bryan Cantrill (April 2026)](https://bcantrill.dtrace.org/2026/04/12/the-peril-of-laziness-lost/) — argues LLMs "lack the virtue of laziness," so they don't optimize for future maintainability and will grow systems unless humans impose abstraction discipline.
 
 ---
 

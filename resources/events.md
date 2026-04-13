@@ -107,6 +107,15 @@ The Aardvark product is architecturally distinctive from Anthropic's approach: w
 
 ---
 
+## [Our response to the Axios developer tool compromise](https://openai.com/index/axios-developer-tool-compromise)
+*2026-04*
+
+By OpenAI. Incident response report for a software supply-chain compromise that reached OpenAI's macOS signing pipeline via a malicious Axios package version pulled by a GitHub Actions workflow. The strongest value is procedural: OpenAI documents the likely exposure path (floating action tag + package freshness gap), the compensating controls, certificate rotation, external DFIR engagement, notarization review, and a forced client upgrade timeline.
+
+Worth preserving as a dated snapshot of how a frontier lab handles developer-tooling compromise under uncertainty: no evidence of user-data exposure or maliciously signed binaries, but full certificate revocation/rotation anyway. Connects to the collection's broader security pattern (prompt injection, agent risk controls, trusted access) by adding a concrete **build-pipeline and signing-chain** failure mode.
+
+---
+
 ## [Pi Joins Earendil](https://mariozechner.at/posts/2026-04-08-ive-sold-out)
 *2026-04*
 
