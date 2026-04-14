@@ -178,6 +178,15 @@ The key conceptual contribution is the **agent-centric model**: the tool is orga
 
 ---
 
+## [Pruner](https://github.com/heikki-laitala/pruner)
+By Heikki Laitala. A Rust CLI that pre-indexes codebases using tree-sitter parsing and gives AI coding agents the context they need in one shot — eliminating the expensive exploration phase where agents burn 50–80 tool calls grepping, globbing, and reading files to understand a codebase. Indexes symbols, imports, call sites, and execution paths into SQLite; takes a natural language task description and returns a focused context package (~3K–15K tokens) with relevant files, symbols, code snippets, and traced call paths. No LLM, no embeddings, no API keys — purely structural, deterministic, and fast.
+
+What makes Pruner distinctive in the collection is the quality of its evaluation. A/B tests on real Claude Code sessions (not synthetic benchmarks), interleaved randomized ordering to control for prompt cache bias, published raw result JSONs, and honest reporting of where it *doesn't* help. Understanding/tracing tasks are the sweet spot (40–62% cheaper, 52–64% faster, 80–86% fewer tool calls). Small implementations show modest gains (~15% cheaper). Narrow fixes can actually *hurt* — the upfront context adds overhead that exceeds navigation savings on simple queries. This honesty about limitations is unusual for tools in this space. Full tree-sitter parsing for Python, JS/TS, Rust, Go, Java, C, C++, C#; basic file-level indexing for everything else. Integrates with Claude Code (via hook or skill), Copilot CLI, or any agent that can call a CLI command.
+
+Sits in a similar problem space to [Aider's repo-map](https://github.com/Aider-AI/aider) (tree-sitter + PageRank, embedded in Aider) and MCP-based code indexing servers, but takes a different approach: standalone CLI, one-shot context generation, no server. The tradeoff is less flexibility (the agent can't ask follow-up questions of the index) but fewer tool calls and lower cost per query. Keyword-based query analysis (not semantic) means it can miss relevant code when names don't match the query vocabulary.
+
+---
+
 ## [tq](https://github.com/soenderby/task-queue)
 By Jakob (@soenderby), the curator of this collection. A minimal task queue for coding agents — local-first, file-based, zero dependencies. Currently in design phase (thorough [DESIGN.md](https://github.com/soenderby/task-queue/blob/main/DESIGN.md), no implementation yet). Designed to be usable both as a standalone CLI tool and as an importable Go library so that [Orca](#orca) can embed it directly without subprocess overhead.
 
