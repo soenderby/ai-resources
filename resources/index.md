@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 49 tracked people
-- `articles.md` — 109 tracked articles / reference sites
+- `articles.md` — 110 tracked articles / reference sites
 - `events.md` — 14 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 28 tracked projects
@@ -180,6 +180,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Reasoning models struggle to control their chains of thought
 - Clawdbot Bought Me a Car
 - Pi: The Minimal Agent Within OpenClaw
+- Your Imagination Was Always Empire's Last Frontier
 
 ---
 

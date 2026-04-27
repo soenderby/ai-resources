@@ -23,7 +23,7 @@ Currently also building more ambitious infrastructure: FrankenSQLite (clean-room
 
 "Digital Griot. Ex-Big Tech insider with an outsider's perspective." Author of *How Not to Use AI*. Deliberately teaches the opposite of the dominant narrative — frames AI not as a tool you command but as a medium you craft with. A useful counterweight to the practitioner-productivity angle that dominates most AI writing.
 
-Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion), [Decoding the Empires of AI](articles.md#decoding-the-empires-of-ai-what-follows-the-mission-statement)
+Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion), [Decoding the Empires of AI](articles.md#decoding-the-empires-of-ai-what-follows-the-mission-statement), [Your Imagination Was Always Empire's Last Frontier](articles.md#your-imagination-was-always-empires-last-frontier)
 
 ---
 
