@@ -125,6 +125,34 @@ The licensing model: MIT core stays MIT forever ("non-negotiable"), a Fair Sourc
 
 ---
 
+## [Sequoia Ascent 2026: Andrej Karpathy on Software 3.0 and Agentic Engineering](https://karpathy.bearblog.dev/sequoia-ascent-2026/)
+*2026-04*
+
+By [Andrej Karpathy](people.md#andrej-karpathy). Fireside chat at Sequoia Ascent 2026, written up as an AI-generated transcript cleanup (Karpathy is transparent about this: "I fed an LLM all of my recent blog posts and tweets, then I had it read this video's transcript"). The most comprehensive single statement of Karpathy's current worldview, synthesising his Software 3.0, vibe coding, and verifiability ideas into a coherent framework.
+
+The genuinely new contribution is a refined **capability spike formula**: `capability spike ≈ verifiability × training attention × data coverage × economic value`. This adds "training attention" as a second axis to his earlier verifiability thesis — model capability depends not only on whether a task has automatic feedback, but on whether the task was emphasised by labs during training, post-training, and RL. Chess improved not just because it's verifiable but because chess data was heavily included in training mixes. The practical founder question: **"are you on the model's rails?"** If your task sits inside a region that's both verifiable and heavily trained, the model will fly; if not, it may fail in surprisingly basic ways.
+
+Other notable framings: (1) the MenuGen progression — an app that "should stop existing" because the neural network can directly transform input to output without scaffolding software; (2) **ghosts, not animals** — LLMs are statistical simulations of human artifacts, not biological agents with drives and curiosity; anthropomorphic expectations mislead; (3) "vibe coding raises the floor; agentic engineering raises the ceiling" — the distinction between anyone making software and the professional discipline of coordinating fallible agents; (4) "you can outsource your thinking, but you can't outsource your understanding"; (5) agent-native infrastructure (sensors and actuators, Markdown docs, CLIs, MCP servers, machine-readable schemas).
+
+Mostly synthesises his previous blog posts ([llm-wiki](articles.md#llm-wiki), Software 3.0, Animals vs. Ghosts). The capability spike formula and the "on the model's rails" framing are the genuinely new contributions that weren't available before. The [YouTube video](https://www.youtube.com/watch?v=96jN2OCOfLs) is the primary source.
+
+---
+
+## [UK AISI Evaluation of OpenAI's GPT-5.5 Cyber Capabilities](https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities)
+*2026-04*
+
+By UK AI Security Institute (AISI). The most significant finding: a second frontier model, from a different developer, now reaches the same level of cybersecurity performance as [Claude Mythos Preview](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities) — confirming that the AI cybersecurity capability leap is a **cross-lab trend**, not a breakthrough specific to Anthropic.
+
+On expert-level tasks, GPT-5.5 achieves 71.4% (±8.0%), compared to 68.6% (±8.7%) for Mythos Preview, 52.4% for GPT-5.4, and 48.6% for Opus 4.7. GPT-5.5 is "one of the strongest models we have tested" and the second model (after Mythos) to complete "The Last Ones" — AISI's 32-step corporate network attack simulation spanning reconnaissance through full network takeover, estimated at 20 hours for a human expert.
+
+The spotlight example is stunning: a custom VM reverse-engineering challenge (`rust_vm`) that Crystal Peak's expert playtester solved in ~12 hours with professional tools. **GPT-5.5 solved it in 10 minutes and 22 seconds at $1.73.** The model reverse-engineered a stripped Rust ELF binary implementing a custom virtual machine, built a disassembler for the unknown bytecode format, reversed the authentication program's checksum chain, solved for a valid input, and submitted the password — all autonomously.
+
+Separately, AISI's red team found a **universal jailbreak** that elicited violative content across all malicious cyber queries in six hours of expert effort. OpenAI made safeguard updates but a configuration issue prevented AISI from verifying the final fix.
+
+Directly extends the cybersecurity evidence chain: [Ptacek's structural argument](articles.md#vulnerability-research-is-cooked) → [Finding 0-Days](articles.md#finding-0-days-with-claude) → [Mythos Preview](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities) → [Project Glasswing](events.md#project-glasswing-securing-critical-software-for-the-ai-era) → now GPT-5.5 confirming the trend is cross-lab. The 10-minute `rust_vm` solve is the clearest single data point for the qualitative difference between human and AI capability timelines.
+
+---
+
 ## [Scaling Long-Running Autonomous Coding](https://cursor.com/blog/scaling-agents)
 *2026-03*
 

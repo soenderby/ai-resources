@@ -678,6 +678,49 @@ Directly addresses the limitation noted in the [monitoring entry](#how-we-monito
 
 ---
 
+## [It's All About Trust — For Those of Us With Trust Issues](https://ai-blog.nkschjoedt.com/its-all-about-trust.html)
+By [NK Schjødt](people.md#nk-schjødt). Argues that AI agent security is fundamentally a **trust and perimeter problem**, not a content-filtering problem — and that the industry is solving the wrong one. The piece opens with the "autonomous car paradox" (we accept humans crashing daily but treat a single AI error as a scandal) and applies the same bias to agent security: we try to make models infallible through guardrails rather than designing survivable environments.
+
+Three specific contributions cross the bar:
+
+1. **The self-agreement trap.** When the same underlying model generates an action, validates the action, and explains the action, you haven't built defence in depth — you've built a feedback loop. "Different layers, same model, same blind spots. That's not defence in depth. It's a mirror holding up another mirror." This names a specific failure mode in common multi-layer guardrail architectures.
+
+2. **The developer analogy.** Every developer in a serious engineering org has production access and could take the company down. We don't try to make them infallible or gate every keystroke. We scope their access, require pull requests, run tests, keep backups, make actions reversible, and contain blast radius. The same discipline applies to AI agents: capability scoping, tool isolation, scoped credentials, reversible actions, human-in-the-loop on irreversible steps, and auditable identity.
+
+3. **Make trust deterministic.** Stop asking "is this content safe?" and start asking "is this input from a trusted origin?" — signed messages, embedded tokens, explicit internal/external labels at the transport layer. The entire trust decision collapses into something deterministic, cheap to verify, and hard to fake. This is how browsers already work (cookies, CORS, CSP, HTTPS, signed tokens).
+
+Backed by strong evidence: Dan Guido's Trail of Bits published their full AI-native operating system (March 2026) — standardised agent toolchain, capability-scoping AI Handbook, curated skill marketplace, sandboxing via devcontainers/macOS/Dropkit, hardened defaults via MDM, kernel-level enforcement via agent-native shells. One in five client findings now originates from an AI agent; they went from ~15 bugs/week to 200 on the right engagements. Their open questions section arrives at the essay's thesis independently: "The data the agent works on is inherently accessible to it."
+
+Directly extends the [lethal trifecta](#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication) (which NK explicitly references — break one side of the triangle and the system becomes much easier to reason about). Connects to [harness engineering](#harness-engineering-leveraging-codex-in-an-agent-first-world) (environment design over model design) and the [OpenClaw security concerns](events.md#pi-joins-earendil) (a running instance of everything this piece warns about).
+
+---
+
+## [Agent Skills](https://addyosmani.com/blog/agent-skills/)
+By [Addy Osmani](people.md#addy-osmani). AI coding agents take the shortest path to "done" — they skip specs, tests, reviews, and scope discipline by default. [Agent Skills](https://github.com/addyosmani/agent-skills) (26K+ stars) is Osmani's attempt to encode senior-engineer discipline as markdown workflows injected into the agent's context. But the article is more valuable than the repo: it articulates *why* each design choice exists and maps the whole thing to Google's published engineering practices.
+
+The most distinctive contribution is **anti-rationalization tables**: pre-written rebuttals to lies the agent hasn't yet told. Each skill includes a table of common excuses an agent (or a tired engineer) might use to skip the workflow, paired with a written counter. *"This task is too simple to need a spec" → "Acceptance criteria still apply. Five lines is fine. Zero lines is not."* The pattern works because LLMs are excellent at rationalisation — they will produce plausible justifications for skipping exactly the parts that matter.
+
+Five design principles do the load-bearing work: (1) **Process over prose** — workflows with exit criteria are agent-actionable; essays are not. (2) Anti-rationalization tables. (3) **Verification as hard exit criterion** — every skill terminates in concrete evidence; "seems right" never closes the loop. (4) **Progressive disclosure** — activate skills by phase, not all at once (the [harness engineering](#harness-engineering-leveraging-codex-in-an-agent-first-world) lesson applied at skill granularity). (5) **Scope discipline** — "touch only what you're asked to touch," which Osmani identifies as the single biggest determinant of whether an agent's PR is mergeable.
+
+The Google DNA is explicit: Hyrum's Law in API design, the test pyramid and "Beyoncé Rule" in TDD, ~100-line PR sizing from Google code review norms, Chesterton's Fence in code simplification, trunk-based development, shift-left and feature flags. None are new ideas — the point is that none are in the agent by default.
+
+Connects to [harness engineering](#harness-engineering-leveraging-codex-in-an-agent-first-world) (skills as a layer of the harness), [comprehension debt](#comprehension-debt) (anti-rationalization as a guard against it), and [AGENTS.md / codified context](#agents-md-specification) (same ecosystem, different granularity). The five non-negotiables from the meta-skill could go into any AGENTS.md tomorrow.
+
+---
+
+## [Contributor Poker and Zig's AI Ban](https://kristoff.it/blog/contributor-poker-and-ai/)
+By Loris Cro (VP of Community, Zig Software Foundation). The best articulation of why an open-source project might rationally ban AI-assisted contributions — and the argument has nothing to do with code quality.
+
+The core insight is **contributor poker**: "you play the person, not the cards." In a successful open-source project, reviewing a PR is not primarily about accepting code — it's about investing in a contributor. The majority of a contributor's value lies in later iterations: trust built, domain knowledge accumulated, institutional memory formed. You spend energy onboarding someone because you expect the relationship to compound over time.
+
+LLM assistance breaks this iterated-game logic. If the contribution comes from a model, the reviewer's investment in understanding the contributor's thinking, correcting their misconceptions, and building mutual trust produces no return. The Zig team has capacity to bet on N new contributors per cycle. If some of those bets land on LLM-assisted drive-bys, the investment is wasted — "from the perspective of contributor poker it's simply irrational for us to bet on LLM users while there's a huge pool of other contributors that don't present this risk factor."
+
+The practical reality has been mostly negative: worthless drive-by PRs full of hallucinations, 10,000-line first-time PRs, and contributors who claimed not to use LLMs but whose follow-up discussion immediately revealed otherwise. A concrete illustration: Bun (acquired by Anthropic) achieved a 4x compilation performance improvement in their Zig fork but does not plan to upstream it because Zig bans LLM-authored contributions.
+
+Inverts the usual discussion: most people ask "is AI-generated code good enough?" Cro says the quality of the code is irrelevant — the purpose of reviewing is to grow the contributor. Connects to [comprehension debt](#comprehension-debt) (AI assistance can short-circuit the learning that makes a contributor valuable) and the broader [bottleneck-shifting pattern](../librarian-notes.md) (AI accelerates the visible work while degrading the invisible social infrastructure). Also raises Willison's pointed question: "if a PR was mostly written by an LLM, why should a project maintainer spend time reviewing it as opposed to firing up their own LLM to solve the same problem?"
+
+---
+
 ## [Your Imagination Was Always Empire's Last Frontier](https://abiawomosu.substack.com/p/your-imagination-was-always-empires)
 By [Abi Awomosu](people.md#abi-awomosu). A ~15,000-word extension of [Decoding the Empires of AI](#decoding-the-empires-of-ai-what-follows-the-mission-statement), moving from diagnosis to cosmology and strategy. Where the previous piece mapped eight companies to colonial archetypes, this one asks: what exactly is being extracted, and what has historically survived extraction?
 

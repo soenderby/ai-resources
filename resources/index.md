@@ -7,8 +7,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 49 tracked people
-- `articles.md` — 110 tracked articles / reference sites
-- `events.md` — 14 tracked events / dated snapshots
+- `articles.md` — 113 tracked articles / reference sites
+- `events.md` — 16 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 28 tracked projects
 - `glossary.md` — 10 terms under active semantic diffusion
@@ -181,6 +181,9 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Clawdbot Bought Me a Car
 - Pi: The Minimal Agent Within OpenClaw
 - Your Imagination Was Always Empire's Last Frontier
+- It's All About Trust — For Those of Us With Trust Issues
+- Agent Skills
+- Contributor Poker and Zig's AI Ban
 
 ---
 
@@ -200,6 +203,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - OpenAI Trusted Access for Cyber
 - Our response to the Axios developer tool compromise
 - Pi Joins Earendil
+- Sequoia Ascent 2026: Andrej Karpathy on Software 3.0 and Agentic Engineering
+- UK AISI Evaluation of OpenAI's GPT-5.5 Cyber Capabilities
 
 ---
 
