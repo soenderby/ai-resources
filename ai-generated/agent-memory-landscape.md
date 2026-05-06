@@ -155,7 +155,7 @@ These tools track work state: what needs doing, what's blocked, what's been trie
 
 These tools try to accumulate domain expertise that makes agents better at their jobs over time. This is the hardest problem and the one where the gap between claims and evidence is widest.
 
-**Zep / Graphiti** (~24K stars, YC W24) has the most sophisticated architecture. Its bi-temporal knowledge graph tracks four timestamps per fact: when learned, when it happened, when invalidated, when the system learned it was invalidated. Conflicting facts create causal edges rather than overwrites. This is the only tool that handles temporal fact evolution natively — a genuinely unique contribution. Peer-reviewed architecture (arXiv 2501.13956). The tradeoff: requires a graph database (Neo4j, FalkorDB, or Kuzu), and Zep Community Edition has been deprecated — you must use Zep Cloud or build on Graphiti directly.
+**Zep / Graphiti** (~24K stars, YC W24) has the most sophisticated architecture. Its bi-temporal knowledge graph tracks four timestamps per fact: when learned, when it happened, when invalidated, when the system learned it was invalidated. Conflicting facts create causal edges rather than overwrites. This is the only tool that handles temporal fact evolution natively — a unique contribution. Peer-reviewed architecture (arXiv 2501.13956). The tradeoff: requires a graph database (Neo4j, FalkorDB, or Kuzu), and Zep Community Edition has been deprecated — you must use Zep Cloud or build on Graphiti directly.
 
 **Cognee** (~12K stars, €7.5M seed) takes a pipeline approach: 30+ data source connectors, multimodal ingestion (text, images, audio), knowledge graph extraction into subject-relation-object triplets. Runs on SQLite + LanceDB + Kuzu by default — no external services required. Python-only. The four-operation API (`remember`, `recall`, `forget`, `improve`) is the cleanest in the space.
 
@@ -189,7 +189,7 @@ These tools manage what's in the agent's active context, deciding what to load, 
 
 **Plain files** (CLAUDE.md, AGENTS.md, this repo's `librarian-notes.md` + `librarian-archive.md`) remain the most widely used memory approach. Zero infrastructure, git-versioned, universally supported. The Agent READMEs study (Gao et al.) found 67% of CLAUDE.md files were modified in multiple commits with median update intervals of ~24 hours — these are living documents. This repo's own two-tier system (hot notes + cold archive + staged loading) implements progressive disclosure in plain markdown.
 
-**Primary jobs vary across this category.** Engram and claude-mem serve context + institutional memory; Beads variants serve task memory; soul.py and plain files serve context memory; Animesis addresses governance; the llm-wiki pattern addresses institutional knowledge. The common thread is minimal infrastructure, not a shared problem.
+**Primary jobs vary across this category.** Engram and claude-mem serve context + institutional memory; soul.py and plain files serve context memory; Animesis addresses governance; the llm-wiki pattern addresses institutional knowledge. The common thread is minimal infrastructure, not a shared problem.
 
 ---
 
@@ -226,7 +226,7 @@ The implication is severe: the field's most-cited performance numbers are measur
 
 Memory systems accumulate. In production, this means:
 
-- **Memory rot:** Facts become stale. "Alice is the project lead" becomes wrong when Bob takes over. Only Zep/Graphiti handles this natively with temporal invalidation. Everything else serves stale memories indefinitely.
+- **Memory rot:** Facts become stale. "Alice is the project lead" becomes wrong when Bob takes over. Only Zep/Graphiti handles *factual* staleness natively with temporal invalidation; Beads handles *task* staleness through compaction. Everything else serves stale memories indefinitely.
 - **The junk drawer problem:** Without principled pruning, memory stores fill with low-value entries. The Agent READMEs study found context files "grow through incremental additions and rarely shrink." This pattern extends to all automated memory systems.
 - **Embedding drift:** When the embedding model is updated or replaced, existing vectors are no longer comparable to new ones. Re-embedding an entire memory store is expensive and rarely done.
 - **Schema evolution:** As a memory system matures, its data model changes. Migrations are rarely smooth. Engram's cloud upgrade flow (doctor → repair → bootstrap → status) hints at the real complexity.
@@ -279,7 +279,7 @@ The "Memory in the Age of AI Agents" survey (ICLR 2026) proposes the most rigoro
 - **Functions:** factual (what is true), experiential (what happened), working (what's active now).
 - **Dynamics:** formation (how memories are created), evolution (how they change), retrieval (how they're accessed).
 
-This taxonomy is used throughout this document to connect industry tools to academic categories: personalization maps to factual memory; task memory maps to working memory; institutional knowledge maps to experiential memory; context engineering maps to the dynamics dimension. The mapping is imperfect — most tools blend categories — but it reveals that the academic framework is more precise than the industry's "short-term vs. long-term" distinction.
+This taxonomy is used throughout this document to connect industry tools to academic categories: personalization maps to factual memory; task memory maps to working memory; institutional knowledge maps to experiential memory; context engineering overlaps with working memory but emphasizes the dynamics of retrieval and evolution (see §2.2 for the full mapping). The mapping is imperfect — most tools blend categories — but it reveals that the academic framework is more precise than the industry's "short-term vs. long-term" distinction.
 
 ---
 
@@ -308,7 +308,7 @@ The honest assessment: plain files set a high bar *for the use case they serve*.
 
 **Temporal fact management** (institutional memory). When facts change over time and stale information actively harms the agent, Zep/Graphiti's bi-temporal model provides something no other approach handles well. The failure mode it prevents — the agent recommending something the user has moved away from because the old embedding is closer — is real and consequential.
 
-**Cross-session learning at enterprise scale** (institutional memory). When an agent runs hundreds of times against the same domain (customer support, procurement, compliance), accumulating institutional knowledge produces measurable improvement. This is the strongest case for Mem0, Hindsight, or Cognee — but only at volumes where the overhead is amortized.
+**Cross-session learning at enterprise scale** (institutional memory). When an agent runs hundreds of times against the same domain (customer support, procurement, compliance), accumulating institutional knowledge should produce improvement over time. This is the strongest case for Mem0, Hindsight, or Cognee — but the improvement is reported by vendors rather than independently measured (see §5.3), and only justified at volumes where the overhead is amortized.
 
 **Conflict detection** (institutional memory maintenance). Engram's `mem_judge` / `mem_compare` tools address a problem nobody else is solving: surfacing contradictions between stored memories. This is genuinely novel and directly addresses the junk-drawer problem.
 
@@ -333,7 +333,7 @@ For a developer or team evaluating whether and what to adopt:
 | Solo dev wanting cross-session memory | Context + institutional | Engram | Lightest structured option. Single binary, SQLite, MCP. Conflict detection is a bonus. Accept keyword-only search. |
 | Solo dev, zero curation effort | Context | Claude Code MEMORY.md | Auto-capture, no configuration. Accept lower signal-to-noise. |
 | Multi-agent coordination | Task | Beads or tq | Task memory is the most proven use case. Choose Beads for features, tq for simplicity. |
-| Facts that change over time | Institutional | Graphiti (self-hosted) | Bi-temporal model is genuinely unique. Accept the graph DB dependency. |
+| Facts that change over time | Institutional | Graphiti (self-hosted) | Bi-temporal model is unique in the space. Accept the graph DB dependency. |
 | Enterprise, compliance-required | All four | Mem0 Cloud, Zep Cloud, or Hindsight Cloud | Managed services exist for a reason. Evaluate benchmark claims skeptically. |
 | Research / long-lived agents | Context + institutional | Letta Code | OS-style memory model is the most interesting conceptual contribution. Accept the runtime commitment. |
 | Knowledge base / wiki maintenance | Institutional | llm-wiki pattern (build your own) | No off-the-shelf tool; the pattern is sound. |
