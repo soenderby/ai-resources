@@ -156,7 +156,7 @@ Maintenance is the weakest area in the research. Everyone acknowledges that stal
 
 **What's missing:**
 - Systematic pruning — no source described a principled method for deciding what to remove from judgment memory
-- Contradiction detection — no tool currently flags when two pieces of judgment memory conflict
+- Contradiction detection — Engram's `mem_judge` / `mem_compare` tools are the first attempt at this (see [agent memory landscape survey](./agent-memory-landscape.md#45-lightweight-and-experimental-tools)), but they only find lexically related candidates
 - Quality measurement — no method for evaluating whether judgment memory is actually improving agent output
 - Decay curves — no evidence on how quickly different kinds of judgment go stale
 

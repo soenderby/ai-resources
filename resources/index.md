@@ -11,7 +11,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - `events.md` — 16 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 28 tracked projects
-- `glossary.md` — 10 terms under active semantic diffusion
+- `glossary.md` — 11 terms under active semantic diffusion
 
 ---
 

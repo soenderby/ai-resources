@@ -28,7 +28,7 @@ Start here instead of reading the whole directory. Open only the files that are 
 ## Agent memory, context, and infrastructure
 
 - `memory-for-agents.md` — synthesis on agent memory patterns in the collection.
-- `agent-memory-landscape.md` — critical survey of the agent memory tool landscape (mid-2026): 14 tools assessed, techniques compared, theoretical limits, benchmark critique, and decision framework.
+- `agent-memory-landscape.md` — critical survey of the agent memory tool landscape (mid-2026): 16 tools and one architectural pattern assessed, techniques compared, theoretical limits, benchmark critique, and decision framework.
 - `judgment-memory.md` — synthesis on captured judgment, rationale, and taste for future agents.
 - `agent-skills.md` — notes on agent skills as reusable context and workflow packaging.
 - `context-pruning-research.md` — focused Pi research note on context pruning, caches, and extension points.

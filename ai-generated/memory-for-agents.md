@@ -2,6 +2,8 @@
 
 # Memory for Agents
 
+> **Update (May 2026):** This synthesis covers patterns within the collection as of March 2026. For a broader survey of the agent memory tool landscape — 16 tools compared, techniques assessed, theoretical limits, benchmark critique — see [The Agent Memory Landscape](./agent-memory-landscape.md).
+
 ## What This Document Is
 
 A scoped synthesis of what this repository currently suggests about **agent memory**, with an emphasis on practical systems rather than a comprehensive literature review.
