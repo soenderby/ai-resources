@@ -23,7 +23,7 @@ Currently also building more ambitious infrastructure: FrankenSQLite (clean-room
 
 "Digital Griot. Ex-Big Tech insider with an outsider's perspective." Author of *How Not to Use AI*. Deliberately teaches the opposite of the dominant narrative - frames AI not as a tool you command but as a medium you craft with. A useful counterweight to the practitioner-productivity angle that dominates most AI writing.
 
-Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion), [Decoding the Empires of AI](articles.md#decoding-the-empires-of-ai-what-follows-the-mission-statement), [Your Imagination Was Always Empire's Last Frontier](articles.md#your-imagination-was-always-empires-last-frontier)
+Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion), [Decoding the Empires of AI](articles.md#decoding-the-empires-of-ai-what-follows-the-mission-statement), [Your Imagination Was Always Empire's Last Frontier](articles.md#your-imagination-was-always-empires-last-frontier), [Reese Witherspoon Was Right About Women and AI](articles.md#reese-witherspoon-was-right-about-women-and-ai)
 
 ---
 
@@ -95,7 +95,7 @@ Co-creator of Django and creator of Datasette. One of the most consistent and tr
 - Substack: https://addyo.substack.com/
 - LinkedIn: https://www.linkedin.com/in/addyosmani
 
-Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo), [Agent Skills](articles.md#agent-skills)
+Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo), [Agent Skills](articles.md#agent-skills), [Cognitive Surrender](articles.md#cognitive-surrender)
 
 Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author - recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 
