@@ -23,5 +23,6 @@ ai-resources/
 
 ## See Also
 
+- [information-theory](https://github.com/soenderby/information-theory) — personal knowledge base about information theory, communication, classification, cybernetics. Bootstrapped from [curatorial patterns](ai-generated/curatorial-patterns-extracted.md) extracted from this project.
 - [ORCA](https://github.com/soenderby/orca) — personal agent framework / harness
 - [resources/](resources/) — annotated projects, people, and articles

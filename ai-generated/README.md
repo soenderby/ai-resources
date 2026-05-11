@@ -50,6 +50,7 @@ Start here instead of reading the whole directory. Open only the files that are 
 
 ## Research methodology and knowledge management
 
+- `curatorial-patterns-extracted.md` — the operational DNA of this repo, extracted as transferable patterns. Ten curatorial practices that emerged from building this collection: staged loading, annotation quality tests, the corroboration pattern, cross-linking at insertion, hot/cold memory, etc. Written to seed new knowledge base repositories.
 - `research-organization-methods.md` — comprehensive survey of methods and techniques for organizing large amounts of research materials, sources, notes, and drafts. Covers historical methods (commonplace books, index cards, lab notebooks), structured note-taking (Cornell, outlining, charting, mapping), knowledge management systems (Zettelkasten, PARA/CODE, evergreen notes, GTD, Eco's card system), reference management tools, digital frameworks (Johnny Decimal), reading methods (SQ3R, Feynman technique, Adler's levels), visual methods (mind mapping, concept mapping), and research methodology approaches (systematic review, grounded theory, qualitative coding). Includes comparison tables and synthesis of fundamental trade-offs.
 
 ## Adjacent-field and topic-specific research
