@@ -104,7 +104,7 @@ Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previous
 ## NK Schjødt
 - Blog: https://ai-blog.nkschjoedt.com/
 
-Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don't Feel It — Yet](articles.md#they-dont-feel-it-yet), [It's All About Trust](articles.md#its-all-about-trust--for-those-of-us-with-trust-issues)
+Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don't Feel It — Yet](articles.md#they-dont-feel-it-yet), [It's All About Trust](articles.md#its-all-about-trust--for-those-of-us-with-trust-issues), [Database in a Trenchcoat](articles.md#database-in-a-trenchcoat)
 
 Senior developer writing practical, grounded takes on AI-assisted development.
 

@@ -696,6 +696,19 @@ Directly extends the [lethal trifecta](#the-lethal-trifecta-for-ai-agents-privat
 
 ---
 
+## [Database in a Trenchcoat](https://ai-blog.nkschjoedt.com/database-in-a-trenchcoat.html)
+By [NK Schjødt](people.md#nk-schjødt). Proposes a three-category test for which software survives AI agents: (1) **Experience software** — where the doing is the point (games, creative tools, social presence); nobody asks AI to play Civilization for them. (2) **Means-to-an-end software** — where you want the outcome, not the journey (accounting, expense reports, CRM); this category is now fully exposed because agents can hit the data directly without a human clicking through a UI. (3) **Gatekeeper software** — sitting on genuinely hard-to-access infrastructure (banking rails, telco networks, regulated filing channels); agents still need to pass through these.
+
+The lived example is sharp: Claude did NK's full Danish annual report — logged into the accounting product, pulled transactions, cross-checked against previous years, verified VAT with the tax authority, caught a reconciliation error — without touching the SaaS UI once. The experience was not just faster but *better*.
+
+The structural argument: when SaaS companies say "we'll pivot from app to platform, from UX to data backbone," that is not a strategy — it is an admission. "We become the data layer" is a true statement that buys you a few years, not a few decades. The data is portable. The agents are patient. The replacement cost is dropping by the quarter.
+
+Provides a brutal test for founders: "Make your best users spend a quarter using your product only through their AI agent. If they miss the UI, you have something. If they do not, you have a database with switching costs."
+
+Directly extends his earlier [labor displacement argument](#they-dont-feel-it---yet) (demand vanishes before people notice) and connects to the Gas City [de-SaaS thesis](projects.md#gas-city) (using agent packs to replace SaaS with in-house alternatives). This is the structural framework underneath both: the reason de-SaaS works is that most SaaS was never more than a database in a trenchcoat.
+
+---
+
 ## [Agent Skills](https://addyosmani.com/blog/agent-skills/)
 By [Addy Osmani](people.md#addy-osmani). AI coding agents take the shortest path to "done" - they skip specs, tests, reviews, and scope discipline by default. [Agent Skills](https://github.com/addyosmani/agent-skills) (26K+ stars) is Osmani's attempt to encode senior-engineer discipline as markdown workflows injected into the agent's context. But the article is more valuable than the repo: it articulates *why* each design choice exists and maps the whole thing to Google's published engineering practices.
 
@@ -747,6 +760,8 @@ Software engineers are unusually exposed for four reasons Osmani identifies: (1)
 Also cites the MIT "Your Brain on ChatGPT" paper (reduced neural connectivity, weaker memory of what was just produced, difficulty reconstructing reasoning) and the Anthropic skill-formation paper (17% lower comprehension when using AI for generation vs. conceptual inquiry). The practical heuristics are actionable: construct an expectation before reading agent output, read the diff as if a junior engineer wrote it, ask the model to argue against itself, notice when you're tired.
 
 Completes the cognitive cluster: [cognitive offloading](#outsourcing-cognition-the-psychological-costs-of-ai-era-convenience) names the psychological spectrum, [comprehension debt](#comprehension-debt) names the output gap, [the middle loop](#the-middle-loop) names the work category - this piece names the **moment-to-moment mechanism** by which offloading slides into surrender and debt accumulates.
+
+Also noted by: [Osmani ("Don't Outsource the Learning," May 2026)](https://addyosmani.com/blog/dont-outsource-learning/) — synthesises the same evidence with one new data point: a CHI 2026 study showing that when LLM access arrives at the *start* of a task, the LLM frames the entire problem and produces measurably worse decisions even when the human does the rest of the work. Names the key variable "posture" — the Anthropic RCT showed conceptual questioners scored 65%+ while copy-pasters scored under 40%; the tool doesn't determine the outcome, the user's orientation does.
 
 ---
 

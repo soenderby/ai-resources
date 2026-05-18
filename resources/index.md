@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 49 tracked people
-- `articles.md` — 116 tracked articles / reference sites
+- `articles.md` — 117 tracked articles / reference sites
 - `events.md` — 16 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 28 tracked projects
@@ -187,6 +187,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Cognitive Surrender
 - Behind the Scenes Hardening Firefox with Claude Mythos Preview
 - Reese Witherspoon Was Right About Women and AI
+- Database in a Trenchcoat
 
 ---
 
