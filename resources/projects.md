@@ -104,6 +104,15 @@ Worth tracking because it represents a genuinely new category of software — th
 
 ---
 
+## [Hermes Agent](https://github.com/NousResearch/hermes-agent)
+By [Teknium](people.md#teknium) / Nous Research. A maximalist personal AI agent in Python (157K+ GitHub stars) — the philosophical counterpart to [Pi](projects.md#pi-mono)/[OpenClaw](projects.md#openclaw)'s minimal-core approach. Where Pi uses 4 tools and trusts the agent to self-extend, Hermes ships 70+ tools across 28 toolsets, 7 terminal backends (local, Docker, SSH, Modal, Daytona, Singularity, Vercel Sandbox), 20 messaging platform adapters, 8 pluggable memory providers (including [Honcho](projects.md#honcho) for dialectic user modeling), and a full TUI with multiline editing and slash-command autocomplete. Compatible with the [agentskills.io](projects.md#agentskillsio) open standard.
+
+Three architecturally distinctive patterns: (1) **Background isolation review** — after delivering a response, the agent forks a constrained sub-agent (tool whitelist: only `skill_manage` and `memory`) in a daemon thread that reviews the conversation, writes or patches SKILL.md files and memory entries, then is discarded. Self-improvement is decoupled from task execution through three separations: temporal (post-delivery), process (separate thread), and agency (forked sub-agent with constrained tools). (2) **Prompt stability** — the system prompt is frozen at session start and never mutated mid-conversation, preserving Anthropic prefix cache hits (75% cost reduction per turn). Memory writes persist to disk immediately but don't appear in the system prompt until the next session. (3) **Iterative compression with summary evolution** — on repeated compressions, the previous structured summary is passed to the LLM for incremental *update* rather than re-summarization from scratch, so information accumulates across compression cycles rather than being lost.
+
+The trajectory pipeline connects to Nous Research's model training: sessions are saved as ShareGPT-format JSONL with normalized `<think>` blocks (native thinking tokens, scratchpad XML, and absent reasoning all mapped to identical format), targeting the Atropos RL framework. The agent produces training data for the next Hermes model — though the gradient-level loop depends on Nous's training cadence, the prompt-level loop (skill self-improvement) is fully operational for individual users. Includes explicit [OpenClaw](projects.md#openclaw) migration tooling (`hermes claw migrate`). MIT licensed, 3000+ tests.
+
+---
+
 ## [Compound Engineering Plugin](https://github.com/EveryInc/compound-engineering-plugin)
 By Every. The most useful artifact in Every's compounding-engineering cluster because it turns a lot of marketing language into inspectable workflow. The repo encodes a concrete loop — brainstorm, plan, work, review, compound — plus reviewer agents, reusable skills, and a docs layer (`docs/plans/`, `docs/solutions/`) for carrying lessons forward. The distinctive idea here is less task tracking than **judgment memory**: capturing code-review preferences, architectural heuristics, and solved-problem writeups so future agents inherit taste instead of starting blank. Best read alongside [Stop Coding and Start Planning](articles.md#stop-coding-and-start-planning).
 
@@ -125,7 +134,7 @@ The flywheel idea: each tool makes the others more useful. The whole ecosystem c
 ## [pi-skills](https://github.com/badlogic/pi-skills)
 By [Mario Zechner](people.md#mario-zechner). The upstream repository for reusable **skills** — portable instruction/tool bundles that extend Pi and, in many cases, other coding agents such as Claude Code, Codex CLI, Amp, and Droid. Worth tracking because it is a concrete artifact of an emerging cross-agent pattern: package repeated workflows (web search, browser automation, Google tooling, transcription, editor integration) as inspectable, file-based capability modules instead of re-explaining them every session.
 
-For this repo specifically, it matters both as the source for `agent-skills/` and as evidence that the Anthropic-style skill format is becoming real ecosystem infrastructure rather than a Pi-only feature. Pairs naturally with [pi-mono](#pi-mono), which provides the underlying agent/toolkit stack.
+For this repo specifically, it matters both as the source for `agent-skills/` and as evidence that the [agentskills.io](projects.md#agentskillsio) standard is becoming real ecosystem infrastructure rather than a single-vendor feature. Pairs naturally with [pi-mono](#pi-mono), which provides the underlying agent/toolkit stack.
 
 ---
 
@@ -156,6 +165,24 @@ By Zhenghui Li. The reference implementation for the Memory-as-Ontology paradigm
 
 ## [Spec Kit](https://github.com/github/spec-kit)
 By GitHub. Open-source toolkit for spec-driven development with coding agents. Implements a four-phase gated workflow: **Specify** (high-level intent and user journeys) → **Plan** (technical architecture and constraints) → **Tasks** (small, independently testable work units) → **Implement** (agent executes tasks one by one). The key design insight: each phase has a specific job and you don't move to the next until the current output is validated by the developer. This gating prevents the "house of cards" failure mode where agents build on unvalidated foundations. Works with GitHub Copilot, Claude Code, Gemini CLI, and others via slash commands or agent skills. The Specify phase deliberately separates intent from implementation ("who will use this? what problem does it solve?" — not "what framework should we use?"), ensuring the agent doesn't make premature technical decisions. Connects to [ExecPlans](articles.md#execplans-using-plansmd-for-multi-hour-problem-solving) (complementary planning format) and to the [planning patterns synthesis](../ai-generated/agent-planning-patterns.md).
+
+---
+
+## [Honcho](https://github.com/plastic-labs/honcho)
+By Plastic Labs (Vineeth Voruganti). Stateful memory-as-infrastructure for AI agents — not a RAG layer, but an LLM-powered system that builds and continuously updates *representations* of users, agents, and their relationships over time. Data model: Workspace → Peers → Sessions → Messages, where a "peer" can be a user, agent, group, or project tracked as an entity that changes.
+
+The distinctive mechanism is **dialectic user modeling**: a multi-pass LLM synthesis pipeline that runs after conversation turns. Pass 0: cold-start ("who is this person?") or warm ("given this session, what's most relevant?"). Pass 1: self-audit ("what did my initial assessment miss?"). Pass 2: reconciliation ("check for contradictions, produce final synthesis"). This is fundamentally different from graph retrieval ([Graphiti](projects.md#graphiti)) or vector search — it's *generative* reasoning about the user, with built-in self-correction. The multi-peer architecture means a "coder" profile and a "writer" profile build independent user representations from the same conversations.
+
+Token efficiency claim is the strongest benchmark result: answers LongMem S at 90.4% accuracy while feeding the model only 5–11% of the original context tokens — better recall than putting everything in-window. Uses small fine-tuned ingestion models for processing, stronger models for the chat endpoint. First-class integrations with [Hermes Agent](projects.md#hermes-agent), Claude Code, OpenCode, [OpenClaw](projects.md#openclaw), Cursor, and Cline. Also publishes an MCP server at `mcp.honcho.dev`. Compared with other memory systems in the [agent memory landscape survey](../ai-generated/agent-memory-landscape.md).
+
+---
+
+## [agentskills.io](https://agentskills.io/specification)
+Created by Anthropic, maintained as an open standard (Apache 2.0 code, CC-BY-4.0 docs) at [github.com/agentskills/agentskills](https://github.com/agentskills/agentskills). A lightweight, filesystem-based format for packaging procedural knowledge as portable agent skills. A skill is a directory containing a `SKILL.md` file (YAML frontmatter + markdown instructions) plus optional `scripts/`, `references/`, `templates/`, and `assets/` subdirectories.
+
+The load-bearing design idea is **progressive disclosure for token efficiency**: (1) Discovery (~100 tokens per skill): only `name` + `description` loaded at startup across all skills. (2) Activation (<5,000 tokens recommended): full SKILL.md body loaded on demand when the agent determines relevance. (3) Execution (as-needed): scripts and reference files loaded only when the skill's instructions call for them. This means agents can keep dozens of skills "on hand" with a tiny standing context footprint.
+
+Worth tracking because it has achieved genuine cross-industry adoption: ~35+ products support it, including GitHub Copilot, VS Code, Claude Code, OpenAI Codex, Cursor, Gemini CLI, Snowflake Cortex Code, Databricks Genie Code, Spring AI, JetBrains Junie, [Hermes Agent](projects.md#hermes-agent), and [Pi](projects.md#pi-mono)/[pi-skills](projects.md#pi-skills). This is the de facto standard for portable agent procedural memory. Connects to [Agent Skills](articles.md#agent-skills) (Osmani's design principles for writing effective skills), [AGENTS.md Specification](articles.md#agentsmd-specification) (complementary standard for project-level context), and [Agent READMEs](articles.md#agent-readmes-an-empirical-study-of-context-files-for-agentic-coding) (empirical study of what goes into agent context files).
 
 ---
 

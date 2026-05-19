@@ -6,11 +6,11 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 49 tracked people
+- `people.md` — 50 tracked people
 - `articles.md` — 117 tracked articles / reference sites
 - `events.md` — 16 tracked events / dated snapshots
 - `books.md` — 17 tracked books
-- `projects.md` — 28 tracked projects
+- `projects.md` — 31 tracked projects
 - `glossary.md` — 11 terms under active semantic diffusion
 
 ---
@@ -66,6 +66,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Lalit Maganti
 - Thomas Ptacek
 - Nicholas Carlini
+- Teknium
 
 ---
 
@@ -264,3 +265,6 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Watch
 - Pruner
 - tq
+- Hermes Agent
+- Honcho
+- agentskills.io

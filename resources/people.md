@@ -510,3 +510,13 @@ Veteran security researcher with 15+ years in professional vulnerability researc
 Articles: [Finding 0-Days with Claude](articles.md#finding-0-days-with-claude), [Assessing Claude Mythos Preview's Cybersecurity Capabilities](articles.md#assessing-claude-mythos-previews-cybersecurity-capabilities)
 
 Research scientist at Anthropic leading the Frontier Red Team's cybersecurity research. Previously at Google Brain/DeepMind, with foundational work on adversarial examples and ML security. Now the person most directly responsible for demonstrating that frontier LLMs can find and exploit real-world vulnerabilities at scale - from the initial 500+ vulnerabilities with Opus 4.6 to the thousands of zero-days and autonomous exploit development with Mythos Preview. Worth following because he is producing the primary evidence behind the AI cybersecurity shift, not just commentary on it. His work is the empirical foundation for [Ptacek's structural argument](articles.md#vulnerability-research-is-cooked). Commercial context (Anthropic employee) is real, but the specific vulnerability discoveries and exploit demonstrations are independently verifiable and have been validated by external maintainers (Mozilla, OpenBSD, FreeBSD, Linux kernel).
+
+---
+
+## Teknium
+- GitHub: https://github.com/teknium1
+- X: https://x.com/Teknium
+
+Projects: [Hermes Agent](projects.md#hermes-agent)
+
+Co-founder of Nous Research and creator of the Hermes open-source fine-tuned model family — OpenHermes-2.5-Mistral-7B was one of the most downloaded instruction-tuned models in 2023–2024. The Hermes models are specifically known for tool-calling and instruction-following capabilities, which makes the pivot to building [Hermes Agent](projects.md#hermes-agent) a natural extension: the person who trained models to call tools built the agent framework to use those tools, and the agent generates trajectory data to train the next model. Previously at CarperAI/StabilityAI (Free Willy datasets) and the OpenOrca team. Worth following because he sits at the intersection of model training and agent building in a way few others do — he shapes both sides of the loop.
