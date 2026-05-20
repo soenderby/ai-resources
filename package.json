@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "maintain": "node maintain.js",
+    "maintain:dry": "node maintain.js --dry-run"
+  }
+}

@@ -55,12 +55,12 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Titus Winters
 - Andy Matuschak
 - Maggie Appleton
+- Sam Rose
+- Sebastian Raschka
+- Subbarao Kambhampati
 - Mario Zechner
 - Peter Steinberger
 - Armin Ronacher
-- Subbarao Kambhampati
-- Sam Rose
-- Sebastian Raschka
 - Annie Vella
 - Daniel Chalef
 - Lalit Maganti
@@ -77,13 +77,12 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - llm-wiki
 - My now immaculate knowledge graph of life
 - NK's AI Cookbook
-- They Don’t Feel It — Yet
+- They Don't Feel It - Yet
 - The Human-in-the-Loop is Tired
-- AI Doesn’t Reduce Work—It Intensifies It
+- AI Doesn't Reduce Work-It Intensifies It
 - Real AI Agents and Real Work
 - Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity
 - Critical Thinking during the age of AI
-- Agentic Engine Optimization (AEO)
 - The Anthropic Economic Index
 - Agentic Engineering Patterns
 - Subagents
@@ -93,13 +92,13 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Building Effective AI Agents
 - A practical guide to building agents
 - How we built our multi-agent research system
-- Don’t Build Multi-Agents
+- Don't Build Multi-Agents
 - Building proactive AI agents
 - Ralph Wiggum as a "software engineer"
 - Everything is a RALPH Loop
 - We Put a Coding Agent in a While Loop and It Shipped 6 Repos Overnight
 - With the Rise of AI-Assisted Programming We'll Want More Programmers, Not Fewer
-- Don’t Send an Agent to do Code’s Job
+- Don't Send an Agent to do Code's Job
 - BeadHub: Coordination for AI Programming Teams
 - The Bitter Lesson
 - Designing AI agents to resist prompt injection
@@ -122,6 +121,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Characterization Testing
 - Documenting Architecture Decisions
 - Simple Made Easy
+- Parse, Don't Validate
 - Stop Coding and Start Planning
 - Autoresearch: Liquid Parse+Render Performance
 - Agent READMEs: An Empirical Study of Context Files for Agentic Coding
@@ -130,6 +130,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Turning Code Reviews into AI Prompts
 - AGENTS.md Specification
 - How to Write a Great agents.md
+- Agentic Engine Optimization (AEO)
 - AI Generated Architecture Decision Records
 - Using ADRs with AI Coding Assistants
 - Is the IDE dead?
@@ -146,30 +147,31 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Politics and the English Language
 - How to Write Usefully
 - Professional Writing: The CGSC Writing Guide (ST 22-2)
+- Semantic Diffusion
 - Outsourcing Cognition: The Psychological Costs of AI-Era Convenience
+- Thoughts on slowing the fuck down
 - A Treatise on AI Chatbots Undermining the Enlightenment
-- Prompting agents: What works and why
-- Memory as Ontology: A Constitutional Memory Architecture for Persistent Digital Citizens
-- Role Prompting (LLM Persona Prompting)
-- From Biased Chatbots to Biased Agents: Examining Role Assignment Effects on LLM Agent Robustness
 - Gas Town's Agent Patterns, Design Bottlenecks, and Vibecoding at Scale
 - Effective harnesses for long-running agents
 - Context Rot: How Increasing Input Tokens Impacts LLM Performance
 - Stacked Diffs Versus Pull Requests
 - How I got Claude to write code I could actually ship
-- Thoughts on slowing the fuck down
+- Prompting agents: What works and why
+- Memory as Ontology: A Constitutional Memory Architecture for Persistent Digital Citizens
+- Role Prompting (LLM Persona Prompting)
+- From Biased Chatbots to Biased Agents: Examining Role Assignment Effects on LLM Agent Robustness
+- Harness engineering: leveraging Codex in an agent-first world
+- How we monitor internal coding agents for misalignment
+- Clawdbot Bought Me a Car
+- Pi: The Minimal Agent Within OpenClaw
+- The Middle Loop
 - LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks
 - ExecPlans: Using PLANS.md for Multi-Hour Problem Solving
 - Planning for Agents
 - Quantization from the Ground Up
-- Prompt Caching: 10x Cheaper LLM Tokens, but How?
 - Zep: A Temporal Knowledge Graph Architecture for Agent Memory
 - The Price of Meaning: Why Every Semantic Memory System Forgets
-- Parse, Don't Validate
-- Harness engineering: leveraging Codex in an agent-first world
-- How we monitor internal coding agents for misalignment
-- Semantic Diffusion
-- The Middle Loop
+- Prompt Caching: 10x Cheaper LLM Tokens, but How?
 - Eight years of wanting, three months of building with AI
 - Vulnerability Research Is Cooked
 - Vibe Maintainer
@@ -177,18 +179,16 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Sycophantic AI Decreases Prosocial Intentions and Promotes Dependence
 - Finding 0-Days with Claude
 - Assessing Claude Mythos Preview's Cybersecurity Capabilities
-- Decoding the Empires of AI
-- Reasoning models struggle to control their chains of thought
-- Clawdbot Bought Me a Car
-- Pi: The Minimal Agent Within OpenClaw
-- Your Imagination Was Always Empire's Last Frontier
-- It's All About Trust — For Those of Us With Trust Issues
+- Decoding the Empires of AI: What Follows the Mission Statement
+- Reasoning models struggle to control their chains of thought, and that's good
+- It's All About Trust - For Those of Us With Trust Issues
+- Database in a Trenchcoat
 - Agent Skills
 - Contributor Poker and Zig's AI Ban
+- Your Imagination Was Always Empire's Last Frontier
 - Cognitive Surrender
 - Behind the Scenes Hardening Firefox with Claude Mythos Preview
 - Reese Witherspoon Was Right About Women and AI
-- Database in a Trenchcoat
 
 ---
 
@@ -196,20 +196,20 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 - 2025: The Year in LLMs
 - 2025 LLM Year in Review
+- Minotaur Capital Quarterly — December 2025
+- What Claude Code Actually Chooses
+- Why SWE-bench Verified no longer measures frontier coding capabilities
+- Finding Comfort in the Uncertainty
 - The Shape of the Thing
 - Snowflake Cortex AI Escapes Sandbox and Executes Malware
 - Thoughts on OpenAI acquiring Astral and uv/ruff/ty
-- Minotaur Capital Quarterly — December 2025
-- What Claude Code Actually Chooses
-- Scaling Long-Running Autonomous Coding
-- Finding Comfort in the Uncertainty
-- Why SWE-bench Verified no longer measures frontier coding capabilities
 - Project Glasswing: Securing Critical Software for the AI Era
 - OpenAI Trusted Access for Cyber
 - Our response to the Axios developer tool compromise
 - Pi Joins Earendil
 - Sequoia Ascent 2026: Andrej Karpathy on Software 3.0 and Agentic Engineering
 - UK AISI Evaluation of OpenAI's GPT-5.5 Cyber Capabilities
+- Scaling Long-Running Autonomous Coding
 
 ---
 
@@ -251,6 +251,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Ralph Wiggum Plugin for Claude Code
 - pi-mono
 - OpenClaw
+- Hermes Agent
 - Compound Engineering Plugin
 - Agentic Coding Flywheel
 - pi-skills
@@ -260,11 +261,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Codebase Context MCP
 - Animesis
 - Spec Kit
+- Honcho
+- agentskills.io
 - Graphiti
 - Orca
 - Watch
 - Pruner
 - tq
-- Hermes Agent
-- Honcho
-- agentskills.io
