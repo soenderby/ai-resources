@@ -130,27 +130,22 @@ function checkBrokenLinks(files, anchorMaps) {
     let m;
     while ((m = linkRegex.exec(content)) !== null) {
       const href = m[2];
-      if (/^https?:\/\//.test(href) || href.startsWith('../') || href.startsWith('#')) {
-        // For same-file anchors (#anchor), check within this file
-        if (href.startsWith('#')) {
-          const anchor = href.slice(1);
-          if (!anchorMaps[name].has(anchor)) {
-            report.warnings.push(`[broken-link] ${name}: anchor "${href}" not found (from "${m[1]}")`);
-          }
-        }
-        continue;
-      }
+      if (/^https?:\/\//.test(href) || href.startsWith('../')) continue;
 
-      const hashIdx = href.indexOf('#');
-      if (hashIdx === -1) continue; // no anchor to check
-      const file = href.slice(0, hashIdx);
-      const anchor = href.slice(hashIdx + 1);
+      let file, anchor;
+      if (href.startsWith('#')) {
+        file = name;
+        anchor = href.slice(1);
+      } else {
+        const hashIdx = href.indexOf('#');
+        if (hashIdx === -1) continue;
+        file = href.slice(0, hashIdx);
+        anchor = href.slice(hashIdx + 1);
+      }
 
       if (!anchorMaps[file]) {
         report.warnings.push(`[broken-link] ${name}: links to unknown file "${file}" (from "${m[1]}")`);
-        continue;
-      }
-      if (!anchorMaps[file].has(anchor)) {
+      } else if (!anchorMaps[file].has(anchor)) {
         report.warnings.push(`[broken-link] ${name}: anchor "#${anchor}" not found in ${file} (from "${m[1]}")`);
       }
     }
@@ -261,7 +256,7 @@ function checkArchiveRotation() {
 
 function parseIndexNames(content, heading) {
   const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const regex = new RegExp(`## ${escaped}\\n\\n([\\s\\S]*?)(?=\\n---|\n## |$)`);
+  const regex = new RegExp(`## ${escaped}\\n\\n([\\s\\S]*?)(?=\\n---|\\n## |$)`);
   const m = content.match(regex);
   if (!m) return [];
   return m[1].split('\n').filter(l => l.startsWith('- ')).map(l => l.slice(2).trim());
