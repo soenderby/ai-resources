@@ -268,3 +268,19 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Watch
 - Pruner
 - tq
+
+---
+
+## Glossary terms tracked
+
+- Agent
+- Agentic
+- AGI (Artificial General Intelligence)
+- Alignment
+- Context engineering
+- Hallucination
+- Multi-agent
+- RAG (Retrieval-Augmented Generation)
+- Reasoning
+- Vibe coding
+- Agent memory

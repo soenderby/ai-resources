@@ -282,6 +282,7 @@ function syncIndex(files, dryRun) {
     events:   files['events.md'].entries.map(e => e.title),
     books:    files['books.md'].entries.map(e => e.title),
     projects: files['projects.md'].entries.map(e => e.title),
+    glossary: files['glossary.md'].entries.map(e => e.title),
   };
 
   const renderList = names => names.map(n => `- ${n}`).join('\n');
@@ -330,6 +331,12 @@ ${renderList(lists.books)}
 ## Projects tracked
 
 ${renderList(lists.projects)}
+
+---
+
+## Glossary terms tracked
+
+${renderList(lists.glossary)}
 `;
 
   if (oldContent === newContent) return;
@@ -351,6 +358,7 @@ ${renderList(lists.projects)}
     events:   'Events tracked',
     books:    'Books tracked',
     projects: 'Projects tracked',
+    glossary: 'Glossary terms tracked',
   };
 
   for (const [key, heading] of Object.entries(sectionHeadings)) {

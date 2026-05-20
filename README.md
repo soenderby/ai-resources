@@ -15,10 +15,12 @@ ai-resources/
 │   └── ...                ← generated syntheses and analyses
 └── resources/
     ├── index.md           ← compact inventory of tracked sources
-    ├── articles.md        ← specific articles, posts, and reference sites
+    ├── articles.md        ← durable articles: concepts, frameworks, techniques, named ideas
+    ├── events.md          ← time-bound pieces: industry events, incident reports, dated snapshots
     ├── books.md           ← book-length sources worth keeping
     ├── people.md          ← people worth following
-    └── projects.md        ← open source projects and tools
+    ├── projects.md        ← open source projects and tools
+    └── glossary.md        ← AI terms under active semantic diffusion
 ```
 
 ## See Also

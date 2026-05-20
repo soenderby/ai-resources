@@ -23,7 +23,7 @@ Currently also building more ambitious infrastructure: FrankenSQLite (clean-room
 
 "Digital Griot. Ex-Big Tech insider with an outsider's perspective." Author of *How Not to Use AI*. Deliberately teaches the opposite of the dominant narrative - frames AI not as a tool you command but as a medium you craft with. A useful counterweight to the practitioner-productivity angle that dominates most AI writing.
 
-Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion), [Decoding the Empires of AI](articles.md#decoding-the-empires-of-ai-what-follows-the-mission-statement), [Your Imagination Was Always Empire's Last Frontier](articles.md#your-imagination-was-always-empires-last-frontier), [Reese Witherspoon Was Right About Women and AI](articles.md#reese-witherspoon-was-right-about-women-and-ai)
+Articles: [You Should Anthropomorphize Your AI. Just Not Into a Companion](articles.md#you-should-anthropomorphize-your-ai-just-not-into-a-companion), [Decoding the Empires of AI: What Follows the Mission Statement](articles.md#decoding-the-empires-of-ai-what-follows-the-mission-statement), [Your Imagination Was Always Empire's Last Frontier](articles.md#your-imagination-was-always-empires-last-frontier), [Reese Witherspoon Was Right About Women and AI](articles.md#reese-witherspoon-was-right-about-women-and-ai)
 
 ---
 
@@ -63,7 +63,7 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Gas City](projects.md#gas-city), [Beads](projects.md#beads), [The Wasteland](projects.md#the-wasteland)
-Articles: [Introducing Beads](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire), [Vibe Maintainer](articles.md#vibe-maintainer)
+Articles: [Introducing Beads: A coding agent memory system](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland: A Thousand Gas Towns](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire), [Vibe Maintainer](articles.md#vibe-maintainer)
 
 Long-time tech industry voice (Amazon, Google, Sourcegraph) and one of the most prolific builders and writers in this collection's agent-orchestration cluster. Creator of Gas Town, Beads, and the broader Wasteland ecosystem. His central bet: the future of coding agents is not better individual assistants but factories and colonies - many agents coordinating through shared memory, structured work tracking, and federated reputation. Writes with conviction and at length; the signal-to-noise ratio is high but the volume is large. His architectural ideas (zero-framework cognition, Beads as external agent memory, the Wasteland's federated work protocol) have influenced several other people and projects tracked here.
 
@@ -84,7 +84,7 @@ The originator of the Ralph loop pattern - the idea that a coding agent in a `wh
 
 Articles: [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication)
 
-Events: [2025: The Year in LLMs](events.md#2025-the-year-in-llms), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](events.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral](events.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
+Events: [2025: The Year in LLMs](events.md#2025-the-year-in-llms), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](events.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral and uv/ruff/ty](events.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
 
 Co-creator of Django and creator of Datasette. One of the most consistent and trustworthy voices writing about LLMs and coding agents. His blog is updated almost daily - part working notes, part industry analysis, part security watchdog. The *Agentic Engineering Patterns* guide is becoming one of the most substantial continuously updated references in the collection. Distinctive for his emphasis on security (prompt injection, the lethal trifecta) alongside practical agent-usage patterns, and for coining or popularizing several terms that are sticking in the field.
 
@@ -104,7 +104,7 @@ Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previous
 ## NK Schjødt
 - Blog: https://ai-blog.nkschjoedt.com/
 
-Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don't Feel It — Yet](articles.md#they-dont-feel-it---yet), [It's All About Trust](articles.md#its-all-about-trust---for-those-of-us-with-trust-issues), [Database in a Trenchcoat](articles.md#database-in-a-trenchcoat)
+Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don't Feel It - Yet](articles.md#they-dont-feel-it---yet), [It's All About Trust - For Those of Us With Trust Issues](articles.md#its-all-about-trust---for-those-of-us-with-trust-issues), [Database in a Trenchcoat](articles.md#database-in-a-trenchcoat)
 
 Senior developer writing practical, grounded takes on AI-assisted development.
 
@@ -116,7 +116,7 @@ Senior developer writing practical, grounded takes on AI-assisted development.
 
 Articles: [llm-wiki](articles.md#llm-wiki)
 Projects: [autoresearch](projects.md#autoresearch)
-Events: [2025 LLM Year in Review](events.md#2025-llm-year-in-review), [Sequoia Ascent 2026](events.md#sequoia-ascent-2026-andrej-karpathy-on-software-30-and-agentic-engineering)
+Events: [2025 LLM Year in Review](events.md#2025-llm-year-in-review), [Sequoia Ascent 2026: Andrej Karpathy on Software 3.0 and Agentic Engineering](events.md#sequoia-ascent-2026-andrej-karpathy-on-software-30-and-agentic-engineering)
 
 Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
 
