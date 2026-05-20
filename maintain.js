@@ -34,7 +34,6 @@ function slugify(text) {
   s = s.toLowerCase();
   s = s.replace(/[^\p{L}\p{N}\s-]/gu, '');           // keep letters, digits, spaces, hyphens
   s = s.replace(/\s+/g, '-');                         // spaces → hyphens
-  s = s.replace(/-+/g, '-');                          // collapse hyphens
   s = s.replace(/^-+|-+$/g, '');                      // trim edges
   return s;
 }
