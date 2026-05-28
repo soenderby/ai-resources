@@ -40,7 +40,7 @@ Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about
 - Substack: https://www.oneusefulthing.org/
 - Wharton profile: https://mgmt.wharton.upenn.edu/profile/emollick/
 
-Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work)
+Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work), [Choosing to Stay Human](articles.md#choosing-to-stay-human)
 
 Events: [The Shape of the Thing](events.md#the-shape-of-the-thing)
 
@@ -95,7 +95,7 @@ Co-creator of Django and creator of Datasette. One of the most consistent and tr
 - Substack: https://addyo.substack.com/
 - LinkedIn: https://www.linkedin.com/in/addyosmani
 
-Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo), [Agent Skills](articles.md#agent-skills), [Cognitive Surrender](articles.md#cognitive-surrender)
+Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo), [Agent Skills](articles.md#agent-skills), [Cognitive Surrender](articles.md#cognitive-surrender), [The Orchestration Tax is You](articles.md#the-orchestration-tax-is-you)
 
 Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author - recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 
