@@ -84,7 +84,7 @@ The originator of the Ralph loop pattern - the idea that a coding agent in a `wh
 
 Articles: [Agentic Engineering Patterns](articles.md#agentic-engineering-patterns), [Subagents](articles.md#subagents), [How coding agents work](articles.md#how-coding-agents-work), [The lethal trifecta for AI agents](articles.md#the-lethal-trifecta-for-ai-agents-private-data-untrusted-content-and-external-communication)
 
-Events: [2025: The Year in LLMs](events.md#2025-the-year-in-llms), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](events.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral and uv/ruff/ty](events.md#thoughts-on-openai-acquiring-astral-and-uvruffty)
+Events: [2025: The Year in LLMs](events.md#2025-the-year-in-llms), [Snowflake Cortex AI Escapes Sandbox and Executes Malware](events.md#snowflake-cortex-ai-escapes-sandbox-and-executes-malware), [Thoughts on OpenAI acquiring Astral and uv/ruff/ty](events.md#thoughts-on-openai-acquiring-astral-and-uvruffty), [I think Anthropic and OpenAI have found product-market fit](events.md#i-think-anthropic-and-openai-have-found-product-market-fit)
 
 Co-creator of Django and creator of Datasette. One of the most consistent and trustworthy voices writing about LLMs and coding agents. His blog is updated almost daily - part working notes, part industry analysis, part security watchdog. The *Agentic Engineering Patterns* guide is becoming one of the most substantial continuously updated references in the collection. Distinctive for his emphasis on security (prompt injection, the lethal trifecta) alongside practical agent-usage patterns, and for coining or popularizing several terms that are sticking in the field.
 
@@ -118,7 +118,7 @@ Articles: [llm-wiki](articles.md#llm-wiki)
 Projects: [autoresearch](projects.md#autoresearch)
 Events: [2025 LLM Year in Review](events.md#2025-llm-year-in-review), [Sequoia Ascent 2026: Andrej Karpathy on Software 3.0 and Agentic Engineering](events.md#sequoia-ascent-2026-andrej-karpathy-on-software-30-and-agentic-engineering)
 
-Former OpenAI co-founder and Tesla AI director. One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
+Former OpenAI co-founder and Tesla AI director. Joined Anthropic in May 2026 to lead pre-training research, closing a 22-month chapter running Eureka Labs (an AI-native education startup). One of the clearest thinkers on what LLMs actually are and how to reason about them. Coined "vibe coding". His blog posts tend to be paradigm-level framings rather than tutorials.
 
 ---
 

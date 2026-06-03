@@ -153,6 +153,17 @@ Directly extends the cybersecurity evidence chain: [Ptacek's structural argument
 
 ---
 
+## [I think Anthropic and OpenAI have found product-market fit](https://simonwillison.net/2026/May/27/product-market-fit/)
+*2026-05*
+
+By [Simon Willison](people.md#simon-willison). The sharpest analysis in the collection of how the AI labs started making real money. The core argument: coding agents, not chatbots, are the actual product-market fit product — tools that burn vastly more tokens but are daily drivers for well-compensated professionals.
+
+Key data points: In April 2026, both Anthropic and OpenAI simultaneously shifted enterprise pricing from flat-rate seats to API token rates, locking companies into per-token costs. Willison's personal usage data illustrates the gap: $2,180/month in API-equivalent tokens for $200 in subscriptions. The Anthropic-SpaceX Colossus deal — $1.25 billion/month for inference compute through May 2029 — hints at the scale of demand. Enterprise sales hiring is ramping: 32.6% of OpenAI's 703 open jobs and 26.9% of Anthropic's 390 jobs are enterprise sales/support roles.
+
+Willison argues April 2026 is a second inflection point after November 2025 (when models got good enough for agent work). The Uber budget overrun and Microsoft's Claude Code cancellations don't undermine the PMF thesis — they support it: "your customer should *suck air through their teeth* and then say yes." Addresses the collection's economics gap. Also notable: Anthropic is now cutting out API middlemen (Cursor, Copilot) by competing directly with Claude Code.
+
+---
+
 ## [Scaling Long-Running Autonomous Coding](https://cursor.com/blog/scaling-agents)
 *2026-03*
 

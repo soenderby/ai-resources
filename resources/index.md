@@ -7,8 +7,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 50 tracked people
-- `articles.md` — 120 tracked articles / reference sites
-- `events.md` — 16 tracked events / dated snapshots
+- `articles.md` — 121 tracked articles / reference sites
+- `events.md` — 17 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 31 tracked projects
 - `glossary.md` — 11 terms under active semantic diffusion
@@ -192,6 +192,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - The Orchestration Tax is You
 - Choosing to Stay Human
 - Magnifica Humanitas
+- AI Is Causing a Crisis of Agency
 
 ---
 
@@ -213,6 +214,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Sequoia Ascent 2026: Andrej Karpathy on Software 3.0 and Agentic Engineering
 - UK AISI Evaluation of OpenAI's GPT-5.5 Cyber Capabilities
 - Scaling Long-Running Autonomous Coding
+- I think Anthropic and OpenAI have found product-market fit
 
 ---
 
