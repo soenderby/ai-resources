@@ -7,7 +7,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 50 tracked people
-- `articles.md` — 121 tracked articles / reference sites
+- `articles.md` — 123 tracked articles / reference sites
 - `events.md` — 17 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 31 tracked projects
@@ -193,6 +193,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Choosing to Stay Human
 - Magnifica Humanitas
 - AI Is Causing a Crisis of Agency
+- The Humility Gap
+- AI enthusiasts are in a race against time, AI skeptics are in a race against entropy
 
 ---
 

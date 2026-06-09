@@ -862,3 +862,31 @@ The most original structural observation builds on Paul Ford's 2011 argument tha
 Two other sharp framings: Silicon Valley's obsession with being "high-agency" is a defensive reaction to the very technology they're building — those with high agency are "insulated from becoming replaceable," while everyone else faces "the permanent underclass." And the "human-in-the-loop" language masks actual passivity — beyond the prompt, what humans are doing is reacting to an interaction of multiple machines.
 
 Connects to the cognitive cluster — [Cognitive Surrender](articles.md#cognitive-surrender), [Comprehension Debt](articles.md#comprehension-debt), [The Orchestration Tax is You](articles.md#the-orchestration-tax-is-you) — but comes at the same territory from a cultural/existential angle rather than a cognitive/engineering one. The cognitive cluster describes *how* humans lose capability; this describes *what it feels like* to lose agency, and why the response is paranoia, disorientation, and protest in the physical world. Also connects to [Choosing to Stay Human](articles.md#choosing-to-stay-human) (design determines whether technology helps or harms) and [Magnifica Humanitas](articles.md#magnifica-humanitas) (the dignity of limitation as counter-anthropology to optimisation).
+
+---
+
+## [The Humility Gap](https://ai-blog.nkschjoedt.com/the-humility-gap.html)
+By [NK Schjødt](people.md#nk-schjødt). Identifies a paradox: the most capable engineers often get the worst results from AI, because their hard-earned expertise drives them to over-specify. The "grip" — prescriptive, step-by-step instruction — triggers what researchers call "hyper-literalism" in stronger models: the model reads tight specification as a compliance signal and follows the human's first draft faithfully off a cliff, instead of exploring the problem space.
+
+The empirical anchor is a 2025 paper, "The Prompting Inversion," which demonstrates that constraints improving a mid-tier model (GPT-4o: 93%→97%) actively *hurt* a stronger model (GPT-5: 96%→94%). Additional studies on "reasoning rigidity" and over-prompting point the same direction: as models get better, the optimal prompt gets *less* prescriptive, not more.
+
+The sharpest framing is the **Scrum analogy**: the waterfall posture (giant up-front specification handed down) produces brittle, mediocre results from capable people because it makes them switch their brain off. The same lesson the industry spent twenty years learning about humans applies to models — "Set the *what* and the *why* with conviction; be generous and open about the *how*." Direction over dictation. Intent over instruction. This makes the parallel between management practices and prompting practices explicit in a way no other piece in the collection does.
+
+Also sharp: "A tight specification doesn't only constrain the model. It freezes your first draft into the final answer, and throws away everything you'd have learned by building it." The problem is not that the expert's specification is bad — it's usually excellent — but the best version of the answer rarely exists at the moment you write the spec. You discover it by doing the work.
+
+Connects to the cognitive cluster from a new angle. Where [Cognitive Surrender](articles.md#cognitive-surrender) describes accepting bad AI output, this describes the failure mode *upstream* — expertise-driven over-specification that prevents good output from emerging. Also connects to [The Orchestration Tax is You](articles.md#the-orchestration-tax-is-you) (attention as scarce serial resource) and the harness engineering entries (guardrails in code, not in prompts).
+
+---
+
+## [AI enthusiasts are in a race against time, AI skeptics are in a race against entropy](https://charitydotwtf.substack.com/p/ai-enthusiasts-are-in-a-race-against)
+By Charity Majors. Identifies a structural organizational problem in AI adoption: the wins and costs happen to *two different groups of people*, creating a broken feedback loop. The conference speaker celebrates a migration done in weeks; the downstream team is still grinding through cleanup months later. Neither group has visibility into the other's reality.
+
+The key structural finding: "There is no natural feedback loop connecting enthusiasts with skeptics." This isn't a people problem — it's an information architecture problem. Wins get announced in all-hands and blog posts; costs surface in SRE meetings, on-call rotations, and bitter DMs. Both sides feel silenced: "we aren't even *allowed* to criticize AI" coexists with "all we EVER DO is complain about AI." The asymmetry isn't malicious, it's structural.
+
+Both threats are real and existential. Enthusiasts: teams that sit this out while competitors hustle could be out of business before the dust settles. Skeptics: "When you ship code faster than engineers can read it, in domains where nobody has full context, you are making withdrawals from a trust account that took years to build."
+
+The Fin/Intercom case study is the strongest specific evidence: 3x output in 9 months (PRs/person), with mixed results — defect backlog halved, downtime down 35%, but code quality only provisionally recovering after an 18-month decline. This happened because Fin already had high engineering discipline, fast feedback loops, and a culture of measurement — not because AI is magic.
+
+The reframe from epistemological debate to engineering problem is practical: "What would it take for you to feel comfortable shipping code to production without reading it?" — better evals, tests, feature flags, observability, reduced blast radius? Approach it as preconditions on a roadmap, not a philosophical argument.
+
+Connects to the [bottleneck-shifting pattern](../librarian-notes.md) (costs don't just shift upward — they shift to *different people*), [The Orchestration Tax is You](articles.md#the-orchestration-tax-is-you) (costs invisible to the person incurring them), and [Contributor Poker and Zig's AI Ban](articles.md#contributor-poker-and-zigs-ai-ban) (some processes have value beyond their direct output). The DORA quote — "AI is an amplifier: it magnifies the strengths of high-performing organizations and the dysfunctions of struggling ones" — crystallises the asymmetry.
