@@ -812,6 +812,8 @@ Practical mitigations treat attention as a scarce serial resource: scale agent f
 
 Crystallises the [bottleneck-shifting pattern](../librarian-notes.md) with an engineering vocabulary: the bottleneck doesn't just shift upward, it has a known throughput (your review rate) and a known failure mode (thrashing the lock). Extends [cognitive surrender](#cognitive-surrender) (surrender as the pressure-relief valve when orchestration tax exceeds capacity), [comprehension debt](#comprehension-debt) (unpaid tax → stale mental models), and [the middle loop](#the-middle-loop) (the orchestration layer *is* middle-loop work). References Margaret-Anne Storey's work on cognitive debt as the compounding consequence.
 
+Also noted by: [Christoph Nakazawa (cpojer) — "Modern Engineering Values," 2026](https://cpojer.net/posts/modern-engineering-values) — Jest creator now running 3–6 agent-driven projects simultaneously, reports "I'm bottlenecked on exercising judgment" and describes the spatial overhead of multi-project orchestration. Confirms the pattern from a prolific solo practitioner's perspective but without the engineering vocabulary.
+
 ---
 
 ## [Choosing to Stay Human](https://www.oneusefulthing.org/p/choosing-to-stay-human)
