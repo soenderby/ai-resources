@@ -40,7 +40,7 @@ Ex-CTO of Obama's 2012 re-election campaign. Writes short, practical posts about
 - Substack: https://www.oneusefulthing.org/
 - Wharton profile: https://mgmt.wharton.upenn.edu/profile/emollick/
 
-Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work), [Choosing to Stay Human](articles.md#choosing-to-stay-human)
+Articles: [Real AI Agents and Real Work](articles.md#real-ai-agents-and-real-work), [Choosing to Stay Human](articles.md#choosing-to-stay-human), [The Twilight of the Chatbots](articles.md#the-twilight-of-the-chatbots)
 
 Events: [The Shape of the Thing](events.md#the-shape-of-the-thing)
 
@@ -52,7 +52,7 @@ Associate professor at Wharton. Writes *One Useful Thing* - a research-backed ta
 - Blog: https://lilianweng.github.io/
 - GitHub: https://github.com/lilianweng
 
-Articles: [LLM Powered Autonomous Agents](articles.md#llm-powered-autonomous-agents)
+Articles: [LLM Powered Autonomous Agents](articles.md#llm-powered-autonomous-agents), [Harness Engineering for Self-Improvement](articles.md#harness-engineering-for-self-improvement), [Scaling Laws, Carefully](articles.md#scaling-laws-carefully)
 
 Researcher at OpenAI. Writes long, dense technical posts on agent architecture, memory systems, prompting, and alignment. Her posts read more like literature reviews than blog posts - she synthesises dozens of papers into coherent frameworks. The most technically rigorous writing in this collection. Her 2023 agent overview is still the canonical reference for anyone building agent systems.
 
@@ -63,7 +63,7 @@ Researcher at OpenAI. Writes long, dense technical posts on agent architecture, 
 - GitHub: https://github.com/steveyegge
 
 Projects: [Gastown](projects.md#gastown), [Gas City](projects.md#gas-city), [Beads](projects.md#beads), [The Wasteland](projects.md#the-wasteland)
-Articles: [Introducing Beads: A coding agent memory system](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland: A Thousand Gas Towns](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire), [Vibe Maintainer](articles.md#vibe-maintainer)
+Articles: [Introducing Beads: A coding agent memory system](articles.md#introducing-beads-a-coding-agent-memory-system), [Zero-Framework Cognition](articles.md#zero-framework-cognition), [Welcome to the Wasteland: A Thousand Gas Towns](articles.md#welcome-to-the-wasteland-a-thousand-gas-towns), [The Future of Coding Agents](articles.md#the-future-of-coding-agents), [Software Survival 3.0](articles.md#software-survival-30), [The AI Vampire](articles.md#the-ai-vampire), [Vibe Maintainer](articles.md#vibe-maintainer), [The Flat Curve Society](articles.md#the-flat-curve-society)
 
 Long-time tech industry voice (Amazon, Google, Sourcegraph) and one of the most prolific builders and writers in this collection's agent-orchestration cluster. Creator of Gas Town, Beads, and the broader Wasteland ecosystem. His central bet: the future of coding agents is not better individual assistants but factories and colonies - many agents coordinating through shared memory, structured work tracking, and federated reputation. Writes with conviction and at length; the signal-to-noise ratio is high but the volume is large. His architectural ideas (zero-framework cognition, Beads as external agent memory, the Wasteland's federated work protocol) have influenced several other people and projects tracked here.
 
@@ -95,7 +95,7 @@ Co-creator of Django and creator of Datasette. One of the most consistent and tr
 - Substack: https://addyo.substack.com/
 - LinkedIn: https://www.linkedin.com/in/addyosmani
 
-Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo), [Agent Skills](articles.md#agent-skills), [Cognitive Surrender](articles.md#cognitive-surrender), [The Orchestration Tax is You](articles.md#the-orchestration-tax-is-you)
+Articles: [Critical Thinking during the age of AI](articles.md#critical-thinking-during-the-age-of-ai), [Is the IDE dead?](articles.md#is-the-ide-dead), [Comprehension Debt](articles.md#comprehension-debt), [Agentic Engine Optimization (AEO)](articles.md#agentic-engine-optimization-aeo), [Agent Skills](articles.md#agent-skills), [Cognitive Surrender](articles.md#cognitive-surrender), [The Orchestration Tax is You](articles.md#the-orchestration-tax-is-you), [Agentic Autonomy Levels](articles.md#agentic-autonomy-levels)
 
 Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previously 14 years leading Chrome DevTools, Lighthouse, and Core Web Vitals. Prolific author - recent books include *Beyond Vibe Coding* and *Learning JavaScript Design Patterns*. Writes under the banner of "AI-assisted engineering": using AI aggressively while staying accountable for what ships. His Substack has ~600k readers.
 
@@ -104,7 +104,7 @@ Director at Google Cloud AI (Gemini, Vertex AI, Agent Development Kit). Previous
 ## NK Schjødt
 - Blog: https://ai-blog.nkschjoedt.com/
 
-Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don't Feel It - Yet](articles.md#they-dont-feel-it---yet), [It's All About Trust - For Those of Us With Trust Issues](articles.md#its-all-about-trust---for-those-of-us-with-trust-issues), [Database in a Trenchcoat](articles.md#database-in-a-trenchcoat), [The Humility Gap](articles.md#the-humility-gap)
+Articles: [NK's AI Cookbook](articles.md#nks-ai-cookbook), [They Don't Feel It - Yet](articles.md#they-dont-feel-it---yet), [It's All About Trust - For Those of Us With Trust Issues](articles.md#its-all-about-trust---for-those-of-us-with-trust-issues), [Database in a Trenchcoat](articles.md#database-in-a-trenchcoat), [The Humility Gap](articles.md#the-humility-gap), [Everyone Produces Code Now](articles.md#everyone-produces-code-now-even-john-from-marketing)
 
 Senior developer writing practical, grounded takes on AI-assisted development.
 
@@ -453,7 +453,8 @@ Austrian developer who created [OpenClaw](projects.md#openclaw) (formerly Clawdb
 - GitHub: https://github.com/mitsuhiko
 - X: https://x.com/maboroshi_san
 
-Articles: [Pi: The Minimal Agent Within OpenClaw](articles.md#pi-the-minimal-agent-within-openclaw)
+Articles: [Pi: The Minimal Agent Within OpenClaw](articles.md#pi-the-minimal-agent-within-openclaw), [The Coming Loop](articles.md#the-coming-loop), [Better Models: Worse Tools](articles.md#better-models-worse-tools)
+Events: [Dangerous Technology For Americans Only](events.md#dangerous-technology-for-americans-only)
 
 Creator of Flask, co-founder of Sentry, now CEO of Earendil (where [Pi](projects.md#pi-mono) is the foundation for consumer products including Lefos). One of the most prolific and thoughtful writers in the agentic coding space. His blog combines deep technical detail with a clear design philosophy: minimal cores, self-extending agents, quality over velocity. The post that revealed Pi's role inside [OpenClaw](projects.md#openclaw) is the most widely read explanation of minimal agent architecture. Worth following because he builds at the intersection of open-source infrastructure and AI products, writes about what he actually learns, and consistently prioritises craft - "these systems are also capable of producing a great deal of damage... more slop, more noise, more disingenuous emails."
 

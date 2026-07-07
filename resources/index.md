@@ -7,8 +7,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 ## Canonical files
 
 - `people.md` — 50 tracked people
-- `articles.md` — 123 tracked articles / reference sites
-- `events.md` — 17 tracked events / dated snapshots
+- `articles.md` — 131 tracked articles / reference sites
+- `events.md` — 18 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 31 tracked projects
 - `glossary.md` — 11 terms under active semantic diffusion
@@ -195,6 +195,14 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - AI Is Causing a Crisis of Agency
 - The Humility Gap
 - AI enthusiasts are in a race against time, AI skeptics are in a race against entropy
+- Everyone Produces Code Now (Even John From Marketing)
+- The Twilight of the Chatbots
+- Agentic Autonomy Levels
+- The Flat Curve Society
+- The Coming Loop
+- Better Models: Worse Tools
+- Harness Engineering for Self-Improvement
+- Scaling Laws, Carefully
 
 ---
 
@@ -217,6 +225,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - UK AISI Evaluation of OpenAI's GPT-5.5 Cyber Capabilities
 - Scaling Long-Running Autonomous Coding
 - I think Anthropic and OpenAI have found product-market fit
+- Dangerous Technology For Americans Only
 
 ---
 
