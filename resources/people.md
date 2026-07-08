@@ -521,3 +521,22 @@ Research scientist at Anthropic leading the Frontier Red Team's cybersecurity re
 Projects: [Hermes Agent](projects.md#hermes-agent)
 
 Co-founder of Nous Research and creator of the Hermes open-source fine-tuned model family — OpenHermes-2.5-Mistral-7B was one of the most downloaded instruction-tuned models in 2023–2024. The Hermes models are specifically known for tool-calling and instruction-following capabilities, which makes the pivot to building [Hermes Agent](projects.md#hermes-agent) a natural extension: the person who trained models to call tools built the agent framework to use those tools, and the agent generates trajectory data to train the next model. Previously at CarperAI/StabilityAI (Free Willy datasets) and the OpenOrca team. Worth following because he sits at the intersection of model training and agent building in a way few others do — he shapes both sides of the loop. Commercial context: Nous Research operates Nous Portal (paid inference endpoint) and the agent's trajectory pipeline feeds their model training; the open-source contribution (MIT license, 157K+ stars) is real, but the agent also serves the lab's commercial model pipeline.
+
+---
+
+## Birgitta Böckeler
+- Homepage / Martin Fowler bliki: https://martinfowler.com/authors/birgitta.html
+- Thoughtworks: https://www.thoughtworks.com/profiles/b/birgitta-boeckeler
+
+Articles: [Harness engineering for coding agent users](articles.md#harness-engineering-for-coding-agent-users)
+
+Distinguished engineer at Thoughtworks and Martin Fowler's main collaborator on agentic-coding writing. Worth following because she brings an unusually disciplined, vendor-neutral engineering lens to coding agents — her work reframes the fuzzy "harness" concept in the vocabulary of control theory (feedforward/feedback, computational/inferential) rather than hype. The kind of practitioner who tests claims against real engineering practice and writes for durability rather than for the timeline.
+
+---
+
+## Dex Horthy
+- HumanLayer: https://www.humanlayer.dev/
+- GitHub: https://github.com/humanlayer
+- X: https://x.com/dexhorthy
+
+Founder of HumanLayer, and one of the more grounded practitioner voices on running coding agents in loops — present in San Francisco when the Ralph technique emerged (June 2025) and focused specifically on making these techniques work on *brownfield* codebases, not greenfield demos. Worth following for the **RPI methodology** (Research → Plan → Implement — forcing agents to produce design artifacts before writing code), the **"Dumb Zone"** framing (model performance degrades as the context window saturates, so the whole game is staying in the "smart zone" via frequent context resets), and a notably anti-hype stance: he argues reliability comes from ruthless simplicity rather than elaborate multi-agent orchestrators, and that "you cannot outsource the thinking." A candidate for a standalone entry once the RPI work exists as a solid written primary rather than mainly talks.

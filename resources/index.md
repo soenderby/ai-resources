@@ -6,9 +6,9 @@ Read this file first to see what is already tracked. Open the full canonical fil
 
 ## Canonical files
 
-- `people.md` — 50 tracked people
-- `articles.md` — 131 tracked articles / reference sites
-- `events.md` — 18 tracked events / dated snapshots
+- `people.md` — 52 tracked people
+- `articles.md` — 135 tracked articles / reference sites
+- `events.md` — 19 tracked events / dated snapshots
 - `books.md` — 17 tracked books
 - `projects.md` — 31 tracked projects
 - `glossary.md` — 11 terms under active semantic diffusion
@@ -67,6 +67,8 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Thomas Ptacek
 - Nicholas Carlini
 - Teknium
+- Birgitta Böckeler
+- Dex Horthy
 
 ---
 
@@ -203,6 +205,10 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Better Models: Worse Tools
 - Harness Engineering for Self-Improvement
 - Scaling Laws, Carefully
+- Loop Engineering
+- Harness engineering for coding agent users
+- Why Do Multi-Agent LLM Systems Fail? (MAST)
+- The Long-Horizon Task Mirage? Diagnosing Where and Why Agentic Systems Break
 
 ---
 
@@ -226,6 +232,7 @@ Read this file first to see what is already tracked. Open the full canonical fil
 - Scaling Long-Running Autonomous Coding
 - I think Anthropic and OpenAI have found product-market fit
 - Dangerous Technology For Americans Only
+- The Ralph Loop: How I Run Autonomous AI Agents Overnight
 
 ---
 
